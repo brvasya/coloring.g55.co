@@ -53,6 +53,13 @@
 "description": "Fun Plush Adventure coloring sheet for Minecraft fans. Print and color!",
 "category": "minecraft",
 "image": "minecraft/minecraft-creeper-coloring-page.png"
+},
+{
+"id": "minecraft-baby-moblin-coloring-page",
+"title": "Minecraft Baby Moblin Coloring Page",
+"description": "Print and color this adorable Minecraft scene. Perfect for kids!",
+"category": "minecraft",
+"image": "minecraft/minecraft-baby-moblin-coloring-page.png"
 }
 ]
 }
