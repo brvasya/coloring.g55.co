@@ -1,0 +1,37 @@
+{
+"site": {
+"title": "Free Printable Coloring Pages",
+"h1": "Free Printable Coloring Pages",
+"description": "Discover free printable coloring pages you can instantly print. Simple, high quality designs for kids, teens, and adults."
+},
+
+"categories": [
+{
+"id": "minecraft",
+"name": "Minecraft",
+"description": "Free printable Minecraft coloring pages to download and print. Color Minecraft characters, mobs, and scenes with fun, kid friendly designs."
+},
+{
+"id": "zootopia",
+"name": "Zootopia",
+"description": "Free printable Zootopia coloring pages to download and print. Color Judy Hopps, Nick Wilde, and other Zootopia characters."
+}
+],
+
+"pages": [
+{
+"id": "minecraft-steve-coloring-page-holding-tnt",
+"title": "Minecraft Steve Coloring Page Holding TNT",
+"description": "Minecraft Steve coloring page with Steve holding TNT blocks, black and white printable line art for kids and Minecraft fans",
+"category": "minecraft",
+"image": "minecraft/minecraft-steve-coloring-page-holding-tnt.png"
+},
+{
+"id": "zootopia-coloring-page-judy-hopps-nick-wilde",
+"title": "Zootopia Coloring Page: Judy Hopps and Nick Wilde",
+"description": "Simple Zootopia coloring page featuring Nick Wilde and Judy Hopps standing in front of a city skyline with palm trees, black and white line art for kids",
+"category": "zootopia",
+"image": "zootopia/zootopia-coloring-page-judy-hopps-nick-wilde.png"
+}
+]
+}
