@@ -8,12 +8,12 @@
 "categories": [
 {
 "id": "minecraft",
-"name": "Minecraft Coloring Pages",
+"name": "Minecraft",
 "description": "Free printable Minecraft coloring pages to download and print. Color Minecraft characters, mobs, and scenes with fun, kid friendly designs."
 },
 {
 "id": "zootopia",
-"name": "Zootopia Coloring Pages",
+"name": "Zootopia",
 "description": "Free printable Zootopia coloring pages to download and print. Color Judy Hopps, Nick Wilde, and other Zootopia characters."
 }
 ],
@@ -235,6 +235,13 @@
 "description": "Enter the fiery dimension with our Ghast Attack coloring page! This high-quality printable features a giant Ghast shooting fireballs at two adventurers as they race across a stone bridge in the Nether. It’s an exciting, action-packed creative activity for Minecraft fans who love the thrill of the Nether. Download and print for free!",
 "category": "minecraft",
 "image": "minecraft/minecraft-ghast-attack-coloring-page.png"
+},
+{
+"id": "free-minecraft-village-railway-coloring-sheet",
+"title": "Minecraft Minecart Madness Coloring Page – Free Printable",
+"description": "Get ready for a wild ride with our Minecart Madness coloring page! This high-quality printable features a happy miner leading a train of minecarts filled with gold and treasures through a scenic village landscape under a full moon. It’s a fun, high-energy creative activity for kids who love the engineering and exploration side of Minecraft. Click to download and print for free!",
+"category": "minecraft",
+"image": "minecraft/free-minecraft-village-railway-coloring-sheet.png"
 }
 ]
 }
