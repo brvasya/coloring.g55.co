@@ -24,7 +24,11 @@ function setLink(rel, href) {
   if (link) link.setAttribute("href", href || "");
 }
 
-/* ---------- MENU ---------- */
+function withCountPrefix(count, title) {
+  return count > 0 ? `${count} ${title}` : title;
+}
+
+/* menu */
 
 function renderMenu(data) {
   const menu = document.getElementById("category-menu");
@@ -43,7 +47,7 @@ function renderMenu(data) {
   });
 }
 
-/* ---------- GRID ---------- */
+/* grid */
 
 function renderGrid(pages) {
   const grid = document.getElementById("pages-grid");
@@ -66,7 +70,7 @@ function renderGrid(pages) {
   });
 }
 
-/* ---------- HOME + CATEGORY ---------- */
+/* home and category */
 
 async function initRoot() {
   const data = await loadData();
@@ -80,8 +84,15 @@ async function initRoot() {
   const descEl = document.getElementById("desc");
 
   if (!isCategory) {
+    const totalCount = data.pages.length;
+
     document.title = data.site?.title || "";
-    if (h1El) h1El.textContent = data.site?.h1 || "";
+    if (h1El) {
+      h1El.textContent = withCountPrefix(
+        totalCount,
+        data.site?.h1 || ""
+      );
+    }
     if (descEl) descEl.textContent = data.site?.description || "";
 
     setMetaDescription(data.site?.description || "");
@@ -96,8 +107,15 @@ async function initRoot() {
   const catName = cat?.name || "Category";
   const catDesc = cat?.description || data.site?.description || "";
 
+  const categoryCount = data.pages.filter(p => p.category === cid).length;
+
   document.title = catName + (data.site?.title ? " | " + data.site.title : "");
-  if (h1El) h1El.textContent = catName;
+  if (h1El) {
+    h1El.textContent = withCountPrefix(
+      categoryCount,
+      catName
+    );
+  }
   if (descEl) descEl.textContent = catDesc;
 
   setMetaDescription(catDesc);
@@ -107,7 +125,7 @@ async function initRoot() {
   renderGrid(list);
 }
 
-/* ---------- SINGLE PAGE ---------- */
+/* single page */
 
 async function initPage() {
   const data = await loadData();
@@ -146,14 +164,14 @@ async function initPage() {
 
   const more = document.getElementById("more-link");
   if (more && category) {
-    more.textContent = "More " + category.name + " Coloring Pages";
+    more.textContent = "More " + category.name;
     more.href = "index.html?c=" + encodeURIComponent(category.id);
   }
 
   const moreTitle = document.getElementById("more-title");
   if (moreTitle && category) {
     moreTitle.textContent =
-      "Similar Free Printable " + category.name + " Coloring Pages You May Like";
+      "Similar Free Printable " + category.name + " You May Like";
   }
 
   const similar = data.pages
@@ -182,7 +200,7 @@ async function initPage() {
   renderMenu(data);
 }
 
-/* ---------- BOOT ---------- */
+/* boot */
 
 document.addEventListener("DOMContentLoaded", () => {
   const pageType = document.body.dataset.page;
