@@ -4,6 +4,13 @@ async function loadData() {
   return res.json();
 }
 
+async function loadCategoryPages(cid) {
+  const res = await fetch(`categories/${encodeURIComponent(cid)}.json`, { cache: "no-store" });
+  if (!res.ok) throw new Error("Category file not found: " + cid);
+  const data = await res.json();
+  return Array.isArray(data.pages) ? data.pages : [];
+}
+
 function el(html) {
   const t = document.createElement("template");
   t.innerHTML = html.trim();
@@ -28,7 +35,7 @@ function withCountPrefix(count, title) {
   return count > 0 ? `${count} ${title}` : title;
 }
 
-/* menu */
+/* menu (alphabetical) */
 
 function renderMenu(data) {
   const menu = document.getElementById("category-menu");
@@ -36,8 +43,8 @@ function renderMenu(data) {
 
   menu.innerHTML = "";
 
-  const sortedCategories = [...data.categories].sort((a, b) =>
-    a.name.localeCompare(b.name)
+  const sortedCategories = [...(data.categories || [])].sort((a, b) =>
+    (a.name || "").localeCompare(b.name || "")
   );
 
   sortedCategories.forEach(c => {
@@ -45,8 +52,8 @@ function renderMenu(data) {
       <li>
         <a class="tag"
            href="index.html?c=${encodeURIComponent(c.id)}"
-           title="${c.name}"
-           target="_top">${c.name}</a>
+           title="${c.name || ""}"
+           target="_top">${c.name || ""}</a>
       </li>
     `));
   });
@@ -62,7 +69,7 @@ function renderGrid(pages) {
   pages.forEach(p => {
     grid.appendChild(el(`
       <a class="thumbnail"
-         href="page.html?id=${encodeURIComponent(p.id)}"
+         href="page.html?id=${encodeURIComponent(p.id)}&c=${encodeURIComponent(p.category)}"
          title="${p.title}"
          target="_top">
         <img loading="lazy"
@@ -75,7 +82,7 @@ function renderGrid(pages) {
   });
 }
 
-/* home and category */
+/* home + category */
 
 async function initRoot() {
   const data = await loadData();
@@ -89,65 +96,74 @@ async function initRoot() {
   const descEl = document.getElementById("desc");
 
   if (!isCategory) {
-    const totalCount = data.pages.length;
+    // load pages from all categories (for latest 24)
+    let allPages = [];
+    for (const c of (data.categories || [])) {
+      const pages = await loadCategoryPages(c.id);
+      pages.forEach(p => allPages.push({ ...p, category: c.id }));
+    }
+
+    const totalCount = allPages.length;
 
     document.title = data.site?.title || "";
-    if (h1El) {
-      h1El.textContent = withCountPrefix(
-        totalCount,
-        data.site?.h1 || ""
-      );
-    }
+    if (h1El) h1El.textContent = withCountPrefix(totalCount, data.site?.h1 || "");
     if (descEl) descEl.textContent = data.site?.description || "";
 
     setMetaDescription(data.site?.description || "");
     setLink("canonical", "/");
 
-    const latest = [...data.pages].slice(-24).reverse();
+    const latest = allPages.slice(-24).reverse();
     renderGrid(latest);
     return;
   }
 
-  const cat = data.categories.find(x => x.id === cid);
+  const cat = (data.categories || []).find(x => x.id === cid);
   const catName = cat?.name || "Category";
   const catDesc = cat?.description || data.site?.description || "";
 
-  const categoryCount = data.pages.filter(p => p.category === cid).length;
+  const pages = (await loadCategoryPages(cid)).map(p => ({ ...p, category: cid }));
+  const categoryCount = pages.length;
 
   document.title = catName + (data.site?.title ? " | " + data.site.title : "");
-  if (h1El) {
-    h1El.textContent = withCountPrefix(
-      categoryCount,
-      catName
-    );
-  }
+  if (h1El) h1El.textContent = withCountPrefix(categoryCount, catName);
   if (descEl) descEl.textContent = catDesc;
 
   setMetaDescription(catDesc);
   setLink("canonical", "/?c=" + encodeURIComponent(cid));
 
-  const list = data.pages
-    .filter(p => p.category === cid)
-    .slice()
-    .reverse();
-
-  renderGrid(list);
+  renderGrid(pages.slice().reverse());
 }
 
 /* single page */
 
 async function initPage() {
   const data = await loadData();
-  const id = qs("id");
 
-  const page = data.pages.find(p => p.id === id);
+  const id = qs("id");
+  let cid = qs("c"); // optional but helps performance
+
+  // If category not provided, find it by scanning categories
+  if (!cid) {
+    for (const c of (data.categories || [])) {
+      const pages = await loadCategoryPages(c.id);
+      if (pages.some(p => p.id === id)) {
+        cid = c.id;
+        break;
+      }
+    }
+  }
+
+  if (!cid) return;
+
+  const pages = await loadCategoryPages(cid);
+  const page = pages.find(p => p.id === id);
   if (!page) return;
 
-  const category = data.categories.find(c => c.id === page.category);
+  const category = (data.categories || []).find(c => c.id === cid);
 
   document.title = page.title + (data.site?.title ? " | " + data.site.title : "");
   setMetaDescription(page.description || page.title);
-  setLink("canonical", "/page.html?id=" + encodeURIComponent(page.id));
+  setLink("canonical", "/page.html?id=" + encodeURIComponent(id) + "&c=" + encodeURIComponent(cid));
   setLink("image_src", page.image);
 
   const h1 = document.getElementById("page-h1");
@@ -174,20 +190,20 @@ async function initPage() {
   const more = document.getElementById("more-link");
   if (more && category) {
     more.textContent = "More " + category.name;
-    more.href = "index.html?c=" + encodeURIComponent(category.id);
+    more.href = "index.html?c=" + encodeURIComponent(cid);
   }
 
   const moreTitle = document.getElementById("more-title");
   if (moreTitle && category) {
-    moreTitle.textContent =
-      "Similar Free Printable " + category.name + " You May Like";
+    moreTitle.textContent = "Similar Free Printable " + category.name + " You May Like";
   }
 
-  const similar = data.pages
-    .filter(p => p.category === page.category && p.id !== page.id)
+  const similar = pages
+    .filter(p => p.id !== id)
     .slice()
     .reverse()
-    .slice(0, 8);
+    .slice(0, 8)
+    .map(p => ({ ...p, category: cid }));
 
   const list = document.getElementById("more-pages-list");
   if (list) {
@@ -195,7 +211,7 @@ async function initPage() {
     similar.forEach(p => {
       list.appendChild(el(`
         <a class="thumbnail"
-           href="page.html?id=${encodeURIComponent(p.id)}"
+           href="page.html?id=${encodeURIComponent(p.id)}&c=${encodeURIComponent(p.category)}"
            title="${p.title}"
            target="_top">
           <img loading="lazy"
