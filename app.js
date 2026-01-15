@@ -95,8 +95,8 @@ async function initRoot() {
   const h1El = document.getElementById("h1");
   const descEl = document.getElementById("desc");
 
+  /* homepage */
   if (!isCategory) {
-    // homepage: 1 newest image per category, categories sorted alphabetically
     let homepagePages = [];
     let totalCount = 0;
 
@@ -114,8 +114,10 @@ async function initRoot() {
       }
     }
 
-    document.title = data.site?.title || "";
-    if (h1El) h1El.textContent = withCountPrefix(totalCount, data.site?.h1 || "");
+    const h1Text = withCountPrefix(totalCount, data.site?.h1 || "");
+
+    document.title = h1Text;
+    if (h1El) h1El.textContent = h1Text;
     if (descEl) descEl.textContent = data.site?.description || "";
 
     setMetaDescription(data.site?.description || "");
@@ -125,6 +127,7 @@ async function initRoot() {
     return;
   }
 
+  /* category page */
   const cat = (data.categories || []).find(x => x.id === cid);
   const catName = cat?.name || "Category";
   const catDesc = cat?.description || data.site?.description || "";
@@ -132,8 +135,10 @@ async function initRoot() {
   const pages = (await loadCategoryPages(cid)).map(p => ({ ...p, category: cid }));
   const categoryCount = pages.length;
 
-  document.title = catName + (data.site?.title ? " | " + data.site.title : "");
-  if (h1El) h1El.textContent = withCountPrefix(categoryCount, catName);
+  const h1Text = withCountPrefix(categoryCount, catName);
+
+  document.title = h1Text + (data.site?.title ? " | " + data.site.title : "");
+  if (h1El) h1El.textContent = h1Text;
   if (descEl) descEl.textContent = catDesc;
 
   setMetaDescription(catDesc);
@@ -150,7 +155,6 @@ async function initPage() {
   const id = qs("id");
   let cid = qs("c");
 
-  // If category not provided, find it by scanning categories
   if (!cid) {
     for (const c of (data.categories || [])) {
       const pages = await loadCategoryPages(c.id);
