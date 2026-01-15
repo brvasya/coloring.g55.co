@@ -3,29 +3,34 @@
 "baseUrl": "https://coloring.g55.co",
 "title": "Free Printable Coloring Pages",
 "h1": "Free Printable Coloring Pages",
-"description": "Discover free printable coloring pages you can instantly print. Simple, high quality designs for kids, teens, and adults."
+"description": "Discover free printable coloring pages you can instantly print. Simple, high quality designs for kids, teens, and adults"
 },
 
 "categories": [
 {
 "id": "minecraft",
 "name": "Minecraft Coloring Pages",
-"description": "Free printable Minecraft coloring pages to download and print. Color Minecraft characters, mobs, and scenes with fun, kid friendly designs."
+"description": "Free printable Minecraft coloring pages to download and print. Color Minecraft characters, mobs, and scenes with fun, kid friendly designs"
 },
 {
 "id": "zootopia",
 "name": "Zootopia Coloring Pages",
-"description": "Free printable Zootopia coloring pages to download and print. Color Judy Hopps, Nick Wilde, and other Zootopia characters."
+"description": "Free printable Zootopia coloring pages to download and print. Color Judy Hopps, Nick Wilde, and other Zootopia characters"
 },
 {
 "id": "fnaf",
 "name": "FNAF Coloring Pages",
-"description": "Free printable FNAF coloring pages featuring Freddy Fazbear and other Five Nights at Freddy’s characters Perfect for kids and fans to download print and color at home or school."
+"description": "Free printable FNAF coloring pages featuring Freddy Fazbear and other Five Nights at Freddy’s characters Perfect for kids and fans to download print and color at home or school"
 },
 {
 "id": "sonic",
 "name": "Sonic Coloring Pages",
-"description": "Discover free printable Sonic coloring pages featuring action scenes rings robots and classic game worlds perfect for kids and Sonic fans to print and color at home."
+"description": "Discover free printable Sonic coloring pages featuring action scenes rings robots and classic game worlds perfect for kids and Sonic fans to print and color at home"
+},
+{
+"id": "crash-bandicoot",
+"name": "Crash Bandicoot Coloring Pages",
+"description": "Discover free Crash Bandicoot coloring pages featuring fun action scenes perfect for kids and fans Print high quality black and white pages to color online or offline and enjoy classic platform adventure characters anytime"
 }
 ]
 }
