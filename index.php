@@ -189,7 +189,7 @@ gtag('config', 'G-6SLYYXXV9H');
 <table id="footer">
 <tr>
 <td>
-<a href="privacy-policy/" title="Privacy Policy" target="_top">Privacy Policy</a>
+<a href="privacy-policy.php" title="Privacy Policy" target="_top">Privacy Policy</a>
 </td>
 </tr>
 </table>

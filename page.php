@@ -109,7 +109,6 @@ $moreTitle = $cat ? ('Similar Free Printable ' . ($cat['name'] ?? '') . ' You Ma
 <title><?php echo h($title); ?></title>
 <meta name="description" content="<?php echo h($metaDesc); ?>">
 <link rel="canonical" href="<?php echo h($canonical); ?>">
-<link rel="image_src" href="<?php echo h($imageSrc); ?>">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="style.css">
 <script src="colors.js"></script>
@@ -188,7 +187,7 @@ gtag('config', 'G-6SLYYXXV9H');
 <table id="footer">
 <tr>
 <td>
-<a href="privacy-policy/" title="Privacy Policy" target="_top">Privacy Policy</a>
+<a href="privacy-policy.php" title="Privacy Policy" target="_top">Privacy Policy</a>
 </td>
 </tr>
 </table>
