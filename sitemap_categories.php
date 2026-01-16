@@ -45,7 +45,7 @@ $today = date('Y-m-d');
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
 
-$home = $base . "/index.php";
+$home = $base . "/";
 echo "  <url>\n";
 echo "    <loc>" . xml_e($home) . "</loc>\n";
 echo "    <lastmod>" . xml_e($today) . "</lastmod>\n";
@@ -55,7 +55,7 @@ foreach ($categories as $c) {
   $cid = isset($c['id']) ? $c['id'] : '';
   if ($cid === '') continue;
 
-  $loc = $base . "/index.php?c=" . q($cid);
+  $loc = $base . "/?c=" . q($cid);
   echo "  <url>\n";
   echo "    <loc>" . xml_e($loc) . "</loc>\n";
   echo "    <lastmod>" . xml_e($today) . "</lastmod>\n";
