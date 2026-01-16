@@ -80,7 +80,7 @@ $siteTitle = $site['title'] ?? '';
 $title = $pageTitle;
 
 $metaDesc = $page['description'] ?? $pageTitle;
-$canonical = '/page.php?id=' . rawurlencode($id) . '&c=' . rawurlencode($cid);
+$canonical = 'https://coloring.g55.co/page.php?id=' . rawurlencode($id) . '&c=' . rawurlencode($cid);
 $imageSrc = $page['image'] ?? '';
 
 $h1 = $pageTitle;

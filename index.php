@@ -48,7 +48,7 @@ $isCategory = ($cid !== '');
 
 $title = '';
 $metaDesc = $site['description'] ?? '';
-$canonical = '/';
+$canonical = 'https://coloring.g55.co/';
 
 $h1 = '';
 $desc = '';
@@ -82,7 +82,7 @@ if (!$isCategory) {
 
   $title = $h1;
   $metaDesc = $site['description'] ?? '';
-  $canonical = '/';
+  $canonical = 'https://coloring.g55.co/';
 } else {
   $cat = null;
   foreach ($categories as $c) {
@@ -113,7 +113,7 @@ if (!$isCategory) {
   $title = $h1;
 
   $metaDesc = $catDesc;
-  $canonical = '/?c=' . rawurlencode($cid);
+  $canonical = 'https://coloring.g55.co/?c=' . rawurlencode($cid);
 }
 ?>
 <!DOCTYPE html>
