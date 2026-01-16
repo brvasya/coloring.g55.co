@@ -70,7 +70,7 @@ $data = [
 
 /* INDEX PAGE */
 
-if ($view === 'index.php') {
+if ($view === '/') {
 
   $cid = preg_replace('/[^a-z0-9_-]/i', '', $_GET['c'] ?? '');
   $isCategory = $cid !== '';
@@ -96,7 +96,7 @@ if ($view === 'index.php') {
     $h1 = title_with_count($totalCount, $site['h1'] ?? '');
     $desc = $site['description'] ?? '';
     $title = $h1;
-    $canonical = 'index.php';
+    $canonical = '/';
   } else {
     $cat = null;
     foreach ($categories as $c) {
@@ -117,7 +117,7 @@ if ($view === 'index.php') {
     $h1 = title_with_count($count, $cat['name'] ?? 'Category');
     $desc = $cat['description'] ?? ($site['description'] ?? '');
     $title = $h1 . (!empty($site['title']) ? ' | ' . $site['title'] : '');
-    $canonical = 'index.php?c=' . rawurlencode($cid);
+    $canonical = '/?c=' . rawurlencode($cid);
   }
 
   $data += compact('grid','h1','desc','title','canonical');
