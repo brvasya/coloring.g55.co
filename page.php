@@ -80,7 +80,7 @@ $siteTitle = $site['title'] ?? '';
 $title = $pageTitle;
 
 $metaDesc = $page['description'] ?? $pageTitle;
-$canonical = 'page.php?id=' . rawurlencode($id) . '&c=' . rawurlencode($cid);
+$canonical = '/page.php?id=' . rawurlencode($id) . '&c=' . rawurlencode($cid);
 $imageSrc = $page['image'] ?? '';
 
 $h1 = $pageTitle;
@@ -110,8 +110,8 @@ $moreTitle = $cat ? ('Similar Free Printable ' . ($cat['name'] ?? '') . ' You Ma
 <meta name="description" content="<?php echo h($metaDesc); ?>">
 <link rel="canonical" href="<?php echo h($canonical); ?>">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="style.css">
-<script src="colors.js"></script>
+<link rel="stylesheet" href="/style.css">
+<script src="/colors.js"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6180203036822393" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SLYYXXV9H"></script>
 <script>
@@ -164,7 +164,7 @@ gtag('config', 'G-6SLYYXXV9H');
 <h2><?php echo h($moreTitle); ?></h2>
 <ul class="more-pages" id="more-pages-list">
 <?php foreach ($similar as $p): ?>
-<a class="thumbnail" href="page.php?id=<?php echo rawurlencode($p['id']); ?>&c=<?php echo rawurlencode($cid); ?>" title="<?php echo h($p['title']); ?>" target="_top">
+<a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($p['id']); ?>&c=<?php echo rawurlencode($cid); ?>" title="<?php echo h($p['title']); ?>" target="_top">
 <img loading="lazy" src="<?php echo h($p['image']); ?>" alt="<?php echo h($p['title']); ?>" width="170" height="128">
 </a>
 <?php endforeach; ?>
@@ -187,7 +187,7 @@ gtag('config', 'G-6SLYYXXV9H');
 <table id="footer">
 <tr>
 <td>
-<a href="privacy-policy.php" title="Privacy Policy" target="_top">Privacy Policy</a>
+<a href="/privacy-policy.php" title="Privacy Policy" target="_top">Privacy Policy</a>
 </td>
 </tr>
 </table>
