@@ -37,12 +37,6 @@ foreach ($categories as $c) {
   if (($c['id'] ?? '') === $cid) { $cat = $c; break; }
 }
 
-if (!$page) {
-  http_response_code(404);
-  echo 'Not found';
-  exit;
-}
-
 $pageTitle = $page['title'] ?? '';
 $title = $pageTitle;
 
