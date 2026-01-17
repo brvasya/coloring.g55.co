@@ -37,6 +37,10 @@ foreach ($categories as $c) {
   if (($c['id'] ?? '') === $cid) { $cat = $c; break; }
 }
 
+if (!$page) {
+  exit;
+}
+
 $pageTitle = $page['title'] ?? '';
 $title = $pageTitle;
 
