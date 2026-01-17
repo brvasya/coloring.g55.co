@@ -12,6 +12,7 @@ $page = null;
 $cat  = null;
 
 if (!$cid || !$id) {
+  http_response_code(404);
   exit;
 }
 
@@ -23,6 +24,7 @@ foreach ($categories as $c) {
 }
 
 if (!$cat) {
+  http_response_code(404);
   exit;
 }
 
@@ -36,6 +38,7 @@ foreach ($pages as $p) {
 }
 
 if (!$page) {
+  http_response_code(404);
   exit;
 }
 
