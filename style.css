@@ -125,7 +125,6 @@ p {
     display: flex;
     background-color: #eee;
     flex-direction: column;
-    justify-content: space-evenly;
     box-sizing: border-box;
 }
 .tower_r h1 {
