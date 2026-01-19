@@ -100,6 +100,7 @@ body {
     width: calc(100% - 50px);
     margin: 0 auto;
     display: flex;
+    flex-direction: row-reverse;
 }
 a, a:visited {
     color: #fff;
