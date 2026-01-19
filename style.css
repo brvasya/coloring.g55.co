@@ -39,7 +39,7 @@ body * {
     height: unset !important;
 }
 #container {
-    flex-direction: column;
+    flex-direction: column-reverse !important;
 }
 .page {
     width: 100% !important;
