@@ -40,6 +40,7 @@ body * {
 }
 #container {
     flex-direction: column-reverse !important;
+    height: unset !important;
 }
 .page {
     width: 100% !important;
@@ -98,6 +99,7 @@ body {
 }
 #container {
     width: calc(100% - 50px);
+    height: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
@@ -146,6 +148,7 @@ h1, h2, h3 {
     overflow: hidden;
     box-sizing: border-box;
     cursor: pointer;
+    object-fit: contain;
 }
 .thumbnail {
     flex: auto;
