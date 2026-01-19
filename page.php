@@ -48,8 +48,8 @@ gtag('config', 'G-F24J0X7PDM');
 <div class="tower_r">
 <h1><?php echo h($h1); ?></h1>
 <p><?php echo h($desc); ?></p>
-<a class="tag" id="print" href="#printable" onclick="window.print();">Print</a>
-<a class="tag" id="download" href="<?php echo h($imageSrc); ?>" download>Download</a>
+<a class="tag" id="print" href="#printable" onclick="window.print();">&#9113; Print</a>
+<a class="tag" id="download" href="<?php echo h($imageSrc); ?>" download>&#8673; Download</a>
 <a class="tag" id="more" href="<?php echo h($moreHref); ?>"><?php echo h($moreText); ?></a>
 </div>
 <img class="page" id="printable" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h($desc); ?>">
