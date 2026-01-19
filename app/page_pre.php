@@ -63,7 +63,7 @@ $similar = [];
 foreach ($pagesAllRev as $p) {
   if ($p['id'] === $id) continue;
   $similar[] = $p;
-  if (count($similar) >= 8) break;
+  if (count($similar) >= 4) break;
 }
 
 $moreText = 'More ' . $cat['name'];
