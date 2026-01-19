@@ -8,8 +8,8 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'page
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php echo h($title); ?></title>
 <meta name="description" content="<?php echo h($metaDesc); ?>">
-<meta property="og:image" content="https://coloring.g55.co<?php echo h($imageSrc); ?>">
 <link rel="canonical" href="<?php echo h($canonical); ?>">
+<link rel="image_src" href="<?php echo h($imageSrc); ?>">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="/style.css">
 <script defer src="/colors.js"></script>
