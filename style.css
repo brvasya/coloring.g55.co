@@ -13,8 +13,9 @@ body * {
 }
 #printable {
     visibility: visible;
-    object-fit: cover;
+    object-fit: contain;
     position: absolute;
+    border: unset;
     height: 100%;
     width: 100%;
     left: 0;
