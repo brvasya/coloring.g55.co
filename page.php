@@ -48,7 +48,7 @@ gtag('config', 'G-F24J0X7PDM');
 <div class="tower_r">
 <h1><?php echo h($h1); ?></h1>
 <p><?php echo h($desc); ?></p>
-<a class="tag" id="save" href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode($canonical); ?>&description=<?php echo h($desc); ?>" target="_blank">Save to Pinterest</a>
+<a class="tag" id="save" href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode($canonical); ?>&description=<?php echo rawurlencode($desc); ?>" target="_blank">Save to Pinterest</a>
 <a class="tag" id="print" href="#printable" onclick="window.print();">Print</a>
 <a class="tag" id="download" href="<?php echo h($imageSrc); ?>" download>Download</a>
 <a class="tag" id="more" href="<?php echo h($moreHref); ?>"><?php echo h($moreText); ?></a>
