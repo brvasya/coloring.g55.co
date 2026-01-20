@@ -152,7 +152,7 @@ h1, h2, h3 {
 }
 .page {
     width: 70%;
-    border: 5px solid #000;
+    border: 5px solid #eee;
     border-radius: 20px;
     overflow: hidden;
     box-sizing: border-box;
