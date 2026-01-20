@@ -30,32 +30,14 @@
   }
 
   function colorize() {
-    document.querySelectorAll(".thumbnail:not([data-colored])").forEach(el => {
+    document.querySelectorAll(".thumbnail").forEach(el => {
       el.style.borderColor = getReadablePastel();
-      el.dataset.colored = "1";
     });
 
-    document.querySelectorAll(".tag:not([data-colored])").forEach(el => {
+    document.querySelectorAll(".tag").forEach(el => {
       el.style.backgroundColor = getReadablePastel();
-      el.dataset.colored = "1";
     });
   }
 
-  function start() {
-    colorize();
-
-    new MutationObserver(colorize).observe(document.documentElement, {
-      childList: true,
-      subtree: true
-    });
-
-    setTimeout(colorize, 250);
-    setTimeout(colorize, 1000);
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", start);
-  } else {
-    start();
-  }
+  colorize();
 })();
