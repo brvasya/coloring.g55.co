@@ -57,13 +57,21 @@ $imageSrc = $page['image'];
 $h1 = $pageTitle;
 $desc = $page['description'];
 
-$pagesAllRev = array_reverse($pages);
-
-$similar = [];
-foreach ($pagesAllRev as $p) {
+$pool = [];
+foreach ($pages as $p) {
   if ($p['id'] === $id) continue;
-  $similar[] = $p;
-  if (count($similar) >= 4) break;
+  $pool[] = $p;
+}
+
+$limit = min(4, count($pool));
+$similar = [];
+
+if ($limit > 0) {
+  $keys = array_rand($pool, $limit);
+  if (!is_array($keys)) $keys = [$keys];
+  foreach ($keys as $k) {
+    $similar[] = $pool[$k];
+  }
 }
 
 $moreText = 'More ' . $cat['name'];
