@@ -63,9 +63,17 @@ body {
     padding: 0 !important;
     background-color: #fff;
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
     font-weight: bold;
+    font-size: 14px;
     color: #333;
+}
+button {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    border: unset;
+    color: #fff;
 }
 #logo {
     height: 60px;
