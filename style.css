@@ -43,6 +43,9 @@ body * {
     flex-direction: column-reverse !important;
     height: unset !important;
 }
+.thumbnail {
+    width: unset !important;
+}
 .page {
     width: 100% !important;
 }
@@ -53,9 +56,6 @@ body * {
 }
 .pages, .description, .menu, .more-pages {
     flex-direction: column;
-}
-.thumbnail {
-    width: unset;
 }
 h1, h2, h3 {
     text-align: center;
