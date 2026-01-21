@@ -54,7 +54,7 @@ gtag('config', 'G-F24J0X7PDM');
 <h2><?php echo h($moreTitle); ?></h2>
 <ul class="more-pages">
 <?php foreach ($similar as $p): ?>
-<li><a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($p['id']); ?>&c=<?php echo rawurlencode($cid); ?>" title="<?php echo h($p['title']); ?>" target="_top"><img loading="lazy" src="<?php echo h('/categories/' . $cid . '/' . $p['id'] . '.png'); ?>" alt="<?php echo h($p['title']); ?>" width="170" height="128"></a></li>
+<li><a class="thumbnail" style="background-image: url(<?php echo h('/categories/' . $cid . '/' . $p['id'] . '.png'); ?>)" href="/page.php?id=<?php echo rawurlencode($p['id']); ?>&c=<?php echo rawurlencode($cid); ?>" title="<?php echo h($p['title']); ?>" target="_top"></a></li>
 <?php endforeach; ?>
 </ul>
 </td>
