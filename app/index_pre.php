@@ -30,7 +30,7 @@ if ($hasC) {
     $gridItems[] = [
       'id' => $p['id'],
       'title' => $p['title'],
-      'image' => '/categories/' . $catId . '/' . $p['id'] . '.png',
+      'image' => '/categories/' . $cid . '/' . $p['id'] . '.png',
       'category' => $cid
     ];
   }
