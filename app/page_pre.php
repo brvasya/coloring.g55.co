@@ -52,7 +52,7 @@ $title = $pageTitle;
 
 $metaDesc = $page['description'];
 $canonical = 'https://coloring.g55.co/page.php?id=' . rawurlencode($id) . '&c=' . rawurlencode($cid);
-$imageSrc = $page['image'];
+$imageSrc = '/categories/' . $cid . '/' . $page['id'] . '.png';
 
 $h1 = $pageTitle;
 $desc = $page['description'];

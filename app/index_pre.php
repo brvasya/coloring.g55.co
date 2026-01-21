@@ -30,7 +30,7 @@ if ($hasC) {
     $gridItems[] = [
       'id' => $p['id'],
       'title' => $p['title'],
-      'image' => $p['image'],
+      'image' => '/categories/' . $catId . '/' . $p['id'] . '.png',
       'category' => $cid
     ];
   }
@@ -56,7 +56,7 @@ if ($hasC) {
     $gridItems[] = [
       'id' => $newest['id'],
       'title' => $newest['title'],
-      'image' => $newest['image'],
+      'image' => '/categories/' . $catId . '/' . $newest['id'] . '.png',
       'category' => $catId
     ];
   }
