@@ -181,8 +181,8 @@ h1, h2, h3 {
 }
 .thumbnail {
     flex: auto;
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     border: 4px solid;
     margin: 5px;
     border-radius: 20px;
