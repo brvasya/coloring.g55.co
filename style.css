@@ -78,6 +78,16 @@ button {
     border: unset;
     color: #fff;
 }
+span {
+    width: 100%;
+    color: #333;
+    padding: 20px;
+    background-image: linear-gradient(to top, transparent, #eee);
+    opacity: 0;
+}
+span:hover {
+    opacity: 1;
+}
 #logo {
     height: 60px;
     display: block;
@@ -178,6 +188,7 @@ h1, h2, h3 {
     margin: 5px;
     border-radius: 20px;
     display: flex;
+    overflow: hidden;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
