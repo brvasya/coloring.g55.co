@@ -82,11 +82,10 @@ span {
     width: 100%;
     padding: 20px;
     background-image: linear-gradient(to top, transparent, #333);
-    text-shadow: 0 0 1px #000;
     opacity: 0;
 }
 span:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 #logo {
     height: 60px;
