@@ -11,7 +11,10 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'inde
 <link rel="canonical" href="<?php echo h($canonical); ?>">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="/style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="/mason.min.js"></script>
 <script defer src="/colors.js"></script>
+<script defer src="/resize.js"></script>
 <script async src="https://cse.google.com/cse.js?cx=d0a39b24af4ab40a8"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6180203036822393" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F24J0X7PDM"></script>
