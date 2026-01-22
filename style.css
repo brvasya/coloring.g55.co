@@ -80,13 +80,12 @@ button {
 }
 span {
     width: 100%;
-    color: #333;
     padding: 20px;
-    background-image: linear-gradient(to top, transparent, #eee);
+    background-image: linear-gradient(to top, transparent, #333);
     opacity: 0;
 }
 span:hover {
-    opacity: 1;
+    opacity: 0.9;
 }
 #logo {
     height: 60px;
