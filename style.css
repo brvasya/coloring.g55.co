@@ -54,7 +54,7 @@ body * {
     margin-left: unset !important;
     margin-top: 25px;
 }
-.pages, .description, .menu, .more-pages {
+.pages, .description, .menu {
     flex-direction: column;
 }
 h1, h2, h3 {
@@ -132,7 +132,7 @@ a, a:visited {
 p {
     text-align: justify;
 }
-.pages, .description, .menu, .more-pages {
+.pages, .description, .menu {
     margin: 0;
     padding: 25px;
     display: flex;

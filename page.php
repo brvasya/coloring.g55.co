@@ -52,7 +52,7 @@ gtag('config', 'G-F24J0X7PDM');
 <tr>
 <td>
 <h2><?php echo h($moreTitle); ?></h2>
-<div class="more-pages">
+<div class="pages">
 <?php foreach ($similar as $p): ?>
 <a class="thumbnail" style="background-image: url(<?php echo h('/categories/' . $cid . '/' . $p['id'] . '.png'); ?>);" href="/page.php?id=<?php echo rawurlencode($p['id']); ?>&c=<?php echo rawurlencode($cid); ?>" title="<?php echo h($p['title']); ?>" target="_top"><span><?php echo h($p['title']); ?></span></a>
 <?php endforeach; ?>

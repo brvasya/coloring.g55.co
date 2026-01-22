@@ -31,7 +31,7 @@ function read_json(string $path): array {
 }
 
 function load_site_index(): array {
-  $path = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'pages.json';
+  $path = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'categories.json';
   return read_json($path);
 }
 
