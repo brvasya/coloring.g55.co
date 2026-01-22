@@ -42,7 +42,7 @@ gtag('config', 'G-F24J0X7PDM');
 <tr>
 <td class="pages">
 <?php foreach ($gridItems as $it): ?>
-<a class="thumbnail" style="background-image: url(<?php echo h($it['image']); ?>);" href="/page.php?id=<?php echo rawurlencode($it['id']); ?>&c=<?php echo rawurlencode($it['category']); ?>" title="<?php echo h($it['title']); ?>" target="_top"></a>
+<a class="thumbnail" style="background-image: url(<?php echo h($it['image']); ?>);" href="/page.php?id=<?php echo rawurlencode($it['id']); ?>&c=<?php echo rawurlencode($it['category']); ?>" title="<?php echo h($it['title']); ?>" target="_top"><span><?php echo h($it['title']); ?></span></a>
 <?php endforeach; ?>
 </td>
 </tr>
