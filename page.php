@@ -27,7 +27,7 @@ gtag('config', 'G-F24J0X7PDM');
 <body>
 <table id="header">
 <tr>
-<td id="header-left"><a id="logo" href="/" title="" target="_top"></a></td>
+<td id="header-left"><a id="logo" href="/"></a></td>
 <td id="header-right"><div class="gcse-searchbox-only"></div></td>
 </tr>
 </table>
@@ -54,7 +54,7 @@ gtag('config', 'G-F24J0X7PDM');
 <h2><?php echo h($moreTitle); ?></h2>
 <div class="pages">
 <?php foreach ($similar as $p): ?>
-<a class="thumbnail" style="background-image: url(<?php echo h('/categories/' . $cid . '/' . $p['id'] . '.png'); ?>);" href="/page.php?id=<?php echo rawurlencode($p['id']); ?>&c=<?php echo rawurlencode($cid); ?>" title="<?php echo h($p['title']); ?>" target="_top"><span><?php echo h($p['title']); ?></span></a>
+<a class="thumbnail" style="background-image: url(<?php echo h('/categories/' . $cid . '/' . $p['id'] . '.png'); ?>);" href="/page.php?id=<?php echo rawurlencode($p['id']); ?>&c=<?php echo rawurlencode($cid); ?>"><span><?php echo h($p['title']); ?></span></a>
 <?php endforeach; ?>
 </div>
 </td>
@@ -66,7 +66,7 @@ gtag('config', 'G-F24J0X7PDM');
 <h3>Discover More Free Printable Coloring Pages</h3>
 <ul class="menu">
 <?php foreach ($categories as $c): ?>
-<li><a class="tag" href="/?c=<?php echo rawurlencode($c['id']); ?>" title="<?php echo h($c['name']); ?>" target="_top"><?php echo h($c['name']); ?></a></li>
+<li><a class="tag" href="/?c=<?php echo rawurlencode($c['id']); ?>"><?php echo h($c['name']); ?></a></li>
 <?php endforeach; ?>
 </ul>
 </td>
@@ -75,7 +75,7 @@ gtag('config', 'G-F24J0X7PDM');
 <table id="footer">
 <tr>
 <td>
-<a href="/privacy-policy.php" title="Privacy Policy" target="_top">Privacy Policy</a>
+<a href="/privacy-policy.php">Privacy Policy</a>
 </td>
 </tr>
 </table>
