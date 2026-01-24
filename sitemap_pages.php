@@ -31,7 +31,7 @@ if ($n < 1) {
 $index = load_site_index();
 $categories = get_categories_sorted($index);
 
-$perSitemap = 40000;
+$perSitemap = 10000;
 $start = ($n - 1) * $perSitemap;
 $end = $start + $perSitemap;
 
