@@ -36,7 +36,7 @@ if ($hasC) {
   }
 
   $count = count($gridItems);
-  $h1 = ($count > 0 ? $count . ' ' : '') . $cat['name'];
+  $h1 = ($count > 0 ? number_format($count) . ' ' : '') . $cat['name'];
   $desc = $cat['description'];
 
   $title = $h1;
@@ -61,7 +61,7 @@ if ($hasC) {
     ];
   }
 
-  $h1 = ($totalCount > 0 ? $totalCount . ' ' : '') . $site['h1'];
+  $h1 = ($totalCount > 0 ? number_format($totalCount) . ' ' : '') . $site['h1'];
   $desc = $site['description'];
 
   $title = $h1;
