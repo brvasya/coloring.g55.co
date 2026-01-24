@@ -68,7 +68,8 @@ function newest_page(array $pages): array {
     echo 'Empty category';
     exit;
   }
-  return $pages[$n - 1];
+  $idx = array_rand($pages);
+  return $pages[$idx];
 }
 
 function get_categories_sorted(array $index): array {
