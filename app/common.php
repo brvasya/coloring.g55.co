@@ -15,14 +15,12 @@ function read_json(string $path): array {
   $raw = file_get_contents($path);
   if ($raw === false) {
     http_response_code(500);
-    echo 'JSON read failed';
     exit;
   }
 
   $data = json_decode($raw, true);
   if (!is_array($data)) {
     http_response_code(500);
-    echo 'Invalid JSON';
     exit;
   }
 
@@ -38,7 +36,6 @@ function load_site_index(): array {
 function load_category_pages(string $cid): array {
   if ($cid === '' || !preg_match('/^[a-z0-9_-]+$/i', $cid)) {
     http_response_code(400);
-    echo 'Invalid category';
     exit;
   }
 
@@ -47,7 +44,6 @@ function load_category_pages(string $cid): array {
 
   if (!isset($data['pages']) || !is_array($data['pages'])) {
     http_response_code(500);
-    echo 'Invalid category schema';
     exit;
   }
 
@@ -65,7 +61,6 @@ function newest_page(array $pages): array {
   $n = count($pages);
   if ($n === 0) {
     http_response_code(500);
-    echo 'Empty category';
     exit;
   }
   $idx = array_rand($pages);
