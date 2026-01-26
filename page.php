@@ -43,7 +43,7 @@ gtag('config', 'G-F24J0X7PDM');
 <a class="tag" id="download" href="<?php echo h($imageSrc); ?>" download>Download</a>
 <a class="tag" id="more" href="<?php echo h($moreHref); ?>"><?php echo h($moreText); ?></a>
 </div>
-<img class="page" id="printable" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h($desc); ?>">
+<img class="page" id="printable" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h($imageAlt); ?>">
 </div>
 </td>
 </tr>
