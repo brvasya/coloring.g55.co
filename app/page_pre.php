@@ -54,7 +54,7 @@ $metaDesc = $page['description'];
 $canonical = 'https://coloring.g55.co/page.php?id=' . rawurlencode($id) . '&c=' . rawurlencode($cid);
 $imageSrc = '/categories/' . $cid . '/' . $page['id'] . '.png';
 $imageAlt = str_replace('-', ' ', $page['id']);
-$imageAlt = str_replace('coloring page', 'line art', $imageAlt);
+$imageAlt = str_replace(['coloring page', 'free', 'printable'], ['line art', '', ''], $imageAlt);
 
 $h1 = $pageTitle;
 $desc = $page['description'];
