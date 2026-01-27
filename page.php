@@ -63,7 +63,7 @@ gtag('config', 'G-F24J0X7PDM');
 <table id="menu">
 <tr>
 <td>
-<h3>Discover More Free Printable Coloring Pages</h3>
+<h3>Browse More Free Printable Coloring Pages</h3>
 <ul class="menu">
 <?php foreach ($categories as $c): ?>
 <li><a class="tag" href="/?c=<?php echo rawurlencode($c['id']); ?>"><?php echo h($c['name']); ?></a></li>
