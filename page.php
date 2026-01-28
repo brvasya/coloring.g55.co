@@ -31,8 +31,7 @@ gtag('config', 'G-F24J0X7PDM');
 </table>
 <table id="content">
 <tr>
-<td>
-<div id="container">
+<td id="container">
 <div class="tower_r">
 <h1><?php echo h($h1); ?></h1>
 <p><?php echo h($desc); ?></p>
@@ -42,7 +41,6 @@ gtag('config', 'G-F24J0X7PDM');
 <a class="tag" id="more" href="<?php echo h($moreHref); ?>"><?php echo h($moreText); ?></a>
 </div>
 <img class="page" id="printable" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h($imageAlt); ?>">
-</div>
 </td>
 </tr>
 </table>
