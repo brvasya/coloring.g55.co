@@ -74,15 +74,6 @@ button {
     border: unset;
     color: #fff;
 }
-span {
-    width: 100%;
-    padding: 20px;
-    background-image: linear-gradient(to top, transparent, #333);
-    opacity: 0;
-}
-span:hover {
-    opacity: 0.9;
-}
 #logo {
     height: 60px;
     display: block;
@@ -191,6 +182,15 @@ h1, h2, h3 {
 }
 .thumbnail:hover {
     transform: scale(1.02);
+}
+.thumbnail span {
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(to top, transparent, #333);
+    opacity: 0;
+}
+.thumbnail span:hover {
+    opacity: 0.9;
 }
 table {
     width: 100%;
