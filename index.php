@@ -45,24 +45,6 @@ gtag('config', 'G-F24J0X7PDM');
 </td>
 </tr>
 </table>
-<table id="menu">
-<tr>
-<td>
-<h2>Browse More Free Printable Coloring Pages</h2>
-<ul class="menu">
-<?php foreach ($categories as $c): ?>
-<li><a class="tag" href="/?c=<?php echo rawurlencode($c['id']); ?>"><?php echo h($c['name']); ?></a></li>
-<?php endforeach; ?>
-</ul>
-</td>
-</tr>
-</table>
-<table id="footer">
-<tr>
-<td>
-<a href="/privacy-policy.php">Privacy Policy</a>
-</td>
-</tr>
-</table>
+<?php include 'footer.php'; ?>
 </body>
 </html>
