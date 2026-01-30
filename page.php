@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'page_pre.php'; ?>
+<?php require_once 'app/page_pre.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,27 +8,11 @@
 <meta name="description" content="<?php echo h($metaDesc); ?>">
 <link rel="canonical" href="<?php echo h($canonical); ?>">
 <link rel="image_src" href="<?php echo h($imageSrc); ?>">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="/style.css">
-<script defer src="/colors.js"></script>
-<script async src="https://cse.google.com/cse.js?cx=d0a39b24af4ab40a8"></script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6180203036822393" crossorigin="anonymous"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F24J0X7PDM"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-F24J0X7PDM');
-</script>
+<?php include 'head.php'; ?>
 </head>
 
 <body>
-<table id="header">
-<tr>
-<td id="header-left"><a id="logo" href="/"></a></td>
-<td id="header-right"><div class="gcse-searchbox-only"></div></td>
-</tr>
-</table>
+<?php include 'header.php'; ?>
 <table id="content">
 <tr>
 <td id="container">
@@ -56,24 +40,6 @@ gtag('config', 'G-F24J0X7PDM');
 </td>
 </tr>
 </table>
-<table id="menu">
-<tr>
-<td>
-<h3>Browse More Free Printable Coloring Pages</h3>
-<ul class="menu">
-<?php foreach ($categories as $c): ?>
-<li><a class="tag" href="/?c=<?php echo rawurlencode($c['id']); ?>"><?php echo h($c['name']); ?></a></li>
-<?php endforeach; ?>
-</ul>
-</td>
-</tr>
-</table>
-<table id="footer">
-<tr>
-<td>
-<a href="/privacy-policy.php">Privacy Policy</a>
-</td>
-</tr>
-</table>
+<?php include 'footer.php'; ?>
 </body>
 </html>

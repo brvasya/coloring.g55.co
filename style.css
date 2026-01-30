@@ -22,12 +22,9 @@ body * {
 }
 
 @media screen and (max-width: 768px) {
-#logo {
+.logo {
     width: 180px !important;
     margin: 0 auto !important;
-}
-#header-right {
-    display: none;
 }
 #title {
     background-image: unset !important;
@@ -66,6 +63,9 @@ body {
     color: #333;
     overflow-x: hidden;
 }
+header {
+    height: 90px;
+}
 footer {
     height: 60px;
     display: flex;
@@ -85,7 +85,7 @@ button {
     border: unset;
     color: #fff;
 }
-#logo {
+.logo {
     height: 60px;
     display: block;
     margin-left: 60px;
@@ -100,12 +100,6 @@ button {
     background-repeat: no-repeat;
     background-position: top right;
     background-image: linear-gradient(to bottom, transparent, #eee), linear-gradient(to top, transparent, #eee), url(mascot.png);
-}
-#header {
-    height: 90px;
-}
-#header-left {
-    width: 300px;
 }
 #container {
     width: calc(100% - 50px);
