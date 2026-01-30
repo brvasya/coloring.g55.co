@@ -25,6 +25,9 @@ body * {
 .logo {
     margin: 0 auto !important;
 }
+.gcse-searchbox-only {
+    display: none !important;
+}
 #title {
     background-image: unset !important;
     background-color: #eee;
@@ -65,6 +68,7 @@ body {
 header {
     height: 90px;
     display: flex;
+    align-items: center;
 }
 footer {
     height: 60px;
@@ -258,5 +262,6 @@ li {
     border: 1px solid #ccc;
 }
 #___gcse_0 {
-    width: calc(100% - 300px);
+    width: calc(100% - 360px);
+    margin-right: 60px;
 }
