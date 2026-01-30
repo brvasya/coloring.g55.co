@@ -65,6 +65,7 @@ body {
 }
 header {
     height: 90px;
+    display: flex;
 }
 footer {
     height: 60px;
