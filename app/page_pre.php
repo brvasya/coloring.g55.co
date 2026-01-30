@@ -77,6 +77,6 @@ if ($limit > 0) {
   }
 }
 
-$moreText = 'More ' . $cat['name'];
+$moreText = 'More ' . $cat['name'] . ' Coloring Pages';
 $moreHref = '/?c=' . rawurlencode($cid);
-$moreTitle = 'Similar Free Printable ' . $cat['name'] . ' You May Like';
+$moreTitle = 'Similar ' . $cat['name'] . ' Coloring Pages';
