@@ -8,7 +8,5 @@
 </nav>
 </main>
 <footer>
-&#169; <?php echo date('Y'); ?> coloring.g55.co
 <a href="/privacy-policy.php">Privacy Policy</a>
-<a href="mailto:crazygames888@gmail.com">Contact Us</a>
 </footer>
