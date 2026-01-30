@@ -1,6 +1,6 @@
 <?php
 // app/index_pre.php
-require_once __DIR__ . DIRECTORY_SEPARATOR . 'common.php';
+require_once 'common.php';
 
 $index = load_site_index();
 $site = $index['site'];
