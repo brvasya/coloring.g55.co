@@ -36,7 +36,7 @@ if ($hasC) {
   }
 
   $count = count($gridItems);
-  $h1 = ($count > 0 ? number_format($count) . ' ' : '') . $cat['name'];
+  $h1 = ($count > 0 ? number_format($count) . ' ' : '') . $cat['name'] . ' Coloring Pages';
   $desc = $cat['description'];
 
   $title = $h1;
