@@ -93,7 +93,11 @@ img {
     width: auto;
     height: 100%;
 }
-h1, h2 {
+h1 {
+    font-size: 20px;
+    margin: 0;
+}
+h2 {
     font-size: 20px;
     margin: 0 25px;
 }
@@ -134,9 +138,6 @@ p {
     background-position: top right;
     background-image: linear-gradient(to bottom, transparent, #eee), linear-gradient(to top, transparent, #eee), url(mascot.png);
 }
-.title h1 {
-    margin: 0;
-}
 .container {
     width: calc(100% - 50px);
     height: 600px;
@@ -161,9 +162,6 @@ p {
     background-color: #eee;
     flex-direction: column;
     box-sizing: border-box;
-}
-.tower_r h1 {
-    margin: 0;
 }
 .tower_r .tag {
     background-position: 15px center;
