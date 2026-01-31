@@ -13,33 +13,28 @@
 
 <body>
 <?php include 'header.php'; ?>
-<table id="content">
-<tr>
-<td id="container">
+<main>
+<section>
+<div class="container">
 <div class="tower_r">
 <h1><?php echo h($h1); ?></h1>
 <p><?php echo h($desc); ?></p>
-<a class="tag" id="save" href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode($canonical); ?>&description=<?php echo rawurlencode($desc); ?>" target="_blank">Save to Pinterest</a>
-<button class="tag" id="print" onclick="window.print();">Print</button>
-<a class="tag" id="download" href="<?php echo h($imageSrc); ?>" download>Download</a>
-<a class="tag" id="more" href="<?php echo h($moreHref); ?>"><?php echo h($moreText); ?></a>
+<a class="tag save" href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode($canonical); ?>&description=<?php echo rawurlencode($desc); ?>" target="_blank">Save to Pinterest</a>
+<button class="tag print" onclick="window.print();">Print</button>
+<a class="tag download" href="<?php echo h($imageSrc); ?>" download>Download</a>
+<a class="tag more" href="<?php echo h($moreHref); ?>"><?php echo h($moreText); ?></a>
 </div>
-<img class="page" id="printable" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h($imageAlt); ?>">
-</td>
-</tr>
-</table>
-<table id="more-pages">
-<tr>
-<td>
+<img class="page printable" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h($imageAlt); ?>">
+</div>
+</section>
+<section>
 <h2><?php echo h($moreTitle); ?></h2>
-<div class="pages">
+<div class="grid">
 <?php foreach ($similar as $p): ?>
 <a class="thumbnail" style="background-image: url(<?php echo h('/categories/' . $cid . '/' . $p['id'] . '.png'); ?>);" href="/page.php?id=<?php echo rawurlencode($p['id']); ?>&c=<?php echo rawurlencode($cid); ?>"><span><?php echo h($p['title']); ?></span></a>
 <?php endforeach; ?>
 </div>
-</td>
-</tr>
-</table>
+</section>
 <?php include 'footer.php'; ?>
 </body>
 </html>
