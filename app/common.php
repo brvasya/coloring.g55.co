@@ -74,3 +74,9 @@ function get_categories_sorted(array $index): array {
 function clean_slug($s): string {
   return preg_replace('/[^a-z0-9_-]/i', '', (string)$s);
 }
+
+function makeImageAlt(string $id): string {
+  $imageAlt = str_replace('-', ' ', $id);
+  $imageAlt = str_replace(['coloring page', 'free', 'printable'], ['line art', '', ''], $imageAlt);
+return preg_replace('/\s+/', ' ', trim($imageAlt));
+}
