@@ -12,23 +12,18 @@
 
 <body>
 <?php include 'header.php'; ?>
-<table id="title">
-<tr>
-<td>
+<main>
+<section>
+<div class="title">
 <h1><?php echo h($h1); ?></h1>
 <p class="description"><?php echo h($desc); ?></p>
-</td>
-</tr>
-</table>
-<table id="content">
-<tr>
-<td class="pages">
+</div>
+<div class="grid">
 <?php foreach ($gridItems as $it): ?>
 <a class="thumbnail" style="background-image: url(<?php echo h($it['image']); ?>);" href="/page.php?id=<?php echo rawurlencode($it['id']); ?>&c=<?php echo rawurlencode($it['category']); ?>"><span><?php echo h($it['title']); ?></span></a>
 <?php endforeach; ?>
-</td>
-</tr>
-</table>
+</div>
+</section>
 <?php include 'footer.php'; ?>
 </body>
 </html>
