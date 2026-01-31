@@ -140,7 +140,7 @@ p {
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 }
 #more-pages, .title h1 {
     padding-top: 25px;
