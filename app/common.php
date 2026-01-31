@@ -78,5 +78,5 @@ function clean_slug($s): string {
 function makeImageAlt(string $id): string {
   $imageAlt = str_replace('-', ' ', $id);
   $imageAlt = str_replace(['coloring page', 'free', 'printable'], ['line art', '', ''], $imageAlt);
-return preg_replace('/\s+/', ' ', trim($imageAlt));
+  return preg_replace('/\s+/', ' ', trim($imageAlt));
 }
