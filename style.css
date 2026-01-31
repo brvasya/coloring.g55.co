@@ -143,6 +143,7 @@ p {
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
+    padding-bottom: 25px;
 }
 .grid, .categories {
     padding: 25px;
