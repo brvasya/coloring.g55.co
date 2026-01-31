@@ -38,9 +38,6 @@ section, nav, footer, .adsbygoogle {
     flex-direction: column-reverse !important;
     height: unset !important;
 }
-.thumbnail {
-    width: unset !important;
-}
 .page {
     width: 100% !important;
 }
@@ -51,6 +48,7 @@ section, nav, footer, .adsbygoogle {
 }
 .grid, .categories {
     flex-direction: column;
+    flex-wrap: nowrap !important;
 }
 h1, h2 {
     text-align: center;
