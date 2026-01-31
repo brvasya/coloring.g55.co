@@ -16,8 +16,7 @@ section, nav, footer, .adsbygoogle {
     border: unset;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
+    inset: 0;
 }
 }
 
