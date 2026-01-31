@@ -14,7 +14,7 @@
 <body>
 <?php include 'header.php'; ?>
 <main>
-<section>
+<article>
 <div class="container">
 <div class="tower_r">
 <h1><?php echo h($h1); ?></h1>
@@ -26,7 +26,7 @@
 </div>
 <img class="page" id="printable" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h($imageAlt); ?>">
 </div>
-</section>
+</article>
 <section>
 <h2><?php echo h($moreTitle); ?></h2>
 <div class="grid">
