@@ -143,6 +143,9 @@ p {
 }
 .title {
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -161,7 +164,7 @@ p {
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 15px;
 }
 #more-pages, .title h1 {
     padding-top: 25px;
@@ -201,7 +204,7 @@ p {
     border: 4px solid;
     border-radius: 20px;
     display: flex;
-    flex: auto;
+    box-sizing: border-box;
     overflow: hidden;
     background-size: contain;
     background-repeat: no-repeat;
@@ -243,7 +246,6 @@ p {
     border-radius: 15px 0 0 15px;
 }
 .tag {
-    margin: 5px;
     display: block;
     overflow: hidden;
     white-space: nowrap;
