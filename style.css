@@ -195,6 +195,7 @@ p {
     transform: scale(1.02);
 }
 .thumbnail span {
+    width: 100%;
     height: 100%;
     padding: 20px;
     position: absolute;
@@ -207,6 +208,7 @@ p {
 .thumbnail img {
     width: 100%;
     height: 100%;
+    position: absolute;
     object-fit: contain;
 }
 .gsc-search-button {
