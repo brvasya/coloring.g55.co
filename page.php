@@ -24,7 +24,7 @@
 <a class="tag download" href="<?php echo h($imageSrc); ?>" download>Download</a>
 <a class="tag more" href="<?php echo h($moreHref); ?>"><?php echo h($moreText); ?></a>
 </div>
-<img class="page printable" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h($imageAlt); ?>">
+<img class="page" id="printable" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h($imageAlt); ?>">
 </div>
 </section>
 <section>
