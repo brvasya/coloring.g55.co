@@ -6,6 +6,9 @@ html, body {
 body * {
     visibility: hidden;
 }
+section, nav, footer, .adsbygoogle {
+    display: none !important;
+}
 #printable {
     visibility: visible;
     object-fit: contain;
@@ -15,9 +18,6 @@ body * {
     width: 100%;
     left: 0;
     top: 0;
-}
-.tower_r, .adsbygoogle, .grid, .categories, footer {
-    display: none !important;
 }
 }
 
