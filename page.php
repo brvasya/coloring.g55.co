@@ -32,8 +32,8 @@
 <div class="grid">
 <?php foreach ($similar as $p): ?>
 <a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($p['id']); ?>&c=<?php echo rawurlencode($cid); ?>">
-<img src="<?php echo h('/categories/' . $cid . '/' . $p['id'] . '.png'); ?>" alt="<?php echo h(makeImageAlt($p['id'])); ?>">
 <span><?php echo h($p['title']); ?></span>
+<img src="<?php echo h('/categories/' . $cid . '/' . $p['id'] . '.png'); ?>" alt="<?php echo h(makeImageAlt($p['id'])); ?>">
 </a>
 <?php endforeach; ?>
 </div>

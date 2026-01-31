@@ -90,10 +90,6 @@ button {
     border: unset;
     color: #fff;
 }
-img {
-    width: auto;
-    height: 100%;
-}
 h1 {
     font-size: 20px;
     margin: 0;
@@ -186,7 +182,7 @@ p {
     aspect-ratio: 3 / 2;
     border: 4px solid;
     border-radius: 20px;
-    display: flex;
+    position: relative;
     box-sizing: border-box;
     overflow: hidden;
     background-size: contain;
@@ -199,13 +195,19 @@ p {
     transform: scale(1.02);
 }
 .thumbnail span {
-    width: 100%;
+    height: 100%;
     padding: 20px;
+    position: absolute;
     background-image: linear-gradient(to top, transparent, #333);
     opacity: 0;
 }
 .thumbnail span:hover {
     opacity: 0.9;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .gsc-search-button {
     width: 75px !important;
