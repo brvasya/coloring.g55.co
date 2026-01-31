@@ -22,7 +22,7 @@
 <?php foreach ($gridItems as $it): ?>
 <a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($it['id']); ?>&c=<?php echo rawurlencode($it['category']); ?>">
 <span><?php echo h($it['title']); ?></span>
-<img src="<?php echo h('/categories/' . $cid . '/' . $it['id'] . '.png'); ?>" alt="<?php echo h(makeImageAlt($it['id'])); ?>">
+<img src="<?php echo h('/categories/' . $it['category'] . '/' . $it['id'] . '.png'); ?>" alt="<?php echo h(makeImageAlt($it['id'])); ?>">
 </a>
 <?php endforeach; ?>
 </div>
