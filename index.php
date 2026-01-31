@@ -16,7 +16,7 @@
 <section>
 <div class="title">
 <h1><?php echo h($h1); ?></h1>
-<p class="description"><?php echo h($desc); ?></p>
+<p><?php echo h($desc); ?></p>
 </div>
 <div class="grid">
 <?php foreach ($gridItems as $it): ?>
