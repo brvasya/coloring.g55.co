@@ -235,32 +235,32 @@ section, nav, footer, .adsbygoogle {
 
 @media screen and (max-width: 768px) {
 .logo {
-    margin: 0 auto !important;
+    margin: 0 auto;
 }
 #___gcse_0 {
-    display: none !important;
+    display: none;
 }
 .title {
-    background-image: unset !important;
+    background-image: unset;
     background-color: #eee;
-    height: unset !important;
-    padding: 30px !important;
+    height: unset;
+    padding: 30px;
 }
 article {
-    flex-direction: column-reverse !important;
-    height: unset !important;
+    flex-direction: column-reverse;
+    height: unset;
 }
 .page {
-    width: 100% !important;
+    width: 100%;
 }
 .tower_r {
-    width: 100% !important;
-    margin-left: unset !important;
+    width: 100%;
+    margin-left: unset;
     margin-top: 25px;
 }
 .grid, .categories {
     flex-direction: column;
-    flex-wrap: nowrap !important;
+    flex-wrap: nowrap;
 }
 h1, h2 {
     text-align: center;
