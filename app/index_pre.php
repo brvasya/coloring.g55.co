@@ -61,7 +61,7 @@ if ($hasC) {
     ];
   }
 
-  $h1 = ($totalCount > 0 ? number_format($totalCount) . ' ' : '') . $site['h1'];
+  $h1 = ($totalCount > 0 ? number_format($totalCount) . ' ' : '') . $site['title'];
   $desc = $site['description'];
 
   $title = $h1;
