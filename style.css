@@ -1,58 +1,3 @@
-
-@media print {
-html, body {
-    height: 100%;
-}
-body * {
-    visibility: hidden;
-}
-section, nav, footer, .adsbygoogle {
-    display: none !important;
-}
-#printable {
-    visibility: visible;
-    object-fit: contain;
-    position: absolute;
-    border: unset;
-    height: 100%;
-    width: 100%;
-    inset: 0;
-}
-}
-
-@media screen and (max-width: 768px) {
-.logo {
-    margin: 0 auto !important;
-}
-#___gcse_0 {
-    display: none !important;
-}
-.title {
-    background-image: unset !important;
-    background-color: #eee;
-    height: unset !important;
-    padding: 30px !important;
-}
-article {
-    flex-direction: column-reverse !important;
-    height: unset !important;
-}
-.page {
-    width: 100% !important;
-}
-.tower_r {
-    width: 100% !important;
-    margin-left: unset !important;
-    margin-top: 25px;
-}
-.grid, .categories {
-    flex-direction: column;
-    flex-wrap: nowrap !important;
-}
-h1, h2 {
-    text-align: center;
-}
-}
 body {
     margin: 0;
     padding: 0 !important;
@@ -265,4 +210,59 @@ p {
 }
 #___gcse_0 {
     width: calc(100% - 360px);
+}
+
+@media print {
+html, body {
+    height: 100%;
+}
+body * {
+    visibility: hidden;
+}
+section, nav, footer, .adsbygoogle {
+    display: none !important;
+}
+#printable {
+    visibility: visible;
+    object-fit: contain;
+    position: absolute;
+    border: unset;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+}
+}
+
+@media screen and (max-width: 768px) {
+.logo {
+    margin: 0 auto !important;
+}
+#___gcse_0 {
+    display: none !important;
+}
+.title {
+    background-image: unset !important;
+    background-color: #eee;
+    height: unset !important;
+    padding: 30px !important;
+}
+article {
+    flex-direction: column-reverse !important;
+    height: unset !important;
+}
+.page {
+    width: 100% !important;
+}
+.tower_r {
+    width: 100% !important;
+    margin-left: unset !important;
+    margin-top: 25px;
+}
+.grid, .categories {
+    flex-direction: column;
+    flex-wrap: nowrap !important;
+}
+h1, h2 {
+    text-align: center;
+}
 }
