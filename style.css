@@ -134,9 +134,8 @@ p {
     background-image: linear-gradient(to bottom, transparent, #eee), linear-gradient(to top, transparent, #eee), url(mascot.png);
 }
 .container {
-    width: calc(100% - 50px);
     height: 600px;
-    margin: 0 auto;
+    margin: 0 25px;
     display: flex;
     flex-direction: row-reverse;
     padding-bottom: 25px;
