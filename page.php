@@ -15,7 +15,6 @@
 <?php include 'header.php'; ?>
 <main>
 <article>
-<div class="container">
 <div class="tower_r">
 <h1><?php echo h($h1); ?></h1>
 <p><?php echo h($desc); ?></p>
@@ -25,7 +24,6 @@
 <a class="tag more" href="<?php echo h($moreHref); ?>"><?php echo h($moreText); ?></a>
 </div>
 <img class="page" id="printable" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h(makeImageAlt($page['id'])); ?>">
-</div>
 </article>
 <section>
 <h2><?php echo h($moreTitle); ?></h2>

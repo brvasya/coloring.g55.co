@@ -33,7 +33,7 @@ section, nav, footer, .adsbygoogle {
     height: unset !important;
     padding: 30px !important;
 }
-.container {
+article {
     flex-direction: column-reverse !important;
     height: unset !important;
 }
@@ -67,6 +67,13 @@ header {
     height: 90px;
     display: flex;
     align-items: center;
+}
+article {
+    height: 600px;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 25px;
 }
 footer {
     height: 60px;
@@ -132,13 +139,6 @@ p {
     background-repeat: no-repeat;
     background-position: top right;
     background-image: linear-gradient(to bottom, transparent, #eee), linear-gradient(to top, transparent, #eee), url(mascot.png);
-}
-.container {
-    height: 600px;
-    margin: 0 25px;
-    display: flex;
-    flex-direction: row-reverse;
-    padding-bottom: 25px;
 }
 .grid, .categories {
     padding: 25px;
