@@ -14,7 +14,6 @@ header {
     align-items: center;
 }
 article {
-    height: 600px;
     margin: 0 25px;
     display: flex;
     flex-direction: row-reverse;
@@ -112,6 +111,7 @@ p {
 }
 .page {
     width: 70%;
+    height: 600px;
     border: 5px solid #eee;
     border-radius: 20px;
     overflow: hidden;
@@ -237,7 +237,6 @@ section, nav, footer, .adsbygoogle {
 @media (max-width: 768px) {
 article {
     flex-direction: column-reverse;
-    height: unset;
 }
 h1, h2 {
     text-align: center;
@@ -257,6 +256,7 @@ h1, h2 {
 }
 .page {
     width: 100%;
+    height: unset;
 }
 .tower_r {
     width: 100%;
