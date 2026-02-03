@@ -223,11 +223,11 @@ body * {
 section, nav, footer, .adsbygoogle {
     display: none !important;
 }
-#printable {
+.page {
     visibility: visible;
     position: absolute;
     border: unset;
-    height: 100%;
+    height: 100% !important;
     width: 100%;
     inset: 0;
 }

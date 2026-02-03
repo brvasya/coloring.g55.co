@@ -23,7 +23,7 @@
 <a class="tag download" href="<?php echo h($imageSrc); ?>" download>Download</a>
 <a class="tag more" href="<?php echo h($moreHref); ?>"><?php echo h($moreText); ?></a>
 </div>
-<img class="page" id="printable" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h(makeImageAlt($page['id'])); ?>">
+<img class="page" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h(makeImageAlt($page['id'])); ?>">
 </article>
 <section>
 <h2><?php echo h($moreTitle); ?></h2>
