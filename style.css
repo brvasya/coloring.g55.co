@@ -225,7 +225,6 @@ section, nav, footer, .adsbygoogle {
 }
 #printable {
     visibility: visible;
-    object-fit: contain;
     position: absolute;
     border: unset;
     height: 100%;
