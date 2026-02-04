@@ -28,7 +28,7 @@ footer {
     box-shadow: 0 100vmax 0 100vmax #eee;
 }
 footer a {
-    color: #333;
+    color: #333 !important;
 }
 button {
     font-family: inherit;
