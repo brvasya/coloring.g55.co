@@ -25,8 +25,8 @@ if ($hasC) {
   list($_, $pages) = load_category_pages($cid);
 
   $gridItems = [];
-  for ($i = count($pages) - 1; $i >= 0; $i--) {
-    $p = $pages[$i];
+  // CHANGED: removed reverse order loop
+  foreach ($pages as $p) {
     $gridItems[] = [
       'id' => $p['id'],
       'title' => $p['title'],
