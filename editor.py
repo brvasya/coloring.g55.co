@@ -5,6 +5,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+CATEGORIES_DIR = os.path.join(SCRIPT_DIR, "categories")
 
 TEMPLATE = {"id": "", "title": "", "description": ""}
 
@@ -44,14 +45,14 @@ class JsonGui(tk.Tk):
         self.wrapper = None
         self.selected_index = None
 
-        self.files = list_json_files(SCRIPT_DIR)
+        self.files = list_json_files(CATEGORIES_DIR)
         self.build_ui()
 
         if self.files:
             self.file_var.set(self.files[0])
             self.load_selected()
         else:
-            messagebox.showwarning("No JSON files", f"No .json files found in:\n{SCRIPT_DIR}")
+            messagebox.showwarning("No JSON files", f"No .json files found in:\n{CATEGORIES_DIR}")
 
     def build_ui(self):
         top = ttk.Frame(self, padding=10)
@@ -126,7 +127,7 @@ class JsonGui(tk.Tk):
         self.new_template()
 
     def reload_list(self):
-        self.files = list_json_files(SCRIPT_DIR)
+        self.files = list_json_files(CATEGORIES_DIR)
         self.file_combo["values"] = self.files
         if self.files:
             if self.file_var.get() not in self.files:
@@ -144,7 +145,7 @@ class JsonGui(tk.Tk):
         name = self.file_var.get().strip()
         if not name:
             return None
-        return os.path.join(SCRIPT_DIR, name)
+        return os.path.join(CATEGORIES_DIR, name)
 
     def load_selected(self):
         path = self.selected_path()
