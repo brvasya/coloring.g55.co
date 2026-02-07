@@ -1,0 +1,31 @@
+with Diamond Sword
+with Iron Sword
+with Sword
+with Bow
+with Shield
+with Trident
+with Pickaxe
+with Axe
+with Shovel
+with Torch
+with Lantern
+with Crafting Table
+with Furnace
+with Chest
+with Treasure Chest
+with Enchanting Table
+with Bed
+with Boat
+with Minecart
+with TNT
+with Door
+with Ladder
+with Fence
+with Map
+with Elytra
+with Totem of Undying
+with Ender Pearl
+with Fishing Rod
+with Saddle
+with Armor
+with Armor Stand

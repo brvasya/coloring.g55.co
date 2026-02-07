@@ -1,0 +1,36 @@
+running
+jumping
+expling
+mining with pickaxe
+digging blocks
+building house
+placing blocks
+breaking blocks
+fighting mobs
+swinging sword
+shooting bow
+using shield
+climbing ladder
+climbing vines
+riding horse
+riding camel
+riding boat
+fishing
+swimming
+flying with elytra
+gliding in sky
+taming wolf
+opening treasure chest
+harvesting crops
+escaping monsters
+chasing mobs
+fighting boss
+exploring cave
+exploring temple
+entering portal
+building shelter
+protecting village
+searching treasure
+lighting torch
+camping
+sailing boat

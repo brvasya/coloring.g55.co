@@ -1,0 +1,34 @@
+Plains
+Forest
+Flower Forest
+Taiga
+Snowy Plains
+Snowy Mountains
+Jungle
+Bamboo Jungle
+Desert
+Savanna
+Badlands
+Swamp
+Mangrove Swamp
+River
+Beach
+Ocean Coast
+Mushroom Fields
+Lush Caves
+Dripstone Caves
+Deep Cave
+Village
+Snow Village
+Desert Village
+Jungle Temple
+Desert Temple
+Stronghold
+Mineshaft
+Nether Wastes
+Crimson Forest
+Warped Forest
+Basalt Deltas
+Soul Sand Valley
+The End
+End City
