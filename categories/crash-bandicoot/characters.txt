@@ -6,5 +6,5 @@ Tawna Bandicoot
 Fake Crash
 Baby Crash
 Baby Coco
-Polar
-Pura
+#Polar
+#Pura
