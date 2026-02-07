@@ -1,14 +1,19 @@
 {
-"pages": [
-{
-"id": "cute-frog-coloring-page-free-printable",
-"title": "Cute Frog Coloring Page Free Printable",
-"description": "Cute smiling frog coloring page sitting on a large lily pad in a pond surrounded by butterflies flowers mushrooms cattails rocks and a lotus flower with a happy sun and clouds in the sky free printable black and white coloring sheet for kids"
-},
-{
-"id": "cute-baby-giraffe-coloring-page-free-printable",
-"title": "Cute Baby Giraffe Coloring Page Free Printable",
-"description": "Cute baby giraffe coloring page sitting in a meadow with flowers butterflies mushrooms hearts clouds and a smiling sun free printable black and white coloring sheet for kids"
-}
-]
+  "pages": [
+    {
+      "id": "giraffe-chasing-frogs-coloring-page",
+      "title": "Free Printable Giraffe Chasing Frogs Coloring Page for Kids",
+      "description": "Enjoy a fun printable coloring page featuring a playful giraffe chasing frogs across lily pads in a peaceful pond setting. Designed with thick, clean outlines and simple black and white line art, this kid friendly page is perfect for crayons, markers, or colored pencils at home or in the classroom. The clear cartoon style makes coloring easy and relaxing for children while encouraging creativity, focus, and fine motor skill development. Great for animal lovers and nature themed coloring activities."
+    },
+    {
+      "id": "cute-frog-coloring-page-free-printable",
+      "title": "Cute Frog Coloring Page Free Printable",
+      "description": "Cute smiling frog coloring page sitting on a large lily pad in a pond surrounded by butterflies flowers mushrooms cattails rocks and a lotus flower with a happy sun and clouds in the sky free printable black and white coloring sheet for kids"
+    },
+    {
+      "id": "cute-baby-giraffe-coloring-page-free-printable",
+      "title": "Cute Baby Giraffe Coloring Page Free Printable",
+      "description": "Cute baby giraffe coloring page sitting in a meadow with flowers butterflies mushrooms hearts clouds and a smiling sun free printable black and white coloring sheet for kids"
+    }
+  ]
 }
