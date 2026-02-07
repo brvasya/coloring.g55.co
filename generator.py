@@ -200,9 +200,7 @@ class PromptGUI(tk.Tk):
             side="left", padx=(0, 8)
         )
 
-        ttk.Button(top, text="Append All", command=self.append_all_to_json).pack(
-            side="left"
-        )
+        ttk.Button(top, text="Save All", command=self.save_all_to_json).pack(side="left")
 
         ttk.Separator(self).pack(fill="x", padx=10, pady=(0, 10))
 
@@ -289,7 +287,7 @@ class PromptGUI(tk.Tk):
         self.update()
         self.mark_row(idx)
 
-    def append_one_to_json(self, idx):
+    def save_one_to_json(self, idx):
         category_name = self.category_var.get().strip()
 
         page = {
@@ -306,7 +304,7 @@ class PromptGUI(tk.Tk):
             f"Added 1 page to top of {category_name}.json",
         )
 
-    def append_all_to_json(self):
+    def save_all_to_json(self):
         category_name = self.category_var.get().strip()
 
         pages = [
@@ -409,8 +407,8 @@ class PromptGUI(tk.Tk):
 
             ttk.Button(
                 btns,
-                text="Append",
-                command=lambda idx=i: self.append_one_to_json(idx),
+                text="Save",
+                command=lambda idx=i: self.save_one_to_json(idx),
             ).pack(side="top", fill="x")
 
             self.rows.append(card)
