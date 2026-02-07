@@ -102,10 +102,19 @@ def build_id(parts):
     return slugify(build_seo_base_for_slug(parts))
 
 
+def format_extra_clause(extra):
+    return f"with {extra.strip()}"
+
+
 def build_prompt(parts, style):
+    extra_clause = format_extra_clause(parts["extra"])
+    core = f"{parts['character']} {parts['action']} {parts['environment']}"
+    core = re.sub(r"\s{2,}", " ", core).strip()
+    core = f"{core} {extra_clause}"
+
     return (
         "Coloring page on white background, "
-        f"{parts['character']} {parts['action']} {parts['environment']} {parts['extra']}, "
+        f"{core}, "
         f"{style}."
     )
 
