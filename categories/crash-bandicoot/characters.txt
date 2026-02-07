@@ -1,10 +1,10 @@
 Crash Bandicoot
-Coco Bandicoot
-Aku Aku
-Crunch Bandicoot
-Tawna Bandicoot
-Fake Crash
-Baby Crash
-Baby Coco
+#Coco Bandicoot
+#Aku Aku
+#Crunch Bandicoot
+#Tawna Bandicoot
+#Fake Crash
+#Baby Crash
+#Baby Coco
 #Polar
 #Pura
