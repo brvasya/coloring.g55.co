@@ -1,8 +1,10 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import messagebox
 import random
 import os
 import re
+import json
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CATEGORIES_DIR = os.path.join(BASE_DIR, "categories")
@@ -10,14 +12,14 @@ STYLE_FILE = os.path.join(CATEGORIES_DIR, "style.txt")
 
 LIST_NAMES = ["characters", "actions", "environments", "extras"]
 COPIED_BG = "#d1fae5"
-DEFAULT_BG = "white"
 
 
 def list_category_folders():
     if not os.path.isdir(CATEGORIES_DIR):
         return []
     return sorted(
-        d for d in os.listdir(CATEGORIES_DIR)
+        d
+        for d in os.listdir(CATEGORIES_DIR)
         if os.path.isdir(os.path.join(CATEGORIES_DIR, d))
     )
 
@@ -83,7 +85,6 @@ def build_h1(parts):
 
     base = f"{character} {action} {env}"
     base = re.sub(r"\s{2,}", " ", base).strip()
-
     return f"Free Printable {title_case_simple(base)} Coloring Page for Kids"
 
 
@@ -97,7 +98,7 @@ def build_seo_base_for_slug(parts):
     return base
 
 
-def build_filename(parts):
+def build_id(parts):
     return slugify(build_seo_base_for_slug(parts))
 
 
@@ -112,10 +113,12 @@ def build_prompt(parts, style):
 def generate_item(data):
     if not all(data.get(k) for k in LIST_NAMES) or not data.get("style"):
         parts = {"character": "", "action": "", "environment": "", "extra": ""}
-        h1 = "Missing files"
-        filename = "missing-files"
-        prompt = "Missing files"
-        return {"parts": parts, "h1": h1, "filename": filename, "prompt": prompt}
+        return {
+            "parts": parts,
+            "h1": "Missing files",
+            "id": "missing-files",
+            "prompt": "Missing files",
+        }
 
     parts = {
         "character": random.choice(data["characters"]),
@@ -124,20 +127,46 @@ def generate_item(data):
         "extra": random.choice(data["extras"]),
     }
 
-    h1 = build_h1(parts)
-    filename = build_filename(parts)
-    prompt = build_prompt(parts, data["style"])
-    return {"parts": parts, "h1": h1, "filename": filename, "prompt": prompt}
+    return {
+        "parts": parts,
+        "h1": build_h1(parts),
+        "id": build_id(parts),
+        "prompt": build_prompt(parts, data["style"]),
+    }
+
+
+def category_json_path(category_name):
+    return os.path.join(CATEGORIES_DIR, f"{category_name}.json")
+
+
+def prepend_pages_to_category_json(category_name, pages_to_add):
+    path = category_json_path(category_name)
+
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    if "pages" not in data or not isinstance(data["pages"], list):
+        data["pages"] = []
+
+    data["pages"] = list(pages_to_add) + data["pages"]
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
 
 class PromptGUI(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Coloring Promt Generator")
+        self.title("Coloring Prompt Generator")
         self.geometry("980x560")
 
+        self.style = ttk.Style(self)
+        self._setup_styles()
+
         self.categories = list_category_folders()
-        self.category_var = tk.StringVar(value=self.categories[0] if self.categories else "")
+        self.category_var = tk.StringVar(
+            value=self.categories[0] if self.categories else ""
+        )
         self.count_var = tk.IntVar(value=10)
 
         self.data = (
@@ -150,6 +179,7 @@ class PromptGUI(tk.Tk):
         top.pack(fill="x")
 
         ttk.Label(top, text="Category:").pack(side="left")
+
         combo = ttk.Combobox(
             top,
             textvariable=self.category_var,
@@ -161,11 +191,16 @@ class PromptGUI(tk.Tk):
         combo.bind("<<ComboboxSelected>>", self.on_category_change)
 
         ttk.Label(top, text="Items:").pack(side="left")
+
         ttk.Spinbox(
             top, from_=1, to=200, textvariable=self.count_var, width=6
         ).pack(side="left", padx=(6, 12))
 
         ttk.Button(top, text="Refresh", command=self.refresh_items).pack(
+            side="left", padx=(0, 8)
+        )
+
+        ttk.Button(top, text="Append All", command=self.append_all_to_json).pack(
             side="left"
         )
 
@@ -182,14 +217,13 @@ class PromptGUI(tk.Tk):
         self.scrollable_frame = ttk.Frame(self.canvas)
         self.scrollable_frame.bind(
             "<Configure>",
-            lambda e: self.canvas.configure(
-                scrollregion=self.canvas.bbox("all")
-            ),
+            lambda _e: self.canvas.configure(scrollregion=self.canvas.bbox("all")),
         )
 
         self.canvas_window = self.canvas.create_window(
             (0, 0), window=self.scrollable_frame, anchor="nw"
         )
+
         self.canvas.configure(yscrollcommand=scrollbar.set)
 
         self.canvas.pack(side="left", fill="both", expand=True)
@@ -202,10 +236,28 @@ class PromptGUI(tk.Tk):
 
         self.rows = []
         self.h1_vars = []
-        self.filename_vars = []
+        self.id_vars = []
         self.prompt_vars = []
 
         self.refresh_items()
+
+    def _setup_styles(self):
+        base_bg = self.style.lookup("TFrame", "background")
+        if not base_bg:
+            base_bg = self.cget("bg")
+
+        self.style.configure(
+            "Card.TFrame",
+            relief="solid",
+            borderwidth=1,
+            background=base_bg,
+        )
+        self.style.configure(
+            "Copied.Card.TFrame",
+            relief="solid",
+            borderwidth=1,
+            background=COPIED_BG,
+        )
 
     def on_category_change(self, _event=None):
         self.data = load_category_data(self.category_var.get())
@@ -214,32 +266,64 @@ class PromptGUI(tk.Tk):
     def mark_row(self, idx):
         if idx >= len(self.rows):
             return
-        row = self.rows[idx]
-        row.configure(bg=COPIED_BG)
-        for child in row.winfo_children():
-            if isinstance(child, tk.Label):
-                child.configure(bg=COPIED_BG)
+        try:
+            self.rows[idx].configure(style="Copied.Card.TFrame")
+        except Exception:
+            pass
 
     def copy_h1(self, idx):
-        text = self.h1_vars[idx].get()
         self.clipboard_clear()
-        self.clipboard_append(text)
+        self.clipboard_append(self.h1_vars[idx].get())
         self.update()
         self.mark_row(idx)
 
-    def copy_filename(self, idx):
-        text = self.filename_vars[idx].get()
+    def copy_id(self, idx):
         self.clipboard_clear()
-        self.clipboard_append(text)
+        self.clipboard_append(self.id_vars[idx].get())
         self.update()
         self.mark_row(idx)
 
     def copy_prompt(self, idx):
-        text = self.prompt_vars[idx].get()
         self.clipboard_clear()
-        self.clipboard_append(text)
+        self.clipboard_append(self.prompt_vars[idx].get())
         self.update()
         self.mark_row(idx)
+
+    def append_one_to_json(self, idx):
+        category_name = self.category_var.get().strip()
+
+        page = {
+            "id": self.id_vars[idx].get(),
+            "title": self.h1_vars[idx].get(),
+            "description": self.prompt_vars[idx].get(),
+        }
+
+        prepend_pages_to_category_json(category_name, [page])
+        self.mark_row(idx)
+
+        messagebox.showinfo(
+            "Saved",
+            f"Added 1 page to top of {category_name}.json",
+        )
+
+    def append_all_to_json(self):
+        category_name = self.category_var.get().strip()
+
+        pages = [
+            {
+                "id": self.id_vars[i].get(),
+                "title": self.h1_vars[i].get(),
+                "description": self.prompt_vars[i].get(),
+            }
+            for i in range(len(self.h1_vars))
+        ]
+
+        prepend_pages_to_category_json(category_name, pages)
+
+        messagebox.showinfo(
+            "Saved",
+            f"Added {len(pages)} pages to top of {category_name}.json",
+        )
 
     def refresh_items(self):
         for child in self.scrollable_frame.winfo_children():
@@ -247,7 +331,7 @@ class PromptGUI(tk.Tk):
 
         self.rows.clear()
         self.h1_vars.clear()
-        self.filename_vars.clear()
+        self.id_vars.clear()
         self.prompt_vars.clear()
 
         try:
@@ -260,78 +344,81 @@ class PromptGUI(tk.Tk):
             item = generate_item(self.data)
 
             h1_var = tk.StringVar(value=item["h1"])
-            filename_var = tk.StringVar(value=item["filename"])
+            id_var = tk.StringVar(value=item["id"])
             prompt_var = tk.StringVar(value=item["prompt"])
 
             self.h1_vars.append(h1_var)
-            self.filename_vars.append(filename_var)
+            self.id_vars.append(id_var)
             self.prompt_vars.append(prompt_var)
 
-            row = tk.Frame(self.scrollable_frame, bg=DEFAULT_BG)
-            row.pack(fill="x", pady=4)
+            card = ttk.Frame(
+                self.scrollable_frame,
+                style="Card.TFrame",
+                padding=10,
+            )
+            card.pack(fill="x", pady=6)
 
-            tk.Label(
-                row, text=f"{i+1}.", width=4, anchor="n", bg=DEFAULT_BG
-            ).pack(side="left")
+            card.grid_columnconfigure(1, weight=1)
 
-            text_block = tk.Frame(row, bg=DEFAULT_BG)
-            text_block.pack(side="left", fill="x", expand=True, padx=(0, 8))
+            idx_label = ttk.Label(card, text=f"{i+1}.", width=4, anchor="n")
+            idx_label.grid(row=0, column=0, rowspan=2, sticky="nw", padx=(0, 10))
 
-            tk.Label(
+            text_block = ttk.Frame(card)
+            text_block.grid(row=0, column=1, sticky="nsew")
+
+            ttk.Label(
                 text_block,
                 textvariable=h1_var,
                 wraplength=760,
                 justify="left",
                 anchor="w",
-                bg=DEFAULT_BG,
             ).pack(side="top", anchor="w", fill="x")
 
-            tk.Label(
+            ttk.Label(
                 text_block,
-                textvariable=filename_var,
+                textvariable=id_var,
                 wraplength=760,
                 justify="left",
                 anchor="w",
-                bg=DEFAULT_BG,
-            ).pack(side="top", anchor="w", fill="x")
+            ).pack(side="top", anchor="w", fill="x", pady=(4, 0))
 
-            tk.Label(
+            ttk.Label(
                 text_block,
                 textvariable=prompt_var,
                 wraplength=760,
                 justify="left",
                 anchor="w",
-                bg=DEFAULT_BG,
-            ).pack(side="top", anchor="w", fill="x", pady=(2, 0))
+            ).pack(side="top", anchor="w", fill="x", pady=(6, 0))
 
-            btns = tk.Frame(row, bg=DEFAULT_BG)
-            btns.pack(side="right")
-
-            ttk.Button(
-                btns,
-                text="Copy Title",
-                command=lambda idx=i: self.copy_h1(idx),
-            ).pack(side="top", pady=(0, 4))
+            btns = ttk.Frame(card)
+            btns.grid(row=0, column=2, rowspan=2, sticky="ne", padx=(10, 0))
 
             ttk.Button(
-                btns,
-                text="Copy Id",
-                command=lambda idx=i: self.copy_filename(idx),
-            ).pack(side="top", pady=(0, 4))
+                btns, text="Copy Title", command=lambda idx=i: self.copy_h1(idx)
+            ).pack(side="top", fill="x", pady=(0, 6))
+
+            ttk.Button(
+                btns, text="Copy Id", command=lambda idx=i: self.copy_id(idx)
+            ).pack(side="top", fill="x", pady=(0, 6))
 
             ttk.Button(
                 btns,
                 text="Copy Prompt",
                 command=lambda idx=i: self.copy_prompt(idx),
-            ).pack(side="top")
+            ).pack(side="top", fill="x", pady=(0, 6))
 
-            self.rows.append(row)
+            ttk.Button(
+                btns,
+                text="Append",
+                command=lambda idx=i: self.append_one_to_json(idx),
+            ).pack(side="top", fill="x")
+
+            self.rows.append(card)
 
 
 if __name__ == "__main__":
     try:
         from ctypes import windll
-
         windll.shcore.SetProcessDpiAwareness(1)
     except Exception:
         pass
