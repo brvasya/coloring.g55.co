@@ -225,7 +225,7 @@ p {
 
 @media (min-width: 1080px) {
 .thumbnail {
---cols: 5;
+--cols: 4;
 }
 }
 
