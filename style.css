@@ -211,27 +211,6 @@ p {
     width: calc(100% - 360px);
 }
 
-@media print {
-html, body {
-    height: 100%;
-}
-body * {
-    visibility: hidden;
-}
-section, nav, footer, .adsbygoogle {
-    display: none !important;
-}
-.page {
-    visibility: visible;
-    position: absolute;
-    background-color: unset;
-    border: unset;
-    height: 100% !important;
-    width: 100%;
-    inset: 0;
-}
-}
-
 @media (min-width: 480px) {
 .thumbnail {
 --cols: 1;
@@ -287,5 +266,26 @@ h1, h2 {
 }
 #___gcse_0 {
     display: none;
+}
+}
+
+@media print {
+html, body {
+    height: 100%;
+}
+body * {
+    visibility: hidden;
+}
+section, nav, footer, .adsbygoogle {
+    display: none !important;
+}
+.page {
+    visibility: visible;
+    position: absolute;
+    background-color: unset;
+    border: unset;
+    height: 100% !important;
+    width: 100%;
+    inset: 0;
 }
 }
