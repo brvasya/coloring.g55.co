@@ -150,7 +150,6 @@ p {
     height: 100%;
     position: absolute;
     object-fit: contain;
-    background-color: #eee;
 }
 .gsc-search-button {
     width: 75px !important;
