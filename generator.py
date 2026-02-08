@@ -11,7 +11,7 @@ CATEGORIES_DIR = os.path.join(BASE_DIR, "categories")
 STYLE_FILE = os.path.join(CATEGORIES_DIR, "style.txt")
 
 LIST_NAMES = ["characters", "actions", "environments", "extras"]
-COPIED_BG = "#d1fae5"
+COPIED_BG = "systemHighlight"
 
 
 def list_category_folders():
