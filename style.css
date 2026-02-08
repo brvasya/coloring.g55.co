@@ -224,6 +224,7 @@ section, nav, footer, .adsbygoogle {
 .page {
     visibility: visible;
     position: absolute;
+    background-color: unset;
     border: unset;
     height: 100% !important;
     width: 100%;
