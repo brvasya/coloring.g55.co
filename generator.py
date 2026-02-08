@@ -170,6 +170,7 @@ class PromptGUI(tk.Tk):
         self.geometry("980x560")
 
         self.style = ttk.Style(self)
+        self.base_bg = None
         self._setup_styles()
 
         self.categories = list_category_folders()
@@ -252,18 +253,13 @@ class PromptGUI(tk.Tk):
         base_bg = self.style.lookup("TFrame", "background")
         if not base_bg:
             base_bg = self.cget("bg")
+        self.base_bg = base_bg
 
         self.style.configure(
             "Card.TFrame",
             relief="solid",
             borderwidth=1,
             background=base_bg,
-        )
-        self.style.configure(
-            "Copied.Card.TFrame",
-            relief="solid",
-            borderwidth=1,
-            background=COPIED_BG,
         )
 
     def on_category_change(self, _event=None):
@@ -274,7 +270,8 @@ class PromptGUI(tk.Tk):
         if idx >= len(self.rows):
             return
         try:
-            self.rows[idx].configure(style="Copied.Card.TFrame")
+            _card, indicator = self.rows[idx]
+            indicator.configure(bg=COPIED_BG)
         except Exception:
             pass
 
@@ -365,13 +362,17 @@ class PromptGUI(tk.Tk):
             )
             card.pack(fill="x", pady=6)
 
-            card.grid_columnconfigure(1, weight=1)
+            card.grid_columnconfigure(2, weight=1)
+
+            indicator = tk.Frame(card, width=6, bg=self.base_bg)
+            indicator.grid(row=0, column=0, rowspan=2, sticky="ns", padx=(0, 6))
+            indicator.grid_propagate(False)
 
             idx_label = ttk.Label(card, text=f"{i+1}.", width=4, anchor="n")
-            idx_label.grid(row=0, column=0, rowspan=2, sticky="nw", padx=(0, 10))
+            idx_label.grid(row=0, column=1, rowspan=2, sticky="nw", padx=(0, 10))
 
             text_block = ttk.Frame(card)
-            text_block.grid(row=0, column=1, sticky="nsew")
+            text_block.grid(row=0, column=2, sticky="nsew")
 
             ttk.Label(
                 text_block,
@@ -398,7 +399,7 @@ class PromptGUI(tk.Tk):
             ).pack(side="top", anchor="w", fill="x", pady=(6, 0))
 
             btns = ttk.Frame(card)
-            btns.grid(row=0, column=2, rowspan=2, sticky="ne", padx=(10, 0))
+            btns.grid(row=0, column=3, rowspan=2, sticky="ne", padx=(10, 0))
 
             ttk.Button(
                 btns, text="Copy Title", command=lambda idx=i: self.copy_h1(idx)
@@ -420,7 +421,7 @@ class PromptGUI(tk.Tk):
                 command=lambda idx=i: self.save_one_to_json(idx),
             ).pack(side="top", fill="x")
 
-            self.rows.append(card)
+            self.rows.append((card, indicator))
 
 
 if __name__ == "__main__":
