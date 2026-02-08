@@ -129,7 +129,7 @@ p {
     box-sizing: border-box;
     transition: transform 0.2s ease;
  flex: 0 0 calc((100% - (var(--cols) - 1) * 10px) / var(--cols));
- --cols: 5;
+ --cols: 6;
 }
 .thumbnail:hover {
     transform: scale(1.02);
