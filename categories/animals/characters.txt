@@ -1,0 +1,60 @@
+dog
+puppy
+cat
+kitten
+rabbit
+hamster
+guinea pig
+cow
+pig
+horse
+sheep
+goat
+chicken
+duck
+donkey
+lion
+tiger
+elephant
+giraffe
+monkey
+zebra
+panda
+hippopotamus
+rhinoceros
+bear
+fox
+wolf
+deer
+raccoon
+squirrel
+hedgehog
+owl
+shark
+dolphin
+whale
+octopus
+sea turtle
+seal
+crab
+starfish
+fish
+penguin
+polar bear
+arctic fox
+gorilla
+leopard
+cheetah
+crocodile
+alligator
+snake
+toucan
+parrot
+baby elephant
+baby tiger
+baby panda
+baby bear
+baby fox
+baby rabbit
+unicorn
+dragon

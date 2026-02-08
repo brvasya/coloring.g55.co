@@ -1,0 +1,32 @@
+tree
+bush
+flowers
+grass
+rock
+cloud
+sun
+rainbow
+river
+lake
+tent
+campfire
+bridge
+house
+barn
+fence
+boat
+ball
+kite
+snowman
+sandcastle
+backpack
+book
+paint brush
+fishing rod
+soccer goal
+bicycle
+picnic basket
+butterflies
+treasure chest
+magic wand
+castle tower

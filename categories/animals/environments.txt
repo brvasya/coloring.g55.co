@@ -1,0 +1,25 @@
+farm
+barnyard
+pet backyard
+zoo habitat
+savanna plains
+jungle
+rainforest
+forest clearing
+mountain valley
+lake shore
+river bank
+ocean beach
+underwater reef
+arctic snow land
+village
+countryside
+city park
+playground
+school yard
+campground
+desert oasis
+tropical island
+flower garden
+fantasy land
+castle grounds
