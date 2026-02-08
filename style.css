@@ -112,6 +112,7 @@ p {
 .page {
     width: 70%;
     height: 600px;
+    background-color: #eee;
     border: 5px solid #eee;
     border-radius: 20px;
     overflow: hidden;
