@@ -111,12 +111,129 @@ def build_prompt(parts, style):
     core = f"{parts['character']} {parts['action']} {parts['environment']}"
     core = re.sub(r"\s{2,}", " ", core).strip()
     core = f"{core} {extra_clause}"
+    return "Coloring page on white background, " f"{core}, " f"{style}."
 
-    return (
-        "Coloring page on white background, "
-        f"{core}, "
-        f"{style}."
-    )
+
+def _clean_sentence(s):
+    s = re.sub(r"\s{2,}", " ", (s or "").strip())
+    s = s.strip(" ,")
+    if not s.endswith("."):
+        s += "."
+    return s
+
+
+def build_page_description(parts):
+    character = parts["character"].strip()
+    action = parts["action"].strip()
+    env = parts["environment"].strip()
+    extra_clause = format_extra_clause(parts["extra"])
+
+    scene = f"{character} {action} {env} {extra_clause}"
+    scene = re.sub(r"\s{2,}", " ", scene).strip()
+
+    intro_pool = [
+        f"This printable coloring page features {scene} in a fun scene to color.",
+        f"Enjoy coloring {scene} on this free printable page for kids.",
+        f"This coloring sheet shows {scene} using clean lines and simple shapes.",
+        f"Download and print a coloring page of {scene} for creative play.",
+        f"Kids will have fun coloring {scene} in this easy printable design.",
+        f"This free coloring page includes {scene} as the main scene to color.",
+        f"Print this coloring page and color {scene} for a relaxing activity.",
+        f"A cute coloring page shows {scene} in a clear black and white style.",
+        f"Coloring time is easy with this printable page featuring {scene}.",
+        f"This kid friendly coloring page shows {scene} using bold outlines.",
+        f"Get a free printable coloring page showing {scene} for home or school.",
+        f"This simple coloring page lets kids color {scene}.",
+    ]
+
+    usage_pool = [
+        "The black and white line art is designed for easy printing.",
+        "Perfect for home activities, classrooms, and weekend fun.",
+        "Great for quiet time, rainy days, and creative breaks.",
+        "A simple printable page for quick coloring sessions.",
+        "Ideal for teachers, parents, and kids who want an easy activity.",
+        "Print it anytime for a screen free craft and coloring moment.",
+        "Works well for party activities, family time, or after school fun.",
+        "A fun printable for travel, waiting rooms, or cozy evenings.",
+        "Easy to print and share for group coloring or solo coloring.",
+        "Made for simple printing and fast setup at home.",
+        "A handy printable activity for school projects and art centers.",
+        "A simple print and color page that fits many kids activities.",
+    ]
+
+    ease_pool = [
+        "Thick outlines make the drawing easy to color and easy to follow.",
+        "Large open areas are great for crayons, markers, or colored pencils.",
+        "Simple shapes help younger kids color without frustration.",
+        "Clean outlines keep the page clear and enjoyable to finish.",
+        "Big coloring spaces are friendly for small hands and early learners.",
+        "The minimal background detail keeps the focus on the main scene.",
+        "The design is easy to color, even for beginners.",
+        "Bold lines help colors stay inside the shapes more easily.",
+        "A clear layout makes coloring relaxing and straightforward.",
+        "The page is designed for quick printing and simple coloring.",
+        "Easy outlines make it a good fit for preschool and elementary kids.",
+        "Simple line art helps kids complete the page with confidence.",
+    ]
+
+    benefit_pool = [
+        "Coloring supports creativity and fine motor skills.",
+        "This activity helps kids practice focus and patience.",
+        "A fun way to build imagination through coloring.",
+        "Coloring can support hand control and coordination.",
+        "A relaxing activity that encourages calm creative time.",
+        "Helps kids explore colors while enjoying a simple scene.",
+        "Great for developing art confidence with an easy design.",
+        "Encourages creative choices and storytelling through color.",
+        "Supports early learning skills like color recognition.",
+        "A simple activity that can keep kids engaged and happy.",
+        "A nice way to enjoy screen free time with a printable page.",
+        "Coloring helps kids slow down and enjoy a creative moment.",
+    ]
+
+    tail_pool = [
+        "Free printable coloring page for kids.",
+        "Printable black and white line art for easy coloring.",
+        "A simple printable coloring activity for kids.",
+        "A fun coloring sheet to print and color anytime.",
+        "A kid friendly printable coloring page for home or school.",
+        "A clean line art printable that is easy to color.",
+        "A quick print coloring page for creative time.",
+        "An easy printable for crayons, markers, or pencils.",
+        "A simple coloring page with bold outlines.",
+        "A printable coloring page designed for easy coloring.",
+        "A free printable page for relaxing coloring time.",
+        "A fun printable coloring sheet for young artists.",
+    ]
+
+    # Multiple layout patterns to reduce repeated ordering
+    # Pattern A: intro + usage + ease + benefit
+    # Pattern B: intro + ease + usage + benefit
+    # Pattern C: intro + usage + benefit
+    # Pattern D: intro + ease + benefit
+    patterns = [
+        ("intro", "usage", "ease", "benefit"),
+        ("intro", "ease", "usage", "benefit"),
+        ("intro", "usage", "benefit"),
+        ("intro", "ease", "benefit"),
+    ]
+
+    pools = {
+        "intro": intro_pool,
+        "usage": usage_pool,
+        "ease": ease_pool,
+        "benefit": benefit_pool,
+    }
+
+    pattern = random.choice(patterns)
+
+    sentences = [random.choice(pools[key]) for key in pattern]
+
+    # Optional tail, added sometimes to diversify output
+    if random.random() < 0.35:
+        sentences.append(random.choice(tail_pool))
+
+    return " ".join(_clean_sentence(s) for s in sentences)
 
 
 def generate_item(data):
@@ -127,6 +244,7 @@ def generate_item(data):
             "h1": "Missing files",
             "id": "missing-files",
             "prompt": "Missing files",
+            "page_description": "Missing files",
         }
 
     parts = {
@@ -141,6 +259,7 @@ def generate_item(data):
         "h1": build_h1(parts),
         "id": build_id(parts),
         "prompt": build_prompt(parts, data["style"]),
+        "page_description": build_page_description(parts),
     }
 
 
@@ -167,7 +286,7 @@ class PromptGUI(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Coloring Prompt Generator")
-        self.geometry("980x560")
+        self.geometry("980x620")
 
         self.style = ttk.Style(self)
         self.base_bg = None
@@ -202,9 +321,9 @@ class PromptGUI(tk.Tk):
 
         ttk.Label(top, text="Items:").pack(side="left")
 
-        ttk.Spinbox(
-            top, from_=1, to=200, textvariable=self.count_var, width=6
-        ).pack(side="left", padx=(6, 12))
+        ttk.Spinbox(top, from_=1, to=200, textvariable=self.count_var, width=6).pack(
+            side="left", padx=(6, 12)
+        )
 
         ttk.Button(top, text="Refresh", command=self.refresh_items).pack(
             side="left", padx=(0, 8)
@@ -246,6 +365,7 @@ class PromptGUI(tk.Tk):
         self.h1_vars = []
         self.id_vars = []
         self.prompt_vars = []
+        self.desc_vars = []
 
         self.refresh_items()
 
@@ -275,12 +395,6 @@ class PromptGUI(tk.Tk):
         except Exception:
             pass
 
-    def copy_h1(self, idx):
-        self.clipboard_clear()
-        self.clipboard_append(self.h1_vars[idx].get())
-        self.update()
-        self.mark_row(idx)
-
     def copy_id(self, idx):
         self.clipboard_clear()
         self.clipboard_append(self.id_vars[idx].get())
@@ -299,16 +413,13 @@ class PromptGUI(tk.Tk):
         page = {
             "id": self.id_vars[idx].get(),
             "title": self.h1_vars[idx].get(),
-            "description": self.prompt_vars[idx].get(),
+            "description": self.desc_vars[idx].get(),
         }
 
         prepend_pages_to_category_json(category_name, [page])
         self.mark_row(idx)
 
-        messagebox.showinfo(
-            "Saved",
-            f"Added 1 page to top of {category_name}.json",
-        )
+        messagebox.showinfo("Saved", f"Added 1 page to top of {category_name}.json")
 
     def save_all_to_json(self):
         category_name = self.category_var.get().strip()
@@ -317,7 +428,7 @@ class PromptGUI(tk.Tk):
             {
                 "id": self.id_vars[i].get(),
                 "title": self.h1_vars[i].get(),
-                "description": self.prompt_vars[i].get(),
+                "description": self.desc_vars[i].get(),
             }
             for i in range(len(self.h1_vars))
         ]
@@ -325,8 +436,7 @@ class PromptGUI(tk.Tk):
         prepend_pages_to_category_json(category_name, pages)
 
         messagebox.showinfo(
-            "Saved",
-            f"Added {len(pages)} pages to top of {category_name}.json",
+            "Saved", f"Added {len(pages)} pages to top of {category_name}.json"
         )
 
     def refresh_items(self):
@@ -337,6 +447,7 @@ class PromptGUI(tk.Tk):
         self.h1_vars.clear()
         self.id_vars.clear()
         self.prompt_vars.clear()
+        self.desc_vars.clear()
 
         try:
             count = int(self.count_var.get())
@@ -349,17 +460,15 @@ class PromptGUI(tk.Tk):
 
             h1_var = tk.StringVar(value=item["h1"])
             id_var = tk.StringVar(value=item["id"])
+            desc_var = tk.StringVar(value=item["page_description"])
             prompt_var = tk.StringVar(value=item["prompt"])
 
             self.h1_vars.append(h1_var)
             self.id_vars.append(id_var)
+            self.desc_vars.append(desc_var)
             self.prompt_vars.append(prompt_var)
 
-            card = ttk.Frame(
-                self.scrollable_frame,
-                style="Card.TFrame",
-                padding=10,
-            )
+            card = ttk.Frame(self.scrollable_frame, style="Card.TFrame", padding=10)
             card.pack(fill="x", pady=6)
 
             card.grid_columnconfigure(2, weight=1)
@@ -392,6 +501,14 @@ class PromptGUI(tk.Tk):
 
             ttk.Label(
                 text_block,
+                textvariable=desc_var,
+                wraplength=760,
+                justify="left",
+                anchor="w",
+            ).pack(side="top", anchor="w", fill="x", pady=(6, 0))
+
+            ttk.Label(
+                text_block,
                 textvariable=prompt_var,
                 wraplength=760,
                 justify="left",
@@ -402,11 +519,9 @@ class PromptGUI(tk.Tk):
             btns.grid(row=0, column=3, rowspan=2, sticky="ne", padx=(10, 0))
 
             ttk.Button(
-                btns, text="Copy Title", command=lambda idx=i: self.copy_h1(idx)
-            ).pack(side="top", fill="x", pady=(0, 6))
-
-            ttk.Button(
-                btns, text="Copy Id", command=lambda idx=i: self.copy_id(idx)
+                btns,
+                text="Copy Id",
+                command=lambda idx=i: self.copy_id(idx),
             ).pack(side="top", fill="x", pady=(0, 6))
 
             ttk.Button(
@@ -427,6 +542,7 @@ class PromptGUI(tk.Tk):
 if __name__ == "__main__":
     try:
         from ctypes import windll
+
         windll.shcore.SetProcessDpiAwareness(1)
     except Exception:
         pass
