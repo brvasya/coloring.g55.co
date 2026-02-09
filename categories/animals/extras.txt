@@ -1,82 +1,82 @@
-tree
-bush
+a tree
+a bush
 flowers
 grass
-rock
-cloud
-sun
-rainbow
-river
-lake
-tent
-campfire
-bridge
-house
-barn
-fence
-boat
-ball
-kite
-snowman
-sandcastle
-backpack
-book
-paint brush
-fishing rod
-soccer goal
-bicycle
-picnic basket
+a rock
+a cloud
+the sun
+a rainbow
+a river
+a lake
+a tent
+a campfire
+a bridge
+a house
+a barn
+a fence
+a boat
+a ball
+a kite
+a snowman
+a sandcastle
+a backpack
+a book
+a paint brush
+a fishing rod
+a soccer goal
+a bicycle
+a picnic basket
 butterflies
-treasure chest
-magic wand
-castle tower
-mountain
-hill
-waterfall
-pond
-cave
-tree stump
-log
-nest
-egg
-honeycomb
-beehive
-apple
-carrot
-bone
-fish
-shell
+a treasure chest
+a magic wand
+a castle tower
+a mountain
+a hill
+a waterfall
+a pond
+a cave
+a tree stump
+a log
+a nest
+an egg
+a honeycomb
+a beehive
+an apple
+a carrot
+a bone
+a fish
+a shell
 coral
 seaweed
-iceberg
-igloo
-sled
-hay bale
-tractor
-windmill
-lighthouse
-dock
-sailboat
-canoe
+an iceberg
+an igloo
+a sled
+a hay bale
+a tractor
+a windmill
+a lighthouse
+a dock
+a sailboat
+a canoe
 footprints
-leaf pile
-mushroom
-acorn
-pine cone
+a leaf pile
+a mushroom
+an acorn
+a pine cone
 berries
-flower field
-sunflower
-palm tree
-coconut
-jungle vine
+a flower field
+a sunflower
+a palm tree
+a coconut
+a jungle vine
 jungle leaves
-desert cactus
-oasis
-snow hill
-snowflake
-star
-moon
+a desert cactus
+an oasis
+a snow hill
+a snowflake
+a star
+the moon
 clouds
-rain puddle
-rain boots
-umbrella
+a rain puddle
+a pair of rain boots
+an umbrella
