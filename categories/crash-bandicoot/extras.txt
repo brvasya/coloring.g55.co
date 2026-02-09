@@ -1,25 +1,25 @@
-Aku Aku mask
-Uka Uka mask
-wumpa fruit
-wooden crate
-TNT crate
-nitro crate
-checkpoint crate
-arrow crate
-bounce crate
-gem crystal
-power crystal
-golden relic
-time machine
-portal device
-jungle tree
-palm tree
-treasure chest
-giant mushroom
-stone statue
-tribal totem
-jungle vine
-wooden bridge
-ancient pillar
-stone platform
-volcanic rock
+an Aku Aku mask
+an Uka Uka mask
+a wumpa fruit
+a wooden crate
+a TNT crate
+a nitro crate
+a checkpoint crate
+an arrow crate
+a bounce crate
+a crystal gem
+a power crystal
+a golden relic
+a time machine
+a portal device
+a jungle tree
+a palm tree
+a treasure chest
+a giant mushroom
+a stone statue
+a tribal totem
+a jungle vine
+a wooden bridge
+an ancient pillar
+a stone platform
+a volcanic rock

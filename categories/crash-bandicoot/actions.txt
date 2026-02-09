@@ -1,41 +1,29 @@
 running
-jumping over obstacles
-spinning attack
+jumping
+spinning
 collecting wumpa fruit
 breaking crates
-riding pura
-riding polar
-surfing
-driving kart
-escaping rolling boulder
-swinging on vines
-sliding down slope
-snowboarding downhill
-flying with jetpack
-riding motorcycle
-exploring
-crossing
-climbing rocks
+riding Pura
+riding Polar
+escaping danger
+sliding
+sliding down a slope
 swimming
-dodging traps
-escaping enemies
-carrying aku aku mask
-opening treasure chest
+gliding in the air
+exploring ruins
+battling enemies
+dodging obstacles
 balancing on platforms
-jumping
-sneaking past enemies
-skateboarding
-gliding in air
-throwing crates
-solving puzzle
-running from giant monster
-celebrating victory
-dancing happily
-waving to friends
-high jumping
-racing friends
+swinging on vines
+riding a jet board
+driving a kart
+racing with friends
+fighting a boss
+opening a treasure chest
+activating a portal
+solving a puzzle
 saving friends
-searching for treasure
-jumping on platforms
-escaping collapsing structure
-spinning to break crates
+celebrating victory
+performing a spinning attack
+jumping across platforms
+riding a mine cart
