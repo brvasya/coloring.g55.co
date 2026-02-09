@@ -7,11 +7,25 @@ import re
 import json
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+APP_DIR = os.path.join(BASE_DIR, "app")
+
 CATEGORIES_DIR = os.path.join(BASE_DIR, "categories")
 STYLE_FILE = os.path.join(CATEGORIES_DIR, "style.txt")
 
 LIST_NAMES = ["characters", "actions", "environments", "extras"]
 COPIED_BG = "systemHighlight"
+
+# Pool txt files stored in BASE_DIR/app
+POOL_FILES = {
+    "intro": os.path.join(APP_DIR, "intro_pool.txt"),
+    "usage": os.path.join(APP_DIR, "usage_pool.txt"),
+    "ease": os.path.join(APP_DIR, "ease_pool.txt"),
+    "benefit": os.path.join(APP_DIR, "benefit_pool.txt"),
+    "tail": os.path.join(APP_DIR, "tail_pool.txt"),
+}
+
+# Loaded pools (populated at startup)
+POOLS = {k: [] for k in POOL_FILES.keys()}
 
 
 def list_category_folders():
@@ -122,6 +136,15 @@ def _clean_sentence(s):
     return s
 
 
+def load_pools():
+    for key, path in POOL_FILES.items():
+        POOLS[key] = load_lines(path)
+
+
+def render_template(line, scene):
+    return (line or "").replace("{scene}", scene)
+
+
 def build_page_description(parts):
     character = parts["character"].strip()
     action = parts["action"].strip()
@@ -131,86 +154,12 @@ def build_page_description(parts):
     scene = f"{character} {action} {env} {extra_clause}"
     scene = re.sub(r"\s{2,}", " ", scene).strip()
 
-    intro_pool = [
-        f"This printable coloring page features {scene} in a fun scene to color.",
-        f"Enjoy coloring {scene} on this free printable page for kids.",
-        f"This coloring sheet shows {scene} using clean lines and simple shapes.",
-        f"Download and print a coloring page of {scene} for creative play.",
-        f"Kids will have fun coloring {scene} in this easy printable design.",
-        f"This free coloring page includes {scene} as the main scene to color.",
-        f"Print this coloring page and color {scene} for a relaxing activity.",
-        f"A cute coloring page shows {scene} in a clear black and white style.",
-        f"Coloring time is easy with this printable page featuring {scene}.",
-        f"This kid friendly coloring page shows {scene} using bold outlines.",
-        f"Get a free printable coloring page showing {scene} for home or school.",
-        f"This simple coloring page lets kids color {scene}.",
-    ]
+    intro_pool = POOLS.get("intro") or []
+    usage_pool = POOLS.get("usage") or []
+    ease_pool = POOLS.get("ease") or []
+    benefit_pool = POOLS.get("benefit") or []
+    tail_pool = POOLS.get("tail") or []
 
-    usage_pool = [
-        "The black and white line art is designed for easy printing.",
-        "Perfect for home activities, classrooms, and weekend fun.",
-        "Great for quiet time, rainy days, and creative breaks.",
-        "A simple printable page for quick coloring sessions.",
-        "Ideal for teachers, parents, and kids who want an easy activity.",
-        "Print it anytime for a screen free craft and coloring moment.",
-        "Works well for party activities, family time, or after school fun.",
-        "A fun printable for travel, waiting rooms, or cozy evenings.",
-        "Easy to print and share for group coloring or solo coloring.",
-        "Made for simple printing and fast setup at home.",
-        "A handy printable activity for school projects and art centers.",
-        "A simple print and color page that fits many kids activities.",
-    ]
-
-    ease_pool = [
-        "Thick outlines make the drawing easy to color and easy to follow.",
-        "Large open areas are great for crayons, markers, or colored pencils.",
-        "Simple shapes help younger kids color without frustration.",
-        "Clean outlines keep the page clear and enjoyable to finish.",
-        "Big coloring spaces are friendly for small hands and early learners.",
-        "The minimal background detail keeps the focus on the main scene.",
-        "The design is easy to color, even for beginners.",
-        "Bold lines help colors stay inside the shapes more easily.",
-        "A clear layout makes coloring relaxing and straightforward.",
-        "The page is designed for quick printing and simple coloring.",
-        "Easy outlines make it a good fit for preschool and elementary kids.",
-        "Simple line art helps kids complete the page with confidence.",
-    ]
-
-    benefit_pool = [
-        "Coloring supports creativity and fine motor skills.",
-        "This activity helps kids practice focus and patience.",
-        "A fun way to build imagination through coloring.",
-        "Coloring can support hand control and coordination.",
-        "A relaxing activity that encourages calm creative time.",
-        "Helps kids explore colors while enjoying a simple scene.",
-        "Great for developing art confidence with an easy design.",
-        "Encourages creative choices and storytelling through color.",
-        "Supports early learning skills like color recognition.",
-        "A simple activity that can keep kids engaged and happy.",
-        "A nice way to enjoy screen free time with a printable page.",
-        "Coloring helps kids slow down and enjoy a creative moment.",
-    ]
-
-    tail_pool = [
-        "Free printable coloring page for kids.",
-        "Printable black and white line art for easy coloring.",
-        "A simple printable coloring activity for kids.",
-        "A fun coloring sheet to print and color anytime.",
-        "A kid friendly printable coloring page for home or school.",
-        "A clean line art printable that is easy to color.",
-        "A quick print coloring page for creative time.",
-        "An easy printable for crayons, markers, or pencils.",
-        "A simple coloring page with bold outlines.",
-        "A printable coloring page designed for easy coloring.",
-        "A free printable page for relaxing coloring time.",
-        "A fun printable coloring sheet for young artists.",
-    ]
-
-    # Multiple layout patterns to reduce repeated ordering
-    # Pattern A: intro + usage + ease + benefit
-    # Pattern B: intro + ease + usage + benefit
-    # Pattern C: intro + usage + benefit
-    # Pattern D: intro + ease + benefit
     patterns = [
         ("intro", "usage", "ease", "benefit"),
         ("intro", "ease", "usage", "benefit"),
@@ -225,15 +174,20 @@ def build_page_description(parts):
         "benefit": benefit_pool,
     }
 
+    if any(not pools[k] for k in ("intro", "usage", "ease", "benefit")):
+        return "Missing pool files."
+
     pattern = random.choice(patterns)
+    sentences = []
 
-    sentences = [random.choice(pools[key]) for key in pattern]
+    for key in pattern:
+        line = random.choice(pools[key])
+        sentences.append(_clean_sentence(render_template(line, scene)))
 
-    # Optional tail, added sometimes to diversify output
-    if random.random() < 0.35:
-        sentences.append(random.choice(tail_pool))
+    if tail_pool and random.random() < 0.35:
+        sentences.append(_clean_sentence(render_template(random.choice(tail_pool), scene)))
 
-    return " ".join(_clean_sentence(s) for s in sentences)
+    return " ".join(sentences)
 
 
 def generate_item(data):
@@ -245,6 +199,16 @@ def generate_item(data):
             "id": "missing-files",
             "prompt": "Missing files",
             "page_description": "Missing files",
+        }
+
+    if not all(POOLS.get(k) for k in ("intro", "usage", "ease", "benefit")):
+        parts = {"character": "", "action": "", "environment": "", "extra": ""}
+        return {
+            "parts": parts,
+            "h1": "Missing pool files",
+            "id": "missing-pool-files",
+            "prompt": "Missing pool files",
+            "page_description": "Missing pool files",
         }
 
     parts = {
@@ -540,6 +504,8 @@ class PromptGUI(tk.Tk):
 
 
 if __name__ == "__main__":
+    load_pools()
+
     try:
         from ctypes import windll
 
