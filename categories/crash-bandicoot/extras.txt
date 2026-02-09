@@ -1,9 +1,9 @@
 Aku Aku mask
 Uka Uka mask
-Wumpa fruit
+wumpa fruit
 wooden crate
 TNT crate
-Nitro crate
+nitro crate
 checkpoint crate
 arrow crate
 bounce crate

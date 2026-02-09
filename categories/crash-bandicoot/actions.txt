@@ -1,43 +1,41 @@
-Running through jungle
-Jumping over obstacles
-Spinning attack
-Collecting Wumpa fruit
-Breaking crates
-Riding Pura
-Riding Polar
-Surfing on water
-Driving kart
-Escaping rolling boulder
-Swinging on vines
-Sliding down slope
-Snowboarding downhill
-Flying with jetpack
-Riding motorcycle
-Exploring ruins
-Crossing rope bridge
-Climbing rocks
-Swimming underwater
-Dodging traps
-Escaping enemies
-Carrying Aku Aku mask
-Opening treasure chest
-Balancing on platforms
-Jumping across lava
-Sneaking past enemies
-Skateboarding
-Gliding in air
-Throwing crates
-Solving temple puzzle
-Running from giant monster
-Celebrating victory
-Dancing happily
-Waving to friends
-High jumping
-Racing friends
-Saving friends
-Exploring cave
-Running on beach
-Searching for treasure
-Jumping on platforms
-Escaping collapsing temple
-Spinning to break crates
+running
+jumping over obstacles
+spinning attack
+collecting wumpa fruit
+breaking crates
+riding pura
+riding polar
+surfing
+driving kart
+escaping rolling boulder
+swinging on vines
+sliding down slope
+snowboarding downhill
+flying with jetpack
+riding motorcycle
+exploring
+crossing
+climbing rocks
+swimming
+dodging traps
+escaping enemies
+carrying aku aku mask
+opening treasure chest
+balancing on platforms
+jumping
+sneaking past enemies
+skateboarding
+gliding in air
+throwing crates
+solving puzzle
+running from giant monster
+celebrating victory
+dancing happily
+waving to friends
+high jumping
+racing friends
+saving friends
+searching for treasure
+jumping on platforms
+escaping collapsing structure
+spinning to break crates

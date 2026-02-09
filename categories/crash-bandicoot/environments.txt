@@ -1,25 +1,25 @@
-Jungle
-Beach
-Temple ruins
-Ancient temple
-Snowy mountains
-Ice cave
-Volcano area
-Lava cave
-River jungle
-Waterfall jungle
-Tropical island
-Pirate ship
-Underwater ruins
-Desert ruins
-Lost city
-Rope bridge
-Crystal cave
-Dark cave
-Haunted castle
-Space station
-Alien planet
-Laboratory
-Factory
-Mechanical base
-Time travel portal
+in the jungle
+on the beach
+in temple ruins
+in an ancient temple
+in snowy mountains
+in an ice cave
+in a volcano area
+in a lava cave
+in a river jungle
+in a waterfall jungle
+on a tropical island
+on a pirate ship
+in underwater ruins
+in desert ruins
+in a lost city
+on a rope bridge
+in a crystal cave
+in a dark cave
+in a haunted castle
+on a space station
+on an alien planet
+in a laboratory
+in a factory
+in a mechanical base
+at a time travel portal
