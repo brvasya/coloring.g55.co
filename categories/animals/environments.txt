@@ -23,3 +23,44 @@ tropical island
 flower garden
 fantasy land
 castle grounds
+farm field
+orchard
+pumpkin patch
+vegetable garden
+sunflower field
+flower meadow
+park pond
+forest trail
+woodland path
+mountain trail
+waterfall pool
+river crossing
+lakeside dock
+fishing village
+harbor
+seaside town
+beach dunes
+coral lagoon
+snow village
+winter forest
+ice lake
+polar coast
+jungle river
+jungle clearing
+rainforest waterfall
+desert trail
+desert canyon
+oasis village
+island beach
+tropical jungle
+palm beach
+village street
+small town
+city street park
+backyard garden
+camp trail
+nature reserve
+wildlife sanctuary
+fantasy forest
+magic kingdom
+enchanted meadow
