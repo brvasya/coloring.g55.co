@@ -1,66 +1,66 @@
-farm
-barnyard
-pet backyard
-zoo habitat
-savanna plains
-jungle
-rainforest
-forest clearing
-mountain valley
-lake shore
-river bank
-ocean beach
-underwater reef
-arctic snow land
-village
-countryside
-city park
-playground
-school yard
-campground
-desert oasis
-tropical island
-flower garden
-fantasy land
-castle grounds
-farm field
-orchard
-pumpkin patch
-vegetable garden
-sunflower field
-flower meadow
-park pond
-forest trail
-woodland path
-mountain trail
-waterfall pool
-river crossing
-lakeside dock
-fishing village
-harbor
-seaside town
-beach dunes
-coral lagoon
-snow village
-winter forest
-ice lake
-polar coast
-jungle river
-jungle clearing
-rainforest waterfall
-desert trail
-desert canyon
-oasis village
-island beach
-tropical jungle
-palm beach
-village street
-small town
-city street park
-backyard garden
-camp trail
-nature reserve
-wildlife sanctuary
-fantasy forest
-magic kingdom
-enchanted meadow
+on a farm
+in a barnyard
+in a pet backyard
+in a zoo habitat
+on savanna plains
+in the jungle
+in the rainforest
+in a forest clearing
+in a mountain valley
+on a lake shore
+on a river bank
+on an ocean beach
+in an underwater reef
+in an arctic snow land
+in a village
+in the countryside
+in a city park
+in a playground
+in a school yard
+at a campground
+in a desert oasis
+on a tropical island
+in a flower garden
+in a fantasy land
+on castle grounds
+in a farm field
+in an orchard
+in a pumpkin patch
+in a vegetable garden
+in a sunflower field
+in a flower meadow
+at a park pond
+on a forest trail
+on a woodland path
+on a mountain trail
+at a waterfall pool
+at a river crossing
+on a lakeside dock
+in a fishing village
+in a harbor
+in a seaside town
+on beach dunes
+in a coral lagoon
+in a snow village
+in a winter forest
+on an ice lake
+on a polar coast
+on a jungle river
+in a jungle clearing
+at a rainforest waterfall
+on a desert trail
+in a desert canyon
+in an oasis village
+on an island beach
+in a tropical jungle
+on a palm beach
+on a village street
+in a small town
+in a city street park
+in a backyard garden
+on a camp trail
+in a nature reserve
+in a wildlife sanctuary
+in a fantasy forest
+in a magic kingdom
+in an enchanted meadow
