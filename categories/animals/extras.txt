@@ -30,3 +30,53 @@ butterflies
 treasure chest
 magic wand
 castle tower
+mountain
+hill
+waterfall
+pond
+cave
+tree stump
+log
+nest
+egg
+honeycomb
+beehive
+apple
+carrot
+bone
+fish
+shell
+coral
+seaweed
+iceberg
+igloo
+sled
+hay bale
+tractor
+windmill
+lighthouse
+dock
+sailboat
+canoe
+footprints
+leaf pile
+mushroom
+acorn
+pine cone
+berries
+flower field
+sunflower
+palm tree
+coconut
+jungle vine
+jungle leaves
+desert cactus
+oasis
+snow hill
+snowflake
+star
+moon
+clouds
+rain puddle
+rain boots
+umbrella
