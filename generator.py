@@ -21,7 +21,6 @@ POOL_FILES = {
     "usage": os.path.join(APP_DIR, "usage_pool.txt"),
     "ease": os.path.join(APP_DIR, "ease_pool.txt"),
     "benefit": os.path.join(APP_DIR, "benefit_pool.txt"),
-    "tail": os.path.join(APP_DIR, "tail_pool.txt"),
 }
 
 # Loaded pools (populated at startup)
@@ -172,7 +171,6 @@ def build_page_description(parts):
     usage_pool = POOLS.get("usage") or []
     ease_pool = POOLS.get("ease") or []
     benefit_pool = POOLS.get("benefit") or []
-    tail_pool = POOLS.get("tail") or []
 
     patterns = [
         ("intro", "usage", "ease", "benefit"),
@@ -197,9 +195,6 @@ def build_page_description(parts):
     for key in pattern:
         line = random.choice(pools[key])
         sentences.append(_clean_sentence(render_template(line, scene)))
-
-    if tail_pool and random.random() < 0.35:
-        sentences.append(_clean_sentence(render_template(random.choice(tail_pool), scene)))
 
     return " ".join(sentences)
 
