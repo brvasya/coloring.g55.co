@@ -12,7 +12,9 @@ APP_DIR = os.path.join(BASE_DIR, "app")
 CATEGORIES_DIR = os.path.join(BASE_DIR, "categories")
 STYLE_FILE = os.path.join(CATEGORIES_DIR, "style.txt")
 
-LIST_NAMES = ["characters", "actions", "environments", "extras"]
+# Option A: remove extras completely
+LIST_NAMES = ["characters", "actions", "environments"]
+
 COPIED_BG = "systemHighlight"
 
 # Pool txt files stored in BASE_DIR/app
@@ -63,7 +65,19 @@ def load_category_data(category_name):
 
 
 SMALL_WORDS = {
-    "a", "an", "the", "at", "in", "on", "to", "for", "with", "and", "or", "of", "as",
+    "a",
+    "an",
+    "the",
+    "at",
+    "in",
+    "on",
+    "to",
+    "for",
+    "with",
+    "and",
+    "or",
+    "of",
+    "as",
 }
 
 
@@ -142,16 +156,10 @@ def build_id(parts):
     return slugify(build_seo_base_for_slug(parts))
 
 
-def format_extra_clause(extra):
-    return f"with {extra.strip()}"
-
-
 def build_prompt(parts, style):
     # Keep articles in prompt for correct grammar
-    extra_clause = format_extra_clause(parts["extra"])
     core = f"{parts['character']} {parts['action']} {parts['environment']}"
     core = re.sub(r"\s{2,}", " ", core).strip()
-    core = f"{core} {extra_clause}"
     return "Coloring page on white background, " f"{core}, " f"{style}."
 
 
@@ -177,9 +185,8 @@ def build_page_description(parts):
     character = parts["character"].strip()
     action = parts["action"].strip()
     env = parts["environment"].strip()
-    extra_clause = format_extra_clause(parts["extra"])
 
-    scene = f"{character} {action} {env} {extra_clause}"
+    scene = f"{character} {action} {env}"
     scene = re.sub(r"\s{2,}", " ", scene).strip()
 
     intro_pool = POOLS.get("intro") or []
@@ -218,7 +225,7 @@ def build_page_description(parts):
 
 def generate_item(data):
     if not all(data.get(k) for k in LIST_NAMES) or not data.get("style"):
-        parts = {"character": "", "action": "", "environment": "", "extra": ""}
+        parts = {"character": "", "action": "", "environment": ""}
         return {
             "parts": parts,
             "h1": "Missing files",
@@ -228,7 +235,7 @@ def generate_item(data):
         }
 
     if not all(POOLS.get(k) for k in ("intro", "usage", "ease", "benefit")):
-        parts = {"character": "", "action": "", "environment": "", "extra": ""}
+        parts = {"character": "", "action": "", "environment": ""}
         return {
             "parts": parts,
             "h1": "Missing pool files",
@@ -241,7 +248,6 @@ def generate_item(data):
         "character": random.choice(data["characters"]),
         "action": random.choice(data["actions"]),
         "environment": random.choice(data["environments"]),
-        "extra": random.choice(data["extras"]),
     }
 
     return {
@@ -328,9 +334,7 @@ class PromptGUI(tk.Tk):
         container.pack(fill="both", expand=True, padx=10, pady=(0, 10))
 
         self.canvas = tk.Canvas(container, highlightthickness=0)
-        scrollbar = ttk.Scrollbar(
-            container, orient="vertical", command=self.canvas.yview
-        )
+        scrollbar = ttk.Scrollbar(container, orient="vertical", command=self.canvas.yview)
 
         self.scrollable_frame = ttk.Frame(self.canvas)
         self.scrollable_frame.bind(
@@ -426,9 +430,7 @@ class PromptGUI(tk.Tk):
 
         prepend_pages_to_category_json(category_name, pages)
 
-        messagebox.showinfo(
-            "Saved", f"Added {len(pages)} pages to top of {category_name}.json"
-        )
+        messagebox.showinfo("Saved", f"Added {len(pages)} pages to top of {category_name}.json")
 
     def refresh_items(self):
         for child in self.scrollable_frame.winfo_children():
