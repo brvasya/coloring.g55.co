@@ -74,6 +74,16 @@ def slugify(text):
     return text or "coloring-page"
 
 
+def strip_leading_article(text):
+    s = (text or "").strip()
+    lower = s.lower()
+    if lower.startswith("a "):
+        return s[2:].lstrip()
+    if lower.startswith("an "):
+        return s[3:].lstrip()
+    return s
+
+
 def normalize_action_for_title(action):
     s = action.strip()
     s = re.sub(r"\s+", " ", s)
@@ -93,7 +103,8 @@ def normalize_action_for_title(action):
 
 
 def build_h1(parts):
-    character = parts["character"].strip()
+    # Filter leading articles from character only for H1
+    character = strip_leading_article(parts["character"])
     action = normalize_action_for_title(parts["action"])
     env = parts["environment"].strip()
 
@@ -103,7 +114,8 @@ def build_h1(parts):
 
 
 def build_seo_base_for_slug(parts):
-    character = parts["character"].strip()
+    # Filter leading articles from character only for id/slug
+    character = strip_leading_article(parts["character"])
     action = normalize_action_for_title(parts["action"])
     env = parts["environment"].strip()
 
@@ -121,6 +133,7 @@ def format_extra_clause(extra):
 
 
 def build_prompt(parts, style):
+    # Keep articles in prompt for correct grammar
     extra_clause = format_extra_clause(parts["extra"])
     core = f"{parts['character']} {parts['action']} {parts['environment']}"
     core = re.sub(r"\s{2,}", " ", core).strip()
@@ -146,6 +159,7 @@ def render_template(line, scene):
 
 
 def build_page_description(parts):
+    # Keep articles in description for correct grammar
     character = parts["character"].strip()
     action = parts["action"].strip()
     env = parts["environment"].strip()

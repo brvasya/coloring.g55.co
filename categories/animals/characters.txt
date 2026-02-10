@@ -1,119 +1,119 @@
-dog
-puppy
-cat
-kitten
-rabbit
-hamster
-guinea pig
-cow
-pig
-horse
-sheep
-goat
-chicken
-duck
-donkey
-lion
-tiger
-elephant
-giraffe
-monkey
-zebra
-panda
-hippopotamus
-rhinoceros
-bear
-fox
-wolf
-deer
-raccoon
-squirrel
-hedgehog
-owl
-shark
-dolphin
-whale
-octopus
-sea turtle
-seal
-crab
-starfish
-fish
-penguin
-polar bear
-arctic fox
-gorilla
-leopard
-cheetah
-crocodile
-alligator
-snake
-toucan
-parrot
-baby elephant
-baby tiger
-baby panda
-baby bear
-baby fox
-baby rabbit
-unicorn
-dragon
-pony
-foal
-calf
-lamb
-kid goat
-chick
-gosling
-turkey
-rooster
-peacock
-flamingo
-pelican
-seagull
-sparrow
-bluebird
-woodpecker
-koala
-kangaroo
-wallaby
-platypus
-meerkat
-otter
-beaver
-badger
-skunk
-moose
-reindeer
-bison
-buffalo
-yak
-camel
-llama
-alpaca
-sloth
-anteater
-armadillo
-chinchilla
-ferret
-weasel
-lemur
-baboon
-mandrill
-jaguar
-panther
-snow leopard
-hyena
-vulture
-eagle
-falcon
-hawk
-stingray
-seahorse
-jellyfish
-lobster
-shrimp
-clownfish
-pufferfish
-narwhal
-walrus
+a dog
+a puppy
+a cat
+a kitten
+a rabbit
+a hamster
+a guinea pig
+a cow
+a pig
+a horse
+a sheep
+a goat
+a chicken
+a duck
+a donkey
+a lion
+a tiger
+an elephant
+a giraffe
+a monkey
+a zebra
+a panda
+a hippopotamus
+a rhinoceros
+a bear
+a fox
+a wolf
+a deer
+a raccoon
+a squirrel
+a hedgehog
+an owl
+a shark
+a dolphin
+a whale
+an octopus
+a sea turtle
+a seal
+a crab
+a starfish
+a fish
+a penguin
+a polar bear
+an arctic fox
+a gorilla
+a leopard
+a cheetah
+a crocodile
+an alligator
+a snake
+a toucan
+a parrot
+a baby elephant
+a baby tiger
+a baby panda
+a baby bear
+a baby fox
+a baby rabbit
+a unicorn
+a dragon
+a pony
+a foal
+a calf
+a lamb
+a kid goat
+a chick
+a gosling
+a turkey
+a rooster
+a peacock
+a flamingo
+a pelican
+a seagull
+a sparrow
+a bluebird
+a woodpecker
+a koala
+a kangaroo
+a wallaby
+a platypus
+a meerkat
+an otter
+a beaver
+a badger
+a skunk
+a moose
+a reindeer
+a bison
+a buffalo
+a yak
+a camel
+a llama
+an alpaca
+a sloth
+an anteater
+an armadillo
+a chinchilla
+a ferret
+a weasel
+a lemur
+a baboon
+a mandrill
+a jaguar
+a panther
+a snow leopard
+a hyena
+a vulture
+an eagle
+a falcon
+a hawk
+a stingray
+a seahorse
+a jellyfish
+a lobster
+a shrimp
+a clownfish
+a pufferfish
+a narwhal
+a walrus
