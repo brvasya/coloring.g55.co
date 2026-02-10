@@ -310,6 +310,11 @@ class PromptGUI(tk.Tk):
 
         ttk.Button(top, text="Save All", command=self.save_all_to_json).pack(side="left")
 
+        # Counters row
+        self.counters_var = tk.StringVar(value="")
+        counters = ttk.Label(top, textvariable=self.counters_var)
+        counters.pack(side="right")
+
         ttk.Separator(self).pack(fill="x", padx=10, pady=(0, 10))
 
         container = ttk.Frame(self)
@@ -344,6 +349,7 @@ class PromptGUI(tk.Tk):
         self.prompt_vars = []
         self.desc_vars = []
 
+        self.update_counters()
         self.refresh_items()
 
     def _setup_styles(self):
@@ -359,8 +365,16 @@ class PromptGUI(tk.Tk):
             background=base_bg,
         )
 
+    def update_counters(self):
+        data = self.data or {}
+        c = len(data.get("characters") or [])
+        a = len(data.get("actions") or [])
+        e = len(data.get("environments") or [])
+        self.counters_var.set(f"Characters: {c}  Actions: {a}  Environments: {e}")
+
     def on_category_change(self, _event=None):
         self.data = load_category_data(self.category_var.get())
+        self.update_counters()
         self.refresh_items()
 
     def mark_row(self, idx):
@@ -425,6 +439,8 @@ class PromptGUI(tk.Tk):
         self.id_vars.clear()
         self.prompt_vars.clear()
         self.desc_vars.clear()
+
+        self.update_counters()
 
         try:
             count = int(self.count_var.get())
