@@ -62,8 +62,23 @@ def load_category_data(category_name):
     return data
 
 
-def title_case_simple(s):
-    return " ".join(w.capitalize() for w in s.split())
+SMALL_WORDS = {
+    "a", "an", "the", "at", "in", "on", "to", "for", "with", "and", "or", "of", "as",
+}
+
+
+def format_title(title: str) -> str:
+    words = title.strip().split()
+    out = []
+
+    for i, word in enumerate(words):
+        lw = word.lower()
+        if i != 0 and lw in SMALL_WORDS:
+            out.append(lw)
+        else:
+            out.append(lw.capitalize())
+
+    return " ".join(out)
 
 
 def slugify(text):
@@ -109,7 +124,7 @@ def build_h1(parts):
 
     base = f"{character} {action} {env}"
     base = re.sub(r"\s{2,}", " ", base).strip()
-    return f"Free Printable {title_case_simple(base)} Coloring Page for Kids"
+    return f"Free Printable {format_title(base)} Coloring Page for Kids"
 
 
 def build_seo_base_for_slug(parts):
@@ -268,6 +283,7 @@ class PromptGUI(tk.Tk):
         self._setup_styles()
 
         self.categories = list_category_folders()
+
         self.category_var = tk.StringVar(
             value=self.categories[0] if self.categories else ""
         )
