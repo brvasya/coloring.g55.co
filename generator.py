@@ -112,28 +112,10 @@ def strip_leading_article(text):
     return s
 
 
-def normalize_action_for_title(action):
-    s = action.strip()
-    s = re.sub(r"\s+", " ", s)
-    s = re.sub(
-        r"\b(in|through|across|over|into|inside|around)\b\s*$",
-        "",
-        s,
-        flags=re.IGNORECASE,
-    ).strip()
-    s = re.sub(
-        r"\b(in|through|across|over|into|inside|around)\b\s+",
-        " ",
-        s,
-        flags=re.IGNORECASE,
-    ).strip()
-    return s
-
-
 def build_h1(parts):
     # Filter leading articles from character only for H1
     character = strip_leading_article(parts["character"])
-    action = normalize_action_for_title(parts["action"])
+    action = parts["action"].strip()
     env = parts["environment"].strip()
 
     base = f"{character} {action} {env}"
@@ -144,7 +126,7 @@ def build_h1(parts):
 def build_seo_base_for_slug(parts):
     # Filter leading articles from character only for id/slug
     character = strip_leading_article(parts["character"])
-    action = normalize_action_for_title(parts["action"])
+    action = parts["action"].strip()
     env = parts["environment"].strip()
 
     base = f"{character} {action} {env} coloring page"
@@ -430,7 +412,9 @@ class PromptGUI(tk.Tk):
 
         prepend_pages_to_category_json(category_name, pages)
 
-        messagebox.showinfo("Saved", f"Added {len(pages)} pages to top of {category_name}.json")
+        messagebox.showinfo(
+            "Saved", f"Added {len(pages)} pages to top of {category_name}.json"
+        )
 
     def refresh_items(self):
         for child in self.scrollable_frame.winfo_children():

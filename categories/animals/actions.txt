@@ -1,49 +1,25 @@
 sleeping
-resting
+sitting
+standing
 walking
+running slowly
 swimming
-exploring
+flying
+playing
 playing with a ball
-having a picnic
-building a sandcastle
+playing with a toy
+eating
+drinking water
+smiling
+looking around
+jumping gently
+climbing
+digging
+catching fish
+watching butterflies
+picking flowers
+playing in snow
 reading a book
 drawing
-painting
-flying a kite
-playing in snow
-collecting leaves
-gardening
-cooking
-baking
-going to school
-looking for treasure
-watching butterflies
-riding a bicycle slowly
-rowing a boat
-smiling
-waving
-laughing
-dancing gently
-singing
-stretching
-looking around
-playing with a toy
-watering plants
-picking flowers
-harvesting vegetables
-collecting fruits
-building a snowman
-sledding gently
-ice skating slowly
-making a snow angel
-splashing in water
-catching fish
-digging
-searching for shells
-sailing a boat
-riding a scooter slowly
-planting a tree
-watching the sunset
-stargazing
-watching birds
-enjoying the day
+riding a bicycle
+having a picnic

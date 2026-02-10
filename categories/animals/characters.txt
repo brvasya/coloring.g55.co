@@ -117,3 +117,82 @@ a clownfish
 a pufferfish
 a narwhal
 a walrus
+a border collie
+a golden retriever
+a husky
+a bulldog
+a dalmatian
+a corgi
+a tabby cat
+a persian cat
+a siamese cat
+a barn cat
+a pony foal
+a baby horse
+a baby cow
+a baby pig
+a baby sheep
+a baby goat
+a farm puppy
+a farm kitten
+a barn owl
+a wild horse
+a mustang
+a prairie dog
+a chipmunk
+a groundhog
+a mountain goat
+a wild boar
+a fawn
+a baby deer
+a baby raccoon
+a baby squirrel
+a baby hedgehog
+a baby penguin
+a baby seal
+a baby dolphin
+a baby whale
+a baby sea turtle
+a baby otter
+a baby fox
+a baby wolf
+a baby lion
+a baby leopard
+a baby giraffe
+a baby zebra
+a baby monkey
+a chimpanzee
+an orangutan
+a tree frog
+a poison dart frog
+a bullfrog
+a lizard
+a gecko
+a chameleon
+a turtle
+a tortoise
+a iguana
+a cobra
+a python
+a rattlesnake
+a macaw
+a cockatoo
+a canary
+a hummingbird
+a swan
+a goose
+a pigeon
+a ant
+a ladybug
+a butterfly
+a dragonfly
+a bee
+a grasshopper
+a caterpillar
+a hermit crab
+a manta ray
+a swordfish
+a angelfish
+a blue tang fish
+a sea lion
+a manatee
