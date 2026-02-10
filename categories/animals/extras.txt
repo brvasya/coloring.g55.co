@@ -58,7 +58,7 @@ a lighthouse
 a dock
 a sailboat
 a canoe
-footprints
+footprints in the sand
 a leaf pile
 a mushroom
 an acorn
@@ -76,7 +76,7 @@ a snow hill
 a snowflake
 a star
 the moon
-clouds
+clouds in the sky
 a rain puddle
 a pair of rain boots
 an umbrella
