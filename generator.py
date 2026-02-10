@@ -175,8 +175,8 @@ def build_page_description(parts):
     patterns = [
         ("intro", "usage", "ease", "benefit"),
         ("intro", "ease", "usage", "benefit"),
-        ("intro", "usage", "benefit"),
-        ("intro", "ease", "benefit"),
+        ("intro", "usage", "benefit", "ease"),
+        ("intro", "ease", "benefit", "usage"),
     ]
 
     pools = {
