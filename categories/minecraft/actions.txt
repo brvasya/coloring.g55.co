@@ -31,6 +31,11 @@ patrolling
 chasing
 escaping
 hunting
+mining
+placing a block
+building a small shelter
+collecting treasure
+escaping lava
 protecting a friend
 protecting a baby
 holding a torch
