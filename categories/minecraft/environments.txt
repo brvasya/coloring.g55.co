@@ -17,19 +17,19 @@ in a desert village
 in a savanna village
 in a taiga village
 in a cherry blossom biome
-in a forest biome
+in a forest
 in a dark forest
-in a jungle biome
+in a jungle
 in a bamboo jungle
-in a desert biome
-in a savanna biome
-in a snowy tundra
-in a mountains biome
+in a desert
+in a savanna
+in snowy tundra
+in mountains
 in frozen peaks
 on an ocean shore
 on a beach
 near a river
-in a swamp biome
+in a swamp
 in a mangrove swamp
 on a mushroom island
 in a flower forest
@@ -50,7 +50,7 @@ near an end city
 on a sky island
 inside a house
 inside a storage room
-inside a farm area
+inside a farm
 inside an animal farm
 on a bridge
 near a waterfall
