@@ -1,0 +1,57 @@
+in a village
+in a cave
+in a diamond cave
+in a mineshaft
+in a stronghold
+in an ancient city
+in an underground dungeon
+in a lush cave
+in a dripstone cave
+in a desert temple
+in a jungle temple
+in a pillager outpost
+in a woodland mansion
+in a snowy village
+in a plains village
+in a desert village
+in a savanna village
+in a taiga village
+in a cherry blossom biome
+in a forest biome
+in a dark forest
+in a jungle biome
+in a bamboo jungle
+in a desert biome
+in a savanna biome
+in a snowy tundra
+in a mountains biome
+in frozen peaks
+on an ocean shore
+on a beach
+near a river
+in a swamp biome
+in a mangrove swamp
+on a mushroom island
+in a flower forest
+in sunflower plains
+in a meadow
+in an underground base
+in a survival base
+in a treehouse base
+in a castle base
+in a sky base
+in a nether fortress
+in a bastion remnant
+in the nether
+near a lava lake
+in the end dimension
+on an end island
+near an end city
+on a sky island
+inside a house
+inside a storage room
+inside a farm area
+inside an animal farm
+on a bridge
+near a waterfall
+near a lava cave

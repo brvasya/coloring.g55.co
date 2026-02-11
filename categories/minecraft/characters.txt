@@ -1,0 +1,62 @@
+minecraft Steve
+minecraft Alex
+minecraft Herobrine
+minecraft creeper
+minecraft enderman
+minecraft ender dragon
+minecraft wither
+minecraft warden
+minecraft villager
+minecraft wandering trader
+minecraft iron golem
+minecraft snow golem
+minecraft zombie
+minecraft husk
+minecraft drowned
+minecraft zombie villager
+minecraft skeleton
+minecraft stray
+minecraft wither skeleton
+minecraft spider
+minecraft cave spider
+minecraft witch
+minecraft pillager
+minecraft vindicator
+minecraft evoker
+minecraft vex
+minecraft ravager
+minecraft piglin
+minecraft piglin brute
+minecraft zombified piglin
+minecraft ghast
+minecraft blaze
+minecraft magma cube
+minecraft slime
+minecraft guardian
+minecraft elder guardian
+minecraft shulker
+minecraft phantom
+minecraft allay
+minecraft axolotl
+minecraft wolf
+minecraft cat
+minecraft fox
+minecraft panda
+minecraft bee
+minecraft parrot
+minecraft horse
+minecraft donkey
+minecraft mule
+minecraft llama
+minecraft camel
+minecraft dolphin
+minecraft turtle
+minecraft frog
+minecraft goat
+minecraft cow
+minecraft pig
+minecraft sheep
+minecraft chicken
+minecraft mooshroom
+minecraft ocelot
+minecraft polar bear
