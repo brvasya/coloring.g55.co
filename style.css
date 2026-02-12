@@ -174,8 +174,8 @@ p {
     border: 1px solid #ccc !important;
     border-radius: 15px !important;
 }
-.gsib_a {
-    padding: 0 0 0 50px !important;
+.gsib_a, .gsib_b {
+    padding: 3px 0 0 50px !important;
     vertical-align: top !important;
     background-position: 10px 4px !important;
 }
