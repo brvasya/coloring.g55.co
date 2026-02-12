@@ -153,9 +153,9 @@ p {
 }
 .gsc-search-button {
     width: 75px !important;
-    height: 30px;
+    height: 36px;
     margin-left: 0 !important;
-    border-radius: 0 15px 15px 0 !important;
+    border-radius: 0 20px 20px 0 !important;
     background-color: #66cc33 !important;
     border-color: #66cc33 !important;
 }
@@ -166,18 +166,18 @@ p {
     margin: 0 !important;
 }
 .gsc-input {
-    height: 30px;
+    height: 36px;
     padding-right: 0 !important;
 }
 .gsc-input-box {
-    height: 30px;
+    height: 36px;
     border: 1px solid #ccc !important;
-    border-radius: 15px !important;
+    border-radius: 20px !important;
 }
 .gsib_a, .gsib_b {
-    padding: 3px 0 0 50px !important;
+    padding: 6px 0 0 50px !important;
     vertical-align: top !important;
-    background-position: 10px 4px !important;
+    background-position: 10px 7px !important;
 }
 .tag {
     display: block;
