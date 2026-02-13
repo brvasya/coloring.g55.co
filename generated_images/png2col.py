@@ -13,7 +13,11 @@ for entry in os.listdir(root):
             if filename.lower().endswith(".png"):
                 filepath = os.path.join(subpath, filename)
 
-                img = Image.open(filepath).convert("RGB")
+                img = Image.open(filepath)
+
+                # skip already converted images
+                if img.mode == "1":
+                    continue
 
                 # convert to pure black and white
                 gray = img.convert("L")
