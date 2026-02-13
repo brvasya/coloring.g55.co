@@ -6,11 +6,32 @@ import os
 import re
 import json
 
+import threading
+from datetime import datetime
+from io import BytesIO
+import base64
+
+# Optional deps for image generation
+try:
+    from google import genai
+    from google.genai import types
+except Exception:
+    genai = None
+    types = None
+
+try:
+    from PIL import Image
+except Exception:
+    Image = None
+
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 APP_DIR = os.path.join(BASE_DIR, "app")
 
 CATEGORIES_DIR = os.path.join(BASE_DIR, "categories")
 STYLE_FILE = os.path.join(CATEGORIES_DIR, "style.txt")
+
+GENERATED_IMAGES_DIR = os.path.join(BASE_DIR, "generated_images")
 
 # Option A: remove extras completely
 LIST_NAMES = ["characters", "actions", "environments"]
@@ -205,6 +226,111 @@ def build_page_description(parts):
     return " ".join(sentences)
 
 
+
+def _safe_mkdir(p):
+    try:
+        os.makedirs(p, exist_ok=True)
+    except Exception:
+        pass
+
+
+def _sanitize_filename(name: str) -> str:
+    name = (name or "").strip()
+    name = re.sub(r"[^a-zA-Z0-9._-]+", "_", name)
+    name = re.sub(r"_+", "_", name).strip("_")
+    return name or "image"
+
+
+def save_image_with_gemini(prompt: str, api_key: str, model: str, out_path: str, num_images: int = 1):
+    """
+    Generates an image from a text prompt and saves it to out_path (PNG).
+
+    Supports:
+    - Gemini native image generation models (e.g. gemini-2.5-flash-image)
+    - Imagen generation models (e.g. imagen-4.0-generate-001)
+
+    Requires:
+    - pip install google-genai
+    - pip install pillow
+    """
+    if genai is None or Image is None:
+        raise RuntimeError("Missing dependency. Install: pip install google-genai pillow")
+
+    api_key = (api_key or "").strip()
+    client = genai.Client(api_key=api_key) if api_key else genai.Client()
+
+    model = (model or "").strip() or "gemini-2.5-flash-image"
+    out_path = os.path.abspath(out_path)
+
+    _safe_mkdir(os.path.dirname(out_path))
+
+    # Imagen models use generate_images, Gemini native image models use generate_content
+    if model.startswith("imagen-"):
+        if types is None:
+            raise RuntimeError("google-genai types not available")
+        resp = client.models.generate_images(
+            model=model,
+            prompt=prompt,
+            config=types.GenerateImagesConfig(number_of_images=max(1, int(num_images))),
+        )
+        if not getattr(resp, "generated_images", None):
+            raise RuntimeError("No images returned")
+        img_b64 = resp.generated_images[0].image.image_bytes
+        if isinstance(img_b64, str):
+            img_bytes = base64.b64decode(img_b64)
+        else:
+            img_bytes = img_b64
+        Image.open(BytesIO(img_bytes)).save(out_path, format="PNG")
+        return out_path
+
+    if types is None:
+        raise RuntimeError("google-genai types not available")
+
+    resp = client.models.generate_content(
+        model=model,
+        contents=[prompt],
+        config=types.GenerateContentConfig(
+            image_config=types.ImageConfig(
+                aspect_ratio="2:3"
+            )
+        ),
+    )
+
+    parts = getattr(resp, "parts", None)
+    if parts is None:
+        try:
+            parts = resp.candidates[0].content.parts
+        except Exception:
+            parts = []
+
+    for part in parts:
+        inline_data = getattr(part, "inline_data", None)
+        if inline_data is not None:
+            try:
+                img = part.as_image()
+                img.save(out_path, format="PNG")
+                return out_path
+            except Exception:
+                data = getattr(inline_data, "data", None) or getattr(inline_data, "image_bytes", None)
+                if data is None:
+                    continue
+                if isinstance(data, str):
+                    img_bytes = base64.b64decode(data)
+                else:
+                    img_bytes = data
+                Image.open(BytesIO(img_bytes)).save(out_path, format="PNG")
+                return out_path
+
+    raise RuntimeError("No image part returned")
+
+
+def default_image_path(category_name: str, page_id: str) -> str:
+    cat = _sanitize_filename(category_name)
+    pid = _sanitize_filename(page_id)
+    return os.path.join(GENERATED_IMAGES_DIR, cat, f"{pid}.png")
+
+
+
 def generate_item(data):
     if not all(data.get(k) for k in LIST_NAMES) or not data.get("style"):
         parts = {"character": "", "action": "", "environment": ""}
@@ -277,6 +403,9 @@ class PromptGUI(tk.Tk):
         )
         self.count_var = tk.IntVar(value=2)
 
+        self.api_key_var = tk.StringVar(value=os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY') or '')
+        self.model_var = tk.StringVar(value='gemini-2.5-flash-image')
+
         self.data = (
             load_category_data(self.category_var.get())
             if self.category_var.get()
@@ -308,7 +437,31 @@ class PromptGUI(tk.Tk):
             side="left", padx=(0, 8)
         )
 
+        ttk.Button(top, text="Save Images", command=self.generate_all_images).pack(
+            side="left", padx=(0, 8)
+        )
+
         ttk.Button(top, text="Save All", command=self.save_all_to_json).pack(side="left")
+
+        ttk.Separator(top, orient="vertical").pack(side="left", fill="y", padx=10)
+
+        ttk.Label(top, text="Gemini key:").pack(side="left")
+        ttk.Entry(top, textvariable=self.api_key_var, width=26, show="*").pack(
+            side="left", padx=(6, 12)
+        )
+
+        ttk.Label(top, text="Model:").pack(side="left")
+        ttk.Combobox(
+            top,
+            textvariable=self.model_var,
+            values=[
+                "gemini-2.5-flash-image",
+                "gemini-3-pro-image-preview",
+                "imagen-4.0-generate-001",
+            ],
+            width=26,
+            state="readonly",
+        ).pack(side="left", padx=(6, 0))
 
         # Counters row
         self.counters_var = tk.StringVar(value="")
@@ -397,6 +550,67 @@ class PromptGUI(tk.Tk):
         self.clipboard_append(self.prompt_vars[idx].get())
         self.update()
         self.mark_row(idx)
+
+
+    def _run_bg(self, fn, on_ok=None, on_err=None):
+        def worker():
+            try:
+                result = fn()
+                if on_ok:
+                    self.after(0, lambda: on_ok(result))
+            except Exception as e:
+                if on_err:
+                    self.after(0, lambda: on_err(e))
+        t = threading.Thread(target=worker, daemon=True)
+        t.start()
+
+    def generate_image(self, idx):
+        category_name = self.category_var.get().strip()
+        page_id = self.id_vars[idx].get().strip()
+        prompt = self.prompt_vars[idx].get().strip()
+        api_key = self.api_key_var.get()
+        model = self.model_var.get().strip()
+
+        out_path = default_image_path(category_name, page_id)
+
+        def job():
+            return save_image_with_gemini(prompt=prompt, api_key=api_key, model=model, out_path=out_path)
+
+        def ok(saved_path):
+            self.mark_row(idx)
+            messagebox.showinfo("Image saved", f"Saved: {saved_path}")
+
+        def err(e):
+            messagebox.showerror("Image error", str(e))
+
+        self._run_bg(job, on_ok=ok, on_err=err)
+
+    def generate_all_images(self):
+        category_name = self.category_var.get().strip()
+        api_key = self.api_key_var.get()
+        model = self.model_var.get().strip()
+
+        prompts = [
+            (i, self.id_vars[i].get().strip(), self.prompt_vars[i].get().strip())
+            for i in range(len(self.id_vars))
+        ]
+
+        def job():
+            saved = 0
+            for _i, page_id, prompt in prompts:
+                out_path = default_image_path(category_name, page_id)
+                save_image_with_gemini(prompt=prompt, api_key=api_key, model=model, out_path=out_path)
+                saved += 1
+            return saved
+
+        def ok(n):
+            messagebox.showinfo("Images saved", f"Saved {n} images.")
+
+        def err(e):
+            messagebox.showerror("Image error", str(e))
+
+        self._run_bg(job, on_ok=ok, on_err=err)
+
 
     def save_one_to_json(self, idx):
         category_name = self.category_var.get().strip()
@@ -521,6 +735,12 @@ class PromptGUI(tk.Tk):
                 btns,
                 text="Copy Prompt",
                 command=lambda idx=i: self.copy_prompt(idx),
+            ).pack(side="top", fill="x", pady=(0, 6))
+
+            ttk.Button(
+                btns,
+                text="Generate Image",
+                command=lambda idx=i: self.generate_image(idx),
             ).pack(side="top", fill="x", pady=(0, 6))
 
             ttk.Button(
