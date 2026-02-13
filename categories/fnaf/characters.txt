@@ -1,46 +1,42 @@
 FNAF Freddy Fazbear
+FNAF Freddy Fazbear
+FNAF Freddy Fazbear
+FNAF Bonnie
 FNAF Bonnie
 FNAF Chica
+FNAF Chica
+FNAF Chica
+FNAF Foxy
+FNAF Foxy
 FNAF Foxy
 FNAF Golden Freddy
-FNAF Springtrap
-FNAF The Puppet
-FNAF Marionette
-FNAF Balloon Boy
-FNAF JJ
-FNAF Mangle
 FNAF Toy Freddy
 FNAF Toy Bonnie
 FNAF Toy Chica
-FNAF Withered Freddy
-FNAF Withered Bonnie
-FNAF Withered Chica
-FNAF Withered Foxy
-FNAF Shadow Freddy
-FNAF Shadow Bonnie
+FNAF Mangle
+FNAF Balloon Boy
+FNAF JJ
+FNAF The Puppet
+FNAF Marionette
 FNAF Circus Baby
 FNAF Ballora
 FNAF Funtime Freddy
 FNAF Funtime Foxy
-FNAF Ennard
-FNAF Lolbit
 FNAF Bidybab
 FNAF Minireena
 FNAF Rockstar Freddy
 FNAF Rockstar Bonnie
 FNAF Rockstar Chica
 FNAF Rockstar Foxy
-FNAF Lefty
 FNAF Helpy
+FNAF Glamrock Freddy
 FNAF Glamrock Freddy
 FNAF Glamrock Chica
 FNAF Roxanne Wolf
+FNAF Roxanne Wolf
+FNAF Montgomery Gator
 FNAF Montgomery Gator
 FNAF Sun
-FNAF Moon
-FNAF Vanny
-FNAF Gregory
-FNAF Burntrap
+FNAF Sun
 FNAF Glamrock Bonnie
 FNAF DJ Music Man
-FNAF The Blob
