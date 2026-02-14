@@ -1,24 +1,54 @@
 sleeping
+napping
+resting
 sitting
 standing
 walking
-running slowly
-swimming
-flying
+running
+jumping
+hopping
 playing
+dancing
+spinning
+stretching
+yawning
+smiling
+laughing
+waving
+looking around
+listening
+blinking
+posing
+wiggling
+shaking head
+tilting head
+dreaming
+exploring
+playing gently
+holding a ball
+holding a toy
+holding a balloon
+holding a heart
+holding a star
 playing with a ball
 playing with a toy
-eating
+playing with bubbles
+blowing bubbles
+chasing a ball
+catching a ball
+rolling a ball
+looking happy
+looking curious
+looking surprised
+looking sleepy
+looking excited
+sniffing
 drinking water
-smiling
-looking around
-jumping gently
-climbing
-digging
-catching fish
-watching butterflies
-picking flowers
-playing in snow
-reading a book
-riding a bicycle
-having a picnic
+eating food
+eating a snack
+holding food
+sharing food
+hugging
+giving a high five
+celebrating
+relaxing

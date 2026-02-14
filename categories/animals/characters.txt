@@ -1,199 +1,50 @@
-a frog
 a dog
-a puppy
 a cat
+a puppy
 a kitten
+a horse
 a rabbit
-a hamster
-a guinea pig
 a cow
 a pig
-a horse
 a sheep
-a goat
 a chicken
 a duck
-a donkey
 a lion
 a tiger
 an elephant
 a giraffe
 a monkey
-a zebra
 a panda
-a hippopotamus
-a rhinoceros
 a bear
+a zebra
 a fox
 a wolf
 a deer
-a raccoon
-a squirrel
-a hedgehog
-an owl
-a shark
 a dolphin
+a shark
 a whale
-an octopus
-a sea turtle
-a seal
-a crab
-a starfish
 a fish
 a penguin
-a polar bear
-an arctic fox
-a gorilla
-a leopard
-a cheetah
+a unicorn
+a dragon
+a butterfly
+a bee
+a turtle
 a crocodile
 an alligator
 a snake
-a toucan
 a parrot
-a baby elephant
-a baby tiger
-a baby panda
-a baby bear
-a baby fox
-a baby rabbit
-a unicorn
-a dragon
-a pony
-a foal
-a calf
-a lamb
-a kid goat
-a chick
-a gosling
-a turkey
-a rooster
-a peacock
-a flamingo
-a pelican
-a seagull
-a sparrow
-a bluebird
-a woodpecker
-a koala
-a kangaroo
-a wallaby
-a platypus
-a meerkat
-an otter
-a beaver
-a badger
-a skunk
-a moose
-a reindeer
-a bison
-a buffalo
-a yak
-a camel
-a llama
-an alpaca
-a sloth
-an anteater
-an armadillo
-a chinchilla
-a ferret
-a weasel
-a lemur
-a baboon
-a mandrill
-a jaguar
-a panther
-a snow leopard
-a hyena
-a vulture
+an owl
 an eagle
-a falcon
-a hawk
-a stingray
-a seahorse
-a jellyfish
-a lobster
-a shrimp
-a clownfish
-a pufferfish
-a narwhal
-a walrus
-a border collie
-a golden retriever
-a husky
-a bulldog
-a dalmatian
-a corgi
-a tabby cat
-a persian cat
-a siamese cat
-a barn cat
-a pony foal
-a baby horse
-a baby cow
-a baby pig
-a baby sheep
-a baby goat
-a farm puppy
-a farm kitten
-a barn owl
-a wild horse
-a mustang
-a prairie dog
-a chipmunk
-a groundhog
-a mountain goat
-a wild boar
-a fawn
-a baby deer
-a baby raccoon
-a baby squirrel
-a baby hedgehog
-a baby penguin
-a baby seal
-a baby dolphin
-a baby whale
-a baby sea turtle
-a baby otter
-a baby fox
-a baby wolf
-a baby lion
-a baby leopard
-a baby giraffe
-a baby zebra
-a baby monkey
-a chimpanzee
-an orangutan
-a tree frog
-a poison dart frog
-a bullfrog
-a lizard
-a gecko
-a chameleon
-a turtle
-a tortoise
-a iguana
-a cobra
-a python
-a rattlesnake
-a macaw
-a cockatoo
-a canary
-a hummingbird
-a swan
-a goose
-a pigeon
-a ant
-a ladybug
-a butterfly
-a dragonfly
-a bee
-a grasshopper
-a caterpillar
-a hermit crab
-a manta ray
-a swordfish
-a angelfish
-a blue tang fish
-a sea lion
-a manatee
+a kangaroo
+a koala
+a sloth
+an otter
+a seal
+a sea turtle
+an octopus
+a baby elephant
+a baby panda
+a baby tiger
+a baby rabbit
+a pony

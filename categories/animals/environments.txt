@@ -26,7 +26,6 @@ on a forest trail
 at a waterfall
 in a desert
 in an oasis
-on a beach
 in the snow
 in a winter forest
 on an ice lake
@@ -34,3 +33,46 @@ on a jungle riverbank
 in a jungle clearing
 in a nature reserve
 in a wildlife sanctuary
+on a mountain trail
+in the mountains
+on a grassy hill
+in a sunny meadow
+near a cave
+near a small pond
+near a river
+near a stream
+near a waterfall
+in tall grass
+in a bamboo forest
+in a palm forest
+in a coral reef
+near coral reefs
+under the sea
+on a rocky shore
+on sea ice
+near an iceberg
+in a polar landscape
+in an open field
+on a dirt path
+near a wooden fence
+in a village field
+near a farmhouse
+near a barn
+near a lake
+near a lagoon
+on a sandy shore
+on a cliffside
+near coastal rocks
+in a mangrove forest
+on a jungle path
+in a safari park
+in a wildlife park
+on a snowy hill
+during snowfall
+in autumn leaves
+in spring flowers
+in summer sunshine
+in a magical forest
+in a fantasy land
+in a crystal cave
+in a cartoon village
