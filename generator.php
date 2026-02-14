@@ -3,24 +3,26 @@ declare(strict_types=1);
 
 header('Content-Type: application/json; charset=utf-8');
 
-$base_dir = __DIR__;
-$app_dir = $base_dir . DIRECTORY_SEPARATOR . 'app';
-$categories_dir = $base_dir . DIRECTORY_SEPARATOR . 'categories';
-
-$list_names = ['characters', 'actions', 'environments'];
-
-$pool_files = [
-  'intro' => $app_dir . DIRECTORY_SEPARATOR . 'intro_pool.txt',
-  'usage' => $app_dir . DIRECTORY_SEPARATOR . 'usage_pool.txt',
-  'ease' => $app_dir . DIRECTORY_SEPARATOR . 'ease_pool.txt',
-  'benefit' => $app_dir . DIRECTORY_SEPARATOR . 'benefit_pool.txt',
-];
+$BASE_DIR = __DIR__;
+$APP_DIR = $BASE_DIR . DIRECTORY_SEPARATOR . 'app';
+$CATEGORIES_DIR = $BASE_DIR . DIRECTORY_SEPARATOR . 'categories';
 
 function qs(string $k, string $default = ''): string {
   return isset($_GET[$k]) ? trim((string)$_GET[$k]) : $default;
 }
 function qi(string $k, int $default = 0): int {
-  return isset($_GET[$k]) ? max(0, (int)$_GET[$k]) : $default;
+  return isset($_GET[$k]) ? (int)$_GET[$k] : $default;
+}
+function qb(string $k, bool $default = false): bool {
+  if (!isset($_GET[$k])) return $default;
+  $v = strtolower(trim((string)$_GET[$k]));
+  return in_array($v, ['1','true','yes','on'], true);
+}
+
+function json_out(array $payload, int $code = 200): void {
+  http_response_code($code);
+  echo json_encode($payload, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+  exit;
 }
 
 function load_lines(string $path): array {
@@ -64,31 +66,6 @@ function slugify(string $s): string {
   return $s !== '' ? $s : 'item';
 }
 
-function build_h1(array $parts): string {
-  $character = strip_leading_article((string)$parts['character']);
-  $action = trim((string)$parts['action']);
-  $env = trim((string)$parts['environment']);
-  $base = trim(preg_replace('/\s{2,}/', ' ', "$character $action $env") ?? '');
-  return 'Free Printable ' . format_title($base) . ' Coloring Page for Kids';
-}
-
-function build_seo_base_for_slug(array $parts): string {
-  $character = strip_leading_article((string)$parts['character']);
-  $action = trim((string)$parts['action']);
-  $env = trim((string)$parts['environment']);
-  $base = trim(preg_replace('/\s{2,}/', ' ', "$character $action $env coloring page") ?? '');
-  return $base;
-}
-
-function build_id(array $parts): string {
-  return slugify(build_seo_base_for_slug($parts));
-}
-
-function build_prompt(array $parts, string $style): string {
-  $core = trim(preg_replace('/\s{2,}/', ' ', $parts['character'] . ' ' . $parts['action'] . ' ' . $parts['environment']) ?? '');
-  return 'Coloring page on white background, ' . $core . ', ' . rtrim($style, '.') . '.';
-}
-
 function clean_sentence(string $s): string {
   $s = trim(preg_replace('/\s{2,}/', ' ', trim($s)) ?? '');
   $s = trim($s, " ,");
@@ -101,7 +78,28 @@ function render_template(string $line, string $scene): string {
   return str_replace('{scene}', $scene, $line);
 }
 
-function build_page_description(array $parts, array $pools): string {
+function build_title(array $parts): string {
+  $character = strip_leading_article((string)$parts['character']);
+  $action = trim((string)$parts['action']);
+  $env = trim((string)$parts['environment']);
+  $base = trim(preg_replace('/\s{2,}/', ' ', "$character $action $env") ?? '');
+  return 'Free Printable ' . format_title($base) . ' Coloring Page for Kids';
+}
+
+function build_id(array $parts): string {
+  $character = strip_leading_article((string)$parts['character']);
+  $action = trim((string)$parts['action']);
+  $env = trim((string)$parts['environment']);
+  $base = trim(preg_replace('/\s{2,}/', ' ', "$character $action $env coloring page") ?? '');
+  return slugify($base);
+}
+
+function build_prompt(array $parts, string $style): string {
+  $core = trim(preg_replace('/\s{2,}/', ' ', $parts['character'] . ' ' . $parts['action'] . ' ' . $parts['environment']) ?? '');
+  return 'Coloring page on white background, ' . $core . ', ' . rtrim($style, '.') . '.';
+}
+
+function build_description(array $parts, array $pools): string {
   $scene = trim(preg_replace('/\s{2,}/', ' ', $parts['character'] . ' ' . $parts['action'] . ' ' . $parts['environment']) ?? '');
 
   foreach (['intro','usage','ease','benefit'] as $k) {
@@ -141,7 +139,13 @@ function sanitize_filename(string $name): string {
   return $name !== '' ? $name : 'image';
 }
 
-function gemini_generate_image(string $api_key, string $prompt, string $out_path, string $aspect_ratio = '2:3', string $model = 'gemini-2.5-flash-image'): array {
+function gemini_generate_image(
+  string $api_key,
+  string $prompt,
+  string $out_path,
+  string $aspect_ratio = '2:3',
+  string $model = 'gemini-2.5-flash-image'
+): array {
   $url = 'https://generativelanguage.googleapis.com/v1beta/models/' . rawurlencode($model) . ':generateContent';
 
   $payload = [
@@ -177,176 +181,189 @@ function gemini_generate_image(string $api_key, string $prompt, string $out_path
   $code = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
   curl_close($ch);
 
-  if ($raw === false) {
-    return ['ok' => false, 'error' => 'curl_error', 'detail' => $err];
-  }
-  if ($code < 200 || $code >= 300) {
-    return ['ok' => false, 'error' => 'http_error', 'status' => $code, 'detail' => $raw];
-  }
+  if ($raw === false) return ['ok' => false, 'error' => 'curl_error', 'detail' => $err];
+  if ($code < 200 || $code >= 300) return ['ok' => false, 'error' => 'http_error', 'status' => $code, 'detail' => $raw];
 
   $json = json_decode($raw, true);
-  if (!is_array($json)) {
-    return ['ok' => false, 'error' => 'bad_json', 'detail' => $raw];
-  }
+  if (!is_array($json)) return ['ok' => false, 'error' => 'bad_json', 'detail' => $raw];
 
   $image_b64 = null;
   $parts = $json['candidates'][0]['content']['parts'] ?? [];
   foreach ($parts as $p) {
-    if (isset($p['inlineData']['data'])) {
-      $image_b64 = (string)$p['inlineData']['data'];
-      break;
-    }
-    if (isset($p['inline_data']['data'])) {
-      $image_b64 = (string)$p['inline_data']['data'];
-      break;
-    }
+    if (isset($p['inlineData']['data'])) { $image_b64 = (string)$p['inlineData']['data']; break; }
+    if (isset($p['inline_data']['data'])) { $image_b64 = (string)$p['inline_data']['data']; break; }
   }
-
-  if (!$image_b64) {
-    return ['ok' => false, 'error' => 'no_image_in_response', 'detail' => $json];
-  }
+  if (!$image_b64) return ['ok' => false, 'error' => 'no_image_in_response'];
 
   $bytes = base64_decode($image_b64, true);
-  if ($bytes === false) {
-    return ['ok' => false, 'error' => 'base64_decode_failed'];
-  }
+  if ($bytes === false) return ['ok' => false, 'error' => 'base64_decode_failed'];
 
   ensure_dir(dirname($out_path));
   $ok = file_put_contents($out_path, $bytes);
-  if ($ok === false) {
-    return ['ok' => false, 'error' => 'write_failed', 'path' => $out_path];
-  }
+  if ($ok === false) return ['ok' => false, 'error' => 'write_failed', 'path' => $out_path];
 
-  return ['ok' => true, 'path' => $out_path];
+  return ['ok' => true];
 }
 
 function category_json_path(string $categories_dir, string $category_name): string {
   return $categories_dir . DIRECTORY_SEPARATOR . $category_name . '.json';
 }
 
-function prepend_pages_to_category_json(string $path, array $pages_to_add): array {
-  if (!is_file($path)) {
-    return ['ok' => false, 'error' => 'missing_category_json', 'path' => $path];
-  }
+function read_category_json_locked($fp): array {
+  rewind($fp);
+  $raw = stream_get_contents($fp);
+  $data = json_decode($raw ?: '{}', true);
+  if (!is_array($data)) $data = [];
+  if (!isset($data['pages']) || !is_array($data['pages'])) $data['pages'] = [];
+  return $data;
+}
+
+function write_category_json_locked($fp, array $data): void {
+  ftruncate($fp, 0);
+  rewind($fp);
+  fwrite($fp, json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+  fflush($fp);
+}
+
+function prepend_unique_pages(string $path, array $pages_to_add): array {
+  if (!is_file($path)) return ['ok' => false, 'error' => 'missing_category_json', 'path' => $path];
 
   $fp = fopen($path, 'c+');
   if (!$fp) return ['ok' => false, 'error' => 'open_failed', 'path' => $path];
 
-  if (!flock($fp, LOCK_EX)) {
-    fclose($fp);
-    return ['ok' => false, 'error' => 'lock_failed', 'path' => $path];
+  if (!flock($fp, LOCK_EX)) { fclose($fp); return ['ok' => false, 'error' => 'lock_failed', 'path' => $path]; }
+
+  $data = read_category_json_locked($fp);
+
+  $existing_ids = [];
+  foreach ($data['pages'] as $p) {
+    if (is_array($p) && isset($p['id'])) $existing_ids[(string)$p['id']] = true;
   }
 
-  $raw = stream_get_contents($fp);
-  $data = json_decode($raw ?: '{}', true);
-  if (!is_array($data)) $data = [];
+  $clean_add = [];
+  foreach ($pages_to_add as $p) {
+    $id = (string)($p['id'] ?? '');
+    if ($id === '') continue;
+    if (isset($existing_ids[$id])) continue;
+    $existing_ids[$id] = true;
 
-  if (!isset($data['pages']) || !is_array($data['pages'])) $data['pages'] = [];
-  $data['pages'] = array_values(array_merge($pages_to_add, $data['pages']));
+    $clean_add[] = [
+      'id' => $id,
+      'title' => (string)($p['title'] ?? ''),
+      'description' => (string)($p['description'] ?? ''),
+    ];
+  }
 
-  ftruncate($fp, 0);
-  rewind($fp);
-  fwrite($fp, json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
-  fflush($fp);
+  $data['pages'] = array_values(array_merge($clean_add, $data['pages']));
+
+  write_category_json_locked($fp, $data);
+
   flock($fp, LOCK_UN);
   fclose($fp);
 
-  return ['ok' => true, 'count' => count($pages_to_add)];
+  return ['ok' => true, 'added' => count($clean_add)];
 }
 
 $category = qs('c', '');
-$count = max(1, min(20, qi('n', 1)));
-$do_img = qi('img', 0) === 1;
-$dry = qi('dry', 0) === 1;
+if ($category === '') json_out(['ok' => false, 'error' => 'missing_c_param'], 400);
+
+$count = qi('n', 1);
+if ($count < 1) $count = 1;
+if ($count > 20) $count = 20;
+
+$do_img = qb('img', false);
+$dry = qb('dry', false);
 
 $aspect_ratio = qs('ar', '2:3');
 $model = qs('model', 'gemini-2.5-flash-image');
 
+$skip_existing_img = qb('skip_img_existing', true);
+
 $api_key = qs('key', '');
-if ($api_key === '') {
-  $api_key = (string)getenv('GEMINI_API_KEY');
-}
+if ($api_key === '') $api_key = (string)getenv('GEMINI_API_KEY');
 
-if ($category === '') {
-  http_response_code(400);
-  echo json_encode(['ok' => false, 'error' => 'missing_c_param']);
-  exit;
-}
+$cat_dir = $CATEGORIES_DIR . DIRECTORY_SEPARATOR . $category;
+if (!is_dir($cat_dir)) json_out(['ok' => false, 'error' => 'missing_category_dir', 'category' => $category], 404);
 
-$cat_dir = $categories_dir . DIRECTORY_SEPARATOR . $category;
-if (!is_dir($cat_dir)) {
-  http_response_code(404);
-  echo json_encode(['ok' => false, 'error' => 'missing_category_dir', 'category' => $category]);
-  exit;
-}
+$characters = load_lines($cat_dir . DIRECTORY_SEPARATOR . 'characters.txt');
+$actions = load_lines($cat_dir . DIRECTORY_SEPARATOR . 'actions.txt');
+$environments = load_lines($cat_dir . DIRECTORY_SEPARATOR . 'environments.txt');
 
-$data = [];
-foreach ($list_names as $k) {
-  $data[$k] = load_lines($cat_dir . DIRECTORY_SEPARATOR . $k . '.txt');
-}
-$style = load_style($categories_dir . DIRECTORY_SEPARATOR . 'style.txt');
+$style = load_style($CATEGORIES_DIR . DIRECTORY_SEPARATOR . 'style.txt');
 
-$pools = [];
-foreach ($pool_files as $k => $p) {
-  $pools[$k] = load_lines($p);
-}
+$pools = [
+  'intro' => load_lines($APP_DIR . DIRECTORY_SEPARATOR . 'intro_pool.txt'),
+  'usage' => load_lines($APP_DIR . DIRECTORY_SEPARATOR . 'usage_pool.txt'),
+  'ease' => load_lines($APP_DIR . DIRECTORY_SEPARATOR . 'ease_pool.txt'),
+  'benefit' => load_lines($APP_DIR . DIRECTORY_SEPARATOR . 'benefit_pool.txt'),
+];
 
 $missing = [];
-foreach ($list_names as $k) if (empty($data[$k])) $missing[] = $k;
+if (empty($characters)) $missing[] = 'characters';
+if (empty($actions)) $missing[] = 'actions';
+if (empty($environments)) $missing[] = 'environments';
 foreach (['intro','usage','ease','benefit'] as $k) if (empty($pools[$k])) $missing[] = 'pool_' . $k;
 if ($style === '') $missing[] = 'style';
 
-if (!empty($missing)) {
-  http_response_code(500);
-  echo json_encode(['ok' => false, 'error' => 'missing_inputs', 'missing' => $missing], JSON_UNESCAPED_UNICODE);
-  exit;
-}
+if (!empty($missing)) json_out(['ok' => false, 'error' => 'missing_inputs', 'missing' => $missing], 500);
 
-$generated = [];
+$items = [];
+$errors = [];
+
 for ($i = 0; $i < $count; $i++) {
   $parts = [
-    'character' => $data['characters'][array_rand($data['characters'])],
-    'action' => $data['actions'][array_rand($data['actions'])],
-    'environment' => $data['environments'][array_rand($data['environments'])],
+    'character' => $characters[array_rand($characters)],
+    'action' => $actions[array_rand($actions)],
+    'environment' => $environments[array_rand($environments)],
   ];
 
-  $page = [
-    'parts' => $parts,
-    'h1' => build_h1($parts),
-    'id' => build_id($parts),
-    'prompt' => build_prompt($parts, $style),
-    'page_description' => build_page_description($parts, $pools),
+  $id = build_id($parts);
+  $title = build_title($parts);
+  $description = build_description($parts, $pools);
+  $prompt = build_prompt($parts, $style);
+
+  $items[] = [
+    'id' => $id,
+    'title' => $title,
+    'description' => $description,
   ];
 
   if ($do_img) {
     if ($api_key === '') {
-      $page['image_error'] = 'missing_api_key';
-    } else {
-      $img_name = sanitize_filename($page['id']) . '.png';
-      $out_path = $categories_dir . DIRECTORY_SEPARATOR . $category . DIRECTORY_SEPARATOR . $img_name;
-      $img_res = gemini_generate_image($api_key, $page['prompt'], $out_path, $aspect_ratio, $model);
-      if (!($img_res['ok'] ?? false)) {
-        $page['image_error'] = $img_res;
-      } else {
-        $page['image_path'] = $out_path;
-      }
+      $errors[] = ['id' => $id, 'error' => 'missing_api_key'];
+      continue;
+    }
+
+    $img_name = sanitize_filename($id) . '.png';
+    $out_path = $CATEGORIES_DIR . DIRECTORY_SEPARATOR . $category . DIRECTORY_SEPARATOR . $img_name;
+
+    if ($skip_existing_img && is_file($out_path)) {
+      continue;
+    }
+
+    $img_res = gemini_generate_image($api_key, $prompt, $out_path, $aspect_ratio, $model);
+    if (!($img_res['ok'] ?? false)) {
+      $errors[] = ['id' => $id, 'error' => $img_res];
     }
   }
-
-  $generated[] = $page;
 }
 
-$write_res = null;
+$write_result = null;
 if (!$dry) {
-  $json_path = category_json_path($categories_dir, $category);
-  $write_res = prepend_pages_to_category_json($json_path, $generated);
+  $json_path = category_json_path($CATEGORIES_DIR, $category);
+  $write_result = prepend_unique_pages($json_path, $items);
+  if (!($write_result['ok'] ?? false)) {
+    json_out(['ok' => false, 'error' => 'write_failed', 'detail' => $write_result], 500);
+  }
 }
 
-echo json_encode([
+json_out([
   'ok' => true,
   'category' => $category,
-  'count' => $count,
-  'wrote' => $dry ? false : true,
-  'write_result' => $write_res,
-  'items' => $generated
-], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+  'count_requested' => $count,
+  'count_generated' => count($items),
+  'dry' => $dry,
+  'write_result' => $write_result,
+  'items' => $items,
+  'errors' => $errors
+]);
