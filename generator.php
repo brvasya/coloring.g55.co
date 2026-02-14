@@ -102,10 +102,6 @@ function build_prompt(array $parts, string $style): string {
 function build_description(array $parts, array $pools): string {
   $scene = trim(preg_replace('/\s{2,}/', ' ', $parts['character'] . ' ' . $parts['action'] . ' ' . $parts['environment']) ?? '');
 
-  foreach (['intro','usage','ease','benefit'] as $k) {
-    if (empty($pools[$k])) return 'Missing pool files.';
-  }
-
   $patterns = [
     ['intro', 'usage', 'ease', 'benefit'],
     ['intro', 'usage', 'benefit', 'ease'],
@@ -137,6 +133,70 @@ function sanitize_filename(string $name): string {
   $name = preg_replace('/_+/', '_', $name) ?? $name;
   $name = trim($name, '_');
   return $name !== '' ? $name : 'image';
+}
+
+function png_is_1bit(string $path): bool {
+  if (!is_file($path)) return false;
+  $info = @getimagesize($path);
+  if (!is_array($info)) return false;
+  if (($info['mime'] ?? '') !== 'image/png') return false;
+  return isset($info['bits']) && (int)$info['bits'] === 1;
+}
+
+function convert_png_to_1bit_gd(string $path, int $threshold = 200): array {
+  if (!extension_loaded('gd')) return ['ok' => false, 'error' => 'gd_not_loaded'];
+  if (!is_file($path)) return ['ok' => false, 'error' => 'missing_input', 'path' => $path];
+
+  // skip if already 1-bit to avoid overwriting converted files
+  if (png_is_1bit($path)) return ['ok' => true, 'skipped' => true];
+
+  $bytes = @file_get_contents($path);
+  if ($bytes === false) return ['ok' => false, 'error' => 'read_failed', 'path' => $path];
+
+  $src = @imagecreatefromstring($bytes);
+  if (!$src) return ['ok' => false, 'error' => 'imagecreate_failed'];
+
+  $w = imagesx($src);
+  $h = imagesy($src);
+
+  // palette image = 1-bit possible
+  $dst = imagecreate($w, $h);
+  if (!$dst) { imagedestroy($src); return ['ok' => false, 'error' => 'imagecreate_palette_failed']; }
+
+  imagealphablending($dst, true);
+
+  $white = imagecolorallocate($dst, 255, 255, 255);
+  $black = imagecolorallocate($dst, 0, 0, 0);
+
+  for ($y = 0; $y < $h; $y++) {
+    for ($x = 0; $x < $w; $x++) {
+      $rgba = imagecolorat($src, $x, $y);
+
+      // alpha in GD is 0..127 (0 opaque, 127 fully transparent)
+      $a7 = ($rgba >> 24) & 0x7F;
+      $r = ($rgba >> 16) & 0xFF;
+      $g = ($rgba >> 8) & 0xFF;
+      $b = $rgba & 0xFF;
+
+      // treat transparent as white
+      if ($a7 >= 64) {
+        imagesetpixel($dst, $x, $y, $white);
+        continue;
+      }
+
+      $lum = (int)round(0.2126 * $r + 0.7152 * $g + 0.0722 * $b);
+      imagesetpixel($dst, $x, $y, ($lum >= $threshold) ? $white : $black);
+    }
+  }
+
+  $ok = @imagepng($dst, $path, 9);
+
+  imagedestroy($src);
+  imagedestroy($dst);
+
+  if (!$ok) return ['ok' => false, 'error' => 'write_failed', 'path' => $path];
+
+  return ['ok' => true, 'skipped' => false];
 }
 
 function gemini_generate_image(
@@ -173,7 +233,7 @@ function gemini_generate_image(
       'x-goog-api-key: ' . $api_key
     ],
     CURLOPT_POSTFIELDS => json_encode($payload, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE),
-    CURLOPT_TIMEOUT => 180,
+    CURLOPT_TIMEOUT => 120,
   ]);
 
   $raw = curl_exec($ch);
@@ -203,59 +263,6 @@ function gemini_generate_image(
   if ($ok === false) return ['ok' => false, 'error' => 'write_failed', 'path' => $out_path];
 
   return ['ok' => true];
-}
-
-function imagick_is_bilevel(Imagick $img): bool {
-  try {
-    $type = $img->getImageType();
-    if ($type === Imagick::IMGTYPE_BILEVEL) return true;
-  } catch (Exception $e) {
-  }
-  try {
-    $depth = $img->getImageDepth();
-    if ((int)$depth === 1) return true;
-  } catch (Exception $e) {
-  }
-  return false;
-}
-
-function convert_png_to_1bit(string $path): array {
-  if (!extension_loaded('imagick')) return ['ok' => false, 'error' => 'imagick_not_loaded'];
-  if (!is_file($path)) return ['ok' => false, 'error' => 'file_missing'];
-
-  try {
-    $img = new Imagick($path);
-
-    if (imagick_is_bilevel($img)) {
-      $img->clear();
-      $img->destroy();
-      return ['ok' => true, 'skipped' => true];
-    }
-
-    $img->setImageColorspace(Imagick::COLORSPACE_GRAY);
-
-    $img->quantizeImage(
-      2,
-      Imagick::COLORSPACE_GRAY,
-      0,
-      false,
-      false
-    );
-
-    $quantum = Imagick::getQuantum();
-    $img->thresholdImage(0.5 * $quantum);
-
-    $img->setImageType(Imagick::IMGTYPE_BILEVEL);
-    $img->setImageFormat('png');
-
-    $img->writeImage($path);
-    $img->clear();
-    $img->destroy();
-
-    return ['ok' => true, 'skipped' => false];
-  } catch (Exception $e) {
-    return ['ok' => false, 'error' => 'imagick_exception', 'detail' => $e->getMessage()];
-  }
 }
 
 function category_json_path(string $categories_dir, string $category_name): string {
@@ -330,9 +337,10 @@ $dry = qb('dry', false);
 $aspect_ratio = qs('ar', '2:3');
 $model = qs('model', 'gemini-2.5-flash-image');
 
-$skip_existing_img = qb('skip_img_existing', true);
-$convert_1bit = qb('onebit', true);
-$skip_existing_1bit = qb('skip_onebit_existing', true);
+$skip_existing_img = true;
+
+// always convert to 1-bit like python version
+$ONEBIT_THRESHOLD = 200;
 
 $api_key = qs('key', '');
 if ($api_key === '') $api_key = (string)getenv('GEMINI_API_KEY');
@@ -393,28 +401,6 @@ for ($i = 0; $i < $count; $i++) {
     $out_path = $CATEGORIES_DIR . DIRECTORY_SEPARATOR . $category . DIRECTORY_SEPARATOR . $img_name;
 
     if ($skip_existing_img && is_file($out_path)) {
-      if ($convert_1bit && !$dry) {
-        if (!$skip_existing_1bit) {
-          $c = convert_png_to_1bit($out_path);
-          if (!($c['ok'] ?? false)) $errors[] = ['id' => $id, 'error' => ['onebit' => $c]];
-        } else {
-          if (extension_loaded('imagick')) {
-            try {
-              $tmp = new Imagick($out_path);
-              $is1 = imagick_is_bilevel($tmp);
-              $tmp->clear();
-              $tmp->destroy();
-              if (!$is1) {
-                $c = convert_png_to_1bit($out_path);
-                if (!($c['ok'] ?? false)) $errors[] = ['id' => $id, 'error' => ['onebit' => $c]];
-              }
-            } catch (Exception $e) {
-              $c = convert_png_to_1bit($out_path);
-              if (!($c['ok'] ?? false)) $errors[] = ['id' => $id, 'error' => ['onebit' => $c]];
-            }
-          }
-        }
-      }
       continue;
     }
 
@@ -424,9 +410,9 @@ for ($i = 0; $i < $count; $i++) {
       continue;
     }
 
-    if ($convert_1bit && !$dry) {
-      $c = convert_png_to_1bit($out_path);
-      if (!($c['ok'] ?? false)) $errors[] = ['id' => $id, 'error' => ['onebit' => $c]];
+    $conv = convert_png_to_1bit_gd($out_path, $ONEBIT_THRESHOLD);
+    if (!($conv['ok'] ?? false)) {
+      $errors[] = ['id' => $id, 'error' => ['onebit' => $conv]];
     }
   }
 }
@@ -448,7 +434,5 @@ json_out([
   'dry' => $dry,
   'write_result' => $write_result,
   'items' => $items,
-  'errors' => $errors,
-  'onebit_enabled' => $convert_1bit,
-  'imagick_loaded' => extension_loaded('imagick')
+  'errors' => $errors
 ]);
