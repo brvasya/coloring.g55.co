@@ -226,7 +226,6 @@ def build_page_description(parts):
     return " ".join(sentences)
 
 
-
 def _safe_mkdir(p):
     try:
         os.makedirs(p, exist_ok=True)
@@ -239,6 +238,12 @@ def _sanitize_filename(name: str) -> str:
     name = re.sub(r"[^a-zA-Z0-9._-]+", "_", name)
     name = re.sub(r"_+", "_", name).strip("_")
     return name or "image"
+
+
+def _save_bw_png(img, out_path: str):
+    gray = img.convert("L")
+    bw = gray.point(lambda p: 255 if p >= 128 else 0, mode="1")
+    bw.save(out_path, format="PNG")
 
 
 def save_image_with_gemini(prompt: str, api_key: str, model: str, out_path: str, num_images: int = 1):
@@ -280,7 +285,9 @@ def save_image_with_gemini(prompt: str, api_key: str, model: str, out_path: str,
             img_bytes = base64.b64decode(img_b64)
         else:
             img_bytes = img_b64
-        Image.open(BytesIO(img_bytes)).save(out_path, format="PNG")
+
+        img = Image.open(BytesIO(img_bytes))
+        _save_bw_png(img, out_path)
         return out_path
 
     if types is None:
@@ -308,7 +315,7 @@ def save_image_with_gemini(prompt: str, api_key: str, model: str, out_path: str,
         if inline_data is not None:
             try:
                 img = part.as_image()
-                img.save(out_path, format="PNG")
+                _save_bw_png(img, out_path)
                 return out_path
             except Exception:
                 data = getattr(inline_data, "data", None) or getattr(inline_data, "image_bytes", None)
@@ -318,7 +325,9 @@ def save_image_with_gemini(prompt: str, api_key: str, model: str, out_path: str,
                     img_bytes = base64.b64decode(data)
                 else:
                     img_bytes = data
-                Image.open(BytesIO(img_bytes)).save(out_path, format="PNG")
+
+                img = Image.open(BytesIO(img_bytes))
+                _save_bw_png(img, out_path)
                 return out_path
 
     raise RuntimeError("No image part returned")
@@ -328,7 +337,6 @@ def default_image_path(category_name: str, page_id: str) -> str:
     cat = _sanitize_filename(category_name)
     pid = _sanitize_filename(page_id)
     return os.path.join(GENERATED_IMAGES_DIR, cat, f"{pid}.png")
-
 
 
 def generate_item(data):
@@ -403,8 +411,8 @@ class PromptGUI(tk.Tk):
         )
         self.count_var = tk.IntVar(value=2)
 
-        self.api_key_var = tk.StringVar(value=os.environ.get('GEMINI_API_KEY') or os.environ.get('GOOGLE_API_KEY') or '')
-        self.model_var = tk.StringVar(value='gemini-2.5-flash-image')
+        self.api_key_var = tk.StringVar(value=os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or "")
+        self.model_var = tk.StringVar(value="gemini-2.5-flash-image")
 
         self.data = (
             load_category_data(self.category_var.get())
@@ -551,7 +559,6 @@ class PromptGUI(tk.Tk):
         self.update()
         self.mark_row(idx)
 
-
     def _run_bg(self, fn, on_ok=None, on_err=None):
         def worker():
             try:
@@ -561,6 +568,7 @@ class PromptGUI(tk.Tk):
             except Exception as e:
                 if on_err:
                     self.after(0, lambda: on_err(e))
+
         t = threading.Thread(target=worker, daemon=True)
         t.start()
 
@@ -610,7 +618,6 @@ class PromptGUI(tk.Tk):
             messagebox.showerror("Image error", str(e))
 
         self._run_bg(job, on_ok=ok, on_err=err)
-
 
     def save_one_to_json(self, idx):
         category_name = self.category_var.get().strip()
