@@ -31,7 +31,7 @@ APP_DIR = os.path.join(BASE_DIR, "app")
 CATEGORIES_DIR = os.path.join(BASE_DIR, "categories")
 STYLE_FILE = os.path.join(CATEGORIES_DIR, "style.txt")
 
-GENERATED_IMAGES_DIR = os.path.join(BASE_DIR, "generated_images")
+GENERATED_IMAGES_DIR = os.path.join(BASE_DIR, "categories")
 
 # Option A: remove extras completely
 LIST_NAMES = ["characters", "actions", "environments"]
