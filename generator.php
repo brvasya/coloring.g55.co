@@ -173,7 +173,7 @@ function gemini_generate_image(
       'x-goog-api-key: ' . $api_key
     ],
     CURLOPT_POSTFIELDS => json_encode($payload, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE),
-    CURLOPT_TIMEOUT => 120,
+    CURLOPT_TIMEOUT => 180,
   ]);
 
   $raw = curl_exec($ch);
@@ -203,6 +203,59 @@ function gemini_generate_image(
   if ($ok === false) return ['ok' => false, 'error' => 'write_failed', 'path' => $out_path];
 
   return ['ok' => true];
+}
+
+function imagick_is_bilevel(Imagick $img): bool {
+  try {
+    $type = $img->getImageType();
+    if ($type === Imagick::IMGTYPE_BILEVEL) return true;
+  } catch (Exception $e) {
+  }
+  try {
+    $depth = $img->getImageDepth();
+    if ((int)$depth === 1) return true;
+  } catch (Exception $e) {
+  }
+  return false;
+}
+
+function convert_png_to_1bit(string $path): array {
+  if (!extension_loaded('imagick')) return ['ok' => false, 'error' => 'imagick_not_loaded'];
+  if (!is_file($path)) return ['ok' => false, 'error' => 'file_missing'];
+
+  try {
+    $img = new Imagick($path);
+
+    if (imagick_is_bilevel($img)) {
+      $img->clear();
+      $img->destroy();
+      return ['ok' => true, 'skipped' => true];
+    }
+
+    $img->setImageColorspace(Imagick::COLORSPACE_GRAY);
+
+    $img->quantizeImage(
+      2,
+      Imagick::COLORSPACE_GRAY,
+      0,
+      false,
+      false
+    );
+
+    $quantum = Imagick::getQuantum();
+    $img->thresholdImage(0.5 * $quantum);
+
+    $img->setImageType(Imagick::IMGTYPE_BILEVEL);
+    $img->setImageFormat('png');
+
+    $img->writeImage($path);
+    $img->clear();
+    $img->destroy();
+
+    return ['ok' => true, 'skipped' => false];
+  } catch (Exception $e) {
+    return ['ok' => false, 'error' => 'imagick_exception', 'detail' => $e->getMessage()];
+  }
 }
 
 function category_json_path(string $categories_dir, string $category_name): string {
@@ -278,6 +331,8 @@ $aspect_ratio = qs('ar', '2:3');
 $model = qs('model', 'gemini-2.5-flash-image');
 
 $skip_existing_img = qb('skip_img_existing', true);
+$convert_1bit = qb('onebit', true);
+$skip_existing_1bit = qb('skip_onebit_existing', true);
 
 $api_key = qs('key', '');
 if ($api_key === '') $api_key = (string)getenv('GEMINI_API_KEY');
@@ -338,12 +393,40 @@ for ($i = 0; $i < $count; $i++) {
     $out_path = $CATEGORIES_DIR . DIRECTORY_SEPARATOR . $category . DIRECTORY_SEPARATOR . $img_name;
 
     if ($skip_existing_img && is_file($out_path)) {
+      if ($convert_1bit && !$dry) {
+        if (!$skip_existing_1bit) {
+          $c = convert_png_to_1bit($out_path);
+          if (!($c['ok'] ?? false)) $errors[] = ['id' => $id, 'error' => ['onebit' => $c]];
+        } else {
+          if (extension_loaded('imagick')) {
+            try {
+              $tmp = new Imagick($out_path);
+              $is1 = imagick_is_bilevel($tmp);
+              $tmp->clear();
+              $tmp->destroy();
+              if (!$is1) {
+                $c = convert_png_to_1bit($out_path);
+                if (!($c['ok'] ?? false)) $errors[] = ['id' => $id, 'error' => ['onebit' => $c]];
+              }
+            } catch (Exception $e) {
+              $c = convert_png_to_1bit($out_path);
+              if (!($c['ok'] ?? false)) $errors[] = ['id' => $id, 'error' => ['onebit' => $c]];
+            }
+          }
+        }
+      }
       continue;
     }
 
     $img_res = gemini_generate_image($api_key, $prompt, $out_path, $aspect_ratio, $model);
     if (!($img_res['ok'] ?? false)) {
       $errors[] = ['id' => $id, 'error' => $img_res];
+      continue;
+    }
+
+    if ($convert_1bit && !$dry) {
+      $c = convert_png_to_1bit($out_path);
+      if (!($c['ok'] ?? false)) $errors[] = ['id' => $id, 'error' => ['onebit' => $c]];
     }
   }
 }
@@ -365,5 +448,7 @@ json_out([
   'dry' => $dry,
   'write_result' => $write_result,
   'items' => $items,
-  'errors' => $errors
+  'errors' => $errors,
+  'onebit_enabled' => $convert_1bit,
+  'imagick_loaded' => extension_loaded('imagick')
 ]);
