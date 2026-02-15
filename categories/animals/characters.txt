@@ -3,10 +3,13 @@ a cat
 a puppy
 a kitten
 a horse
+a pony
 a rabbit
+a bunny
 a cow
 a pig
 a sheep
+a goat
 a chicken
 a duck
 a lion
@@ -43,8 +46,16 @@ an otter
 a seal
 a sea turtle
 an octopus
+a hamster
+a guinea pig
+a hedgehog
+a raccoon
+a squirrel
+a flamingo
+a peacock
 a baby elephant
 a baby panda
 a baby tiger
 a baby rabbit
-a pony
+a baby puppy
+a baby kitten

@@ -1,35 +1,28 @@
-sleeping
-napping
-resting
-sitting
-standing
-walking
-running
-jumping
-hopping
-playing
-dancing
-spinning
-stretching
-yawning
-smiling
-laughing
-waving
-looking around
-listening
-blinking
-posing
-wiggling
-shaking head
-tilting head
-dreaming
-exploring
+sleeping peacefully
+napping calmly
+resting peacefully
+sitting calmly
+standing happily
+walking happily
+running happily
+jumping playfully
+hopping happily
+playing happily
+dancing happily
+spinning playfully
+stretching playfully
+yawning sleepily
+smiling happily
+laughing playfully
+waving happily
+looking around curiously
+listening carefully
+posing happily
+exploring curiously
 playing gently
 holding a ball
 holding a toy
 holding a balloon
-holding a heart
-holding a star
 playing with a ball
 playing with a toy
 playing with bubbles
@@ -40,15 +33,22 @@ rolling a ball
 looking happy
 looking curious
 looking surprised
-looking sleepy
-looking excited
-sniffing
+sniffing curiously
 drinking water
-eating food
+eating happily
 eating a snack
 holding food
 sharing food
-hugging
-giving a high five
-celebrating
-relaxing
+hugging happily
+celebrating happily
+relaxing peacefully
+playing with friends
+walking with family
+playing with babies
+taking care of babies
+meeting another animal
+playing with butterflies
+playing in water
+playing in mud
+playing in leaves
+playing in snow
