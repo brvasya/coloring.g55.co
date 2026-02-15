@@ -361,7 +361,7 @@ def prepend_pages_to_category_json(category_name, pages_to_add):
     data["pages"] = list(pages_to_add) + data["pages"]
 
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 class PromptGUI(tk.Tk):
