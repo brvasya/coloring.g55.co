@@ -253,7 +253,7 @@ def save_image_with_gemini(prompt: str, api_key: str, out_path: str):
     api_key = (api_key or "").strip()
     client = genai.Client(api_key=api_key) if api_key else genai.Client()
 
-    model = "gemini-2.5-flash-image"
+    model = "imagen-4.0-fast-generate-001"
     out_path = os.path.abspath(out_path)
 
     _safe_mkdir(os.path.dirname(out_path))
@@ -261,46 +261,38 @@ def save_image_with_gemini(prompt: str, api_key: str, out_path: str):
     if types is None:
         raise RuntimeError("google-genai types not available")
 
-    resp = client.models.generate_content(
+    response = client.models.generate_images(
         model=model,
-        contents=[prompt],
-        config=types.GenerateContentConfig(
-            image_config=types.ImageConfig(
-                aspect_ratio="2:3"
-            )
+        prompt=prompt,
+        config=types.GenerateImagesConfig(
+            number_of_images=1,
+            aspect_ratio="3:4",
         ),
     )
 
-    parts = getattr(resp, "parts", None)
-    if parts is None:
-        try:
-            parts = resp.candidates[0].content.parts
-        except Exception:
-            parts = []
+    generated_images = getattr(response, "generated_images", None) or []
+    if not generated_images:
+        raise RuntimeError("No images returned")
 
-    for part in parts:
-        inline_data = getattr(part, "inline_data", None)
-        if inline_data is not None:
-            try:
-                img = part.as_image()
-                _save_bw_png(img, out_path)
-                return out_path
-            except Exception:
-                data = getattr(inline_data, "data", None) or getattr(inline_data, "image_bytes", None)
-                if data is None:
-                    continue
-                if isinstance(data, str):
-                    img_bytes = base64.b64decode(data)
-                else:
-                    img_bytes = data
+    gi = generated_images[0]
+    img_obj = getattr(gi, "image", None)
 
-                img = Image.open(BytesIO(img_bytes))
-                _save_bw_png(img, out_path)
-                return out_path
+    img_bytes = None
+    if img_obj is not None:
+        img_bytes = getattr(img_obj, "image_bytes", None) or getattr(img_obj, "bytes", None)
 
-    raise RuntimeError("No image part returned")
+    if img_bytes is None:
+        img_bytes = getattr(gi, "image_bytes", None) or getattr(gi, "bytes", None)
 
+    if img_bytes is None:
+        raise RuntimeError("Image bytes not found in response")
 
+    if isinstance(img_bytes, str):
+        img_bytes = base64.b64decode(img_bytes)
+
+    img = Image.open(BytesIO(img_bytes))
+    _save_bw_png(img, out_path)
+    return out_path
 
 
 def default_image_path(category_name: str, page_id: str) -> str:
@@ -425,7 +417,6 @@ class PromptGUI(tk.Tk):
         ttk.Entry(top, textvariable=self.api_key_var, width=26, show="*").pack(
             side="left", padx=(6, 12)
         )
-
 
         # Counters row
         self.counters_var = tk.StringVar(value="")

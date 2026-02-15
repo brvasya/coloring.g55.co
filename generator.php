@@ -144,7 +144,6 @@ function convert_png_to_1bit_gd(string $path, int $threshold = 200): array {
   if (!extension_loaded('gd')) return ['ok' => false, 'error' => 'gd_not_loaded'];
   if (!is_file($path)) return ['ok' => false, 'error' => 'missing_input', 'path' => $path];
 
-  // skip if already 1-bit to avoid overwriting converted files
   if (png_is_1bit($path)) return ['ok' => true, 'skipped' => true];
 
   $bytes = @file_get_contents($path);
@@ -156,7 +155,6 @@ function convert_png_to_1bit_gd(string $path, int $threshold = 200): array {
   $w = imagesx($src);
   $h = imagesy($src);
 
-  // palette image = 1-bit possible
   $dst = imagecreate($w, $h);
   if (!$dst) { imagedestroy($src); return ['ok' => false, 'error' => 'imagecreate_palette_failed']; }
 
@@ -168,14 +166,11 @@ function convert_png_to_1bit_gd(string $path, int $threshold = 200): array {
   for ($y = 0; $y < $h; $y++) {
     for ($x = 0; $x < $w; $x++) {
       $rgba = imagecolorat($src, $x, $y);
-
-      // alpha in GD is 0..127 (0 opaque, 127 fully transparent)
       $a7 = ($rgba >> 24) & 0x7F;
       $r = ($rgba >> 16) & 0xFF;
       $g = ($rgba >> 8) & 0xFF;
       $b = $rgba & 0xFF;
 
-      // treat transparent as white
       if ($a7 >= 64) {
         imagesetpixel($dst, $x, $y, $white);
         continue;
@@ -200,24 +195,16 @@ function gemini_generate_image(
   string $api_key,
   string $prompt,
   string $out_path,
-  string $aspect_ratio = '2:3'
+  string $aspect_ratio = '3:4'
 ): array {
-  $model = 'gemini-2.5-flash-image';
-  $url = 'https://generativelanguage.googleapis.com/v1beta/models/' . rawurlencode($model) . ':generateContent';
+  $model = 'imagen-4.0-fast-generate-001';
+  $url = 'https://generativelanguage.googleapis.com/v1beta/models/' . rawurlencode($model) . ':generateImages';
 
   $payload = [
-    'contents' => [
-      [
-        'parts' => [
-          ['text' => $prompt]
-        ]
-      ]
-    ],
-    'generationConfig' => [
-      'responseModalities' => ['Image'],
-      'imageConfig' => [
-        'aspectRatio' => $aspect_ratio
-      ]
+    'prompt' => $prompt,
+    'config' => [
+      'numberOfImages' => 1,
+      'aspectRatio' => $aspect_ratio
     ]
   ];
 
@@ -244,12 +231,7 @@ function gemini_generate_image(
   $json = json_decode($raw, true);
   if (!is_array($json)) return ['ok' => false, 'error' => 'bad_json', 'detail' => $raw];
 
-  $image_b64 = null;
-  $parts = $json['candidates'][0]['content']['parts'] ?? [];
-  foreach ($parts as $p) {
-    if (isset($p['inlineData']['data'])) { $image_b64 = (string)$p['inlineData']['data']; break; }
-    if (isset($p['inline_data']['data'])) { $image_b64 = (string)$p['inline_data']['data']; break; }
-  }
+  $image_b64 = $json['generatedImages'][0]['image']['imageBytes'] ?? null;
   if (!$image_b64) return ['ok' => false, 'error' => 'no_image_in_response'];
 
   $bytes = base64_decode($image_b64, true);
@@ -324,16 +306,13 @@ function prepend_unique_pages(string $path, array $pages_to_add): array {
 $category = qs('c', '');
 if ($category === '') json_out(['ok' => false, 'error' => 'missing_c_param'], 400);
 
-$count = 1; // hardcoded: always generate exactly 1 page per request
-
-$do_img = true; // images always generated per request
+$count = 1;
+$do_img = true;
 $dry = qb('dry', false);
 
-$aspect_ratio = qs('ar', '2:3'); 
+$aspect_ratio = qs('ar', '3:4'); 
 
 $skip_existing_img = true;
-
-// always convert to 1-bit like python version
 $ONEBIT_THRESHOLD = 200;
 
 $api_key = qs('key', '');
