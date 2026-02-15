@@ -9,7 +9,7 @@ $CATEGORIES_DIR = $BASE_DIR . DIRECTORY_SEPARATOR . 'categories';
 
 function qs(string $k, string $default = ''): string {
   return isset($_GET[$k]) ? trim((string)$_GET[$k]) : $default;
-} 
+}
 function qb(string $k, bool $default = false): bool {
   if (!isset($_GET[$k])) return $default;
   $v = strtolower(trim((string)$_GET[$k]));
@@ -144,7 +144,6 @@ function convert_png_to_1bit_gd(string $path, int $threshold = 200): array {
   if (!extension_loaded('gd')) return ['ok' => false, 'error' => 'gd_not_loaded'];
   if (!is_file($path)) return ['ok' => false, 'error' => 'missing_input', 'path' => $path];
 
-  // skip if already 1-bit to avoid overwriting converted files
   if (png_is_1bit($path)) return ['ok' => true, 'skipped' => true];
 
   $bytes = @file_get_contents($path);
@@ -156,7 +155,6 @@ function convert_png_to_1bit_gd(string $path, int $threshold = 200): array {
   $w = imagesx($src);
   $h = imagesy($src);
 
-  // palette image = 1-bit possible
   $dst = imagecreate($w, $h);
   if (!$dst) { imagedestroy($src); return ['ok' => false, 'error' => 'imagecreate_palette_failed']; }
 
@@ -169,13 +167,11 @@ function convert_png_to_1bit_gd(string $path, int $threshold = 200): array {
     for ($x = 0; $x < $w; $x++) {
       $rgba = imagecolorat($src, $x, $y);
 
-      // alpha in GD is 0..127 (0 opaque, 127 fully transparent)
       $a7 = ($rgba >> 24) & 0x7F;
       $r = ($rgba >> 16) & 0xFF;
       $g = ($rgba >> 8) & 0xFF;
       $b = $rgba & 0xFF;
 
-      // treat transparent as white
       if ($a7 >= 64) {
         imagesetpixel($dst, $x, $y, $white);
         continue;
@@ -200,24 +196,19 @@ function gemini_generate_image(
   string $api_key,
   string $prompt,
   string $out_path,
-  string $aspect_ratio = '2:3'
+  string $aspect_ratio = '3:4'
 ): array {
-  $model = 'gemini-2.5-flash-image';
-  $url = 'https://generativelanguage.googleapis.com/v1beta/models/' . rawurlencode($model) . ':generateContent';
+
+  $model = 'imagen-4.0-fast-generate-001';
+  $url = 'https://generativelanguage.googleapis.com/v1beta/models/' . rawurlencode($model) . ':predict';
 
   $payload = [
-    'contents' => [
-      [
-        'parts' => [
-          ['text' => $prompt]
-        ]
-      ]
+    'instances' => [
+      ['prompt' => $prompt]
     ],
-    'generationConfig' => [
-      'responseModalities' => ['Image'],
-      'imageConfig' => [
-        'aspectRatio' => $aspect_ratio
-      ]
+    'parameters' => [
+      'sampleCount' => 1,
+      'aspectRatio' => $aspect_ratio
     ]
   ];
 
@@ -244,13 +235,8 @@ function gemini_generate_image(
   $json = json_decode($raw, true);
   if (!is_array($json)) return ['ok' => false, 'error' => 'bad_json', 'detail' => $raw];
 
-  $image_b64 = null;
-  $parts = $json['candidates'][0]['content']['parts'] ?? [];
-  foreach ($parts as $p) {
-    if (isset($p['inlineData']['data'])) { $image_b64 = (string)$p['inlineData']['data']; break; }
-    if (isset($p['inline_data']['data'])) { $image_b64 = (string)$p['inline_data']['data']; break; }
-  }
-  if (!$image_b64) return ['ok' => false, 'error' => 'no_image_in_response'];
+  $image_b64 = $json['predictions'][0]['bytesBase64Encoded'] ?? null;
+  if (!is_string($image_b64) || $image_b64 === '') return ['ok' => false, 'error' => 'no_image_in_response', 'detail' => $json];
 
   $bytes = base64_decode($image_b64, true);
   if ($bytes === false) return ['ok' => false, 'error' => 'base64_decode_failed'];
@@ -259,7 +245,7 @@ function gemini_generate_image(
   $ok = file_put_contents($out_path, $bytes);
   if ($ok === false) return ['ok' => false, 'error' => 'write_failed', 'path' => $out_path];
 
-  return ['ok' => true];
+  return ['ok' => true, 'model' => $model, 'aspectRatio' => $aspect_ratio];
 }
 
 function category_json_path(string $categories_dir, string $category_name): string {
@@ -324,16 +310,13 @@ function prepend_unique_pages(string $path, array $pages_to_add): array {
 $category = qs('c', '');
 if ($category === '') json_out(['ok' => false, 'error' => 'missing_c_param'], 400);
 
-$count = 1; // hardcoded: always generate exactly 1 page per request
-
-$do_img = true; // images always generated per request
+$count = 1;
+$do_img = true;
 $dry = qb('dry', false);
 
-$aspect_ratio = qs('ar', '2:3'); 
+$aspect_ratio = qs('ar', '3:4');
 
 $skip_existing_img = true;
-
-// always convert to 1-bit like python version
 $ONEBIT_THRESHOLD = 200;
 
 $api_key = qs('key', '');
@@ -428,5 +411,5 @@ json_out([
   'dry' => $dry,
   'write_result' => $write_result,
   'items' => $items,
-  'errors' => $errors
+  'errors' => $errors,
 ]);
