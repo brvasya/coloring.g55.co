@@ -1,0 +1,49 @@
+a car
+a police car
+a fire truck
+an ambulance
+a school bus
+a city bus
+a monster truck
+a race car
+a sports car
+a pickup truck
+a tow truck
+a garbage truck
+a dump truck
+a cement mixer truck
+a delivery truck
+an ice cream truck
+a food truck
+a tractor
+a bulldozer
+an excavator
+a crane truck
+a forklift
+a train
+a steam train
+a passenger train
+a subway train
+a cargo train
+a tram
+a helicopter
+a rescue helicopter
+an airplane
+a passenger airplane
+a cargo airplane
+a fighter jet
+a hot air balloon
+a rocket ship
+a space shuttle
+a spaceship
+a police motorcycle
+a motorcycle
+a scooter
+a bicycle
+a boat
+a sailboat
+a speedboat
+a ferry
+a cargo ship
+a cruise ship
+a submarine
