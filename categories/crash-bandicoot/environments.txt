@@ -1,88 +1,57 @@
 in the jungle
 on the beach
-in the temple ruins
-in an ancient temple
-in the snowy mountains
-in an ice cave
-in a volcanic area
-in a lava cave
-in a jungle river
-at a jungle waterfall
-on a tropical island
-on a pirate ship
-in underwater ruins
-in the desert ruins
-in a lost city
+in temple ruins
+inside an ancient temple
+in snowy mountains
+inside an ice cave
+in a volcanic cave
+in jungle ruins
 on a rope bridge
-in a crystal cave
-in a dark cave
-in a haunted castle
+inside a crystal cave
+inside a dark cave
+inside a haunted castle
 on a space station
 on an alien planet
-in a laboratory
-in a factory
-in a mechanical base
-at a time travel portal
-in a jungle village
-in a deep jungle clearing
+inside a laboratory
+inside a factory
+inside a mechanical base
+near a time portal
+inside a jungle village
 on a jungle trail
-in a jungle canyon
-in jungle ruins with stone statues
-near ancient jungle ruins
-in a hidden jungle temple
 inside temple corridors
-in temple chambers
-on temple stairs
-inside underground temple tunnels
-in flooded temple ruins
-in a snowy village
+inside temple chambers
+inside underground tunnels
+inside flooded ruins
+inside a snowy village
 on a snowy cliff
-in an icy canyon
-on frozen platforms
+inside an icy canyon
 inside frozen ruins
-on icy mountain peaks
 near a frozen waterfall
-in a lava fortress
-near erupting volcano slopes
+inside a lava fortress
+near a volcano slope
 inside volcanic tunnels
-on cracked lava platforms
-in a molten cave chamber
 on a tropical shoreline
 near ocean cliffs
-on a wooden island dock
-near pirate island caves
-inside pirate ship cabins
+inside pirate caves
 on a shipwreck shore
 inside underwater caves
-in coral reef ruins
-near sunken stone temples
-inside flooded ruins halls
-in a desert canyon
+inside desert ruins
 near desert pyramids
-inside desert temples
-on sandy ruin platforms
-in wind swept desert ruins
-inside an ancient lost city plaza
-on broken city rooftops
+inside a lost city
 inside city tunnels
-on crumbling city bridges
+on city rooftops
 inside crystal caverns
-on glowing crystal platforms
-inside dark underground tunnels
-inside haunted castle halls
+inside underground tunnels
+inside castle halls
 on castle rooftops
-inside castle dungeon corridors
-in castle courtyards
-inside a futuristic space base
+inside castle corridors
+inside castle courtyards
+inside a space base
 on floating space platforms
 inside alien ruins
-near alien technology structures
-inside a research laboratory complex
-inside factory assembly halls
-on mechanical factory platforms
-inside a robotic production zone
+inside a research laboratory
+inside factory platforms
+inside a robotic zone
 inside a mechanical fortress
-near giant machinery chambers
 inside a time portal chamber
-on floating time platforms
 inside distorted time ruins

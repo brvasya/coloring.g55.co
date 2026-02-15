@@ -1,98 +1,38 @@
-running
-jumping
+running fast
+running forward
+jumping high
+jumping across a platform
 spinning
+performing a spin attack
+breaking a crate
 collecting wumpa fruit
-breaking crates
-riding Pura
-riding Polar
 escaping danger
 sliding
-sliding down a slope
-swimming
-gliding in the air
-exploring ruins
-battling enemies
-dodging obstacles
-balancing on platforms
-swinging on vines
+balancing on a platform
+swinging on a vine
+riding Pura
+riding Polar
+riding a mine cart
 riding a jet board
 driving a kart
-racing with friends
+racing forward
+battling an enemy
 fighting a boss
+dodging an obstacle
 opening a treasure chest
 activating a portal
 solving a puzzle
-saving friends
+saving a friend
 celebrating victory
-performing a spinning attack
-jumping across platforms
-riding a mine cart
-running fast
-running forward
-running from danger
-jumping high
-jumping over obstacles
-jumping between platforms
-spinning quickly
-spinning to break crates
-collecting fruit
-collecting wumpa fruit on a path
-breaking wooden crates
-breaking stacked crates
-riding pura through a trail
-riding polar across snow
-escaping from enemies
-sliding under obstacles
-sliding across platforms
-sliding on icy ground
-swimming underwater
-swimming across a river
-gliding through the air
-exploring ancient ruins
-exploring hidden paths
-battling robot enemies
-dodging traps
-dodging rolling rocks
-balancing on narrow platforms
-balancing over a gap
-swinging on jungle vines
-riding a jet board over water
-driving a racing kart
-racing on a track
-racing against rivals
-fighting a giant boss
-opening a hidden treasure chest
-activating a glowing portal
-solving a temple puzzle
-saving captured friends
-celebrating a big win
-celebrating with friends
-performing a spin attack
-jumping across floating platforms
-riding a fast mine cart
-running from a rolling boulder
-chasing escaping enemies
-avoiding falling obstacles
-climbing stone platforms
-climbing icy steps
-searching for hidden paths
+climbing a platform
 searching for treasure
-exploring a secret passage
-escaping a collapsing cave
-dodging laser traps
-collecting bonus items
-running across bridges
-jumping over lava pits
-balancing on moving platforms
-riding an animal companion
-surfing on water waves
-escaping rising lava
-running through jungle paths
-jumping over broken bridges
-sliding through tunnels
-crossing dangerous platforms
-escaping from a giant enemy
-spinning through obstacles
-breaking obstacle crates
+exploring a passage
+escaping a cave
+avoiding a trap
+running across a bridge
+jumping over lava
+crossing a platform
+escaping a giant enemy
+breaking an obstacle crate
 running through ruins
-jumping from platform to platform
+jumping between platforms
