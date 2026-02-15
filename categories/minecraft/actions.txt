@@ -1,21 +1,21 @@
-walking
-standing
-sitting
-sleeping
-resting
-waving
-smiling
-jumping
-running
-climbing
-looking around
-exploring
-sneaking
-hiding
-watching
-listening
-roaring
-howling
+walking happily
+standing calmly
+sitting calmly
+sleeping peacefully
+resting calmly
+waving happily
+smiling happily
+jumping playfully
+running happily
+climbing carefully
+looking around curiously
+exploring curiously
+sneaking quietly
+hiding carefully
+watching calmly
+listening carefully
+roaring playfully
+howling playfully
 flying
 gliding
 swimming
@@ -23,21 +23,21 @@ diving
 floating
 crawling
 slithering
-digging
-stomping
-charging
-guarding
-patrolling
-chasing
-escaping
-hunting
-mining
+digging carefully
+stomping playfully
+charging forward
+guarding an area
+patrolling carefully
+chasing a target
+escaping danger
+hunting carefully
+mining a block
 placing a block
-building a small shelter
+building a shelter
 collecting treasure
 escaping lava
 protecting a friend
-protecting a baby
+protecting a baby mob
 holding a torch
 holding a flower
 holding an apple
@@ -51,14 +51,5 @@ riding a minecart
 riding a boat
 riding a horse
 splashing in water
-playing in the snow
-looking at the stars
-looking at the moon
-standing near a tree
-standing near flowers
-standing near a river
-standing near a waterfall
-standing near a lava lake
-standing near a house
-standing near a farm
-standing on a bridge
+playing in snow
+looking at the sky

@@ -60,3 +60,9 @@ minecraft chicken
 minecraft mooshroom
 minecraft ocelot
 minecraft polar bear
+minecraft baby zombie
+minecraft baby villager
+minecraft baby panda
+minecraft baby wolf
+minecraft baby pig
+minecraft baby sheep
