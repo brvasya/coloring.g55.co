@@ -29,7 +29,6 @@ by a small pond
 near tall grasses
 near a fallen log
 in a berry patch
-near a leaf pile
 on a dirt path
 near dinosaur footprints
 near a crystal cave
@@ -61,5 +60,8 @@ near a jungle clearing
 in a warm prehistoric valley
 near a rocky canyon
 beside a shallow stream
-in a green jungle path
 near a dinosaur nest
+near dinosaur eggs
+near a baby dinosaur nest
+near a hatching egg
+near a dinosaur family nest

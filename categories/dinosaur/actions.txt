@@ -1,56 +1,62 @@
-smiling
-waving
-standing
-sitting
-walking
-running
-jumping
-dancing
-roaring
-laughing
-sleeping
-resting
+smiling happily
+waving happily
+standing calmly
+sitting calmly
+walking happily
+running happily
+jumping playfully
+dancing happily
+roaring happily
+laughing playfully
+sleeping peacefully
+resting calmly
 playing with a ball
 holding a leaf
 holding a flower
 holding a rock
-looking at a butterfly
+looking at butterflies
 chasing butterflies
 chasing a toy
 drinking water
 eating plants
 eating berries
 walking proudly
-marching
-stomping the ground
+marching playfully
+stomping playfully
 digging the ground
 sniffing the air
-looking around
-cheering
-stretching
+looking around curiously
+cheering happily
+stretching playfully
 posing happily
 making a happy face
-spinning around
+spinning playfully
 splashing in a puddle
-hugging a small dino
+hugging a baby dino
 carrying leaves
 balancing on a log
-skipping
-exploring
+skipping happily
+exploring curiously
 guarding a nest
 protecting eggs
+watching eggs hatch
 playing in mud
 climbing rocks
 running playfully
 hiding playfully
 watching the sky
-playing near rocks
 searching for food
 following footprints
 walking with baby dinos
 playing with friends
-roaring happily
-stomping playfully
-resting calmly
+roaring playfully
+resting peacefully
 wandering curiously
 playing happily
+standing near a nest
+taking care of baby dinos
+meeting another dino
+walking with a dino family
+finding dinosaur eggs
+watching a baby dino hatch
+protecting baby dinos
