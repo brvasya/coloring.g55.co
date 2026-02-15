@@ -19,7 +19,6 @@ carrying cargo
 delivering a package
 picking up a passenger
 dropping off a passenger
-leading a parade
 celebrating a victory
 exploring a new place
 getting washed
