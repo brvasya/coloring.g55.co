@@ -246,49 +246,17 @@ def _save_bw_png(img, out_path: str):
     bw.save(out_path, format="PNG")
 
 
-def save_image_with_gemini(prompt: str, api_key: str, model: str, out_path: str, num_images: int = 1):
-    """
-    Generates an image from a text prompt and saves it to out_path (PNG).
-
-    Supports:
-    - Gemini native image generation models (e.g. gemini-2.5-flash-image)
-    - Imagen generation models (e.g. imagen-4.0-generate-001)
-
-    Requires:
-    - pip install google-genai
-    - pip install pillow
-    """
+def save_image_with_gemini(prompt: str, api_key: str, out_path: str):
     if genai is None or Image is None:
         raise RuntimeError("Missing dependency. Install: pip install google-genai pillow")
 
     api_key = (api_key or "").strip()
     client = genai.Client(api_key=api_key) if api_key else genai.Client()
 
-    model = (model or "").strip() or "gemini-2.5-flash-image"
+    model = "gemini-2.5-flash-image"
     out_path = os.path.abspath(out_path)
 
     _safe_mkdir(os.path.dirname(out_path))
-
-    # Imagen models use generate_images, Gemini native image models use generate_content
-    if model.startswith("imagen-"):
-        if types is None:
-            raise RuntimeError("google-genai types not available")
-        resp = client.models.generate_images(
-            model=model,
-            prompt=prompt,
-            config=types.GenerateImagesConfig(number_of_images=max(1, int(num_images))),
-        )
-        if not getattr(resp, "generated_images", None):
-            raise RuntimeError("No images returned")
-        img_b64 = resp.generated_images[0].image.image_bytes
-        if isinstance(img_b64, str):
-            img_bytes = base64.b64decode(img_b64)
-        else:
-            img_bytes = img_b64
-
-        img = Image.open(BytesIO(img_bytes))
-        _save_bw_png(img, out_path)
-        return out_path
 
     if types is None:
         raise RuntimeError("google-genai types not available")
@@ -331,6 +299,8 @@ def save_image_with_gemini(prompt: str, api_key: str, model: str, out_path: str,
                 return out_path
 
     raise RuntimeError("No image part returned")
+
+
 
 
 def default_image_path(category_name: str, page_id: str) -> str:
@@ -412,8 +382,6 @@ class PromptGUI(tk.Tk):
         self.count_var = tk.IntVar(value=2)
 
         self.api_key_var = tk.StringVar(value=os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or "")
-        self.model_var = tk.StringVar(value="gemini-2.5-flash-image")
-
         self.data = (
             load_category_data(self.category_var.get())
             if self.category_var.get()
@@ -458,18 +426,6 @@ class PromptGUI(tk.Tk):
             side="left", padx=(6, 12)
         )
 
-        ttk.Label(top, text="Model:").pack(side="left")
-        ttk.Combobox(
-            top,
-            textvariable=self.model_var,
-            values=[
-                "gemini-2.5-flash-image",
-                "gemini-3-pro-image-preview",
-                "imagen-4.0-generate-001",
-            ],
-            width=26,
-            state="readonly",
-        ).pack(side="left", padx=(6, 0))
 
         # Counters row
         self.counters_var = tk.StringVar(value="")
@@ -577,12 +533,11 @@ class PromptGUI(tk.Tk):
         page_id = self.id_vars[idx].get().strip()
         prompt = self.prompt_vars[idx].get().strip()
         api_key = self.api_key_var.get()
-        model = self.model_var.get().strip()
 
         out_path = default_image_path(category_name, page_id)
 
         def job():
-            return save_image_with_gemini(prompt=prompt, api_key=api_key, model=model, out_path=out_path)
+            return save_image_with_gemini(prompt=prompt, api_key=api_key, out_path=out_path)
 
         def ok(saved_path):
             self.mark_row(idx)
@@ -596,7 +551,6 @@ class PromptGUI(tk.Tk):
     def generate_all_images(self):
         category_name = self.category_var.get().strip()
         api_key = self.api_key_var.get()
-        model = self.model_var.get().strip()
 
         prompts = [
             (i, self.id_vars[i].get().strip(), self.prompt_vars[i].get().strip())
@@ -607,7 +561,7 @@ class PromptGUI(tk.Tk):
             saved = 0
             for _i, page_id, prompt in prompts:
                 out_path = default_image_path(category_name, page_id)
-                save_image_with_gemini(prompt=prompt, api_key=api_key, model=model, out_path=out_path)
+                save_image_with_gemini(prompt=prompt, api_key=api_key, out_path=out_path)
                 saved += 1
             return saved
 
