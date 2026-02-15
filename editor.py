@@ -193,7 +193,7 @@ class JsonGui(tk.Tk):
                 payload = self.wrapper
 
             with open(self.current_file, "w", encoding="utf-8") as f:
-                json.dump(payload, f, ensure_ascii=False, indent=2)
+                json.dump(payload, f, ensure_ascii=False, indent=4)
 
             self.set_status("Saved")
             messagebox.showinfo("Saved", "JSON saved successfully.")
