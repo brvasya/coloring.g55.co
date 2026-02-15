@@ -9,10 +9,7 @@ $CATEGORIES_DIR = $BASE_DIR . DIRECTORY_SEPARATOR . 'categories';
 
 function qs(string $k, string $default = ''): string {
   return isset($_GET[$k]) ? trim((string)$_GET[$k]) : $default;
-}
-function qi(string $k, int $default = 0): int {
-  return isset($_GET[$k]) ? (int)$_GET[$k] : $default;
-}
+} 
 function qb(string $k, bool $default = false): bool {
   if (!isset($_GET[$k])) return $default;
   $v = strtolower(trim((string)$_GET[$k]));
@@ -203,9 +200,9 @@ function gemini_generate_image(
   string $api_key,
   string $prompt,
   string $out_path,
-  string $aspect_ratio = '2:3',
-  string $model = 'gemini-2.5-flash-image'
+  string $aspect_ratio = '2:3'
 ): array {
+  $model = 'gemini-2.5-flash-image';
   $url = 'https://generativelanguage.googleapis.com/v1beta/models/' . rawurlencode($model) . ':generateContent';
 
   $payload = [
@@ -327,15 +324,12 @@ function prepend_unique_pages(string $path, array $pages_to_add): array {
 $category = qs('c', '');
 if ($category === '') json_out(['ok' => false, 'error' => 'missing_c_param'], 400);
 
-$count = qi('n', 1);
-if ($count < 1) $count = 1;
-if ($count > 20) $count = 20;
+$count = 1; // hardcoded: always generate exactly 1 page per request
 
-$do_img = qb('img', false);
+$do_img = true; // images always generated per request
 $dry = qb('dry', false);
 
-$aspect_ratio = qs('ar', '2:3');
-$model = qs('model', 'gemini-2.5-flash-image');
+$aspect_ratio = qs('ar', '2:3'); 
 
 $skip_existing_img = true;
 
@@ -404,7 +398,7 @@ for ($i = 0; $i < $count; $i++) {
       continue;
     }
 
-    $img_res = gemini_generate_image($api_key, $prompt, $out_path, $aspect_ratio, $model);
+    $img_res = gemini_generate_image($api_key, $prompt, $out_path, $aspect_ratio);
     if (!($img_res['ok'] ?? false)) {
       $errors[] = ['id' => $id, 'error' => $img_res];
       continue;
