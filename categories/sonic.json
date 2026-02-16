@@ -1,214 +1,219 @@
 {
-  "pages": [
-    {
-      "id": "sonic-the-hedgehog-coloring-page-action-scene",
-      "title": "Sonic the Hedgehog Coloring Page Action Scene",
-      "description": "Sonic the Hedgehog running through a classic platform game world coloring page with rings palm trees robots and action scenes in black and white outline style"
-    },
-    {
-      "id": "sonic-shadow-knuckles-amy-printable",
-      "title": "Epic Sonic Battle Coloring Page – Sonic, Shadow, and Knuckles Action Scene",
-      "description": "Unleash your speed with our Epic Sonic Battle coloring page! This high-quality printable features the ultimate showdown with Sonic the Hedgehog, Shadow, Knuckles, Amy Rose, and even Dr. Eggman. Packed with lightning-fast energy and iconic characters, it’s the perfect creative challenge for fans of the Sega classic. Click to download and print your free to join the race!"
-    },
-    {
-      "id": "knuckles-the-echidna-action-coloring-page",
-      "title": "Knuckles the Echidna Action Coloring Page – Free Printable",
-      "description": "Get ready to pack a punch with our Knuckles the Echidna coloring page! This high-quality printable features the powerful guardian of the Master Emerald in a classic action pose, complete with his iconic spiked gloves. Set against a tropical island background with palm trees and a loop-de-loop, it’s a must-have for fans of Sonic the Hedgehog. Click to download and print for free!"
-    },
-    {
-      "id": "sonic-and-friends-mega-adventure-coloring-page",
-      "title": "Sonic the Hedgehog and Friends Mega Adventure Coloring Page – Free Printable",
-      "description": "Get ready for the ultimate race with our Sonic and Friends Mega Adventure coloring page! This high-quality printable features the whole team: Sonic, Tails, Knuckles, Rogue the Bat, Cream the Rabbit, Big the Cat, and even the mischievous Dr. Eggman. With gold rings, stars, and a scenic mountain background, it’s a detailed masterpiece for Sonic fans of all ages. Click to download and print your free today!"
-    },
-    {
-      "id": "tails-and-cream-the-rabbit-coloring-page",
-      "title": "Cute Sonic Friends Tails and Cream the Rabbit Coloring Page – Free Printable",
-      "description": "Celebrate friendship with our Cute Sonic Friends coloring page! This high-quality printable features the brilliant two-tailed fox, Tails, and the sweet Cream the Rabbit, accompanied by her loyal friend, Cheese the Chao. With their cheerful smiles and waving hands, it is a heartwarming and easy-to-color activity for fans of the Sonic the Hedgehog universe. Click to download and print your free PDF today!"
-    },
-    {
-      "id": "rouge-the-bat-sonic-coloring-page",
-      "title": "Rouge the Bat Sonic Adventure Coloring Page – Free Printable",
-      "description": "Add some sparkle to your day with our Rouge the Bat coloring page! This high-quality printable features the mysterious and stylish treasure hunter posing with her favorite diamonds and gold rings. With beautiful heart details and a floral background, it’s a perfect creative activity for fans of the Sonic the Hedgehog series who love cool characters and shiny gems. Click to download and print your free today!"
-    },
-    {
-      "id": "sonic-vs-dr-eggman-battle-coloring-page",
-      "title": "Epic Sonic vs. Dr. Eggman Showdown Coloring Page – Free Printable",
-      "description": "Experience the ultimate rivalry with our Sonic vs. Dr. Eggman Showdown coloring page! This high-quality printable features Sonic the Hedgehog ready for action as Dr. Eggman attacks in his iconic Egg Mobile. Set in a classic tropical zone with loops, gold rings, and palm trees, it’s a thrilling activity for fans of the Sega games and movies. Click to download and print your free today!"
-    },
-    {
-      "id": "sonic-vs-shadow-rivalry-coloring-page",
-      "title": "Sonic vs Shadow Rivalry Battle Coloring Page – Free Printable",
-      "description": "Experience the ultimate speedster showdown with our Sonic vs Shadow coloring page! This high-quality printable captures the intense rivalry between Sonic and Shadow the Hedgehog as they clash mid-air. Featuring Amy Rose, Metal Sonic, and Dr. Eggman in the background, this action-packed scene is perfect for fans who love epic battles and the darker side of the Sonic universe. Click to download and print your free today!"
-    },
-    {
-      "id": "cute-amy-rose-dress-coloring-page",
-      "title": "Cute Amy Rose in Dress Coloring Page – Free Sonic Printable",
-      "description": "Spread some love and magic with our Amy Rose in Dress coloring page! This high-quality printable features the cheerful Amy Rose making a peace sign, surrounded by floating hearts, stars, sparkling diamonds, and gold rings. With its clean lines and sweet Kawaii vibe, it’s a wonderful creative activity for Sonic the Hedgehog fans who love fashion and fun. Click to download and print your free today!"
-    },
-    {
-      "id": "sonic-and-blaze-the-cat-coloring-page",
-      "title": "Sonic and Blaze the Cat Adventure Coloring Page – Free Printable",
-      "description": "Join a journey across dimensions with our Sonic and Blaze coloring page! This high-quality printable features the super-fast Sonic the Hedgehog alongside the powerful Princess Blaze the Cat. Set against a beautiful backdrop of a distant castle, palm trees, and iconic loop-de-loops, it’s a perfect activity for fans who love this legendary duo. Click to download and print your free today!"
-    },
-    {
-      "id": "sonic-the-hedgehog-speed-dash-coloring-page",
-      "title": "Super Sonic Speed Dash Coloring Page – Free Action Printable",
-      "description": "Feel the rush of the race with our Sonic Power Dash coloring page! This high-quality printable features Sonic the Hedgehog bursting forward at supersonic speeds, leaving a trail of energy and stars in his wake. With iconic gold rings and a classic loop-de-loop background, it’s a thrilling creative project for fans of the games and movies. Click to download and print your free today!"
-    },
-    {
-      "id": "tails-miles-prower-hero-adventure-coloring-page",
-      "title": "Miles Tails Prower Hero Adventure Coloring Page – Free Printable",
-      "description": "Fly high with our Tails Hero Adventure coloring page! This high-quality printable features Miles Tails Prower, Sonic’s genius best friend, giving a confident thumbs-up as he explores a classic tropical island. With iconic gold rings, a loop-de-loop, and a scenic mountain background, it’s a perfect creative activity for fans of the Sonic the Hedgehog series. Click to download and print your free today!"
-    },
-    {
-      "id": "epic-metal-sonic-boss-battle-printable",
-      "title": "Metal Sonic and Dr. Eggman Villains Coloring Page – Free Printable",
-      "description": "Enter the world of high-tech villainy with our Metal Sonic and Dr. Eggman coloring page! This high-quality printable features the powerful robot double, Metal Sonic, charging forward while Dr. Eggman looms in the background with his mechanical fleet. Perfect for fans who love the intense action and robotic designs of the Sonic the Hedgehog universe. Click to download and print your free today!"
-    },
-    {
-      "id": "sonic-green-hill-zone-adventure-printable",
-      "title": "Classic Sonic the Hedgehog Running Coloring Page – Free Printable",
-      "description": "Get ready for high-speed fun with our Classic Sonic Running coloring page! This high-quality printable features the Blue Blur himself sprinting through the legendary Green Hill Zone. Complete with gold rings, a loop-de-loop, and a hovering Badnik in the sky, it is the ultimate creative activity for fans of the original Sega games. Click to download and print your free today!"
-    },
-    {
-      "id": "sonic-and-friends-team-gathering-coloring-page",
-      "title": "Sonic and Friends Team Gathering Coloring Page – Free Printable",
-      "description": "Get the whole crew together with our Sonic and Friends Team Gathering coloring page! This high-quality printable features Sonic the Hedgehog and his most iconic allies and rivals, including Tails, Knuckles, Shadow, Amy, and Cream. Set against a sunny Green Hill Zone background with mountains and a loop-de-loop, it’s a perfect, high-detail activity for fans of the Sega universe. Click to download and print your free today!"
-    },
-    {
-      "id": "amy-rose-flower-meadow-coloring-page",
-      "title": "Cute Amy Rose in Flower Garden Coloring Page – Free Printable",
-      "description": "Enjoy a peaceful moment with our Amy Rose in the Meadow coloring page! This high-quality printable features a sweet, young Amy Rose sitting among blooming flowers and watching a friendly butterfly. It is a perfect, relaxing creative activity for Sonic the Hedgehog fans who love nature and kawaii character art. Click to download and print this high-resolution PDF for free today!"
-    },
-    {
-      "id": "silver-the-hedgehog-psychic-power-coloring-page",
-      "title": "Silver the Hedgehog Psychic Power Action Coloring Page – Free Printable",
-      "description": "Travel to the future with our Silver the Hedgehog action coloring page! This high-quality printable features Silver using his incredible psychic powers, surrounded by floating Chaos Emeralds and mysterious levitating islands. It’s a must-have for Sonic the Hedgehog fans who love high-detail heroic scenes. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "free-printable-sonic-tails-amy-adventure-scene",
-      "title": "Sonic, Tails, and Amy Team Friends Coloring Page – Free Printable",
-      "description": "Get the best friends together with our Sonic, Tails, and Amy team coloring page! This high-quality printable features the iconic trio standing ready for adventure in a beautiful landscape filled with golden rings, loop-de-loops, and distant mountains. It’s a perfect, high-energy activity for fans of the classic Sega games. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "tails-cream-rabbit-cheese-chao-coloring-page",
-      "title": "Sonic Friends: Tails, Cream the Rabbit, and Cheese Coloring Page – Free Printable",
-      "description": "Celebrate friendship in the Green Hill Zone with our Tails and Cream coloring page! This high-quality printable features Miles Tails Prower, the adorable Cream the Rabbit, and her loyal companion Cheese the Chao. Set against a beautiful landscape with palm trees and a classic loop-de-loop, it’s a perfect, heartwarming activity for Sonic fans of all ages. Click to download and print this high-resolution for free today!"
-    },
-    {
-      "id": "free-sonic-the-hedgehog-and-amy-green-hill-coloring",
-      "title": "Sonic and Amy Rose Adventure Coloring Page – Free Printable",
-      "description": "Join the ultimate duo with our Sonic and Amy Rose Adventure coloring page! This high-quality printable features Sonic giving a thumbs-up while sprinting alongside Amy Rose, who is ready for action with her famous Piko Piko Hammer. Set in the classic Green Hill Zone with palm trees, loops, and golden rings, it’s a perfect high-energy activity for Sonic fans. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "free-sonic-the-hedgehog-action-coloring-sheet",
-      "title": "Epic Sonic the Hedgehog Running Coloring Page – Free Printable",
-      "description": "Gotta go fast! Speed into creativity with our Sonic the Hedgehog Running coloring page. This high-quality printable features Sonic sprinting through a classic level filled with gold rings, palm trees, and loop-de-loops, while Dr. Eggman's badniks hover in the sky. Perfect for fans of the Sega icon who love action-packed adventures. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "amy-rose-sonic-the-hedgehog-dress-coloring-page",
-      "title": "Cute Amy Rose in a Dress Coloring Page – Sonic the Hedgehog Free",
-      "description": "Spread some love and speed with our Cute Amy Rose coloring page! This high-quality printable features the cheerful Amy Rose wearing a sweet dress and striking a classic peace sign pose. Surrounded by floating hearts, stars, and shiny Chaos Emeralds, this page is perfect for Sonic fans who love a touch of magic and fashion. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "rouge-the-bat-sonic-the-hedgehog-coloring-page",
-      "title": "Stylish Rouge the Bat Coloring Page – Sonic the Hedgehog Free",
-      "description": "Add some sparkle to your day with our Rouge the Bat coloring page! This high-quality printable features the stylish treasure hunter from Sonic the Hedgehog in her iconic winking pose. Surrounded by floating hearts, stars, and a giant diamond jewel, this page is a must-have for fans of the Sonic series. Click to download and print this high-resolution for free today!"
-    },
-    {
-      "id": "ultimate-sonic-battle-all-stars-coloring-page",
-      "title": "Ultimate Sonic Battle All-Stars Coloring Page – Free Printable",
-      "description": "Get ready for the ultimate showdown with our Sonic Battle: All-Stars coloring page! This epic high-quality printable features the entire Sonic crew, including Sonic, Shadow, Tails, Knuckles, Rouge, and even the villainous Dr. Eggman. Perfect for hardcore fans who want to color their favorite heroes and rivals all in one massive scene. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "shadow-and-rouge-team-dark-coloring-page",
-      "title": "Shadow the Hedgehog and Rouge the Bat Coloring Page – Team Dark Action",
-      "description": "Join Team Dark with our Shadow and Rouge coloring page! This high-quality printable features the powerful Shadow the Hedgehog and the stylish Rouge the Bat ready for action in a detailed tropical landscape. With Dr. Eggman’s fortress and flying badniks in the background, this page is perfect for fans who love the cooler, edgy side of the Sonic universe. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "sonic-the-hedgehog-thumbs-up-coloring-page",
-      "title": "Classic Sonic the Hedgehog Thumbs Up Coloring Page – Free Printable",
-      "description": "Give a big thumbs up to adventure with our Classic Sonic the Hedgehog coloring page! This high-quality printable features the world’s fastest hedgehog standing confidently in the legendary Green Hill Zone. With golden rings to collect and loop-de-loops in the background, this page captures the true spirit of the Sega icon. Perfect for fans of all ages—click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "sonic-and-amy-rose-best-friends-coloring-page",
-      "title": "Cute Sonic and Amy Rose Coloring Page – Best Friends Forever Free",
-      "description": "Celebrate the power of friendship with our Sonic and Amy Rose coloring page! This high-quality printable features Sonic giving a confident thumbs up while Amy Rose strikes a cheerful pose with her iconic Piko Piko Hammer. Set in a sunny landscape with hearts, butterflies, and palm trees, this page is perfect for fans who love the heart-warming side of the Sonic universe. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "shadow-and-rouge-night-adventure-coloring-page",
-      "title": "Shadow the Hedgehog and Rouge the Bat Night Scene Coloring Page",
-      "description": "Embrace the darkness with our Shadow and Rouge Night Adventure coloring page! This high-quality printable features the ultimate duo, Shadow the Hedgehog and Rouge the Bat, standing under a starry night sky with a crescent moon. With detailed rings, a Chaos Emerald, and a classic loop-de-loop in the background, this page is perfect for fans who love the mysterious side of Sonic Team. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "tails-miles-prower-flying-coloring-page",
-      "title": "Flying Tails Miles Prower Coloring Page – Sonic the Hedgehog Free",
-      "description": "Take to the skies with our Flying Tails coloring page! This high-quality printable features Miles Tails Prower, Sonic’s genius best friend, using his twin tails to fly through a classic Green Hill Zone landscape. With a cheerful thumbs-up, gold rings, and stars in the background, this action-packed scene is perfect for fans of the Sonic the Hedgehog series. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "free-sonic-and-eggman-confrontation-coloring-sheet",
-      "title": "Sonic the Hedgehog vs. Dr. Eggman Coloring Page – Epic Battle Free",
-      "description": "Experience the ultimate gaming rivalry with our Sonic vs. Dr. Eggman coloring page! This high-quality printable features Sonic the Hedgehog standing his ground against the brilliant but villainous Dr. Eggman and his iconic Eggmobile. Set against a backdrop of golden rings, loop-de-loops, and tropical palms, this action-packed scene is a must-have for any Sega fan. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "free-silver-the-hedgehog-chaos-emeralds-coloring-sheet",
-      "title": "Silver the Hedgehog Psychic Power Coloring Page – Sonic Free",
-      "description": "Travel to the future with our Silver the Hedgehog coloring page! This high-quality printable features the heroic Silver using his telekinetic powers amidst a backdrop of floating islands, lightning strikes, and glittering Chaos Emeralds. Perfect for fans of the Sonic the Hedgehog series who love powerful characters and detailed, cosmic backgrounds. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "free-sonic-the-hedgehog-ultimate-power-coloring-sheet",
-      "title": "Ultimate Super Sonic Transformation Coloring Page – Free Printable",
-      "description": "Unleash the ultimate power with our Super Sonic Transformation coloring page! This high-quality printable features Sonic the Hedgehog in his legendary golden form, surrounded by glowing energy, lightning strikes, and glittering Chaos Emeralds. Perfect for fans who want to color the most powerful version of the Blue Blur. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "free-knuckles-sonic-the-hedgehog-printable",
-      "title": "Epic Knuckles the Echidna Action Coloring Page – Free Printable",
-      "description": "Get ready to punch into adventure with our Knuckles the Echidna coloring page! This high-quality printable features the powerful guardian showing off his iconic spiked gloves in a dynamic battle stance. Set in a classic landscape with a giant floating Master Emerald and loop-de-loops, this page is perfect for fans of the Sonic the Hedgehog series. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "free-blaze-the-cat-stars-coloring-sheet",
-      "title": "Blaze the Cat and Sonic the Hedgehog Coloring Page – Dynamic Duo",
-      "description": "Discover the power of fire and speed with our Blaze the Cat and Sonic coloring page! This high-quality printable features the elegant Princess Blaze alongside Sonic the Hedgehog in a cheerful, star-filled scene. Perfect for fans who love the Sonic Rush series and want to color this iconic interdimensional duo. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "tails-the-fox-green-hill-zone-printable",
-      "title": "Classic Tails the Fox Coloring Page – Miles Prower Thumbs Up",
-      "description": "Join Sonic’s best friend on a new adventure with our Classic Tails the Fox coloring page! This high-quality printable features Miles Tails Prower giving a friendly thumbs up in the beautiful Green Hill Zone. Complete with tropical palm trees, golden rings, and the iconic checkered cliffs, this high-resolution PDF is perfect for fans of the genius two-tailed fox. Click to download and print for free today!"
-    },
-    {
-      "id": "free-miles-prower-thumbs-up-coloring-sheet",
-      "title": "Cute Tails the Fox Coloring Page – Miles Prower in Green Hill Zone",
-      "description": "Brighten your day with our Cute Tails the Fox coloring page! This high-quality printable features Miles Tails Prower giving a happy thumbs-up in the iconic Green Hill Zone. With a sunny sky, palm trees, and the classic loop-de-loop in the background, this page captures the cheerful spirit of Sonic’s best friend. Download and print this high-resolution PDF for free and start your coloring adventure today!"
-    },
-    {
-      "id": "sonic-hedgehog-egg-mobile-villain-printable",
-      "title": "Sonic vs. Dr. Eggman Epic Battle Coloring Page – Free",
-      "description": "Jump into the action with our Sonic vs. Dr. Eggman coloring page! This high-quality printable features Sonic the Hedgehog racing through Green Hill Zone to stop the evil Dr. Eggman in his iconic Egg Mobile. With golden rings, loops, and mechanical robots to color, this action-packed scene is perfect for fans who love the classic hero-villain rivalry. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "ultimate-sonic-team-all-stars-coloring-page",
-      "title": "Ultimate Sonic the Hedgehog All-Stars Coloring Page – Free Printable",
-      "description": "Get the whole gang together with our Ultimate Sonic All-Stars coloring page! This high-quality printable features Sonic the Hedgehog leading his friends Shadow, Tails, Knuckles, Amy Rose, and Rouge into action, with the villainous Dr. Eggman looming in the background. It's the perfect challenge for fans who want to color all their favorite characters in one epic scene. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "amy-rose-hedgehog-green-hill-zone-coloring-page",
-      "title": "Amy Rose the Hedgehog Coloring Page – Sweet Green Hill Adventure",
-      "description": "Spread some joy with our Amy Rose the Hedgehog coloring page! This high-quality printable features the cheerful and brave Amy Rose waving hello in the beautiful Green Hill Zone. Set against a backdrop of tropical palms, golden rings, and a sunny sky, this page is perfect for fans who love Sonic's pink-furred friend. Click to download and print your free high-resolution PDF and start coloring today!"
-    },
-    {
-      "id": "action-sonic-hedgehog-green-hill-zone-coloring-page",
-      "title": "Action Sonic the Hedgehog Coloring Page – Green Hill Zone Adventure",
-      "description": "Get ready for high-speed fun with our Action Sonic coloring page! This high-quality printable features Sonic the Hedgehog in a powerful hero stance, ready to take on adventure in the iconic Green Hill Zone. The scene is packed with classic details like a Chaos Emerald monitor, a loop-de-loop, and a friendly turtle robot. Perfect for fans who love detailed backgrounds and classic gaming moments. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "sonic-and-friends-group-coloring-page",
-      "title": "Ultimate Sonic the Hedgehog & Friends Coloring Page – Free Printable Poster",
-      "description": "Download the ultimate Sonic and Friends coloring page! This high-quality printable features Sonic the Hedgehog in a dynamic running pose, with Tails soaring above and Dr. Eggman plotting in his Egg Mobile. Complete with Green Hill Zone loops, golden rings, and a classic Motobug, this detailed scene is perfect for fans of all ages. Click to download and print your free high-resolution today!"
-    },
-    {
-      "id": "free-sonic-shadow-tails-knuckles-group-sheet",
-      "title": "Ultimate Sonic and Friends Group Coloring Page – Free Printable",
-      "description": "Gather the whole team with our Sonic and Friends All-Stars coloring page! This high-quality printable features a massive lineup of your favorite characters, including Sonic, Shadow, Tails, Knuckles, Amy Rose, and Cream the Rabbit. With iconic golden rings and a classic loop-de-loop background, this action-packed scene is the ultimate challenge for any Sonic fan. Click to download and print your free high-resolution today!"
-    }
-  ]
+    "pages": [
+        {
+            "id": "sonic-as-a-baby-saving-a-friend-near-a-mountain-path-coloring-page",
+            "title": "Free Printable Sonic As A Baby Saving A Friend Near A Mountain Path Coloring Page for Kids",
+            "description": "A printable coloring sheet for kids shows sonic as a baby saving a friend near a mountain path. Ideal for teachers, parents, and kids who want an easy activity. The clean drawing style supports smooth coloring sessions. A relaxing activity that supports creative expression."
+        },
+        {
+            "id": "sonic-the-hedgehog-coloring-page-action-scene",
+            "title": "Sonic the Hedgehog Coloring Page Action Scene",
+            "description": "Sonic the Hedgehog running through a classic platform game world coloring page with rings palm trees robots and action scenes in black and white outline style"
+        },
+        {
+            "id": "sonic-shadow-knuckles-amy-printable",
+            "title": "Epic Sonic Battle Coloring Page – Sonic, Shadow, and Knuckles Action Scene",
+            "description": "Unleash your speed with our Epic Sonic Battle coloring page! This high-quality printable features the ultimate showdown with Sonic the Hedgehog, Shadow, Knuckles, Amy Rose, and even Dr. Eggman. Packed with lightning-fast energy and iconic characters, it’s the perfect creative challenge for fans of the Sega classic. Click to download and print your free to join the race!"
+        },
+        {
+            "id": "knuckles-the-echidna-action-coloring-page",
+            "title": "Knuckles the Echidna Action Coloring Page – Free Printable",
+            "description": "Get ready to pack a punch with our Knuckles the Echidna coloring page! This high-quality printable features the powerful guardian of the Master Emerald in a classic action pose, complete with his iconic spiked gloves. Set against a tropical island background with palm trees and a loop-de-loop, it’s a must-have for fans of Sonic the Hedgehog. Click to download and print for free!"
+        },
+        {
+            "id": "sonic-and-friends-mega-adventure-coloring-page",
+            "title": "Sonic the Hedgehog and Friends Mega Adventure Coloring Page – Free Printable",
+            "description": "Get ready for the ultimate race with our Sonic and Friends Mega Adventure coloring page! This high-quality printable features the whole team: Sonic, Tails, Knuckles, Rogue the Bat, Cream the Rabbit, Big the Cat, and even the mischievous Dr. Eggman. With gold rings, stars, and a scenic mountain background, it’s a detailed masterpiece for Sonic fans of all ages. Click to download and print your free today!"
+        },
+        {
+            "id": "tails-and-cream-the-rabbit-coloring-page",
+            "title": "Cute Sonic Friends Tails and Cream the Rabbit Coloring Page – Free Printable",
+            "description": "Celebrate friendship with our Cute Sonic Friends coloring page! This high-quality printable features the brilliant two-tailed fox, Tails, and the sweet Cream the Rabbit, accompanied by her loyal friend, Cheese the Chao. With their cheerful smiles and waving hands, it is a heartwarming and easy-to-color activity for fans of the Sonic the Hedgehog universe. Click to download and print your free PDF today!"
+        },
+        {
+            "id": "rouge-the-bat-sonic-coloring-page",
+            "title": "Rouge the Bat Sonic Adventure Coloring Page – Free Printable",
+            "description": "Add some sparkle to your day with our Rouge the Bat coloring page! This high-quality printable features the mysterious and stylish treasure hunter posing with her favorite diamonds and gold rings. With beautiful heart details and a floral background, it’s a perfect creative activity for fans of the Sonic the Hedgehog series who love cool characters and shiny gems. Click to download and print your free today!"
+        },
+        {
+            "id": "sonic-vs-dr-eggman-battle-coloring-page",
+            "title": "Epic Sonic vs. Dr. Eggman Showdown Coloring Page – Free Printable",
+            "description": "Experience the ultimate rivalry with our Sonic vs. Dr. Eggman Showdown coloring page! This high-quality printable features Sonic the Hedgehog ready for action as Dr. Eggman attacks in his iconic Egg Mobile. Set in a classic tropical zone with loops, gold rings, and palm trees, it’s a thrilling activity for fans of the Sega games and movies. Click to download and print your free today!"
+        },
+        {
+            "id": "sonic-vs-shadow-rivalry-coloring-page",
+            "title": "Sonic vs Shadow Rivalry Battle Coloring Page – Free Printable",
+            "description": "Experience the ultimate speedster showdown with our Sonic vs Shadow coloring page! This high-quality printable captures the intense rivalry between Sonic and Shadow the Hedgehog as they clash mid-air. Featuring Amy Rose, Metal Sonic, and Dr. Eggman in the background, this action-packed scene is perfect for fans who love epic battles and the darker side of the Sonic universe. Click to download and print your free today!"
+        },
+        {
+            "id": "cute-amy-rose-dress-coloring-page",
+            "title": "Cute Amy Rose in Dress Coloring Page – Free Sonic Printable",
+            "description": "Spread some love and magic with our Amy Rose in Dress coloring page! This high-quality printable features the cheerful Amy Rose making a peace sign, surrounded by floating hearts, stars, sparkling diamonds, and gold rings. With its clean lines and sweet Kawaii vibe, it’s a wonderful creative activity for Sonic the Hedgehog fans who love fashion and fun. Click to download and print your free today!"
+        },
+        {
+            "id": "sonic-and-blaze-the-cat-coloring-page",
+            "title": "Sonic and Blaze the Cat Adventure Coloring Page – Free Printable",
+            "description": "Join a journey across dimensions with our Sonic and Blaze coloring page! This high-quality printable features the super-fast Sonic the Hedgehog alongside the powerful Princess Blaze the Cat. Set against a beautiful backdrop of a distant castle, palm trees, and iconic loop-de-loops, it’s a perfect activity for fans who love this legendary duo. Click to download and print your free today!"
+        },
+        {
+            "id": "sonic-the-hedgehog-speed-dash-coloring-page",
+            "title": "Super Sonic Speed Dash Coloring Page – Free Action Printable",
+            "description": "Feel the rush of the race with our Sonic Power Dash coloring page! This high-quality printable features Sonic the Hedgehog bursting forward at supersonic speeds, leaving a trail of energy and stars in his wake. With iconic gold rings and a classic loop-de-loop background, it’s a thrilling creative project for fans of the games and movies. Click to download and print your free today!"
+        },
+        {
+            "id": "tails-miles-prower-hero-adventure-coloring-page",
+            "title": "Miles Tails Prower Hero Adventure Coloring Page – Free Printable",
+            "description": "Fly high with our Tails Hero Adventure coloring page! This high-quality printable features Miles Tails Prower, Sonic’s genius best friend, giving a confident thumbs-up as he explores a classic tropical island. With iconic gold rings, a loop-de-loop, and a scenic mountain background, it’s a perfect creative activity for fans of the Sonic the Hedgehog series. Click to download and print your free today!"
+        },
+        {
+            "id": "epic-metal-sonic-boss-battle-printable",
+            "title": "Metal Sonic and Dr. Eggman Villains Coloring Page – Free Printable",
+            "description": "Enter the world of high-tech villainy with our Metal Sonic and Dr. Eggman coloring page! This high-quality printable features the powerful robot double, Metal Sonic, charging forward while Dr. Eggman looms in the background with his mechanical fleet. Perfect for fans who love the intense action and robotic designs of the Sonic the Hedgehog universe. Click to download and print your free today!"
+        },
+        {
+            "id": "sonic-green-hill-zone-adventure-printable",
+            "title": "Classic Sonic the Hedgehog Running Coloring Page – Free Printable",
+            "description": "Get ready for high-speed fun with our Classic Sonic Running coloring page! This high-quality printable features the Blue Blur himself sprinting through the legendary Green Hill Zone. Complete with gold rings, a loop-de-loop, and a hovering Badnik in the sky, it is the ultimate creative activity for fans of the original Sega games. Click to download and print your free today!"
+        },
+        {
+            "id": "sonic-and-friends-team-gathering-coloring-page",
+            "title": "Sonic and Friends Team Gathering Coloring Page – Free Printable",
+            "description": "Get the whole crew together with our Sonic and Friends Team Gathering coloring page! This high-quality printable features Sonic the Hedgehog and his most iconic allies and rivals, including Tails, Knuckles, Shadow, Amy, and Cream. Set against a sunny Green Hill Zone background with mountains and a loop-de-loop, it’s a perfect, high-detail activity for fans of the Sega universe. Click to download and print your free today!"
+        },
+        {
+            "id": "amy-rose-flower-meadow-coloring-page",
+            "title": "Cute Amy Rose in Flower Garden Coloring Page – Free Printable",
+            "description": "Enjoy a peaceful moment with our Amy Rose in the Meadow coloring page! This high-quality printable features a sweet, young Amy Rose sitting among blooming flowers and watching a friendly butterfly. It is a perfect, relaxing creative activity for Sonic the Hedgehog fans who love nature and kawaii character art. Click to download and print this high-resolution PDF for free today!"
+        },
+        {
+            "id": "silver-the-hedgehog-psychic-power-coloring-page",
+            "title": "Silver the Hedgehog Psychic Power Action Coloring Page – Free Printable",
+            "description": "Travel to the future with our Silver the Hedgehog action coloring page! This high-quality printable features Silver using his incredible psychic powers, surrounded by floating Chaos Emeralds and mysterious levitating islands. It’s a must-have for Sonic the Hedgehog fans who love high-detail heroic scenes. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "free-printable-sonic-tails-amy-adventure-scene",
+            "title": "Sonic, Tails, and Amy Team Friends Coloring Page – Free Printable",
+            "description": "Get the best friends together with our Sonic, Tails, and Amy team coloring page! This high-quality printable features the iconic trio standing ready for adventure in a beautiful landscape filled with golden rings, loop-de-loops, and distant mountains. It’s a perfect, high-energy activity for fans of the classic Sega games. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "tails-cream-rabbit-cheese-chao-coloring-page",
+            "title": "Sonic Friends: Tails, Cream the Rabbit, and Cheese Coloring Page – Free Printable",
+            "description": "Celebrate friendship in the Green Hill Zone with our Tails and Cream coloring page! This high-quality printable features Miles Tails Prower, the adorable Cream the Rabbit, and her loyal companion Cheese the Chao. Set against a beautiful landscape with palm trees and a classic loop-de-loop, it’s a perfect, heartwarming activity for Sonic fans of all ages. Click to download and print this high-resolution for free today!"
+        },
+        {
+            "id": "free-sonic-the-hedgehog-and-amy-green-hill-coloring",
+            "title": "Sonic and Amy Rose Adventure Coloring Page – Free Printable",
+            "description": "Join the ultimate duo with our Sonic and Amy Rose Adventure coloring page! This high-quality printable features Sonic giving a thumbs-up while sprinting alongside Amy Rose, who is ready for action with her famous Piko Piko Hammer. Set in the classic Green Hill Zone with palm trees, loops, and golden rings, it’s a perfect high-energy activity for Sonic fans. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "free-sonic-the-hedgehog-action-coloring-sheet",
+            "title": "Epic Sonic the Hedgehog Running Coloring Page – Free Printable",
+            "description": "Gotta go fast! Speed into creativity with our Sonic the Hedgehog Running coloring page. This high-quality printable features Sonic sprinting through a classic level filled with gold rings, palm trees, and loop-de-loops, while Dr. Eggman's badniks hover in the sky. Perfect for fans of the Sega icon who love action-packed adventures. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "amy-rose-sonic-the-hedgehog-dress-coloring-page",
+            "title": "Cute Amy Rose in a Dress Coloring Page – Sonic the Hedgehog Free",
+            "description": "Spread some love and speed with our Cute Amy Rose coloring page! This high-quality printable features the cheerful Amy Rose wearing a sweet dress and striking a classic peace sign pose. Surrounded by floating hearts, stars, and shiny Chaos Emeralds, this page is perfect for Sonic fans who love a touch of magic and fashion. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "rouge-the-bat-sonic-the-hedgehog-coloring-page",
+            "title": "Stylish Rouge the Bat Coloring Page – Sonic the Hedgehog Free",
+            "description": "Add some sparkle to your day with our Rouge the Bat coloring page! This high-quality printable features the stylish treasure hunter from Sonic the Hedgehog in her iconic winking pose. Surrounded by floating hearts, stars, and a giant diamond jewel, this page is a must-have for fans of the Sonic series. Click to download and print this high-resolution for free today!"
+        },
+        {
+            "id": "ultimate-sonic-battle-all-stars-coloring-page",
+            "title": "Ultimate Sonic Battle All-Stars Coloring Page – Free Printable",
+            "description": "Get ready for the ultimate showdown with our Sonic Battle: All-Stars coloring page! This epic high-quality printable features the entire Sonic crew, including Sonic, Shadow, Tails, Knuckles, Rouge, and even the villainous Dr. Eggman. Perfect for hardcore fans who want to color their favorite heroes and rivals all in one massive scene. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "shadow-and-rouge-team-dark-coloring-page",
+            "title": "Shadow the Hedgehog and Rouge the Bat Coloring Page – Team Dark Action",
+            "description": "Join Team Dark with our Shadow and Rouge coloring page! This high-quality printable features the powerful Shadow the Hedgehog and the stylish Rouge the Bat ready for action in a detailed tropical landscape. With Dr. Eggman’s fortress and flying badniks in the background, this page is perfect for fans who love the cooler, edgy side of the Sonic universe. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "sonic-the-hedgehog-thumbs-up-coloring-page",
+            "title": "Classic Sonic the Hedgehog Thumbs Up Coloring Page – Free Printable",
+            "description": "Give a big thumbs up to adventure with our Classic Sonic the Hedgehog coloring page! This high-quality printable features the world’s fastest hedgehog standing confidently in the legendary Green Hill Zone. With golden rings to collect and loop-de-loops in the background, this page captures the true spirit of the Sega icon. Perfect for fans of all ages—click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "sonic-and-amy-rose-best-friends-coloring-page",
+            "title": "Cute Sonic and Amy Rose Coloring Page – Best Friends Forever Free",
+            "description": "Celebrate the power of friendship with our Sonic and Amy Rose coloring page! This high-quality printable features Sonic giving a confident thumbs up while Amy Rose strikes a cheerful pose with her iconic Piko Piko Hammer. Set in a sunny landscape with hearts, butterflies, and palm trees, this page is perfect for fans who love the heart-warming side of the Sonic universe. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "shadow-and-rouge-night-adventure-coloring-page",
+            "title": "Shadow the Hedgehog and Rouge the Bat Night Scene Coloring Page",
+            "description": "Embrace the darkness with our Shadow and Rouge Night Adventure coloring page! This high-quality printable features the ultimate duo, Shadow the Hedgehog and Rouge the Bat, standing under a starry night sky with a crescent moon. With detailed rings, a Chaos Emerald, and a classic loop-de-loop in the background, this page is perfect for fans who love the mysterious side of Sonic Team. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "tails-miles-prower-flying-coloring-page",
+            "title": "Flying Tails Miles Prower Coloring Page – Sonic the Hedgehog Free",
+            "description": "Take to the skies with our Flying Tails coloring page! This high-quality printable features Miles Tails Prower, Sonic’s genius best friend, using his twin tails to fly through a classic Green Hill Zone landscape. With a cheerful thumbs-up, gold rings, and stars in the background, this action-packed scene is perfect for fans of the Sonic the Hedgehog series. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "free-sonic-and-eggman-confrontation-coloring-sheet",
+            "title": "Sonic the Hedgehog vs. Dr. Eggman Coloring Page – Epic Battle Free",
+            "description": "Experience the ultimate gaming rivalry with our Sonic vs. Dr. Eggman coloring page! This high-quality printable features Sonic the Hedgehog standing his ground against the brilliant but villainous Dr. Eggman and his iconic Eggmobile. Set against a backdrop of golden rings, loop-de-loops, and tropical palms, this action-packed scene is a must-have for any Sega fan. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "free-silver-the-hedgehog-chaos-emeralds-coloring-sheet",
+            "title": "Silver the Hedgehog Psychic Power Coloring Page – Sonic Free",
+            "description": "Travel to the future with our Silver the Hedgehog coloring page! This high-quality printable features the heroic Silver using his telekinetic powers amidst a backdrop of floating islands, lightning strikes, and glittering Chaos Emeralds. Perfect for fans of the Sonic the Hedgehog series who love powerful characters and detailed, cosmic backgrounds. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "free-sonic-the-hedgehog-ultimate-power-coloring-sheet",
+            "title": "Ultimate Super Sonic Transformation Coloring Page – Free Printable",
+            "description": "Unleash the ultimate power with our Super Sonic Transformation coloring page! This high-quality printable features Sonic the Hedgehog in his legendary golden form, surrounded by glowing energy, lightning strikes, and glittering Chaos Emeralds. Perfect for fans who want to color the most powerful version of the Blue Blur. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "free-knuckles-sonic-the-hedgehog-printable",
+            "title": "Epic Knuckles the Echidna Action Coloring Page – Free Printable",
+            "description": "Get ready to punch into adventure with our Knuckles the Echidna coloring page! This high-quality printable features the powerful guardian showing off his iconic spiked gloves in a dynamic battle stance. Set in a classic landscape with a giant floating Master Emerald and loop-de-loops, this page is perfect for fans of the Sonic the Hedgehog series. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "free-blaze-the-cat-stars-coloring-sheet",
+            "title": "Blaze the Cat and Sonic the Hedgehog Coloring Page – Dynamic Duo",
+            "description": "Discover the power of fire and speed with our Blaze the Cat and Sonic coloring page! This high-quality printable features the elegant Princess Blaze alongside Sonic the Hedgehog in a cheerful, star-filled scene. Perfect for fans who love the Sonic Rush series and want to color this iconic interdimensional duo. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "tails-the-fox-green-hill-zone-printable",
+            "title": "Classic Tails the Fox Coloring Page – Miles Prower Thumbs Up",
+            "description": "Join Sonic’s best friend on a new adventure with our Classic Tails the Fox coloring page! This high-quality printable features Miles Tails Prower giving a friendly thumbs up in the beautiful Green Hill Zone. Complete with tropical palm trees, golden rings, and the iconic checkered cliffs, this high-resolution PDF is perfect for fans of the genius two-tailed fox. Click to download and print for free today!"
+        },
+        {
+            "id": "free-miles-prower-thumbs-up-coloring-sheet",
+            "title": "Cute Tails the Fox Coloring Page – Miles Prower in Green Hill Zone",
+            "description": "Brighten your day with our Cute Tails the Fox coloring page! This high-quality printable features Miles Tails Prower giving a happy thumbs-up in the iconic Green Hill Zone. With a sunny sky, palm trees, and the classic loop-de-loop in the background, this page captures the cheerful spirit of Sonic’s best friend. Download and print this high-resolution PDF for free and start your coloring adventure today!"
+        },
+        {
+            "id": "sonic-hedgehog-egg-mobile-villain-printable",
+            "title": "Sonic vs. Dr. Eggman Epic Battle Coloring Page – Free",
+            "description": "Jump into the action with our Sonic vs. Dr. Eggman coloring page! This high-quality printable features Sonic the Hedgehog racing through Green Hill Zone to stop the evil Dr. Eggman in his iconic Egg Mobile. With golden rings, loops, and mechanical robots to color, this action-packed scene is perfect for fans who love the classic hero-villain rivalry. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "ultimate-sonic-team-all-stars-coloring-page",
+            "title": "Ultimate Sonic the Hedgehog All-Stars Coloring Page – Free Printable",
+            "description": "Get the whole gang together with our Ultimate Sonic All-Stars coloring page! This high-quality printable features Sonic the Hedgehog leading his friends Shadow, Tails, Knuckles, Amy Rose, and Rouge into action, with the villainous Dr. Eggman looming in the background. It's the perfect challenge for fans who want to color all their favorite characters in one epic scene. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "amy-rose-hedgehog-green-hill-zone-coloring-page",
+            "title": "Amy Rose the Hedgehog Coloring Page – Sweet Green Hill Adventure",
+            "description": "Spread some joy with our Amy Rose the Hedgehog coloring page! This high-quality printable features the cheerful and brave Amy Rose waving hello in the beautiful Green Hill Zone. Set against a backdrop of tropical palms, golden rings, and a sunny sky, this page is perfect for fans who love Sonic's pink-furred friend. Click to download and print your free high-resolution PDF and start coloring today!"
+        },
+        {
+            "id": "action-sonic-hedgehog-green-hill-zone-coloring-page",
+            "title": "Action Sonic the Hedgehog Coloring Page – Green Hill Zone Adventure",
+            "description": "Get ready for high-speed fun with our Action Sonic coloring page! This high-quality printable features Sonic the Hedgehog in a powerful hero stance, ready to take on adventure in the iconic Green Hill Zone. The scene is packed with classic details like a Chaos Emerald monitor, a loop-de-loop, and a friendly turtle robot. Perfect for fans who love detailed backgrounds and classic gaming moments. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "sonic-and-friends-group-coloring-page",
+            "title": "Ultimate Sonic the Hedgehog & Friends Coloring Page – Free Printable Poster",
+            "description": "Download the ultimate Sonic and Friends coloring page! This high-quality printable features Sonic the Hedgehog in a dynamic running pose, with Tails soaring above and Dr. Eggman plotting in his Egg Mobile. Complete with Green Hill Zone loops, golden rings, and a classic Motobug, this detailed scene is perfect for fans of all ages. Click to download and print your free high-resolution today!"
+        },
+        {
+            "id": "free-sonic-shadow-tails-knuckles-group-sheet",
+            "title": "Ultimate Sonic and Friends Group Coloring Page – Free Printable",
+            "description": "Gather the whole team with our Sonic and Friends All-Stars coloring page! This high-quality printable features a massive lineup of your favorite characters, including Sonic, Shadow, Tails, Knuckles, Amy Rose, and Cream the Rabbit. With iconic golden rings and a classic loop-de-loop background, this action-packed scene is the ultimate challenge for any Sonic fan. Click to download and print your free high-resolution today!"
+        }
+    ]
 }
