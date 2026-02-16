@@ -1,52 +1,37 @@
-in the Mushroom Kingdom
-in a grassy kingdom field
-on a brick platform
-on a floating platform
-in a colorful game world
-in a fantasy kingdom
-in a castle hallway
+in a grassy level
+in a mushroom kingdom
+near a castle
 inside a castle
-outside a castle
-near a castle gate
 on a castle bridge
-in a lava castle area
-on a classic platform level
-in an underground level
-in a cave level
-on a snowy platform
-in an ice world
-on a desert platform
-in a desert world
-in a jungle world
-in a forest level
-in a tropical island
-on a beach level
+near a lava area
+in a snowy level
+in a desert level
+in a jungle level
+in a beach level
 underwater
-in an underwater world
-in the sky world
-on cloud platforms
-on rainbow platforms
-in a night level
-in a starry sky level
+in a cave level
+in a sky level
+on floating platforms
+near a flag pole
 on a racing track
-on a kart racing track
-on a colorful race course
-in a stadium race track
-on a rainbow road
-near a finish line
-on a starting line
-on a training track
-in a fun park world
-in a coin filled area
-near floating coins
-near question blocks
-near pipes and platforms
-near power up blocks
-in a bonus level
-in a hidden bonus room
-on a victory stage
-in a celebration scene
-near a flagpole
-on a final level platform
-inside Bowser castle
-outside Bowser castle
+in a rainbow road
+in a haunted house
+in a ghost house
+on a mountain level
+near a waterfall
+in a flower field
+on a sunny hill
+in a peaceful village
+in a colorful world
+in a fantasy land
+near a fortress
+inside a fortress
+near a lava castle
+in a magical world
+on a platform level
+near coin blocks
+near moving platforms
+in a cloud world
+near a secret area
+in a hidden cave
+in a bright adventure land

@@ -1,53 +1,33 @@
-jumping
-running
-smiling
-waving
-posing
-standing
-walking
-riding a kart
-driving a kart
-throwing a fireball
-holding a mushroom
-holding a star
+running happily
+jumping happily
+posing proudly
+smiling happily
+celebrating happily
 holding a coin
 holding a power up
-collecting a coin
+holding a mushroom
+holding a star power
+holding a flower power
+throwing a fireball
+sliding happily
+riding happily
+exploring happily
+standing bravely
+walking proudly
+walking happily
+sitting peacefully
+resting happily
 celebrating victory
-giving a thumbs up
-ready for adventure
-ready to jump
-ready to race
-spinning
-sliding
-climbing
-swimming
-flying
-gliding
-hovering
-stomping
-dodging
-throwing a shell
-holding a shell
-kicking a shell
-holding a flag
-raising a flag
-sitting and relaxing
-taking a break
-looking happy
-looking surprised
+waving happily
 looking excited
-cheering
-laughing
-calling a friend
+looking surprised
+looking happy
+jumping with joy
+saving a friend
 helping a friend
-holding a kart wheel
-racing forward
-drifting
-starting a race
-crossing finish line
-holding a trophy
-celebrating win
-wearing a power suit
-transforming
-using power up
+walking carefully
+climbing happily
+spinning happily
+holding an item
+celebrating adventure
+getting ready to explore

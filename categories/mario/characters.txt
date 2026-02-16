@@ -1,60 +1,43 @@
-Mario
-Super Mario
-Mario and Luigi
-Luigi
-Princess Peach
-Peach
-Princess Daisy
-Daisy
-Princess Rosalina
-Rosalina
-Toad
-Toadette
-Yoshi
-Birdo
-Bowser
-Bowser Jr
-Koopa Troopa
-Dry Bones
-Shy Guy
-Goomba
-Boo
-King Boo
-Bullet Bill
-Chain Chomp
-Bob omb
-Lakitu
-Hammer Bro
-Magikoopa
-Kamek
-Wario
-Waluigi
-Donkey Kong
-Diddy Kong
-Pauline
-Mario and Yoshi
-Mario
-Luigi
-Peach
-Daisy
-Rosalina
-Metal Mario
-Tanooki Mario
-Cat Mario
-Fire Mario
-Ice Mario
-Captain Toad
-Nabbit
-Piranha Plant
-Petey Piranha
-Cheep Cheep
-Blooper
-Thwomp
-Wiggler
-Larry Koopa
-Morton Koopa Jr
-Wendy O Koopa
-Iggy Koopa
-Roy Koopa
-Lemmy Koopa
-Ludwig von Koopa
+mario
+mario
+mario
+luigi
+luigi
+princess peach
+princess peach
+yoshi
+yoshi
+bowser
+bowser
+toad
+toad
+donkey kong
+donkey kong
+princess daisy
+wario
+waluigi
+rosalina
+bowser jr
+toadette
+birdo
+koopa troopa
+goomba
+boo
+shy guy
+king boo
+lakitu
+dry bones
+hammer bro
+chain chomp
+baby mario
+baby luigi
+baby peach
+baby daisy
+cat mario
+tanooki mario
+fire mario
+ice mario
+builder mario
+raccoon mario
+flying mario
+penguin mario
