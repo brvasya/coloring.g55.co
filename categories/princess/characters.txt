@@ -42,8 +42,6 @@ dancer princess
 music princess
 animal friend princess
 pony princess
-cat princess
-dog princess
 storybook princess
 enchanted princess
 dream princess
@@ -58,3 +56,9 @@ ocean princess
 forest princess
 magic wand princess
 crown princess
+fairy tale princess
+storybook castle princess
+royal adventure princess
+cute princess
+beautiful princess
+brave princess

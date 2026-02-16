@@ -29,7 +29,6 @@ in a rose garden
 in a royal library
 in a royal dining hall
 in a music room
-in a magic classroom
 in a royal art room
 in a festival square
 in a celebration hall
@@ -45,7 +44,7 @@ in a moonlit garden
 under a starry sky
 on a glowing rainbow
 in a magic portal world
-in an enchanted castle gate
+at an enchanted castle gate
 in a royal playground
 in a palace hallway
 in a secret royal garden
@@ -58,3 +57,5 @@ in a royal tea garden
 in a princess tower room
 in a magical kingdom square
 in a golden palace hall
+in a fairy tale castle
+in a magical castle garden
