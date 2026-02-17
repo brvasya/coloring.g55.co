@@ -1,49 +1,164 @@
-a car
+a police car
+a police car
+a police car
+a police car
+a police car
 a police car
 a fire truck
+a fire truck
+a fire truck
+a fire truck
+a fire truck
+a fire truck
+an ambulance
+an ambulance
+an ambulance
+an ambulance
+an ambulance
 an ambulance
 a school bus
-a city bus
+a school bus
+a school bus
+a school bus
+a school bus
+a school bus
+a monster truck
+a monster truck
+a monster truck
+a monster truck
+a monster truck
 a monster truck
 a race car
-a sports car
-a pickup truck
-a tow truck
+a race car
+a race car
+a race car
+a race car
+a race car
+a garbage truck
+a garbage truck
+a garbage truck
+a garbage truck
 a garbage truck
 a dump truck
+a dump truck
+a dump truck
+a dump truck
+a dump truck
 a cement mixer truck
+a cement mixer truck
+a cement mixer truck
+a cement mixer truck
+a cement mixer truck
+an excavator
+an excavator
+an excavator
+an excavator
+an excavator
+a bulldozer
+a bulldozer
+a bulldozer
+a bulldozer
+a bulldozer
+a tractor
+a tractor
+a tractor
+a tractor
+a tractor
+a car
+a car
+a car
+a car
+a sports car
+a sports car
+a sports car
+a sports car
+a pickup truck
+a pickup truck
+a pickup truck
+a pickup truck
+a tow truck
+a tow truck
+a tow truck
+a tow truck
+a delivery truck
+a delivery truck
+a delivery truck
 a delivery truck
 an ice cream truck
-a food truck
-a tractor
-a bulldozer
-an excavator
-a crane truck
-a forklift
-a train
-a steam train
-a passenger train
-a subway train
-a cargo train
-a tram
+an ice cream truck
+an ice cream truck
+an ice cream truck
+a city bus
+a city bus
+a city bus
+a city bus
+a helicopter
+a helicopter
+a helicopter
 a helicopter
 a rescue helicopter
+a rescue helicopter
+a rescue helicopter
+a rescue helicopter
+an airplane
+an airplane
+an airplane
 an airplane
 a passenger airplane
+a passenger airplane
+a passenger airplane
+a passenger airplane
+a train
+a train
+a train
+a train
+a steam train
+a steam train
+a steam train
+a steam train
+a passenger train
+a passenger train
+a passenger train
+a passenger train
+a boat
+a boat
+a boat
+a boat
+a sailboat
+a sailboat
+a sailboat
+a sailboat
 a cargo airplane
+a cargo airplane
+a cargo train
+a cargo train
+a tram
+a tram
+a subway train
+a subway train
+a crane truck
+a crane truck
+a forklift
+a forklift
+a ferry
+a ferry
+a cruise ship
+a cruise ship
+a speedboat
+a speedboat
+a motorcycle
+a motorcycle
+a police motorcycle
+a police motorcycle
+a scooter
+a scooter
+a bicycle
+a bicycle
 a fighter jet
 a hot air balloon
 a rocket ship
 a space shuttle
 a spaceship
-a police motorcycle
-a motorcycle
-a scooter
-a bicycle
-a boat
-a sailboat
-a speedboat
-a ferry
 a cargo ship
-a cruise ship
 a submarine
+a food truck

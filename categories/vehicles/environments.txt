@@ -1,4 +1,3 @@
-in a busy city
 on a city street
 on a highway
 on a country road
@@ -28,21 +27,17 @@ in the countryside
 near a farm
 in a desert
 on a snowy road
-during snowfall
 in autumn leaves
 in spring sunshine
 in summer sunshine
 near the beach
 on a coastal road
-in a jungle road
+on a jungle road
 on a safari road
 near mountains
 near a village
 in a cartoon city
 in a fantasy city
-on a rescue scene
-during a parade
-at a festival
 at a delivery center
 near a warehouse
 in a space station
