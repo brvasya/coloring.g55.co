@@ -6,24 +6,6 @@ import os
 import re
 import json
 
-import threading
-from datetime import datetime
-from io import BytesIO
-import base64
-
-# Optional deps for image generation
-try:
-    from google import genai
-    from google.genai import types
-except Exception:
-    genai = None
-    types = None
-
-try:
-    from PIL import Image
-except Exception:
-    Image = None
-
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 APP_DIR = os.path.join(BASE_DIR, "app")
@@ -31,14 +13,6 @@ APP_DIR = os.path.join(BASE_DIR, "app")
 CATEGORIES_DIR = os.path.join(BASE_DIR, "categories")
 STYLE_FILE = os.path.join(CATEGORIES_DIR, "style.txt")
 
-GENERATED_IMAGES_DIR = os.path.join(BASE_DIR, "categories")
-
-# Option A: remove extras completely
-LIST_NAMES = ["characters", "actions", "environments"]
-
-COPIED_BG = "systemHighlight"
-
-# Pool txt files stored in BASE_DIR/app
 POOL_FILES = {
     "intro": os.path.join(APP_DIR, "intro_pool.txt"),
     "usage": os.path.join(APP_DIR, "usage_pool.txt"),
@@ -46,8 +20,11 @@ POOL_FILES = {
     "benefit": os.path.join(APP_DIR, "benefit_pool.txt"),
 }
 
-# Loaded pools (populated at startup)
 POOLS = {k: [] for k in POOL_FILES.keys()}
+
+LIST_NAMES = ["characters", "actions", "environments"]
+
+COPIED_BG = "systemHighlight"
 
 
 def list_category_folders():
@@ -134,7 +111,6 @@ def strip_leading_article(text):
 
 
 def build_h1(parts):
-    # Filter leading articles from character only for H1
     character = strip_leading_article(parts["character"])
     action = parts["action"].strip()
     env = parts["environment"].strip()
@@ -145,7 +121,6 @@ def build_h1(parts):
 
 
 def build_seo_base_for_slug(parts):
-    # Filter leading articles from character only for id/slug
     character = strip_leading_article(parts["character"])
     action = parts["action"].strip()
     env = parts["environment"].strip()
@@ -160,7 +135,6 @@ def build_id(parts):
 
 
 def build_prompt(parts, style):
-    # Keep articles in prompt for correct grammar
     core = f"{parts['character']} {parts['action']} {parts['environment']}"
     core = re.sub(r"\s{2,}", " ", core).strip()
     return "Coloring page on white background, " f"{core}, " f"{style}."
@@ -184,7 +158,6 @@ def render_template(line, scene):
 
 
 def build_page_description(parts):
-    # Keep articles in description for correct grammar
     character = parts["character"].strip()
     action = parts["action"].strip()
     env = parts["environment"].strip()
@@ -226,89 +199,6 @@ def build_page_description(parts):
     return " ".join(sentences)
 
 
-def _safe_mkdir(p):
-    try:
-        os.makedirs(p, exist_ok=True)
-    except Exception:
-        pass
-
-
-def _sanitize_filename(name: str) -> str:
-    name = (name or "").strip()
-    name = re.sub(r"[^a-zA-Z0-9._-]+", "_", name)
-    name = re.sub(r"_+", "_", name).strip("_")
-    return name or "image"
-
-
-def _save_bw_png(img, out_path: str):
-    gray = img.convert("L")
-    bw = gray.point(lambda p: 255 if p >= 128 else 0, mode="1")
-    bw.save(out_path, format="PNG")
-
-
-def save_image_with_gemini(prompt: str, api_key: str, out_path: str):
-    if genai is None or Image is None:
-        raise RuntimeError("Missing dependency. Install: pip install google-genai pillow")
-
-    api_key = (api_key or "").strip()
-    client = genai.Client(api_key=api_key) if api_key else genai.Client()
-
-    model = "gemini-2.5-flash-image"
-    out_path = os.path.abspath(out_path)
-
-    _safe_mkdir(os.path.dirname(out_path))
-
-    if types is None:
-        raise RuntimeError("google-genai types not available")
-
-    resp = client.models.generate_content(
-        model=model,
-        contents=[prompt],
-        config=types.GenerateContentConfig(
-            image_config=types.ImageConfig(
-                aspect_ratio="2:3"
-            )
-        ),
-    )
-
-    parts = getattr(resp, "parts", None)
-    if parts is None:
-        try:
-            parts = resp.candidates[0].content.parts
-        except Exception:
-            parts = []
-
-    for part in parts:
-        inline_data = getattr(part, "inline_data", None)
-        if inline_data is not None:
-            try:
-                img = part.as_image()
-                _save_bw_png(img, out_path)
-                return out_path
-            except Exception:
-                data = getattr(inline_data, "data", None) or getattr(inline_data, "image_bytes", None)
-                if data is None:
-                    continue
-                if isinstance(data, str):
-                    img_bytes = base64.b64decode(data)
-                else:
-                    img_bytes = data
-
-                img = Image.open(BytesIO(img_bytes))
-                _save_bw_png(img, out_path)
-                return out_path
-
-    raise RuntimeError("No image part returned")
-
-
-
-
-def default_image_path(category_name: str, page_id: str) -> str:
-    cat = _sanitize_filename(category_name)
-    pid = _sanitize_filename(page_id)
-    return os.path.join(GENERATED_IMAGES_DIR, cat, f"{pid}.png")
-
-
 def generate_item(data):
     if not all(data.get(k) for k in LIST_NAMES) or not data.get("style"):
         parts = {"character": "", "action": "", "environment": ""}
@@ -345,6 +235,13 @@ def generate_item(data):
     }
 
 
+def calculate_total_combinations(data):
+    c = len(data.get("characters") or [])
+    a = len(data.get("actions") or [])
+    e = len(data.get("environments") or [])
+    return c * a * e
+
+
 def category_json_path(category_name):
     return os.path.join(CATEGORIES_DIR, f"{category_name}.json")
 
@@ -368,7 +265,7 @@ class PromptGUI(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Coloring Prompt Generator")
-        self.geometry("980x620")
+        self.geometry("1180x620")
 
         self.style = ttk.Style(self)
         self.base_bg = None
@@ -381,7 +278,6 @@ class PromptGUI(tk.Tk):
         )
         self.count_var = tk.IntVar(value=2)
 
-        self.api_key_var = tk.StringVar(value=os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or "")
         self.data = (
             load_category_data(self.category_var.get())
             if self.category_var.get()
@@ -413,21 +309,10 @@ class PromptGUI(tk.Tk):
             side="left", padx=(0, 8)
         )
 
-        ttk.Button(top, text="Save Images", command=self.generate_all_images).pack(
-            side="left", padx=(0, 8)
-        )
-
         ttk.Button(top, text="Save All", command=self.save_all_to_json).pack(side="left")
 
         ttk.Separator(top, orient="vertical").pack(side="left", fill="y", padx=10)
 
-        ttk.Label(top, text="Gemini key:").pack(side="left")
-        ttk.Entry(top, textvariable=self.api_key_var, width=26, show="*").pack(
-            side="left", padx=(6, 12)
-        )
-
-
-        # Counters row
         self.counters_var = tk.StringVar(value="")
         counters = ttk.Label(top, textvariable=self.counters_var)
         counters.pack(side="right")
@@ -487,7 +372,11 @@ class PromptGUI(tk.Tk):
         c = len(data.get("characters") or [])
         a = len(data.get("actions") or [])
         e = len(data.get("environments") or [])
-        self.counters_var.set(f"Characters: {c}  Actions: {a}  Environments: {e}")
+        total = calculate_total_combinations(data)
+        total_fmt = f"{total:,}"
+        self.counters_var.set(
+            f"Characters: {c}  Actions: {a}  Environments: {e}  Total: {total_fmt}"
+        )
 
     def on_category_change(self, _event=None):
         self.data = load_category_data(self.category_var.get())
@@ -514,64 +403,6 @@ class PromptGUI(tk.Tk):
         self.clipboard_append(self.prompt_vars[idx].get())
         self.update()
         self.mark_row(idx)
-
-    def _run_bg(self, fn, on_ok=None, on_err=None):
-        def worker():
-            try:
-                result = fn()
-                if on_ok:
-                    self.after(0, lambda: on_ok(result))
-            except Exception as e:
-                if on_err:
-                    self.after(0, lambda: on_err(e))
-
-        t = threading.Thread(target=worker, daemon=True)
-        t.start()
-
-    def generate_image(self, idx):
-        category_name = self.category_var.get().strip()
-        page_id = self.id_vars[idx].get().strip()
-        prompt = self.prompt_vars[idx].get().strip()
-        api_key = self.api_key_var.get()
-
-        out_path = default_image_path(category_name, page_id)
-
-        def job():
-            return save_image_with_gemini(prompt=prompt, api_key=api_key, out_path=out_path)
-
-        def ok(saved_path):
-            self.mark_row(idx)
-            messagebox.showinfo("Image saved", f"Saved: {saved_path}")
-
-        def err(e):
-            messagebox.showerror("Image error", str(e))
-
-        self._run_bg(job, on_ok=ok, on_err=err)
-
-    def generate_all_images(self):
-        category_name = self.category_var.get().strip()
-        api_key = self.api_key_var.get()
-
-        prompts = [
-            (i, self.id_vars[i].get().strip(), self.prompt_vars[i].get().strip())
-            for i in range(len(self.id_vars))
-        ]
-
-        def job():
-            saved = 0
-            for _i, page_id, prompt in prompts:
-                out_path = default_image_path(category_name, page_id)
-                save_image_with_gemini(prompt=prompt, api_key=api_key, out_path=out_path)
-                saved += 1
-            return saved
-
-        def ok(n):
-            messagebox.showinfo("Images saved", f"Saved {n} images.")
-
-        def err(e):
-            messagebox.showerror("Image error", str(e))
-
-        self._run_bg(job, on_ok=ok, on_err=err)
 
     def save_one_to_json(self, idx):
         category_name = self.category_var.get().strip()
@@ -654,7 +485,7 @@ class PromptGUI(tk.Tk):
             ttk.Label(
                 text_block,
                 textvariable=h1_var,
-                wraplength=760,
+                wraplength=900,
                 justify="left",
                 anchor="w",
             ).pack(side="top", anchor="w", fill="x")
@@ -662,7 +493,7 @@ class PromptGUI(tk.Tk):
             ttk.Label(
                 text_block,
                 textvariable=id_var,
-                wraplength=760,
+                wraplength=900,
                 justify="left",
                 anchor="w",
             ).pack(side="top", anchor="w", fill="x", pady=(4, 0))
@@ -670,7 +501,7 @@ class PromptGUI(tk.Tk):
             ttk.Label(
                 text_block,
                 textvariable=desc_var,
-                wraplength=760,
+                wraplength=900,
                 justify="left",
                 anchor="w",
             ).pack(side="top", anchor="w", fill="x", pady=(6, 0))
@@ -678,7 +509,7 @@ class PromptGUI(tk.Tk):
             ttk.Label(
                 text_block,
                 textvariable=prompt_var,
-                wraplength=760,
+                wraplength=900,
                 justify="left",
                 anchor="w",
             ).pack(side="top", anchor="w", fill="x", pady=(6, 0))
@@ -700,12 +531,6 @@ class PromptGUI(tk.Tk):
 
             ttk.Button(
                 btns,
-                text="Generate Image",
-                command=lambda idx=i: self.generate_image(idx),
-            ).pack(side="top", fill="x", pady=(0, 6))
-
-            ttk.Button(
-                btns,
                 text="Save",
                 command=lambda idx=i: self.save_one_to_json(idx),
             ).pack(side="top", fill="x")
@@ -718,7 +543,6 @@ if __name__ == "__main__":
 
     try:
         from ctypes import windll
-
         windll.shcore.SetProcessDpiAwareness(1)
     except Exception:
         pass

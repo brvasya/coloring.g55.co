@@ -266,6 +266,16 @@ function category_json_path(string $categories_dir, string $category_name): stri
   return $categories_dir . DIRECTORY_SEPARATOR . $category_name . '.json';
 }
 
+function read_category_json_file(string $path): array {
+  if (!is_file($path)) return ['pages' => []];
+  $raw = file_get_contents($path);
+  if (!is_string($raw) || trim($raw) === '') return ['pages' => []];
+  $data = json_decode($raw, true);
+  if (!is_array($data)) return ['pages' => []];
+  if (!isset($data['pages']) || !is_array($data['pages'])) $data['pages'] = [];
+  return $data;
+}
+
 function read_category_json_locked($fp): array {
   rewind($fp);
   $raw = stream_get_contents($fp);
@@ -298,11 +308,14 @@ function prepend_unique_pages(string $path, array $pages_to_add): array {
   }
 
   $clean_add = [];
+  $added_ids = [];
   foreach ($pages_to_add as $p) {
     $id = (string)($p['id'] ?? '');
     if ($id === '') continue;
     if (isset($existing_ids[$id])) continue;
     $existing_ids[$id] = true;
+
+    $added_ids[] = $id;
 
     $clean_add[] = [
       'id' => $id,
@@ -318,7 +331,7 @@ function prepend_unique_pages(string $path, array $pages_to_add): array {
   flock($fp, LOCK_UN);
   fclose($fp);
 
-  return ['ok' => true, 'added' => count($clean_add)];
+  return ['ok' => true, 'added' => count($clean_add), 'added_ids' => $added_ids];
 }
 
 $category = qs('c', '');
@@ -367,6 +380,16 @@ if (!empty($missing)) json_out(['ok' => false, 'error' => 'missing_inputs', 'mis
 $items = [];
 $errors = [];
 $attempts = [];
+$new_images = [];
+
+$json_path = category_json_path($CATEGORIES_DIR, $category);
+$existing_ids = [];
+if (!$dry) {
+  $data_existing = read_category_json_file($json_path);
+  foreach ($data_existing['pages'] as $p) {
+    if (is_array($p) && isset($p['id'])) $existing_ids[(string)$p['id']] = true;
+  }
+}
 
 for ($i = 0; $i < $count; $i++) {
   $parts = [
@@ -379,6 +402,16 @@ for ($i = 0; $i < $count; $i++) {
   $title = build_title($parts);
   $description = build_description($parts, $pools);
   $prompt = build_prompt($parts, $style);
+
+  if (!$dry && isset($existing_ids[$id])) {
+    $attempts[] = [
+      'id' => $id,
+      'title' => $title,
+      'description' => $description,
+      'skipped' => 'duplicate_id_in_json',
+    ];
+    continue;
+  }
 
   // Keep a record of what we tried, even if we skip creating the page
   $attempts[] = [
@@ -400,6 +433,7 @@ for ($i = 0; $i < $count; $i++) {
       $has_existing = $skip_existing_img && is_file($out_path) && filesize($out_path) > 0;
       if (!$has_existing) {
         $img_res = gemini_generate_image($api_key, $prompt, $out_path, $aspect_ratio);
+        if (($img_res['ok'] ?? false)) $new_images[$id] = $out_path;
         if (!($img_res['ok'] ?? false)) {
           $errors[] = ['id' => $id, 'error' => $img_res];
           $page_ok = false;
@@ -432,15 +466,28 @@ for ($i = 0; $i < $count; $i++) {
       'title' => $title,
       'description' => $description,
     ];
+    if (!$dry) $existing_ids[$id] = true;
   }
 }
 
 $write_result = null;
 if (!$dry) {
-  $json_path = category_json_path($CATEGORIES_DIR, $category);
   $write_result = prepend_unique_pages($json_path, $items);
   if (!($write_result['ok'] ?? false)) {
     json_out(['ok' => false, 'error' => 'write_failed', 'detail' => $write_result], 500);
+  }
+
+  if ($do_img && !empty($new_images)) {
+    $added_ids = [];
+    if (isset($write_result['added_ids']) && is_array($write_result['added_ids'])) {
+      foreach ($write_result['added_ids'] as $aid) $added_ids[(string)$aid] = true;
+    }
+
+    foreach ($new_images as $nid => $npath) {
+      if (!isset($added_ids[(string)$nid])) {
+        if (is_file($npath)) @unlink($npath);
+      }
+    }
   }
 }
 
