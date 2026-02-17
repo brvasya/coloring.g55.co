@@ -7,49 +7,23 @@ waving happily
 smiling happily
 jumping playfully
 running happily
-climbing carefully
 looking around curiously
 exploring curiously
-sneaking quietly
-hiding carefully
 watching calmly
 listening carefully
 roaring playfully
 howling playfully
-flying
-gliding
-swimming
-diving
-floating
-crawling
-slithering
+flying calmly
+gliding calmly
+swimming calmly
+floating calmly
+crawling calmly
 digging carefully
 stomping playfully
-charging forward
-guarding an area
-patrolling carefully
-chasing a target
-escaping danger
-hunting carefully
-mining a block
-placing a block
-building a shelter
-collecting treasure
-escaping lava
-protecting a friend
-protecting a baby mob
-holding a torch
+posing happily
+wandering curiously
 holding a flower
 holding an apple
-holding a book
-holding a map
-holding a chest
-carrying a block
-carrying a tool
-pushing a minecart
-riding a minecart
-riding a boat
-riding a horse
-splashing in water
-playing in snow
 looking at the sky
+playing happily
+relaxing peacefully
