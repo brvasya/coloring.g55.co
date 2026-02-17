@@ -29,8 +29,8 @@
 </section>
 <?php if (!empty($pager) && $pager['total_pages'] > 1): ?>
 <nav class="pagination">
-<?php if ($pager['has_prev']): ?><a href="<?php htmlspecialchars($prevUrl) ?>">Prev Page</a><?php endif; ?>
-<?php if ($pager['has_next']): ?><a href="<?php htmlspecialchars($nextUrl) ?>">Next Page</a><?php endif; ?>
+<?php if ($pager['has_prev']): ?><a href="<?php echo htmlspecialchars($prevUrl) ?>">Prev Page</a><?php endif; ?>
+<?php if ($pager['has_next']): ?><a href="<?php echo htmlspecialchars($nextUrl) ?>">Next Page</a><?php endif; ?>
 </nav>
 <?php endif; ?>
 <?php include 'footer.php'; ?>
