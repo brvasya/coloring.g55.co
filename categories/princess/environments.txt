@@ -1,7 +1,6 @@
 in a royal castle garden
 in a magical castle hall
 in a princess bedroom
-in a grand ballroom
 on a castle balcony
 in a fairy tale kingdom
 in an enchanted forest
@@ -16,8 +15,6 @@ in a winter wonderland
 in a summer garden
 in a spring meadow
 in an autumn park
-on a castle bridge
-near a castle tower
 near a sparkling fountain
 near a royal carriage
 near a peaceful lake
@@ -27,13 +24,8 @@ near a waterfall
 in a butterfly garden
 in a rose garden
 in a royal library
-in a royal dining hall
 in a music room
 in a royal art room
-in a festival square
-in a celebration hall
-in a birthday party hall
-in a parade street
 in a magic village
 in a storybook village
 in a candy kingdom
@@ -42,13 +34,10 @@ in a dragon valley
 in a fairy village
 in a moonlit garden
 under a starry sky
-on a glowing rainbow
 in a magic portal world
 at an enchanted castle gate
 in a royal playground
-in a palace hallway
 in a secret royal garden
-in a royal throne room
 in a peaceful meadow
 in a magic flower field
 in a dreamy kingdom
@@ -56,6 +45,4 @@ in a sparkling palace
 in a royal tea garden
 in a princess tower room
 in a magical kingdom square
-in a golden palace hall
 in a fairy tale castle
-in a magical castle garden
