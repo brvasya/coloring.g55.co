@@ -90,6 +90,9 @@ p {
     flex-wrap: wrap;
     gap: 10px;
 }
+.pagination .tag {
+    flex: auto;
+}
 .tower_r {
     gap: 15px;
     width: 30%;
