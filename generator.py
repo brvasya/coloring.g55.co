@@ -246,19 +246,59 @@ def category_json_path(category_name):
     return os.path.join(CATEGORIES_DIR, f"{category_name}.json")
 
 
-def prepend_pages_to_category_json(category_name, pages_to_add):
-    path = category_json_path(category_name)
+def _safe_read_category_json(path):
+    if not os.path.isfile(path):
+        return {"pages": []}
 
-    with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return {"pages": []}
 
+    if not isinstance(data, dict):
+        data = {"pages": []}
     if "pages" not in data or not isinstance(data["pages"], list):
         data["pages"] = []
+    return data
 
-    data["pages"] = list(pages_to_add) + data["pages"]
 
+def prepend_unique_pages_to_category_json(category_name, pages_to_add):
+    path = category_json_path(category_name)
+    data = _safe_read_category_json(path)
+
+    existing_ids = set()
+    for p in data.get("pages", []):
+        if isinstance(p, dict) and p.get("id"):
+            existing_ids.add(str(p["id"]))
+
+    clean_add = []
+    skipped = 0
+
+    for p in pages_to_add:
+        pid = str(p.get("id", "")).strip()
+        if not pid:
+            skipped += 1
+            continue
+        if pid in existing_ids:
+            skipped += 1
+            continue
+        existing_ids.add(pid)
+        clean_add.append(
+            {
+                "id": pid,
+                "title": str(p.get("title", "")),
+                "description": str(p.get("description", "")),
+            }
+        )
+
+    data["pages"] = clean_add + data.get("pages", [])
+
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
+
+    return len(clean_add), skipped
 
 
 class PromptGUI(tk.Tk):
@@ -413,10 +453,13 @@ class PromptGUI(tk.Tk):
             "description": self.desc_vars[idx].get(),
         }
 
-        prepend_pages_to_category_json(category_name, [page])
+        added, skipped = prepend_unique_pages_to_category_json(category_name, [page])
         self.mark_row(idx)
 
-        messagebox.showinfo("Saved", f"Added 1 page to top of {category_name}.json")
+        messagebox.showinfo(
+            "Saved",
+            f"Added: {added}\nSkipped duplicates: {skipped}\nFile: {category_name}.json",
+        )
 
     def save_all_to_json(self):
         category_name = self.category_var.get().strip()
@@ -430,10 +473,11 @@ class PromptGUI(tk.Tk):
             for i in range(len(self.h1_vars))
         ]
 
-        prepend_pages_to_category_json(category_name, pages)
+        added, skipped = prepend_unique_pages_to_category_json(category_name, pages)
 
         messagebox.showinfo(
-            "Saved", f"Added {len(pages)} pages to top of {category_name}.json"
+            "Saved",
+            f"Added: {added}\nSkipped duplicates: {skipped}\nFile: {category_name}.json",
         )
 
     def refresh_items(self):
