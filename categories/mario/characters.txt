@@ -1,10 +1,15 @@
 mario
 mario
 mario
+mario
+mario
+luigi
 luigi
 luigi
 princess peach
 princess peach
+princess peach
+yoshi
 yoshi
 yoshi
 bowser
@@ -14,17 +19,22 @@ toad
 donkey kong
 donkey kong
 princess daisy
+princess daisy
+rosalina
+rosalina
+wario
 wario
 waluigi
-rosalina
+waluigi
+bowser jr
 bowser jr
 toadette
 birdo
 koopa troopa
 goomba
 boo
-shy guy
 king boo
+shy guy
 lakitu
 dry bones
 hammer bro
@@ -35,9 +45,4 @@ baby peach
 baby daisy
 cat mario
 tanooki mario
-fire mario
-ice mario
 builder mario
-raccoon mario
-flying mario
-penguin mario

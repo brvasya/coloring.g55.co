@@ -1,9 +1,6 @@
 in a grassy level
-in a mushroom kingdom
+in the mushroom kingdom
 near a castle
-inside a castle
-on a castle bridge
-near a lava area
 in a snowy level
 in a desert level
 in a jungle level
@@ -11,12 +8,6 @@ in a beach level
 underwater
 in a cave level
 in a sky level
-on floating platforms
-near a flag pole
-on a racing track
-in a rainbow road
-in a haunted house
-in a ghost house
 on a mountain level
 near a waterfall
 in a flower field
@@ -25,13 +16,7 @@ in a peaceful village
 in a colorful world
 in a fantasy land
 near a fortress
-inside a fortress
-near a lava castle
 in a magical world
-on a platform level
-near coin blocks
-near moving platforms
 in a cloud world
-near a secret area
 in a hidden cave
 in a bright adventure land
