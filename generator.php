@@ -366,6 +366,7 @@ if (!empty($missing)) json_out(['ok' => false, 'error' => 'missing_inputs', 'mis
 
 $items = [];
 $errors = [];
+$attempts = [];
 
 for ($i = 0; $i < $count; $i++) {
   $parts = [
@@ -379,35 +380,58 @@ for ($i = 0; $i < $count; $i++) {
   $description = build_description($parts, $pools);
   $prompt = build_prompt($parts, $style);
 
-  $items[] = [
+  // Keep a record of what we tried, even if we skip creating the page
+  $attempts[] = [
     'id' => $id,
     'title' => $title,
     'description' => $description,
   ];
 
+  $page_ok = true;
+
   if ($do_img) {
     if ($api_key === '') {
       $errors[] = ['id' => $id, 'error' => 'missing_api_key'];
-      continue;
-    }
+      $page_ok = false;
+    } else {
+      $img_name = sanitize_filename($id) . '.png';
+      $out_path = $CATEGORIES_DIR . DIRECTORY_SEPARATOR . $category . DIRECTORY_SEPARATOR . $img_name;
 
-    $img_name = sanitize_filename($id) . '.png';
-    $out_path = $CATEGORIES_DIR . DIRECTORY_SEPARATOR . $category . DIRECTORY_SEPARATOR . $img_name;
+      $has_existing = $skip_existing_img && is_file($out_path) && filesize($out_path) > 0;
+      if (!$has_existing) {
+        $img_res = gemini_generate_image($api_key, $prompt, $out_path, $aspect_ratio);
+        if (!($img_res['ok'] ?? false)) {
+          $errors[] = ['id' => $id, 'error' => $img_res];
+          $page_ok = false;
+          if (is_file($out_path)) @unlink($out_path);
+        }
+      }
 
-    if ($skip_existing_img && is_file($out_path)) {
-      continue;
-    }
+      if ($page_ok) {
+        $info = @getimagesize($out_path);
+        if (!is_array($info) || (($info['mime'] ?? '') !== 'image/png')) {
+          $errors[] = ['id' => $id, 'error' => 'invalid_png_output'];
+          $page_ok = false;
+          if (is_file($out_path)) @unlink($out_path);
+        }
+      }
 
-    $img_res = gemini_generate_image($api_key, $prompt, $out_path, $aspect_ratio);
-    if (!($img_res['ok'] ?? false)) {
-      $errors[] = ['id' => $id, 'error' => $img_res];
-      continue;
+      if ($page_ok) {
+        $conv = convert_png_to_1bit_gd($out_path, $ONEBIT_THRESHOLD);
+        if (!($conv['ok'] ?? false)) {
+          $errors[] = ['id' => $id, 'error' => ['onebit' => $conv]];
+        }
+      }
     }
+  }
 
-    $conv = convert_png_to_1bit_gd($out_path, $ONEBIT_THRESHOLD);
-    if (!($conv['ok'] ?? false)) {
-      $errors[] = ['id' => $id, 'error' => ['onebit' => $conv]];
-    }
+  // Only create the page entry if image generation succeeded (or an existing image was already present)
+  if ($page_ok) {
+    $items[] = [
+      'id' => $id,
+      'title' => $title,
+      'description' => $description,
+    ];
   }
 }
 
@@ -424,9 +448,11 @@ json_out([
   'ok' => true,
   'category' => $category,
   'count_requested' => $count,
+  'count_attempted' => count($attempts),
   'count_generated' => count($items),
   'dry' => $dry,
   'write_result' => $write_result,
   'items' => $items,
+  'attempts' => $attempts,
   'errors' => $errors
 ]);
