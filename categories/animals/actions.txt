@@ -8,27 +8,16 @@ running happily
 jumping playfully
 hopping happily
 playing happily
-dancing happily
-spinning playfully
 stretching playfully
 yawning sleepily
 smiling happily
-laughing playfully
-waving happily
 looking around curiously
 listening carefully
 posing happily
 exploring curiously
 playing gently
 holding a ball
-holding a toy
-holding a balloon
 playing with a ball
-playing with a toy
-playing with a bubble
-blowing a bubble
-chasing a ball
-catching a ball
 rolling a ball
 looking happy
 looking curious
@@ -37,18 +26,7 @@ sniffing curiously
 drinking water
 eating happily
 eating a snack
-holding food
-sharing food
 hugging happily
 celebrating happily
 relaxing peacefully
-playing with a friend
-walking with family
-playing with a baby animal
-taking care of a baby animal
-meeting another animal
 playing with a butterfly
-playing in water
-playing in mud
-playing in a leaf pile
-playing in snow

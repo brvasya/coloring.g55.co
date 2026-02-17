@@ -1,40 +1,73 @@
 a dog
-a cat
+a dog
+a dog
+a dog
+a dog
 a puppy
+a puppy
+a puppy
+a cat
+a cat
+a cat
+a cat
+a cat
+a kitten
+a kitten
 a kitten
 a horse
-a pony
+a horse
+a horse
+a horse
 a rabbit
-a bunny
+a rabbit
+a rabbit
+a cow
 a cow
 a pig
+a pig
+a sheep
 a sheep
 a goat
+a goat
+a chicken
 a chicken
 a duck
+a duck
+a lion
+a lion
 a lion
 a tiger
+a tiger
+a tiger
+an elephant
+an elephant
+an elephant
 an elephant
 a giraffe
+a giraffe
+a monkey
 a monkey
 a panda
+a panda
+a panda
+a bear
 a bear
 a zebra
+a zebra
+a fox
 a fox
 a wolf
 a deer
+a dolphin
+a dolphin
 a dolphin
 a shark
 a whale
 a fish
 a penguin
-a unicorn
-a dragon
-a butterfly
-a bee
 a turtle
+a sea turtle
 a crocodile
-an alligator
 a snake
 a parrot
 an owl
@@ -44,18 +77,21 @@ a koala
 a sloth
 an otter
 a seal
-a sea turtle
 an octopus
 a hamster
+a hamster
+a guinea pig
 a guinea pig
 a hedgehog
 a raccoon
 a squirrel
 a flamingo
 a peacock
+a butterfly
+a butterfly
+a bee
+a bee
 a baby elephant
 a baby panda
 a baby tiger
 a baby rabbit
-a baby puppy
-a baby kitten

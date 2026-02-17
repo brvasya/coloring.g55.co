@@ -1,8 +1,6 @@
 on a farm
-in a barnyard
 in a backyard
 in a garden
-in a zoo habitat
 on the savanna
 in the jungle
 in the rainforest
@@ -23,7 +21,6 @@ in a vegetable garden
 in a flower meadow
 at a park pond
 on a forest trail
-at a waterfall
 in a desert
 in an oasis
 in the snow
@@ -31,7 +28,6 @@ in a winter forest
 on an ice lake
 in a jungle clearing
 in a nature reserve
-in a wildlife sanctuary
 on a mountain trail
 in the mountains
 on a grassy hill
@@ -56,20 +52,5 @@ near a farmhouse
 near a barn
 near a lake
 on a sandy shore
-on a cliffside
-in a mangrove forest
-in a safari park
-in a wildlife park
-on a snowy hill
-during snowfall
-in autumn leaves
-in spring flowers
-in summer sunshine
 in a magical forest
-in a fantasy land
-in a crystal cave
 in a cartoon village
-inside a cozy home
-inside a pet house
-near animal families
-near baby animals
