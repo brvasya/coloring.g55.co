@@ -9,9 +9,7 @@ in a lush valley
 on a grassy plain
 in a rainforest
 in a snowy land
-on an icy hill
 near a cave
-at a cliff edge
 in a flower field
 in a palm grove
 near a big tree
@@ -22,46 +20,21 @@ on a windy hill
 in a rocky field
 in a bamboo forest
 in a pine forest
-near ancient ruins
-in a dino village
-near a wooden bridge
-by a small pond
 near tall grasses
 near a fallen log
-in a berry patch
 on a dirt path
 near dinosaur footprints
-near a crystal cave
 near a lava stream
 near a bubbling geyser
-near a giant fern
-near a mushroom patch
-near a sunny cliff
-near a foggy cave
-near a rainbow waterfall
-near a quiet stream
-near a meadow pond
-near a rocky ridge
-near a forest clearing
-near a mountain lake
-near a grassy hill
-near a prehistoric camp
 under giant ferns
-inside a dinosaur cave
 beside a jungle river
-at a fossil site
-near a jungle waterfall
 on a jungle trail
 inside a fern valley
 near a volcanic field
 on a wide grassland
-near ancient stone pillars
 near a jungle clearing
 in a warm prehistoric valley
 near a rocky canyon
 beside a shallow stream
-near a dinosaur nest
-near dinosaur eggs
-near a baby dinosaur nest
-near a hatching egg
-near a dinosaur family nest
+near a mountain lake
+near a grassy hill

@@ -1,15 +1,37 @@
 a tyrannosaurus rex
+a tyrannosaurus rex
+a tyrannosaurus rex
+a tyrannosaurus rex
+a triceratops
+a triceratops
+a triceratops
 a triceratops
 a velociraptor
+a velociraptor
+a velociraptor
+a velociraptor
+a stegosaurus
+a stegosaurus
 a stegosaurus
 a brachiosaurus
+a brachiosaurus
+a brachiosaurus
+a spinosaurus
+a spinosaurus
 a spinosaurus
 a ankylosaurus
+a ankylosaurus
 a allosaurus
-a pteranodon
-a pterodactyl
+a allosaurus
+a diplodocus
 a diplodocus
 a parasaurolophus
+a parasaurolophus
+a pteranodon
+a pteranodon
+a pterodactyl
+a pterodactyl
+a quetzalcoatlus
 a pachycephalosaurus
 a therizinosaurus
 a carnotaurus
@@ -18,7 +40,6 @@ a deinonychus
 a utahraptor
 a oviraptor
 a gallimimus
-a archaeopteryx
 a protoceratops
 a styracosaurus
 a iguanodon
@@ -35,5 +56,3 @@ a saurolophus
 a argentinosaurus
 a acrocanthosaurus
 a corythosaurus
-a quetzalcoatlus
-a dimetrodon
