@@ -35,9 +35,12 @@ if ($cat === null) {
 list($_, $pages) = load_category_pages($cid);
 
 $page = null;
-foreach ($pages as $p) {
-  if ($p['id'] === $id) {
-    $page = $p;
+$pageIndex = -1;
+
+for ($i = 0; $i < count($pages); $i++) {
+  if (($pages[$i]['id'] ?? '') === $id) {
+    $page = $pages[$i];
+    $pageIndex = $i;
     break;
   }
 }
@@ -57,9 +60,26 @@ $imageSrc = '/categories/' . $cid . '/' . $page['id'] . '.png';
 $h1 = $pageTitle;
 $desc = $page['description'];
 
+$prevPage = null;
+$nextPage = null;
+$prevHref = null;
+$nextHref = null;
+
+if ($pageIndex !== -1) {
+  if ($pageIndex > 0) {
+    $prevPage = $pages[$pageIndex - 1];
+    $prevHref = '/page.php?id=' . rawurlencode($prevPage['id']) . '&c=' . rawurlencode($cid);
+  }
+
+  if ($pageIndex < count($pages) - 1) {
+    $nextPage = $pages[$pageIndex + 1];
+    $nextHref = '/page.php?id=' . rawurlencode($nextPage['id']) . '&c=' . rawurlencode($cid);
+  }
+}
+
 $pool = [];
 foreach ($pages as $p) {
-  if ($p['id'] === $id) continue;
+  if (($p['id'] ?? '') === $id) continue;
   $pool[] = $p;
 }
 
@@ -69,6 +89,7 @@ $similar = [];
 if ($limit > 0) {
   $keys = array_rand($pool, $limit);
   if (!is_array($keys)) $keys = [$keys];
+
   foreach ($keys as $k) {
     $similar[] = $pool[$k];
   }
