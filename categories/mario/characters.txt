@@ -14,8 +14,8 @@ yoshi
 yoshi
 bowser
 bowser
-toad
-toad
+toad from super mario series
+toad from super mario series
 donkey kong
 donkey kong
 princess daisy
@@ -36,13 +36,13 @@ boo
 king boo
 shy guy
 lakitu
-dry bones
+dry bones from super mario series
 hammer bro
 chain chomp
 baby mario
 baby luigi
 baby peach
-baby daisy
+baby daisy from super mario series
 cat mario
 tanooki mario
 builder mario
