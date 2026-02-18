@@ -26,11 +26,11 @@
 <img class="page" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h(makeImageAlt($page['id'])); ?>">
 </article>
 <nav class="pagination">
-<?php if ($prevHref): ?>
-<a class="tag" href="<?php echo h($prevHref) ?>">Prev Page</a>
+<?php if ($prevUrl): ?>
+<a class="tag" href="<?php echo h($prevUrl) ?>">Prev Page</a>
 <?php endif; ?>
-<?php if ($nextHref): ?>
-<a class="tag" href="<?php echo h($nextHref) ?>">Next Page</a>
+<?php if ($nextUrl): ?>
+<a class="tag" href="<?php echo h($nextUrl) ?>">Next Page</a>
 <?php endif; ?>
 </nav>
 <section>

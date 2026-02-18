@@ -62,18 +62,18 @@ $desc = $page['description'];
 
 $prevPage = null;
 $nextPage = null;
-$prevHref = null;
-$nextHref = null;
+$prevUrl = null;
+$nextUrl = null;
 
 if ($pageIndex !== -1) {
   if ($pageIndex > 0) {
     $prevPage = $pages[$pageIndex - 1];
-    $prevHref = '/page.php?id=' . rawurlencode($prevPage['id']) . '&c=' . rawurlencode($cid);
+    $prevUrl = '/page.php?id=' . rawurlencode($prevPage['id']) . '&c=' . rawurlencode($cid);
   }
 
   if ($pageIndex < count($pages) - 1) {
     $nextPage = $pages[$pageIndex + 1];
-    $nextHref = '/page.php?id=' . rawurlencode($nextPage['id']) . '&c=' . rawurlencode($cid);
+    $nextUrl = '/page.php?id=' . rawurlencode($nextPage['id']) . '&c=' . rawurlencode($cid);
   }
 }
 
