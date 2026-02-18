@@ -25,6 +25,14 @@
 </div>
 <img class="page" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h(makeImageAlt($page['id'])); ?>">
 </article>
+<nav class="pagination">
+<?php if ($prevHref): ?>
+<a class="tag" href="<?php echo h($prevHref) ?>">Prev Page</a>
+<?php endif; ?>
+<?php if ($nextHref): ?>
+<a class="tag" href="<?php echo h($nextHref) ?>">Next Page</a>
+<?php endif; ?>
+</nav>
 <section>
 <h2><?php echo h($moreTitle); ?></h2>
 <div class="grid">
