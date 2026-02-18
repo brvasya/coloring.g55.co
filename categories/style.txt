@@ -1,1 +1,1 @@
-simple cartoon style, thick clean outlines, black and white line art, minimal background detail, large simple coloring areas, no text, no solid black fills, no filled shadows
+simple cartoon style, thick clean outlines, black and white line art, minimal background detail, large simple coloring areas, pure white background, keep all interior areas white, outlines only, no solid black fills, no filled shadows, no dark areas, do not fill sky or borders, no text
