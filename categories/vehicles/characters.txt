@@ -108,28 +108,20 @@ a passenger airplane
 a passenger airplane
 a passenger airplane
 a passenger airplane
-a train
-a train
-a train
-a train
-a steam train
-a steam train
-a steam train
-a steam train
-a passenger train
-a passenger train
-a passenger train
-a passenger train
-a boat
-a boat
-a boat
-a boat
-a sailboat
-a sailboat
-a sailboat
-a sailboat
 a cargo airplane
 a cargo airplane
+a train
+a train
+a train
+a train
+a steam train
+a steam train
+a steam train
+a steam train
+a passenger train
+a passenger train
+a passenger train
+a passenger train
 a cargo train
 a cargo train
 a tram
@@ -140,12 +132,6 @@ a crane truck
 a crane truck
 a forklift
 a forklift
-a ferry
-a ferry
-a cruise ship
-a cruise ship
-a speedboat
-a speedboat
 a motorcycle
 a motorcycle
 a police motorcycle
@@ -159,6 +145,4 @@ a hot air balloon
 a rocket ship
 a space shuttle
 a spaceship
-a cargo ship
-a submarine
 a food truck
