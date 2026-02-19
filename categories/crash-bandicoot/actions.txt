@@ -1,38 +1,25 @@
-running fast
+standing happily
+smiling confidently
+waving hello
+holding a wooden crate
+holding wumpa fruit
+jumping upward
+jumping forward
+spinning playfully
 running forward
-jumping high
-jumping across a platform
-spinning
-performing a spin attack
-breaking a crate
-collecting wumpa fruit
-escaping danger
-sliding
-balancing on a platform
-swinging on a vine
-riding Pura
-riding Polar
-riding a mine cart
-riding a jet board
-driving a kart
-racing forward
-battling an enemy
-fighting a boss
-dodging an obstacle
-opening a treasure chest
-activating a portal
-solving a puzzle
-saving a friend
-celebrating victory
-climbing a platform
+walking calmly
+balancing carefully
+climbing gently
+looking around curiously
+celebrating happily
+exploring carefully
 searching for treasure
-exploring a passage
-escaping a cave
-avoiding a trap
-running across a bridge
-jumping over lava
-crossing a platform
-escaping a giant enemy
-breaking an obstacle crate
-running through ruins
-jumping between platforms
+pointing forward
+giving a thumbs up
+posing heroically
+sitting and relaxing
+helping a friend
+opening a simple treasure chest
+activating a glowing portal
+crossing a wooden bridge
+avoiding a simple obstacle

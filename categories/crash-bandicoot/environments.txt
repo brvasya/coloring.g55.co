@@ -1,57 +1,25 @@
-in the jungle
-on the beach
-in temple ruins
-inside an ancient temple
-in snowy mountains
-inside an ice cave
-in a volcanic cave
-in jungle ruins
-on a rope bridge
-inside a crystal cave
-inside a dark cave
-inside a haunted castle
-on a space station
-on an alien planet
-inside a laboratory
-inside a factory
-inside a mechanical base
-near a time portal
-inside a jungle village
-on a jungle trail
-inside temple corridors
-inside temple chambers
-inside underground tunnels
-inside flooded ruins
-inside a snowy village
-on a snowy cliff
-inside an icy canyon
-inside frozen ruins
-near a frozen waterfall
-inside a lava fortress
-near a volcano slope
-inside volcanic tunnels
-on a tropical shoreline
-near ocean cliffs
-inside pirate caves
-on a shipwreck shore
-inside underwater caves
-inside desert ruins
-near desert pyramids
-inside a lost city
-inside city tunnels
-on city rooftops
+in a jungle clearing
+near jungle trees
+on a simple jungle path
+inside simple temple ruins
+inside a stone temple
+near tropical plants
+near a small waterfall
+on a wooden bridge
+inside a simple cave
+near rocky cliffs
+on a sandy beach
+near ocean waves
+inside snowy mountains
+near snow covered trees
+inside an icy cave
+near a gentle volcano
+inside a simple castle hall
+inside a castle courtyard
+inside a simple laboratory
+inside a mechanical room
+inside a simple factory
+near a glowing portal
 inside crystal caverns
-inside underground tunnels
-inside castle halls
-on castle rooftops
-inside castle corridors
-inside castle courtyards
-inside a space base
-on floating space platforms
-inside alien ruins
-inside a research laboratory
-inside factory platforms
-inside a robotic zone
-inside a mechanical fortress
-inside a time portal chamber
-inside distorted time ruins
+near ancient ruins
+inside a treasure chamber
