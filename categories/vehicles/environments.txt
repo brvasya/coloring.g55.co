@@ -1,4 +1,5 @@
 on a city street
+on a quiet neighborhood street
 on a highway
 on a country road
 in a small town
@@ -8,9 +9,7 @@ at a police station
 at a hospital
 at a construction site
 at a train station
-at an airport
-at a space center
-in outer space
+at an airport runway
 on a race track
 at a car garage
 at a parking lot
@@ -18,30 +17,20 @@ at a car wash
 at a harbor
 at a seaport
 on the ocean
+on a calm lake
 on a river
-on a lake
-on a bridge
-inside a tunnel
+on a simple bridge
 on a mountain road
 in the countryside
 near a farm
 in a desert
 on a snowy road
-in autumn leaves
-in spring sunshine
-in summer sunshine
 near the beach
 on a coastal road
-on a jungle road
-on a safari road
 near mountains
 near a village
 in a cartoon city
-in a fantasy city
 at a delivery center
 near a warehouse
-in a space station
-on another planet
-in a futuristic city
 near a playground
 near a park

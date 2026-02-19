@@ -1,20 +1,20 @@
-smiling happily
-waving happily
-posing for a picture
-looking friendly
-starting a trip
-going on an adventure
-traveling to a new place
-moving forward
-rolling along
-turning carefully
-speeding up
+driving forward
+rolling forward
+moving slowly
+moving carefully
+turning gently
+turning left
+turning right
+parking safely
 stopping safely
-waiting patiently
-exploring a new place
-celebrating a victory
-getting washed
+waiting at a stop
+traveling on the road
+driving on the road
+working at a job site
+delivering goods
+picking up cargo
+carrying passengers
+ready for action
+on duty
+getting cleaned
 getting repaired
-going on a journey
-traveling safely
-going on a fun ride
