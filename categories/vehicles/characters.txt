@@ -92,24 +92,6 @@ a city bus
 a city bus
 a city bus
 a city bus
-a helicopter
-a helicopter
-a helicopter
-a helicopter
-a rescue helicopter
-a rescue helicopter
-a rescue helicopter
-a rescue helicopter
-an airplane
-an airplane
-an airplane
-an airplane
-a passenger airplane
-a passenger airplane
-a passenger airplane
-a passenger airplane
-a cargo airplane
-a cargo airplane
 a train
 a train
 a train
@@ -140,9 +122,4 @@ a scooter
 a scooter
 a bicycle
 a bicycle
-a fighter jet
-a hot air balloon
-a rocket ship
-a space shuttle
-a spaceship
 a food truck
