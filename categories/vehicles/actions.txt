@@ -1,14 +1,20 @@
-driving forward
-rolling forward
+driving
+rolling
+moving
+turning
+stopping
+waiting
+starting
+parking
+standing still
 moving slowly
-moving carefully
-turning gently
+moving gently
+moving forward
 turning left
 turning right
-parking safely
-stopping safely
-waiting at a stop
-traveling on the road
-driving on the road
-getting cleaned
-getting repaired
+slowing down
+speeding up
+posing proudly
+looking shiny
+lined up neatly
+standing proudly
