@@ -1,19 +1,39 @@
 {
-  "pages": [
-    {
-      "id": "frozen-elsa-braided-hair-portrait-coloring-page",
-      "title": "Free Printable Frozen Elsa Portrait Coloring Page for Kids",
-      "description": "This printable coloring page features Elsa from Frozen smiling in a portrait pose with her braided hair. Perfect for home activities, classroom fun, or relaxing creative time. Clean outlines and large spaces make coloring easy for kids of all skill levels. Coloring helps children build creativity and enjoy calm, focused play."
-    },
-    {
-      "id": "frozen-sven-making-ice-magic-inside-the-ice-castle-coloring-page",
-      "title": "Free Printable Frozen Sven Making Ice Magic Inside the Ice Castle Coloring Page for Kids",
-      "description": "A kid friendly printable page features Frozen Sven making ice magic inside the ice castle. The drawing stays easy to color with simple open areas. Useful for creative breaks during busy school days. Helps kids build patience through enjoyable coloring."
-    },
-    {
-      "id": "frozen-coloring-page-elsa-anna-olaf-ice-castle",
-      "title": "Frozen Coloring Page with Elsa Anna Olaf and Ice Castle",
-      "description": "Frozen coloring page with Elsa and Anna standing in a snowy winter landscape with Olaf the snowman Sven the reindeer Kristoff a magical ice castle snowflakes pine trees and a glowing moon in the sky free printable black and white coloring sheet for kids"
-    }
-  ]
+    "pages": [
+        {
+            "id": "elsa-classic-side-braid-portrait-coloring",
+            "title": "Queen Elsa Classic Side Braid Portrait Coloring Page",
+            "description": "Celebrate the iconic look of the Ice Queen with this beautiful portrait of Elsa featuring her signature long side braid and elegant royal attire. This high quality printable offers clean lines and professional character design making it a perfect creative activity for fans of Frozen and detailed portrait coloring. Visit our website to download this free illustration and explore our massive gallery of over five hundred unique coloring sheets for fans of quality art and magical stories."
+        },
+        {
+            "id": "cute-anna-braids-winter-coloring-page",
+            "title": "Cute Princess Anna with Braids and Winter Cape Coloring Page",
+            "description": "Celebrate the brave spirit of Princess Anna with this adorable coloring page featuring her signature twin braids and royal winter cape. This high quality printable showcases a charming art style with expressive eyes making it a perfect creative activity for fans of Frozen adventures and cute character illustrations. Visit our website to download this free sheet and explore our massive gallery of over five hundred unique coloring pages for fans of quality art and sisterly stories."
+        },
+        {
+            "id": "queen-anna-coronation-portrait-coloring-page",
+            "title": "Queen Anna of Arendelle Royal Coronation Portrait Coloring Page",
+            "description": "Capture the royal elegance of Queen Anna in her beautiful coronation gown and signature braided tiara hairstyle. This high quality printable features clean lines and authentic character details making it a perfect creative activity for fans of Frozen 2 and royal fairytale fashion. Visit our website to download this free illustration and explore our massive gallery of over five hundred unique coloring sheets for fans of quality art and magical stories."
+        },
+        {
+            "id": "elsa-elegant-portrait-coloring-page",
+            "title": "Princess Elsa Elegant Portrait Coloring Page",
+            "description": "Capture the grace of Princess Elsa in this beautiful portrait featuring her long flowing hair and confident expression. This high quality printable focuses on clean lines and elegant character details making it a perfect creative activity for fans of Frozen and winter fairytales. Visit our website to download this free illustration and explore our massive gallery of over five hundred unique coloring sheets for fans of quality art and magical stories."
+        },
+        {
+            "id": "frozen-elsa-braided-hair-portrait-coloring-page",
+            "title": "Free Printable Frozen Elsa Portrait Coloring Page for Kids",
+            "description": "This printable coloring page features Elsa from Frozen smiling in a portrait pose with her braided hair. Perfect for home activities, classroom fun, or relaxing creative time. Clean outlines and large spaces make coloring easy for kids of all skill levels. Coloring helps children build creativity and enjoy calm, focused play."
+        },
+        {
+            "id": "frozen-sven-making-ice-magic-inside-the-ice-castle-coloring-page",
+            "title": "Free Printable Frozen Sven Making Ice Magic Inside the Ice Castle Coloring Page for Kids",
+            "description": "A kid friendly printable page features Frozen Sven making ice magic inside the ice castle. The drawing stays easy to color with simple open areas. Useful for creative breaks during busy school days. Helps kids build patience through enjoyable coloring."
+        },
+        {
+            "id": "frozen-coloring-page-elsa-anna-olaf-ice-castle",
+            "title": "Frozen Coloring Page with Elsa Anna Olaf and Ice Castle",
+            "description": "Frozen coloring page with Elsa and Anna standing in a snowy winter landscape with Olaf the snowman Sven the reindeer Kristoff a magical ice castle snowflakes pine trees and a glowing moon in the sky free printable black and white coloring sheet for kids"
+        }
+    ]
 }
