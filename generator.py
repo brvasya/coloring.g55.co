@@ -621,11 +621,4 @@ class PromptGUI(tk.Tk):
 
 if __name__ == "__main__":
     load_pools()
-
-    try:
-        from ctypes import windll
-        windll.shcore.SetProcessDpiAwareness(1)
-    except Exception:
-        pass
-
     PromptGUI().mainloop()
