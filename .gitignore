@@ -1,2 +1,2 @@
-.tmp.driveupload/
 .DS_Store
+*.lock
