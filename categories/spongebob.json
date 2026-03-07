@@ -1,9 +1,14 @@
 {
-  "pages": [
-    {
-      "id": "free-printable-spongebob-squarepants-underwater-coloring-page",
-      "title": "Free Printable SpongeBob SquarePants Underwater Coloring Page",
-      "description": "SpongeBob SquarePants smiling underwater coloring page featuring SpongeBob waving with jellyfish bubbles coral sea plants starfish and pineapple house free printable coloring sheet"
-    }
-  ]
+    "pages": [
+        {
+            "id": "funny-spongebob-celebrating-near-an-underwater-bridge-coloring-page",
+            "title": "Free Printable Funny Spongebob Celebrating Near An Underwater Bridge Coloring Page for Kids",
+            "description": "This printable coloring sheet highlights funny spongebob celebrating near an underwater bridge. Strong outlines make the page easy to follow while coloring. Supports creative learning with simple coloring fun. A simple activity for daycare, preschool, or kindergarten."
+        },
+        {
+            "id": "free-printable-spongebob-squarepants-underwater-coloring-page",
+            "title": "Free Printable SpongeBob SquarePants Underwater Coloring Page",
+            "description": "SpongeBob SquarePants smiling underwater coloring page featuring SpongeBob waving with jellyfish bubbles coral sea plants starfish and pineapple house free printable coloring sheet"
+        }
+    ]
 }
