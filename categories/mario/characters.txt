@@ -3,45 +3,45 @@ mario
 mario
 mario
 mario
-luigi
-luigi
-luigi
-princess peach
-princess peach
-princess peach
-yoshi
-yoshi
-yoshi
-bowser
-bowser
-toad from super mario series
-toad from super mario series
-donkey kong
-donkey kong
-princess daisy
-princess daisy
-rosalina
-rosalina
-wario
-wario
-waluigi
-waluigi
-bowser jr
-bowser jr
-toadette
-birdo
-koopa troopa
-goomba
-boo from super mario series
-king boo
-shy guy
-lakitu
-hammer bro
-chain chomp
+luigi mario brother
+luigi mario brother
+luigi mario brother
+princess peach mario princess
+princess peach mario princess
+princess peach mario princess
+yoshi mario dinosaur
+yoshi mario dinosaur
+yoshi mario dinosaur
+bowser mario villain
+bowser mario villain
+toad mario mushroom helper
+toad mario mushroom helper
+donkey kong mario ally
+donkey kong mario ally
+princess daisy mario princess
+princess daisy mario princess
+rosalina mario princess
+rosalina mario princess
+wario mario rival
+wario mario rival
+waluigi mario rival
+waluigi mario rival
+bowser jr mario villain
+bowser jr mario villain
+toadette mario mushroom girl
+birdo mario dinosaur
+koopa troopa mario turtle
+goomba mario enemy
+boo mario ghost
+king boo mario ghost
+shy guy mario masked enemy
+lakitu mario cloud rider
+hammer bro mario enemy
+chain chomp mario creature
 baby mario
-baby luigi
-baby peach from super mario series
-baby daisy from super mario series
+baby luigi mario brother
+baby peach mario princess
+baby daisy mario princess
 cat mario
 tanooki mario
 builder mario

@@ -2,6 +2,7 @@ POOL PRODUCTION CHECKLIST FOR COLORING PAGE GENERATION
 
 Character pool checklist
 ✔ Uses high demand characters or themes
+✔ Always use category keyword in characters.txt
 ✔ Covers popular and generic variants
 ✔ Names match common search queries
 ✔ No accidental duplicates unless weighting intentionally
