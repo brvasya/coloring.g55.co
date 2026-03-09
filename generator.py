@@ -242,6 +242,18 @@ def calculate_total_combinations(data):
     return c * a * e
 
 
+def count_keyword_matches(lines, keyword):
+    keyword = (keyword or "").strip().lower()
+    if not keyword:
+        return 0
+
+    count = 0
+    for line in lines or []:
+        if keyword in (line or "").lower():
+            count += 1
+    return count
+
+
 def category_json_path(category_name):
     return os.path.join(CATEGORIES_DIR, f"{category_name}.json")
 
@@ -433,13 +445,17 @@ class PromptGUI(tk.Tk):
 
     def update_counters(self):
         data = self.data or {}
+        category_keyword = self.category_var.get().strip()
+
         c = len(data.get("characters") or [])
+        c_match = count_keyword_matches(data.get("characters") or [], category_keyword)
         a = len(data.get("actions") or [])
         e = len(data.get("environments") or [])
         total = calculate_total_combinations(data)
         total_fmt = f"{total:,}"
+
         self.counters_var.set(
-            f"Characters: {c}  Actions: {a}  Environments: {e}  Total: {total_fmt}"
+            f"Characters: {c} ({c_match} matched)  Actions: {a}  Environments: {e}  Total: {total_fmt}"
         )
 
     def on_category_select(self, _event=None):
