@@ -63,8 +63,8 @@ function newest_page(array $pages): array {
     http_response_code(500);
     exit;
   }
-  $idx = array_rand($pages);
-  return $pages[$idx];
+
+  return $pages[0];
 }
 
 function get_categories_sorted(array $index): array {
