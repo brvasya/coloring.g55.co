@@ -184,10 +184,10 @@ class JsonGui(tk.Tk):
         self.delete_btn = ttk.Button(btn_row, text="Delete", command=self.delete_item)
         self.delete_btn.pack(side="left", padx=6)
 
-        search = ttk.LabelFrame(right, text="Find by title or name", padding=10)
+        search = ttk.LabelFrame(right, text="Find by title", padding=10)
         search.pack(fill="x", pady=(10, 0))
 
-        ttk.Label(search, text="Text").grid(row=0, column=0, sticky="w")
+        ttk.Label(search, text="Title").grid(row=0, column=0, sticky="w")
         self.search_title_var = tk.StringVar()
         search_entry = ttk.Entry(search, textvariable=self.search_title_var, width=34)
         search_entry.grid(row=1, column=0, sticky="we", padx=(0, 6))
