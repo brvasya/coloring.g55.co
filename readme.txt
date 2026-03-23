@@ -1,8 +1,8 @@
-MASTER COLORING CATEGORY DESCRIPTION GENERATOR RULE V3
+MASTER COLORING CATEGORY DESCRIPTION GENERATOR RULE V3.1
 FINAL HARDENED PRODUCTION VERSION
-GOOGLE IMAGES SEMANTIC CLUSTERING AUTHORITY MODEL
+GRAMMAR + SEO + GOOGLE IMAGES SEMANTIC CLUSTERING AUTHORITY MODEL
 
-Goal
+GOAL
 Generate handcrafted editorial quality category descriptions for Coloring.G55.CO that maximize Google Images indexing depth, semantic clustering strength, topical authority, and long term evergreen printable search traffic.
 Descriptions must reinforce visual recognition signals, printable activity intent, subject clarity, and age appropriate usability.
 
@@ -23,29 +23,33 @@ INTRO PARAGRAPH RULES
 Write exactly ONE paragraph
 Length: 80 to 110 words
 First sentence MUST begin with coloring activity action
+Primary keyword must appear naturally in first sentence
 Clearly describe what users color visually
-Mention printable usage naturally
 Include multiple subject variations
 Include scene or environment variation
 Include complexity variation
 Include age or usage context
 Include at least one strong printable long tail signal
 Include visual simplicity signal
+Printable intent must appear twice using different phrasing
 Avoid marketing tone
 Avoid filler phrases
 Avoid storytelling narrative
 Avoid formal academic writing
 Do not use dashes in prose
 Use maximum 2 soft adjectives
+Maintain tense consistency
+Avoid vague pronouns
+Avoid repeated sentence structure patterns
 
 MANDATORY SUBJECT DENSITY RULE
 
 Paragraph must include at least 5 distinct subject variations
-Examples
 
-dogs cats lions elephants horses
-trucks cars buses tractors motorcycles
-princesses castles dragons fairies unicorns
+Example patterns
+dogs, cats, lions, elephants, horses
+trucks, cars, buses, tractors, motorcycles
+princesses, castles, dragons, fairies, unicorns
 
 GOOGLE IMAGES SEMANTIC CLUSTER LAYERS
 
@@ -60,10 +64,9 @@ Layer 6 Age or educational usage cluster
 
 PRINTABLE INTENT REINFORCEMENT RULE
 
-Printable intent must appear twice in different phrasing
+Printable intent must appear twice using variation
 
 Examples
-
 printable coloring pages
 coloring sheets to print
 
@@ -72,7 +75,6 @@ LONG TAIL PRINTABLE SIGNAL RULE
 Include at least one strong long tail phrase
 
 Examples
-
 easy coloring pages for toddlers
 detailed coloring pages for older kids
 free printable coloring sheets
@@ -81,10 +83,9 @@ educational coloring worksheets
 
 VISUAL SIMPLICITY SIGNAL RULE
 
-Paragraph must include one simplicity clarity signal
+Paragraph must include one clarity signal
 
 Examples
-
 simple outline drawings
 bold line art pages
 easy coloring outlines
@@ -92,7 +93,7 @@ clean black and white designs
 
 VISUAL INDEXING SIGNAL OBJECTIVE
 
-Descriptions must help Google understand
+Descriptions must help search engines understand
 
 What objects appear
 How many variations exist
@@ -100,6 +101,50 @@ What complexity levels exist
 What age group is relevant
 What context usage exists
 What printable format exists
+
+GRAMMAR STRUCTURE RULES
+
+Every sentence must contain clear subject and action
+Use commas in all subject lists
+Last list item must include "and"
+Avoid repeating "such as" inside lists
+Avoid chained noun stacks longer than 5 without punctuation
+Avoid run on sentences
+Avoid repeating identical grammatical pattern across sentences
+Avoid keyword stacking structures
+Maintain plural consistency
+Maintain natural editorial rhythm
+Avoid abstract visual descriptions
+
+READABILITY TARGET
+
+Grade level target: 4 to 6
+Prefer short clear sentences
+Maximum sentence length: 28 words
+
+KEYWORD SPAM PREVENTION RULE
+
+Do not repeat identical keyword phrase twice
+Do not use more than 3 occurrences of "coloring" root per sentence
+Do not repeat category name inside bullets
+Avoid unnatural keyword stacking patterns
+
+PARAGRAPH FLOW MODEL
+
+Sentence 1
+Coloring action + primary subject + printable intent
+
+Sentence 2
+Subject expansion + environment diversity
+
+Sentence 3
+Complexity variation + simplicity signal
+
+Sentence 4
+Educational usage + printable variation
+
+Sentence 5
+Skill development + learning signal
 
 CATEGORY TYPE SEMANTIC GUIDANCE
 
@@ -138,12 +183,13 @@ Key Features
 
 Include 6 to 8 bullets
 Ideal bullet length 4 to 8 words
-Bullets must represent semantic visual clusters
+Bullets must be noun phrases
 No full sentences
+No verbs at start
 No marketing language
 No filler adjectives
 Avoid repeating category name
-Avoid generic activity phrases
+Avoid generic activity wording
 
 BULLET SEMANTIC CLUSTER MODEL
 
@@ -194,20 +240,6 @@ Not ad copy
 Not storytelling
 Not AI template
 
-OUTPUT FORMAT EXAMPLE
-
-{PARAGRAPH}
-
-Key Features
-
-• feature
-• feature
-• feature
-• feature
-• feature
-• feature
-• feature
-
 QUALITY VALIDATION CHECK
 
 Before output ensure
@@ -219,10 +251,13 @@ Printable intent repeated twice
 Visual simplicity signal included
 Strong long tail printable phrase included
 Paragraph length correct
+No sentence exceeds 28 words
+Grammar natural when read aloud
 Bullets represent semantic clusters
 Tone editorial and natural
 No filler or repetition
 Clear Google Images search intent
+Evergreen printable authority signal present
 
 END RULE
 
