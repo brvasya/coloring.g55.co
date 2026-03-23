@@ -58,6 +58,7 @@ a, a:visited {
     text-decoration: none;
 }
 p {
+    white-space: pre-line;
     text-align: justify;
     margin: 0;
 }
@@ -73,7 +74,6 @@ p {
 .title {
     gap: 30px;
     padding: 60px;
-    height: 300px;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
