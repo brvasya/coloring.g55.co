@@ -102,6 +102,6 @@ if ($hasC) {
   $desc = $site['description'];
 
   $title = $h1;
-  $metaDesc = $desc;
+  $metaDesc = strip_tags($desc);
   $canonical = 'https://coloring.g55.co/';
 }
