@@ -14,7 +14,7 @@
 <body>
 <?php include 'header.php'; ?>
 <main>
-<article>
+<article class="content">
 <div class="tower_r">
 <h1><?php echo h($h1); ?></h1>
 <p><?php echo h($desc); ?></p>

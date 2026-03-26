@@ -13,7 +13,7 @@ header {
     display: flex;
     align-items: center;
 }
-article {
+.content {
     margin: 0 25px;
     display: flex;
     flex-direction: row-reverse;
