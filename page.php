@@ -15,14 +15,14 @@
 <?php include 'header.php'; ?>
 <main>
 <article class="content">
-<div class="tower_r">
+<section class="tower_r">
 <h1><?php echo h($h1); ?></h1>
 <p><?php echo h($desc); ?></p>
 <a class="tag save" href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode($canonical); ?>&description=<?php echo rawurlencode($desc); ?>" target="_blank">Save to Pinterest</a>
 <button class="tag print" onclick="window.print();">Print</button>
 <a class="tag download" href="<?php echo h($imageSrc); ?>" download>Download</a>
 <a class="tag more" href="<?php echo h($moreHref); ?>"><?php echo h($moreText); ?></a>
-</div>
+</section>
 <img class="page" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h(makeImageAlt($page['id'])); ?>">
 </article>
 <nav class="pagination">
@@ -33,7 +33,7 @@
 <a class="tag" href="<?php echo h($nextUrl) ?>">Next Page</a>
 <?php endif; ?>
 </nav>
-<section>
+<aside>
 <h2><?php echo h($moreTitle); ?></h2>
 <div class="grid">
 <?php foreach ($similar as $p): ?>
@@ -43,7 +43,7 @@
 </a>
 <?php endforeach; ?>
 </div>
-</section>
+</aside>
 </main>
 <?php include 'footer.php'; ?>
 </body>
