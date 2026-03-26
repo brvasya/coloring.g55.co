@@ -37,6 +37,7 @@
 <?php endif; ?>
 </nav>
 <?php endif; ?>
+</main>
 <?php include 'footer.php'; ?>
 </body>
 </html>
