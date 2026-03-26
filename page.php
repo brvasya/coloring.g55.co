@@ -15,7 +15,7 @@
 <?php include 'header.php'; ?>
 <main>
 <article class="content">
-<section class="tower_r">
+<section class="description">
 <h1><?php echo h($h1); ?></h1>
 <p><?php echo h($desc); ?></p>
 <a class="tag save" href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode($canonical); ?>&description=<?php echo rawurlencode($desc); ?>" target="_blank">Save to Pinterest</a>
