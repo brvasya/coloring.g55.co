@@ -7,6 +7,5 @@
 </ul>
 </nav>
 <footer>
-<span>&#169; <?php echo date('Y'); ?> Coloring.G55.CO</span>
 <a href="/privacy-policy.php">Privacy Policy</a>
 </footer>
