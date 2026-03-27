@@ -7,11 +7,6 @@
 </ul>
 </nav>
 <footer>
-<div>
 <span>&#169; <?php echo date('Y'); ?> Coloring.G55.CO</span>
 <a href="/privacy-policy.php">Privacy Policy</a>
-</div>
-<div>
-<a href="https://g55.co/">Online Games</a>
-</div>
 </footer>
