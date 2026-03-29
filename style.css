@@ -17,7 +17,6 @@ header {
     margin: 0 25px;
     display: flex;
     flex-direction: row-reverse;
-    padding-bottom: 25px;
 }
 footer {
     height: 60px;
@@ -89,13 +88,11 @@ p {
     color: #0099cc;
 }
 .grid, .categories, .pagination {
-    padding: 25px;
+    margin: 25px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-}
-.pagination {
-    padding-top: 0;
 }
 .pagination .tag {
     flex: auto;
