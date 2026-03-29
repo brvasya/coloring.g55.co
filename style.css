@@ -73,8 +73,9 @@ p {
 }
 .title {
     gap: 30px;
-    padding: 60px;
     display: flex;
+    padding: 60px;
+    margin-bottom: 25px;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
