@@ -134,7 +134,11 @@ function build_category_clusters(array $categories): array {
                 continue;
             }
 
-            if (array_intersect($linksA, $linksB)) {
+            $shared = array_intersect($linksA, $linksB);
+            $aLinksToB = in_array($b, $linksA, true);
+            $bLinksToA = in_array($a, $linksB, true);
+
+            if ($shared || $aLinksToB || $bLinksToA) {
                 $graph[$a][] = $b;
                 $graph[$b][] = $a;
             }
