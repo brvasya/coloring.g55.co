@@ -18,6 +18,16 @@
 <h1><?php echo h($h1); ?></h1>
 <p><?php echo $desc; ?></p>
 </section>
+<?php if (!empty($currentCluster)): ?>
+<nav class="cluster">
+<h2>Related <?php echo h($currentCluster[0]['name']) ?> Coloring Page Categories</h2>
+<ul class="categories">
+<?php foreach ($currentCluster as $c): ?>
+<li><a class="tag <?php echo rawurlencode($c['id']); ?>" href="/?c=<?php echo rawurlencode($c['id']); ?>"><?php echo h($c['name']); ?></a></li>
+<?php endforeach; ?>
+</ul>
+</nav>
+<?php endif; ?>
 <section class="grid">
 <?php foreach ($gridItems as $it): ?>
 <a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($it['id']); ?>&c=<?php echo rawurlencode($it['category']); ?>">
