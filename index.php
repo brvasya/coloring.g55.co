@@ -23,7 +23,7 @@
 <h2>Related <?php echo h($currentCluster[0]['name']) ?> Coloring Page Categories</h2>
 <ul class="categories">
 <?php foreach ($currentCluster as $c): ?>
-<li><a class="tag <?php echo rawurlencode($c['id']); ?>" href="/?c=<?php echo rawurlencode($c['id']); ?>"><?php echo h($c['name']); ?></a></li>
+<li><a class="tag" href="/?c=<?php echo rawurlencode($c['id']); ?>"><?php echo h($c['name']); ?></a></li>
 <?php endforeach; ?>
 </ul>
 </nav>
