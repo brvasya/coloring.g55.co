@@ -51,7 +51,7 @@ if ($hasC) {
   }
 
   $cat = $catMap[$cid];
-
+  $currentCluster = find_cluster_for_category($grouped, $cid);
   list($_, $pages) = load_category_pages($cid);
 
   $pager = category_pages_pagination($pages, 60, 'p');
