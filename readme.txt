@@ -1,289 +1,271 @@
-MASTER COLORING CATEGORY DESCRIPTION GENERATOR RULE V3.3
-FINAL HARDENED PRODUCTION VERSION
-GRAMMAR + SEO + GOOGLE IMAGES SEMANTIC CLUSTERING AUTHORITY MODEL
+MASTER COLORING CATEGORY DESCRIPTION RULE
+EDITORIAL PRODUCTION VERSION V6
+SIMPLIFIED SEO + GOOGLE IMAGES STRUCTURE + CLUSTER LINKING
 
 GOAL
-Generate handcrafted editorial quality category descriptions for Coloring.G55.CO that maximize Google Images indexing depth, semantic clustering strength, topical authority, and long term evergreen printable search traffic.
-Descriptions must reinforce visual recognition signals, printable activity intent, subject clarity, and age appropriate usability.
+Write clear editorial category descriptions for Coloring.G55.CO that help search engines understand the printable subject, scene variety, complexity range, and educational usage.
+
+Descriptions should support Google Images indexing, printable activity search intent, and internal cluster authority through Tier 1 linking.
+
 
 INPUT VARIABLES
+
 Category name: {CATEGORY_NAME}
 Category type: {CHARACTER | THEME | EDUCATIONAL | ANIMAL | VEHICLE | SEASONAL | TREND | OBJECT | FANTASY}
-Audience: kids, parents, teachers, casual users
-Tone: clear, editorial, structured, activity focused
 
-OUTPUT STRUCTURE STRICT
+Audience
+kids, parents, teachers, casual users
+
+Tone
+clear, editorial, structured, activity focused
+
+
+OUTPUT STRUCTURE
 
 1 Intro paragraph
 2 Key Features section
 3 Bullet list
 
+
 INTRO PARAGRAPH RULES
 
-Write exactly ONE paragraph
-Length: 80 to 110 words
-First sentence MUST begin with coloring activity action
-Full category name must appear in the first sentence as the primary keyword
-Clearly describe what users color visually
-Include multiple subject variations
-Include scene or environment variation
-Include complexity variation
-Include age or usage context
-Include at least one strong printable long tail signal
-Include visual simplicity signal
-Printable intent must appear twice using different phrasing
-Avoid marketing tone
-Avoid filler phrases
-Avoid storytelling narrative
-Avoid formal academic writing
-Do not use dashes in prose
-Use maximum 2 soft adjectives
-Maintain tense consistency
-Avoid vague pronouns
-Avoid repeated sentence structure patterns
+Write exactly one paragraph.
 
-MANDATORY SUBJECT DENSITY RULE
+Length
+70 to 110 words.
 
-Paragraph must include at least 5 distinct subject variations
+Paragraph should contain 4 to 5 sentences.
 
-Example patterns
-dogs, cats, lions, elephants, and horses
-trucks, cars, buses, tractors, and motorcycles
-princesses, castles, dragons, fairies, and unicorns
+The first sentence must start with the full category name.
 
-GOOGLE IMAGES SEMANTIC CLUSTER LAYERS
+The first sentence must describe the coloring activity and include printable intent.
 
-Paragraph must include all layers
+Example printable signals
 
-Layer 1 Primary subject cluster
-Layer 2 Secondary variation cluster
-Layer 3 Scene or environment cluster
-Layer 4 Complexity cluster
-Layer 5 Printable usage cluster
-Layer 6 Age or educational usage cluster
-
-PRINTABLE INTENT REINFORCEMENT RULE
-
-Printable intent must appear twice using variation
-
-Examples
 printable coloring pages
 coloring sheets to print
-
-LONG TAIL PRINTABLE SIGNAL RULE
-
-Include at least one strong long tail phrase
-
-Examples
-easy coloring pages for toddlers
-detailed coloring pages for older kids
 free printable coloring sheets
 simple coloring pages to print
-educational coloring worksheets
 
-VISUAL SIMPLICITY SIGNAL RULE
+Do not repeat printable phrases more than once in the paragraph.
 
-Paragraph must include one clarity signal
 
-Examples
-simple outline drawings
-bold line art pages
-easy coloring outlines
-clean black and white designs
+SUBJECT VARIETY RULE
 
-VISUAL INDEXING SIGNAL OBJECTIVE
+Paragraph must include at least five visual subjects.
 
-Descriptions must help search engines understand
-
-What objects appear
-How many variations exist
-What complexity levels exist
-What age group is relevant
-What context usage exists
-What printable format exists
-
-GRAMMAR STRUCTURE RULES
-
-Every sentence must contain clear subject and action
-Use commas in all subject lists
-Last list item must include "and"
-Avoid repeating "such as" inside lists
-Avoid chained noun stacks longer than 5 without punctuation
-Avoid run on sentences
-Avoid repeating identical grammatical pattern across sentences
-Avoid keyword stacking structures
-Maintain plural consistency
-Maintain natural editorial rhythm
-Avoid abstract visual descriptions
-
-READABILITY TARGET
-
-Grade level target: 4 to 6
-Prefer short clear sentences
-Maximum sentence length: 28 words
-
-KEYWORD SPAM PREVENTION RULE
-
-Do not repeat identical keyword phrase twice
-Do not use more than 2 occurrences of "coloring" root per sentence
-Use alternatives such as pages, sheets, drawings, or outlines
-Do not repeat category name inside bullets
-Avoid unnatural keyword stacking patterns
-
-INTERNAL LINKING RULE
-
-Tier 0 categories may link to up to 6 Tier 1 categories using character or subtopic names as anchor text
-
-Tier 1 categories must include exactly one contextual link to the Tier 0 category
-
-The Tier 0 anchor text must match the exact category name
+Subjects must be written in comma lists and the final item must include "and".
 
 Example
-<a href='/?c=fnaf'>FNAF Coloring Pages</a>
 
-Do not repeat the same internal link more than once in the paragraph
-Do not place links inside the Key Features section
+cats, dogs, lions, elephants, and horses
+cars, trucks, buses, tractors, and motorcycles
+princesses, dragons, castles, fairies, and unicorns
 
-PARAGRAPH FLOW MODEL
+Subject list should not repeat the same entity family.
 
-Sentence 1
-Full category name must start the sentence, followed by a coloring activity phrase and printable intent.
+Bad example
 
-Sentence 2
-Subject expansion + environment diversity
+dogs, puppies, small dogs, big dogs, and dogs running
 
-Sentence 3
-Complexity variation + simplicity signal
+Good example
 
-Sentence 4
-Educational usage + printable variation
+dogs, cats, horses, rabbits, and elephants
 
-Sentence 5
-Skill development + learning signal
 
-CATEGORY TYPE SEMANTIC GUIDANCE
+SCENE VARIETY RULE
 
-CHARACTER
-Focus on recognizable characters and pose variation
+Include environments or settings such as
 
-THEME
-Focus on environment diversity and scene variety
+forests
+villages
+oceans
+mountains
+cities
+castles
+space
+classrooms
 
-EDUCATIONAL
-Focus on structured learning visuals
+Include at least two different environment types when possible.
 
-ANIMAL
-Focus on species grouping and habitats
 
-VEHICLE
-Focus on transport types and motion context
+COMPLEXITY RULE
 
-SEASONAL
-Focus on holiday symbols and seasonal scenes
+Include both
 
-TREND
-Focus on culturally popular visual subjects
+simple outline drawings for younger children
+detailed pages for older kids
 
-OBJECT
-Focus on recognizable everyday shapes
 
-FANTASY
-Focus on magical creatures and imaginative worlds
+VISUAL CLARITY SIGNAL
 
-KEY FEATURES SECTION RULES
+Include one phrase describing printable line art.
 
-Title must be exactly
+Examples
 
-Key Features
+simple outline drawings
+bold line art pages
+clean black and white designs
+easy coloring outlines
 
-Include exactly 5 bullets
-Ideal bullet length 3 to 6 words
-Bullets must be noun phrases
-No full sentences
-No verbs at start
-No marketing language
-No filler adjectives
-Avoid repeating category name
-Avoid generic activity wording
 
-BULLET SEMANTIC CLUSTER MODEL
+AGE OR USAGE CONTEXT
 
-Each bullet should represent
+Mention at least one usage context.
 
-Subject group variation
-Scene or environment variation
-Complexity level variation
-Printable format signal
-Educational or age usage signal
-Optional artistic style signal
+Examples
 
-GOOD BULLET EXAMPLES
+classroom activities
+home art time
+creative practice
+learning activities
 
-Cartoon animal printable outlines
-Realistic wildlife scene drawings
-Simple toddler friendly line art
-Detailed nature illustration sheets
-Bold black outline coloring pages
-Educational printable activity worksheets
 
-PRINTABLE AUTHORITY PRIORITY
+WRITING STYLE RULES
 
-Descriptions must reinforce
+Avoid marketing language.
+Avoid storytelling tone.
+Avoid filler phrases.
+Use short clear sentences.
 
-Printable usage clarity
-Offline activity value
-Subject diversity scale
-Educational relevance
-Visual accessibility for children
+Maximum sentence length
+28 words.
+
+Avoid repeating identical sentence openings.
+
+Do not start multiple sentences with
+
+These pages
+These sheets
+These drawings
+
+Use varied sentence openings to maintain natural editorial rhythm.
+
 
 SOFT ADJECTIVE CONTROL
 
-Allowed limited usage
+Allowed soft adjectives
 
 simple
 cute
 friendly
 clear
 
-Maximum two per paragraph
+Maximum two per paragraph.
 
-STYLE MODEL
 
-Write like structured educational activity portal editor
-Not blog style
-Not ad copy
-Not storytelling
-Not AI template
+INTERNAL LINKING RULE
 
-OUTPUT FORMAT EXAMPLE
+Tier 0 categories must include contextual links to Tier 1 categories.
 
-{PARAGRAPH}
+Tier 0 linking requirements
+
+Include 3 to 6 Tier 1 category links inside the intro paragraph.
+
+Links should appear inside the subject expansion portion of the paragraph,
+preferably within the entity list sentence.
+
+Anchor text must use the subject name only.
+
+Example
+
+<a href='/?c=minecraft-steve'>Steve</a>
+<a href='/?c=minecraft-alex'>Alex</a>
+<a href='/?c=minecraft-creeper'>creeper</a>
+
+If fewer Tier 1 categories exist, include all available Tier 1 links.
+
+Do not repeat the same link.
+Do not place links inside the Key Features section.
+Do not link the Tier 0 category to itself.
+
+
+Tier 1 linking requirements
+
+Tier 1 category descriptions must include exactly one contextual link
+to the Tier 0 category.
+
+Anchor text must match the exact Tier 0 category name.
+
+Example
+
+<a href='/?c=minecraft'>Minecraft Coloring Pages</a>
+
+
+PARAGRAPH FLOW MODEL
+
+Sentence 1
+Category name + coloring activity + printable intent.
+
+Sentence 2
+Subject expansion with Tier 1 internal links.
+
+Sentence 3
+Scene or environment diversity.
+
+Sentence 4
+Complexity variation + visual clarity signal.
+
+Sentence 5
+Educational or usage context.
+
+
+KEY FEATURES SECTION
+
+Title must be exactly
 
 Key Features
 
-• feature
-• feature
-• feature
-• feature
-• feature
+Include exactly five bullets.
 
-QUALITY VALIDATION CHECK
 
-Before output ensure
+BULLET RULES
 
-First sentence coloring activity focused
-Full category keyword present in first sentence
-Minimum subject density satisfied
-Semantic clustering layers present
-Printable intent repeated twice
-Visual simplicity signal included
-Strong long tail printable phrase included
-Paragraph length correct
+3 to 6 words each
+noun phrases only
+no full sentences
+no verbs at the start
+do not repeat the category name
+avoid generic activity wording
+
+Each bullet should represent a different semantic feature group.
+
+Examples of semantic groups
+
+subject variation
+scene variation
+complexity level
+printable format
+educational or age usage
+
+
+BULLET EXAMPLES
+
+Cartoon animal printable outlines
+Forest wildlife scene drawings
+Simple toddler friendly line art
+Detailed printable activity sheets
+Classroom art activity pages
+
+
+QUALITY CHECK
+
+Ensure
+
+Category name appears in first sentence
+Printable intent appears once
+Five subject variations included
+Scene environments included
+Complexity range included
+Visual clarity signal included
+Educational or usage context included
+Paragraph length within limits
 No sentence exceeds 28 words
 Grammar natural when read aloud
-Bullets represent semantic clusters
+Bullets represent clear feature groups
+Tier 1 internal links included
 Tone editorial and natural
-No filler or repetition
+No redundant repetition
 Clear Google Images search intent
 Evergreen printable authority signal present
 
