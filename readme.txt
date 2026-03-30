@@ -1,4 +1,4 @@
-MASTER COLORING CATEGORY DESCRIPTION GENERATOR RULE V3.1
+MASTER COLORING CATEGORY DESCRIPTION GENERATOR RULE V3.2
 FINAL HARDENED PRODUCTION VERSION
 GRAMMAR + SEO + GOOGLE IMAGES SEMANTIC CLUSTERING AUTHORITY MODEL
 
@@ -181,8 +181,8 @@ Title must be exactly
 
 Key Features
 
-Include 6 to 8 bullets
-Ideal bullet length 4 to 8 words
+Include exactly 5 bullets
+Ideal bullet length 3 to 6 words
 Bullets must be noun phrases
 No full sentences
 No verbs at start
@@ -246,8 +246,6 @@ OUTPUT FORMAT EXAMPLE
 
 Key Features
 
-• feature
-• feature
 • feature
 • feature
 • feature
