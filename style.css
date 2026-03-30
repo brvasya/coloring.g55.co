@@ -141,6 +141,7 @@ p {
 }
 .thumbnail:hover {
     transform: scale(1.02);
+    box-shadow: 0 2px 6px #ccc;
 }
 .thumbnail span {
     width: calc(100% - 40px);
@@ -201,7 +202,7 @@ p {
 }
 .tag:hover {
     transform: scale(1.02);
-    text-decoration: none;
+    box-shadow: 0 2px 6px #ccc;
 }
 .more {
     background-color: #0099cc !important;
