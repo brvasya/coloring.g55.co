@@ -1,4 +1,4 @@
-MASTER COLORING CATEGORY DESCRIPTION GENERATOR RULE V3.2
+MASTER COLORING CATEGORY DESCRIPTION GENERATOR RULE V3.3
 FINAL HARDENED PRODUCTION VERSION
 GRAMMAR + SEO + GOOGLE IMAGES SEMANTIC CLUSTERING AUTHORITY MODEL
 
@@ -23,7 +23,7 @@ INTRO PARAGRAPH RULES
 Write exactly ONE paragraph
 Length: 80 to 110 words
 First sentence MUST begin with coloring activity action
-Primary keyword must appear naturally in first sentence
+Full category name must appear in the first sentence as the primary keyword
 Clearly describe what users color visually
 Include multiple subject variations
 Include scene or environment variation
@@ -47,9 +47,9 @@ MANDATORY SUBJECT DENSITY RULE
 Paragraph must include at least 5 distinct subject variations
 
 Example patterns
-dogs, cats, lions, elephants, horses
-trucks, cars, buses, tractors, motorcycles
-princesses, castles, dragons, fairies, unicorns
+dogs, cats, lions, elephants, and horses
+trucks, cars, buses, tractors, and motorcycles
+princesses, castles, dragons, fairies, and unicorns
 
 GOOGLE IMAGES SEMANTIC CLUSTER LAYERS
 
@@ -125,14 +125,29 @@ Maximum sentence length: 28 words
 KEYWORD SPAM PREVENTION RULE
 
 Do not repeat identical keyword phrase twice
-Do not use more than 3 occurrences of "coloring" root per sentence
+Do not use more than 2 occurrences of "coloring" root per sentence
+Use alternatives such as pages, sheets, drawings, or outlines
 Do not repeat category name inside bullets
 Avoid unnatural keyword stacking patterns
+
+INTERNAL LINKING RULE
+
+Tier 0 categories may link to up to 6 Tier 1 categories using character or subtopic names as anchor text
+
+Tier 1 categories must include exactly one contextual link to the Tier 0 category
+
+The Tier 0 anchor text must match the exact category name
+
+Example
+<a href='/?c=fnaf'>FNAF Coloring Pages</a>
+
+Do not repeat the same internal link more than once in the paragraph
+Do not place links inside the Key Features section
 
 PARAGRAPH FLOW MODEL
 
 Sentence 1
-Coloring action + primary subject + printable intent
+Coloring action + full category name + printable intent
 
 Sentence 2
 Subject expansion + environment diversity
@@ -257,6 +272,7 @@ QUALITY VALIDATION CHECK
 Before output ensure
 
 First sentence coloring activity focused
+Full category keyword present in first sentence
 Minimum subject density satisfied
 Semantic clustering layers present
 Printable intent repeated twice
