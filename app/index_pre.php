@@ -79,7 +79,7 @@ if ($hasC) {
   $desc = $cat['description'];
 
   $title = $h1;
-  $metaDesc = trim(preg_replace('/\s+/', ' ', preg_split('/key features/i', strip_tags($desc))[0]));
+  $metaDesc = strip_tags($desc);
 } else {
   $totalCount = 0;
   $gridItems = [];
