@@ -58,7 +58,7 @@ if ($hasC) {
   $pager = category_pages_pagination($pages, 30, 'p');
   $pageNum = $pager['page'];
 
-  $canonical = category_url($cid);
+  $canonical = category_url($cid, $pageNum);
   $prevUrl = $pager['has_prev'] ? category_url($cid, $pageNum - 1) : null;
   $nextUrl = $pager['has_next'] ? category_url($cid, $pageNum + 1) : null;
 
