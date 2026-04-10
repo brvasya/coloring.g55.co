@@ -308,7 +308,7 @@ def prepend_unique_pages_to_category_json(category_name, pages_to_add):
 
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
+        json.dump(data, f, ensure_ascii=False, indent=0)
 
     return len(clean_add), skipped
 
