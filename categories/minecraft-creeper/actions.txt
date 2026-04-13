@@ -13,12 +13,7 @@ watching a player from afar
 watching the sky quietly
 watching the forest quietly
 watching the horizon
-watching the sunset
-watching glowing lava
-watching a waterfall
 watching a distant structure
-watching the night sky
-standing in the shadows
 standing calmly
 standing quietly
 standing alert
@@ -54,16 +49,6 @@ watching attentively
 studying the surroundings
 watching calmly
 standing still silently
-moving through shadows
-standing under a dark sky
-standing under a sunset sky
-standing under a starry sky
-standing under moonlight
-standing under a bright sun
-walking through morning fog
-walking through mist
-walking through light rain
-walking under dark clouds
 searching silently
 searching carefully
 observing from a distance

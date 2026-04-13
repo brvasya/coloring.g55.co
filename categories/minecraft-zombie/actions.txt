@@ -7,7 +7,6 @@ approaching slowly
 moving silently
 moving slowly
 moving quietly
-moving through shadows
 standing still quietly
 standing quietly
 standing silently
@@ -21,7 +20,6 @@ watching cautiously
 watching the horizon silently
 watching the forest quietly
 watching the sky quietly
-watching glowing lava
 watching a waterfall
 watching a distant structure
 looking around slowly
@@ -33,12 +31,6 @@ searching silently
 observing silently
 observing carefully
 observing the surroundings
-wandering during sunset
-wandering at night
-walking through morning fog
-walking through mist
-walking under dark clouds
-walking through light rain
 shuffling slowly
 shuffling silently
 lurking silently
@@ -48,11 +40,6 @@ wandering silently
 wandering cautiously
 watching from afar
 watching attentively
-standing under a dark sky
-standing under a sunset sky
-standing under a starry sky
-standing under moonlight
-watching the night sky
 standing quietly in silence
 watching quietly in silence
 studying the surroundings

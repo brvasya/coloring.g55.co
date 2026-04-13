@@ -5,17 +5,11 @@ watching the horizon
 watching a player from afar
 watching the forest quietly
 watching the sky quietly
-watching glowing lava
-watching a waterfall
 watching a distant structure
 looking around curiously
-looking toward a village
-looking toward a house
-looking toward a portal
 looking toward the sky
 looking into the distance
 standing tall quietly
-standing in the shadows
 standing calmly
 standing quietly
 observing silently
@@ -42,15 +36,8 @@ teleporting suddenly
 appearing suddenly
 appearing silently
 vanishing quietly
-appearing from the shadows
-vanishing into the shadows
 materializing suddenly
 dematerializing silently
-standing under a dark sky
-standing under a sunset sky
-standing under a starry sky
-standing under moonlight
-watching the night sky
 wandering slowly
 wandering silently
 wandering aimlessly
