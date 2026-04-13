@@ -1,29 +1,87 @@
-walking happily
-standing calmly
-sitting calmly
-sleeping peacefully
-resting calmly
-waving happily
-smiling happily
-jumping playfully
-running happily
+standing silently
+watching quietly
+watching from afar
+watching the horizon
+watching a player from afar
+watching the forest quietly
+watching the sky quietly
+watching glowing lava
+watching a waterfall
+watching a distant structure
 looking around curiously
-exploring curiously
-watching calmly
-listening carefully
-roaring playfully
-howling playfully
-flying calmly
-gliding calmly
-swimming calmly
-floating calmly
-crawling calmly
-digging carefully
-stomping playfully
-posing happily
-wandering curiously
-holding a flower
-holding an apple
-looking at the sky
-playing happily
-relaxing peacefully
+looking toward a village
+looking toward a house
+looking toward a portal
+looking toward the sky
+looking into the distance
+standing tall quietly
+standing in the shadows
+standing among tall grass
+standing between trees
+standing beside a cave entrance
+standing beside a cliff
+standing beside a waterfall
+standing near a portal
+standing near a nether portal
+standing near glowing lava
+standing near obsidian blocks
+standing near tall plants
+holding a grass block
+holding a dirt block
+holding a sand block
+holding a stone block
+holding a mushroom block
+holding a moss block
+holding a netherrack block
+holding an end stone block
+picking up a block
+placing a block carefully
+carrying a block quietly
+moving a block slowly
+studying a block curiously
+teleporting silently
+appearing suddenly
+vanishing quietly
+appearing from the shadows
+appearing near a tree
+appearing near a cave entrance
+appearing near a portal
+appearing near a river
+appearing near a village
+teleporting between trees
+teleporting near a cliff
+teleporting near a waterfall
+teleporting across stone blocks
+teleporting across grass
+teleporting across sand
+teleporting across snow
+teleporting across a hillside
+wandering slowly
+wandering near a forest edge
+wandering near a mountain
+wandering near a cave
+wandering near a river
+wandering through tall grass
+wandering through a jungle
+wandering through vines
+standing under a dark sky
+standing under a sunset sky
+standing under a starry sky
+standing under moonlight
+watching the night sky
+walking through morning fog
+walking through mist
+walking under dark clouds
+walking through light rain
+teleporting behind a tree
+teleporting near obsidian
+appearing beside tall grass
+vanishing near a portal
+watching from the shadows
+holding a block in silence
+standing near end stone
+appearing on a hilltop
+watching from beside a cliff
+teleporting near a forest edge
+appearing beside a waterfall
+standing beside obsidian
