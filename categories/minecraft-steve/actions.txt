@@ -1,29 +1,66 @@
-walking happily
 standing calmly
-sitting calmly
-sleeping peacefully
-resting calmly
-waving happily
-smiling happily
-jumping playfully
-running happily
-looking around curiously
-exploring curiously
+standing quietly
+standing proudly
+standing ready
+standing still
+standing confidently
+watching carefully
+watching quietly
+watching attentively
 watching calmly
-listening carefully
-roaring playfully
-howling playfully
-flying calmly
-gliding calmly
-swimming calmly
-floating calmly
-crawling calmly
+looking around carefully
+looking into the distance
+looking toward the sky
+observing carefully
+observing the surroundings
+holding a pickaxe
+holding a sword
+holding a shovel
+holding an axe
+holding a block
+holding tools
+holding equipment
+holding resources
+holding building blocks
+carrying blocks
+carrying tools
+carrying resources
+carrying materials
+carrying wooden planks
+carrying stone blocks
+placing a block
+placing blocks carefully
+building carefully
+building slowly
+constructing something
+working carefully
+working quietly
+holding a crafted item
+holding materials
+standing with a pickaxe
+standing with tools
+standing with equipment
+mining carefully
+mining slowly
 digging carefully
-stomping playfully
-posing happily
-wandering curiously
-holding a flower
-holding an apple
-looking at the sky
-playing happily
-relaxing peacefully
+digging slowly
+gathering resources
+gathering supplies
+collecting materials
+collecting resources
+collecting blocks
+exploring carefully
+exploring slowly
+walking slowly
+walking carefully
+moving slowly
+moving carefully
+walking with tools
+checking surroundings
+studying the surroundings
+watching the horizon
+observing from a distance
+thinking carefully
+standing quietly in silence
+watching quietly in silence
+standing calmly with tools
