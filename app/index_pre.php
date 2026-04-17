@@ -68,7 +68,7 @@ if ($hasC) {
       'id' => $p['id'],
       'title' => $p['title'],
       'image' => '/categories/' . $cid . '/' . $p['id'] . '.png',
-      'category' => $cid
+      'category' => $cid,
     ];
   }
 
@@ -95,7 +95,7 @@ if ($hasC) {
       'id' => $newest['id'],
       'title' => $newest['title'],
       'image' => '/categories/' . $catId . '/' . $newest['id'] . '.png',
-      'category' => $catId
+      'category' => $catId,
     ];
   }
 
