@@ -5,7 +5,6 @@ sitting
 walking
 walking slowly
 running
-moving
 jumping
 watching
 looking around
