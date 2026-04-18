@@ -1,92 +1,76 @@
 minecraft steve
-minecraft steve
-minecraft steve
-minecraft steve
-minecraft steve
 minecraft alex
-minecraft alex
-minecraft alex
-minecraft creeper
-minecraft creeper
-minecraft creeper
-minecraft creeper
-minecraft creeper
-minecraft enderman
-minecraft enderman
-minecraft enderman
-minecraft enderman
-minecraft villager
-minecraft villager
-minecraft villager
-minecraft villager
+minecraft noob
+minecraft pro player
+minecraft hacker
 minecraft zombie
-minecraft zombie
-minecraft zombie
-minecraft zombie
-minecraft skeleton
-minecraft skeleton
-minecraft skeleton
-minecraft iron golem
-minecraft iron golem
-minecraft witch
-minecraft witch
-minecraft pillager
-minecraft pillager
-minecraft warden
-minecraft warden
-minecraft ender dragon
-minecraft ender dragon
-minecraft herobrine
-minecraft wandering trader
-minecraft snow golem
+minecraft baby zombie
+minecraft zombie villager
 minecraft husk
 minecraft drowned
-minecraft zombie villager
+minecraft skeleton
 minecraft stray
 minecraft wither skeleton
+minecraft creeper
+minecraft charged creeper
+minecraft enderman
+minecraft endermite
 minecraft spider
 minecraft cave spider
-minecraft vindicator
-minecraft evoker
-minecraft vex
-minecraft ravager
-minecraft piglin
-minecraft piglin
-minecraft piglin brute
-minecraft zombified piglin
-minecraft ghast
-minecraft blaze
+minecraft slime
 minecraft magma cube
-minecraft slime
-minecraft slime
-minecraft guardian
-minecraft elder guardian
-minecraft shulker
-minecraft phantom
-minecraft allay
-minecraft axolotl
+minecraft villager
+minecraft baby villager
+minecraft wandering trader
+minecraft iron golem
+minecraft snow golem
 minecraft wolf
-minecraft wolf
+minecraft tamed wolf
+minecraft dog
 minecraft cat
-minecraft cat
-minecraft fox
-minecraft panda
-minecraft bee
-minecraft parrot
+minecraft ocelot
 minecraft horse
-minecraft llama
-minecraft camel
-minecraft dolphin
-minecraft turtle
-minecraft frog
-minecraft goat
+minecraft donkey
+minecraft mule
 minecraft cow
 minecraft pig
 minecraft sheep
 minecraft chicken
-minecraft mooshroom
-minecraft ocelot
+minecraft bee
+minecraft fox
+minecraft panda
 minecraft polar bear
-minecraft baby zombie
-minecraft baby villager
-minecraft baby panda
+minecraft turtle
+minecraft dolphin
+minecraft axolotl
+minecraft frog
+minecraft goat
+minecraft allay
+minecraft blaze
+minecraft ghast
+minecraft piglin
+minecraft piglin brute
+minecraft hoglin
+minecraft zoglin
+minecraft guardian
+minecraft elder guardian
+minecraft shulker
+minecraft wither boss
+minecraft ender dragon
+minecraft warden
+minecraft illusioner
+minecraft evoker
+minecraft vindicator
+minecraft pillager
+minecraft ravager
+minecraft witch
+minecraft fisherman villager
+minecraft farmer villager
+minecraft librarian villager
+minecraft blacksmith villager
+minecraft diamond armor player
+minecraft iron armor player
+minecraft netherite armor player
+minecraft player with sword
+minecraft player with bow
+minecraft player with pickaxe
