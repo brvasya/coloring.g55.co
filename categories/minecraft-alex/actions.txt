@@ -1,47 +1,35 @@
+standing
 standing calmly
-standing quietly
 standing confidently
 standing proudly
 standing ready
 standing still
+watching
 watching carefully
 watching quietly
-watching attentively
-watching calmly
-looking around carefully
+looking around
 looking into the distance
 looking toward the sky
+observing
 observing carefully
-observing the surrounding
-holding a pickaxe
-holding a sword
-holding a shovel
-holding an axe
-holding a block
-holding a tool
-holding equipment
-holding a resource
-holding building block
+holding block
+holding resource
 carrying block
-carrying tool
 carrying resource
 carrying material
-carrying wooden plank
-carrying stone block
-placing a block
+placing block
 placing block carefully
+building
 building carefully
 building slowly
-constructing something
+constructing
+working
 working carefully
 working quietly
-holding a crafted item
-holding material
-standing with a pickaxe
-standing with tool
-standing with equipment
+mining
 mining carefully
 mining slowly
+digging
 digging carefully
 digging slowly
 gathering resource
@@ -49,18 +37,12 @@ gathering supply
 collecting material
 collecting resource
 collecting block
+exploring
 exploring carefully
-exploring slowly
+walking
 walking slowly
 walking carefully
-moving slowly
-moving carefully
-walking with tool
-checking surrounding
-studying the surrounding
-watching the horizon
-observing from a distance
+checking area
+watching surroundings
+thinking
 thinking carefully
-standing quietly in silence
-watching quietly in silence
-standing calmly with tool
