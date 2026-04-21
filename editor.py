@@ -482,7 +482,7 @@ class JsonGui(tk.Tk):
 
             if not os.path.exists(characters_file_path):
                 with open(characters_file_path, "w", encoding="utf-8") as f:
-                    f.write(characters_line + "\n")
+                    f.write(characters_line)
         except Exception as e:
             messagebox.showerror("Folder creation failed", f"Could not create folder or characters.txt:\n{e}")
 
