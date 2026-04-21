@@ -357,7 +357,7 @@ if (!is_dir($cat_dir)) json_out(['ok' => false, 'error' => 'missing_category_dir
 
 $characters = load_lines($cat_dir . DIRECTORY_SEPARATOR . 'characters.txt');
 $actions = load_lines($CATEGORIES_DIR . DIRECTORY_SEPARATOR . 'actions.txt');
-$environments = load_lines($cat_dir . DIRECTORY_SEPARATOR . 'environments.txt');
+$environments = load_lines($CATEGORIES_DIR . DIRECTORY_SEPARATOR . 'environments.txt');
 
 $style = load_style($CATEGORIES_DIR . DIRECTORY_SEPARATOR . 'style.txt');
 
