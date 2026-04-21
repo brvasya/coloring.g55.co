@@ -30,10 +30,6 @@ mario monty mole
 mario spiny
 mario thwomp
 mario king boo
-mario baby luigi
-mario baby peach
-mario baby daisy
-mario baby rosalina
 cat mario
 tanooki mario
 fire mario
