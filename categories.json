@@ -87,7 +87,22 @@
 {
 "id": "bluey",
 "name": "Bluey",
-"description": "Color Bluey printable coloring pages featuring characters such as Bluey, Bingo, Bandit, Chilli, and friends including family pets, classmates, and playful animals shown in homes, playgrounds, parks, and backyard scenes. Users explore simple outline drawings and bold line art pages across easy coloring pages for toddlers and detailed coloring pages for older kids. These printable coloring pages support classroom play activities and home art routines while coloring sheets to print encourage character recognition, visual focus, and early creative skill development through structured offline activity."
+"description": "Bluey Coloring Pages offer printable coloring pages featuring family friendly character scenes designed for creative coloring activity and recognition. Subjects include <a href='/?c=bluey-bingo'>Bingo</a>, <a href='/?c=bluey-bandit'>Bandit</a>, <a href='/?c=bluey-chilli'>Chilli</a>, toys, home objects, and backyard play items. Scenes place characters in homes, playgrounds, parks, and classrooms with everyday family environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice focused on storytelling, recognition, and daily life scenes."
+},
+{
+"id": "bluey-bandit",
+"name": "Bluey Bandit",
+"description": "Bluey Bandit Coloring Pages offer printable coloring pages featuring character scenes designed for creative coloring activity and recognition. Subjects include Bandit, tools, games, costumes, and playful interactions inspired by <a href='/?c=bluey'>Bluey Coloring Pages</a> settings. Scenes place characters in homes, backyards, parks, and outdoor areas with family centered environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports home art time and creative practice focused on family interaction and imaginative play."
+},
+{
+"id": "bluey-bingo",
+"name": "Bluey Bingo",
+"description": "Bluey Bingo Coloring Pages offer printable coloring pages featuring character scenes designed for creative coloring activity and recognition. Subjects include Bingo, toys, games, balloons, and playful poses inspired by <a href='/?c=bluey'>Bluey Coloring Pages</a> themes. Scenes place characters in homes, playgrounds, parks, and classrooms with everyday family environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports home art time and classroom activities focused on creativity, recognition, and playful storytelling."
+},
+{
+"id": "bluey-chilli",
+"name": "Bluey Chilli",
+"description": "Bluey Chilli Coloring Pages offer printable coloring pages featuring character scenes designed for creative coloring activity and recognition. Subjects include Chilli, home items, games, accessories, and family moments inspired by <a href='/?c=bluey'>Bluey Coloring Pages</a> themes. Scenes place characters in kitchens, living rooms, parks, and playgrounds with everyday family environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using easy coloring outlines. This category supports classroom activities and home art time focused on recognition, creativity, and daily life scenes."
 },
 {
 "id": "crash-bandicoot",
@@ -248,6 +263,31 @@
 "id": "minecraft-zombie",
 "name": "Minecraft Zombie",
 "description": "Minecraft Zombie Coloring Pages feature printable coloring pages showing the block style creature appearing in adventurous Minecraft themed scenes. Illustrations include zombies walking through forests, approaching villages, standing near caves, exploring dark landscapes, and wandering across block fields inspired by <a href='/?c=minecraft'>Minecraft Coloring Pages</a>. Scenes appear in forests, caves, villages, mountains, and nighttime plains that resemble recognizable Minecraft environments. Pages include simple outline drawings for younger children and detailed pages for older kids using bold line art pages designed for clear coloring. These pages support classroom activities, home art time, and creative practice while encouraging imagination, visual recognition, and focused coloring skills."
+},
+{
+"id": "minions",
+"name": "Minions",
+"description": "Minions Coloring Pages offer printable coloring pages featuring character scenes designed for creative coloring activity and recognition. Subjects include <a href='/?c=minions-kevin'>Kevin</a>, <a href='/?c=minions-stuart'>Stuart</a>, <a href='/?c=minions-bob'>Bob</a>, <a href='/?c=minions-gru'>Gru</a>, goggles, bananas, and tools. Scenes place characters in laboratories, city streets, homes, and outdoor environments with playful action settings. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice focused on humor, recognition, and imaginative play."
+},
+{
+"id": "minions-bob",
+"name": "Minions Bob",
+"description": "Minions Bob Coloring Pages offer printable coloring pages featuring character scenes designed for creative coloring activity and recognition. Subjects include Bob, teddy bears, goggles, bananas, and small character poses inspired by <a href='/?c=minions'>Minions Coloring Pages</a> themes. Scenes place characters in bedrooms, laboratories, city streets, and outdoor environments with cute and playful layouts. Pages range from simple outline drawings for younger children to detailed pages for older kids using easy coloring outlines. This category supports classroom activities and home art time focused on recognition, creativity, and emotional expression."
+},
+{
+"id": "minions-gru",
+"name": "Minions Gru",
+"description": "Minions Gru Coloring Pages offer printable coloring pages featuring character scenes designed for creative coloring activity and recognition. Subjects include Gru, gadgets, rockets, vehicles, and villain tools inspired by <a href='/?c=minions'>Minions Coloring Pages</a> themes. Scenes place characters in laboratories, secret bases, city streets, and underground environments with action focused layouts. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports creative practice and home art time focused on storytelling, recognition, and imaginative play."
+},
+{
+"id": "minions-kevin",
+"name": "Minions Kevin",
+"description": "Minions Kevin Coloring Pages offer printable coloring pages featuring character scenes designed for creative coloring activity and recognition. Subjects include Kevin, goggles, bananas, tools, and tall character poses inspired by <a href='/?c=minions'>Minions Coloring Pages</a> themes. Scenes place characters in laboratories, city streets, homes, and outdoor environments with playful action settings. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports home art time and classroom activities focused on recognition, creativity, and humor."
+},
+{
+"id": "minions-stuart",
+"name": "Minions Stuart",
+"description": "Minions Stuart Coloring Pages offer printable coloring pages featuring character scenes designed for creative coloring activity and recognition. Subjects include Stuart, guitars, goggles, bananas, and playful poses inspired by <a href='/?c=minions'>Minions Coloring Pages</a> settings. Scenes place characters in music rooms, laboratories, city streets, and outdoor environments with lively action scenes. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports home art time and creative practice focused on expression, recognition, and playful scenes."
 },
 {
 "id": "pokemon",
