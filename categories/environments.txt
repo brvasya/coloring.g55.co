@@ -7,8 +7,6 @@ in garden
 on hill
 on mountain
 in valley
-in cave
-in underground cave
 in tunnel
 in rocky area
 by water
@@ -22,7 +20,6 @@ in sand
 in snowy field
 on snowy hill
 in ice area
-in icy cave
 in sky area
 on cloud
 in floating island
