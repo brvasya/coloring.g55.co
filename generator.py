@@ -525,23 +525,6 @@ class PromptGUI(tk.Tk):
             f"Prompt copied to clipboard.\nAdded: {added}\nSkipped duplicates: {skipped}\nFile: {category_name}.json",
         )
 
-    def save_one_to_json(self, idx):
-        category_name = self.category_var.get().strip()
-
-        page = {
-            "id": self.id_vars[idx].get(),
-            "title": self.h1_vars[idx].get(),
-            "description": self.desc_vars[idx].get(),
-        }
-
-        added, skipped = prepend_unique_pages_to_category_json(category_name, [page])
-        self.mark_row(idx)
-
-        messagebox.showinfo(
-            "Saved",
-            f"Added: {added}\nSkipped duplicates: {skipped}\nFile: {category_name}.json",
-        )
-
     def save_all_to_json(self):
         category_name = self.category_var.get().strip()
 
