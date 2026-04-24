@@ -132,7 +132,22 @@
 {
 "id": "dinosaur",
 "name": "Dinosaur",
-"description": "Color dinosaur printable coloring pages featuring creatures such as Tyrannosaurus, Triceratops, Stegosaurus, Velociraptor, Brachiosaurus, and prehistoric animals including Pteranodon, Ankylosaurus, Spinosaurus, and marine reptiles shown in jungles, volcano areas, swamps, and ancient landscapes. Users explore simple outline drawings and bold line art pages across easy coloring pages for toddlers and detailed coloring pages for older kids. These printable coloring pages support classroom science activities and home art routines while coloring sheets to print encourage species recognition, visual focus, and early learning through structured offline activity."
+"description": "Dinosaur Coloring Pages offer printable coloring pages featuring prehistoric creatures designed for creative coloring activity and early learning. Subjects include <a href='/?c=dinosaur-t-rex'>T Rex</a>, <a href='/?c=dinosaur-triceratops'>Triceratops</a>, <a href='/?c=dinosaur-velociraptor'>Velociraptor</a>, stegosaurus, pterodactyls, fossils, and eggs. Scenes place dinosaurs in jungles, volcano areas, deserts, and ancient landscapes with varied natural environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice focused on recognition, imagination, and basic science learning."
+},
+{
+"id": "dinosaur-t-rex",
+"name": "Dinosaur T Rex",
+"description": "Dinosaur T Rex Coloring Pages offer printable coloring pages featuring large prehistoric predators designed for creative coloring activity and early learning. Subjects include T Rex, claws, teeth, footprints, skeletons, and scenes from <a href='/?c=dinosaur'>Dinosaur Coloring Pages</a> collections. Scenes place dinosaurs in jungles, volcano areas, valleys, and prehistoric landscapes with dynamic natural environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports classroom activities and home art time focused on recognition and early science concepts."
+},
+{
+"id": "dinosaur-triceratops",
+"name": "Dinosaur Triceratops",
+"description": "Dinosaur Triceratops Coloring Pages offer printable coloring pages featuring horned herbivores designed for creative coloring activity and visual recognition. Subjects include Triceratops, horns, frills, plants, eggs, and scenes from <a href='/?c=dinosaur'>Dinosaur Coloring Pages</a> collections. Scenes place dinosaurs in forests, plains, riverbanks, and prehistoric environments with calm natural settings. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities and learning practice focused on nature and prehistoric life."
+},
+{
+"id": "dinosaur-velociraptor",
+"name": "Dinosaur Velociraptor",
+"description": "Dinosaur Velociraptor Coloring Pages offer printable coloring pages featuring fast prehistoric hunters designed for creative coloring activity and visual engagement. Subjects include Velociraptor, claws, tails, nests, skeletons, and scenes from <a href='/?c=dinosaur'>Dinosaur Coloring Pages</a> collections. Scenes place dinosaurs in jungles, rocky terrains, deserts, and ancient landscapes with varied environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using easy coloring outlines. This category supports home art time and classroom activities focused on recognition and imagination."
 },
 {
 "id": "dragon",
