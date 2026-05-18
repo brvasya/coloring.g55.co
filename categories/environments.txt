@@ -67,3 +67,123 @@ in adventure area
 in obstacle course
 in level
 in game world
+#rainbow-friends
+in simple room
+in playroom
+in toy room
+in colorful classroom
+in kindergarten classroom
+in indoor hallway
+in soft play area
+in puzzle room
+in party room
+in balloon room
+on small stage
+in game room
+in block room
+in craft room
+in drawing room
+in playhouse
+in friendship room
+in rainbow room
+in simple tunnel
+in factory hallway
+in storage room
+in box room
+in safe room
+in doorway
+in window room
+in locker room
+in poster room
+in tiled room
+in simple playground
+in indoor playground
+in small backyard
+on garden path
+in picnic area
+in treehouse area
+in fenced yard
+in grassy field
+on rainbow bridge
+in cloudy meadow
+on simple forest path
+in campsite
+in wooden cabin
+in school hallway
+in art classroom
+in music room
+in library corner
+in reading room
+in science room
+in gym
+in cafeteria
+in birthday room
+in arcade
+in carpeted room
+in pillow room
+in blanket fort
+in toy shelf area
+in building blocks area
+at crayon table
+in painting corner
+at puzzle table
+in storybook room
+in costume room
+in mirror room
+in friendly monster room
+in rainbow wall room
+in star wall room
+in moon wall room
+in cloud wall room
+in heart wall room
+in simple castle room
+in magic door room
+in treasure room
+in hidden room
+in secret base
+in safe tunnel
+in cozy cave
+in crystal cave
+on mushroom path
+in flower garden
+in pumpkin room
+in winter room
+in snowy yard
+in spring garden
+in summer park
+on autumn path
+in holiday room
+in party hallway
+in gift room
+in candy room
+in cookie room
+in cupcake room
+in simple kitchen
+in bedroom
+in bathroom
+in living room
+in garage
+in basement
+in attic
+in workshop
+in elevator
+on staircase
+on bridge
+in train car
+at bus stop
+in toy store
+in pet room
+in aquarium
+on zoo path
+in farmyard
+in barn
+in space room
+in rocket room
+on planet surface
+in underwater room
+on beach path
+on island path
+at boat dock
+in pirate room
+in robot room
+in laboratory
