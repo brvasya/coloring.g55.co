@@ -61,8 +61,56 @@ def load_shared_actions():
     return load_lines(ACTIONS_FILE)
 
 
+def normalize_category_key(text):
+    return slugify((text or "").strip().lstrip("#"))
+
+
+def load_category_environments(category_name):
+
+    selected_key = normalize_category_key(category_name)
+    shared_lines = []
+    sections = {}
+    active_key = None
+
+    try:
+        with open(ENVIRONMENTS_FILE, "r", encoding="utf-8") as f:
+            for raw_line in f:
+                line = raw_line.strip()
+                if not line:
+                    continue
+
+                if line.startswith("#"):
+                    active_key = normalize_category_key(line)
+                    if active_key:
+                        sections.setdefault(active_key, [])
+                    continue
+
+                if active_key is None:
+                    shared_lines.append(line)
+                elif active_key:
+                    sections.setdefault(active_key, []).append(line)
+
+    except Exception:
+        return []
+
+    if selected_key and sections.get(selected_key):
+        return sections[selected_key]
+
+    parent_keys = [
+        key
+        for key, lines in sections.items()
+        if lines and selected_key.startswith(f"{key}-")
+    ]
+
+    if parent_keys:
+        parent_key = max(parent_keys, key=len)
+        return sections[parent_key]
+
+    return shared_lines
+
+
 def load_shared_environments():
-    return load_lines(ENVIRONMENTS_FILE)
+    return load_category_environments("")
 
 
 def load_category_data(category_name):
@@ -70,7 +118,7 @@ def load_category_data(category_name):
     data = {
         "characters": load_lines(os.path.join(cat_dir, "characters.txt")),
         "actions": load_shared_actions(),
-        "environments": load_shared_environments(),
+        "environments": load_category_environments(category_name),
     }
     data["style"] = load_style()
     return data
