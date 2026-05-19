@@ -20,3 +20,14 @@ in game room
 in puzzle room
 in kindergarten classroom
 in simple room
+#fnaf
+in pizzeria
+in security office
+in party room
+in arcade room
+in dining area
+in backstage room
+in pizza restaurant
+in game room
+in dark hallway
+in indoor playground
