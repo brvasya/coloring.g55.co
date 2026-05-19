@@ -109,10 +109,6 @@ function build_category_clusters(array $categories): array {
             continue;
         }
 
-        if (substr_count($id, '-') > 1) {
-            continue;
-        }
-
         $cat['_cluster_links'] = extract_category_links_from_description((string)($cat['description'] ?? ''));
 
         $map[$id] = $cat;
