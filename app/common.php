@@ -68,11 +68,7 @@ function newest_page(array $pages): array {
 }
 
 function get_categories_sorted(array $index): array {
-  $cats = array_filter($index['categories'], function($cat) {
-  return substr_count($cat['id'], '-') <= 1;
-  });
-
-  return sort_categories_alpha(array_values($cats));
+  return sort_categories_alpha($index['categories']);
 }
 
 function clean_slug($s): string {
