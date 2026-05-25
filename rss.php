@@ -1,6 +1,7 @@
 <?php
 require_once 'app/index_pre.php';
-$pages = array_slice($pages, 0, 50);
+$items = (int) $_GET['items'];
+$pages = array_slice($pages, 0, $items);
 header('Content-Type: application/rss+xml; charset=utf-8');
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 ?>
