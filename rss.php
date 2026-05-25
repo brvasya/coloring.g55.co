@@ -2,8 +2,8 @@
 require_once 'app/index_pre.php';
 $pages = array_slice(array_reverse($pages), 0, 50);
 header('Content-Type: application/rss+xml; charset=utf-8');
+echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 ?>
-<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
 <title><?php echo h($cat['name']); ?> Coloring Pages</title>
