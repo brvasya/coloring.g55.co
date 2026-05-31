@@ -317,7 +317,14 @@ def image_output_path(category_name, page_id):
     return os.path.join(CATEGORIES_DIR, category_name, f"{sanitize_filename(page_id)}.png")
 
 
-def png_is_1bit(path):
+def temp_image_output_path(category_name, page_id, ext="jpg"):
+    ext = (ext or "jpg").lower().strip().lstrip(".")
+    if ext not in {"jpg", "jpeg", "png"}:
+        ext = "jpg"
+    return os.path.join(CATEGORIES_DIR, category_name, f"{sanitize_filename(page_id)}.__gemini_tmp.{ext}")
+
+
+def image_is_1bit_png(path):
     if Image is None or not os.path.isfile(path):
         return False
     try:
@@ -327,41 +334,61 @@ def png_is_1bit(path):
         return False
 
 
-def validate_png(path):
+def validate_image(path):
     if Image is None:
         return False, "pillow_not_installed"
     if not os.path.isfile(path):
-        return False, "missing_png"
+        return False, "missing_image"
     try:
         with Image.open(path) as im:
-            if im.format != "PNG":
-                return False, "not_png"
+            if im.format not in {"JPEG", "PNG"}:
+                return False, f"unsupported_image_format_{im.format}"
             im.verify()
         return True, ""
     except Exception as exc:
         return False, str(exc)
 
 
-def convert_png_to_1bit(path, threshold=ONEBIT_THRESHOLD):
+def detect_image_ext_from_bytes(image_bytes, fallback="jpg"):
+    if image_bytes.startswith(b"\x89PNG\r\n\x1a\n"):
+        return "png"
+    if image_bytes.startswith(b"\xff\xd8\xff"):
+        return "jpg"
+    return fallback
+
+
+def convert_image_to_1bit_png(src_path, final_png_path=None, threshold=ONEBIT_THRESHOLD):
     if Image is None:
         return {"ok": False, "error": "pillow_not_installed"}
-    if not os.path.isfile(path):
-        return {"ok": False, "error": "missing_input", "path": path}
-    if png_is_1bit(path):
-        return {"ok": True, "skipped": True}
+    if not os.path.isfile(src_path):
+        return {"ok": False, "error": "missing_input", "path": src_path}
+
+    if final_png_path is None:
+        final_png_path = os.path.splitext(src_path)[0] + ".png"
+
+    if os.path.abspath(src_path) == os.path.abspath(final_png_path) and image_is_1bit_png(src_path):
+        return {"ok": True, "skipped": True, "path": final_png_path}
 
     try:
-        with Image.open(path) as src:
+        with Image.open(src_path) as src:
             src = src.convert("RGBA")
             alpha = src.getchannel("A")
             white_bg = Image.new("RGBA", src.size, (255, 255, 255, 255))
             white_bg.paste(src, mask=alpha)
             gray = white_bg.convert("L")
             bw = gray.point(lambda px: 255 if px >= threshold else 0, mode="1")
-            bw.save(path, format="PNG", optimize=True)
-        return {"ok": True, "skipped": False}
+            os.makedirs(os.path.dirname(final_png_path), exist_ok=True)
+            bw.save(final_png_path, format="PNG", optimize=True)
+
+        if os.path.abspath(src_path) != os.path.abspath(final_png_path):
+            try:
+                os.remove(src_path)
+            except Exception:
+                pass
+
+        return {"ok": True, "skipped": False, "path": final_png_path}
     except Exception as exc:
-        return {"ok": False, "error": str(exc), "path": path}
+        return {"ok": False, "error": str(exc), "path": src_path, "final_path": final_png_path}
 
 
 def gemini_generate_image(api_key, prompt, out_path, aspect_ratio=DEFAULT_ASPECT_RATIO):
@@ -425,36 +452,40 @@ def gemini_generate_image(api_key, prompt, out_path, aspect_ratio=DEFAULT_ASPECT
     except Exception:
         return {"ok": False, "error": "base64_decode_failed"}
 
+    final_png_path = out_path
+    src_ext = detect_image_ext_from_bytes(image_bytes, fallback="jpg")
+    src_path = out_path if src_ext == "png" else f"{os.path.splitext(out_path)[0]}.__gemini_tmp.{src_ext}"
+
     try:
-        os.makedirs(os.path.dirname(out_path), exist_ok=True)
-        with open(out_path, "wb") as f:
+        os.makedirs(os.path.dirname(src_path), exist_ok=True)
+        with open(src_path, "wb") as f:
             f.write(image_bytes)
     except Exception as exc:
-        return {"ok": False, "error": "write_failed", "path": out_path, "detail": str(exc)}
+        return {"ok": False, "error": "write_failed", "path": src_path, "detail": str(exc)}
 
-    ok, detail = validate_png(out_path)
+    ok, detail = validate_image(src_path)
     if not ok:
         try:
-            os.remove(out_path)
+            os.remove(src_path)
         except Exception:
             pass
-        return {"ok": False, "error": "invalid_png_output", "detail": detail}
+        return {"ok": False, "error": "invalid_image_output", "detail": detail}
 
-    onebit = convert_png_to_1bit(out_path, ONEBIT_THRESHOLD)
+    onebit = convert_image_to_1bit_png(src_path, final_png_path, ONEBIT_THRESHOLD)
     if not onebit.get("ok"):
         return {"ok": False, "error": "onebit_failed", "detail": onebit}
 
-    return {"ok": True, "path": out_path, "onebit": onebit}
+    return {"ok": True, "path": final_png_path, "source_format": src_ext, "onebit": onebit}
 
 
 def generate_image_for_page(category_name, page_id, prompt, api_key, aspect_ratio, skip_existing=True):
     out_path = image_output_path(category_name, page_id)
 
     if skip_existing and os.path.isfile(out_path) and os.path.getsize(out_path) > 0:
-        ok, detail = validate_png(out_path)
+        ok, detail = validate_image(out_path)
         if not ok:
             return {"ok": False, "error": "existing_image_invalid", "detail": detail, "path": out_path}
-        onebit = convert_png_to_1bit(out_path, ONEBIT_THRESHOLD)
+        onebit = convert_image_to_1bit_png(out_path, out_path, ONEBIT_THRESHOLD)
         if not onebit.get("ok"):
             return {"ok": False, "error": "onebit_failed", "detail": onebit, "path": out_path}
         return {"ok": True, "path": out_path, "skipped_existing": True, "onebit": onebit}
