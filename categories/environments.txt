@@ -130,3 +130,25 @@ near peaceful river
 in mountain valley
 in royal courtyard
 in flower field
+#minecraft
+in village
+in forest
+in plains biome
+in cherry grove
+in flower meadow
+in desert biome
+in snowy landscape
+at cave entrance
+in mountain landscape
+beside river
+#minions
+in laboratory
+in banana garden
+in tropical island
+in secret headquarters
+in city park
+in backyard playground
+in toy room
+in castle courtyard
+in treasure room
+in village square
