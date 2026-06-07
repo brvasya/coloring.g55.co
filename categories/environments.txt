@@ -143,3 +143,54 @@ in seaside village
 on sandy beach
 in countryside village
 in cherry blossom park
+#spongebob
+in bikini bottom
+at krusty krab
+in jellyfish fields
+at goo lagoon
+on conch street
+at sandy's treedome
+at mrs puff's boating school
+at chum bucket
+in rock bottom
+in downtown bikini bottom
+at spongebob's pineapple house
+at patrick's rock house
+at squidward's tiki house
+at kelp forest
+at glove world
+at fry cook station
+inside krusty krab kitchen
+at krusty krab dining area
+at krusty krab playground
+at chum bucket laboratory
+inside plankton's lab
+at boating school classroom
+on boating school test track
+at boating school parking lot
+on jellyfishing field
+at jellyfish meadow
+inside giant clam cave
+at coral reef
+in underwater garden
+at seashell park
+on sandy ocean floor
+at treasure cave
+inside shipwreck
+at pirate ship
+inside underwater tunnel
+at coral castle
+inside bubble dome
+at underwater carnival
+at amusement park
+at boardwalk
+at sea museum
+at kelp shake
+at bargain mart
+at super weenie hut jr
+at weenie hut general
+at salty spitoon
+at kelp forest trail
+at goo lagoon pier
+at reef cinema
+at bikini bottom park
