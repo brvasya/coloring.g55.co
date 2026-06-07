@@ -87,3 +87,59 @@ in bastion remnant
 in watchtower
 in dungeon
 in mob spawner room
+#doraemon
+in nobita's bedroom
+in nobita's house
+in school classroom
+in school playground
+in neighborhood park
+in empty lot with concrete pipes
+in shopping street
+in town neighborhood
+in riverside park
+on riverbank
+in bamboo grove
+in flower garden
+in city park
+on hillside trail
+on back hill
+in baseball field
+in japanese neighborhood
+in school library
+in science laboratory
+in gadget workshop
+in robot factory
+in future city
+in futuristic neighborhood
+in robot school
+in time machine room
+inside time tunnel
+in secret gadget museum
+on adventure island
+on tropical island
+in dinosaur world
+in prehistoric valley
+in animal kingdom
+on animal planet
+in robot kingdom
+on floating island
+in cloud kingdom
+in underwater city
+in ocean kingdom
+in magical forest
+in fantasy castle
+in ancient japan
+in ancient china
+in desert kingdom
+in snowy mountain village
+in space station
+on alien planet
+in space city
+in rainbow valley
+in hidden cave
+in treasure island
+in amusement park
+in seaside village
+on sandy beach
+in countryside village
+in cherry blossom park
