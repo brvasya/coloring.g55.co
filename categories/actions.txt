@@ -1,19 +1,10 @@
 standing
-standing calmly
-standing confidently
 sitting
 walking
-walking slowly
 running
 jumping
-watching
 looking around
-observing
-smiling
 waving
-posing
-thinking
-resting
 pointing
-reaching
 exploring
+posing
