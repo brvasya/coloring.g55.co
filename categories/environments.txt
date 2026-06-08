@@ -202,3 +202,54 @@ in cherry blossom grove
 among autumn leaves
 in snowy forest
 near lantern path
+#sonic
+in green hill zone
+in emerald hill zone
+in chemical plant zone
+in marble zone
+in spring yard zone
+in labyrinth zone
+in star light zone
+in scrap brain zone
+in mystic cave zone
+in casino night zone
+in oil ocean zone
+in hill top zone
+in ice cap zone
+in sky sanctuary
+in angel island
+in mushroom hill zone
+in flying battery zone
+in lava reef zone
+in sandopolis zone
+in hydrocity zone
+in city escape
+in station square
+in seaside hill
+in ocean palace
+in kingdom valley
+in crisis city
+in rooftop run
+in tropical resort
+in planet wisp
+in lost hex
+in green forest
+in jungle area
+in desert area
+in snowy mountain
+in icy cave
+in crystal cave
+in volcano area
+in canyon area
+in waterfall area
+in beach area
+in ocean shore
+in island village
+in futuristic city
+in robot factory
+in eggman base
+in secret laboratory
+in space station
+on alien planet
+in amusement park
+in treasure cave
