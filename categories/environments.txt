@@ -304,3 +304,54 @@ in fazcade
 in music room
 in secret basement
 in hidden party room
+#genshin-impact
+in mondstadt city
+in knights of favonius headquarters
+in windrise
+in starfell valley
+in whispering woods
+in stormterror's lair
+in dawn winery
+in springvale
+in dragonspine
+in snow covered path
+in liyue harbor
+in qingce village
+in wangshu inn
+in jueyun karst
+in stone forest
+in chasm surface
+in the chasm
+in underground mines
+in inazuma city
+in narukami shrine
+in chinju forest
+in ritou harbor
+in yashiori island
+in watatsumi island
+in seirai island
+in enkanomiya
+in sumeru city
+in gandharva ville
+in vanarana
+in apam woods
+in desert of hadramaveth
+in desert ruins
+in king deshret ruins
+in fontaine city
+in court of fontaine
+in opera epiclese
+in underwater ruins
+in underwater tunnel
+in merusea village
+in underwater kingdom
+in natlan village
+in volcanic valley
+in hot spring village
+in lava canyon
+in ancient ruins
+in treasure cave
+in magical forest
+in crystal cave
+in floating island
+in training grounds
