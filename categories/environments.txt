@@ -253,3 +253,54 @@ in space station
 on alien planet
 in amusement park
 in treasure cave
+#fnaf
+in freddy fazbear's pizza
+on show stage
+in dining area
+in party room
+in arcade room
+in prize corner
+in kitchen
+in security office
+in backstage area
+in supply closet
+in maintenance room
+in storage room
+in hallway
+in east hallway
+in west hallway
+in restroom area
+in pirate cove
+in game room
+in indoor play area
+in entrance lobby
+in pizzeria dining hall
+in underground facility
+in scooping room
+in control module
+in breaker room
+in vent system
+in private room
+in observation room
+in underground hallway
+in maintenance tunnel
+in circus baby's entertainment and rental
+in circus gallery
+in ballora gallery
+in funtime auditorium
+in star court
+in daycare
+in daycare play area
+in daycare theater
+in daycare castle
+in daycare maze
+in atrium
+in mega pizzaplex
+in laser tag arena
+in bowling alley
+in rockstar row
+in daycare theater
+in fazcade
+in music room
+in secret basement
+in hidden party room
