@@ -1,14 +1,11 @@
 #minecraft
 in village
 in village square
-in village market
 in village farm
-in village pathway
-in villager house
+in village market
 in blacksmith village
 in snowy village
 in desert village
-in plains village
 in house
 in treehouse
 in castle
@@ -16,9 +13,6 @@ in mountain house
 in underground base
 in mansion
 in woodland mansion
-in tower
-in fortress
-in starter base
 in cave
 in deep cave
 in mine entrance
@@ -26,67 +20,35 @@ in abandoned mineshaft
 in underground tunnel
 in diamond mine
 in ore cave
-in treasure chamber
-in mining area
-in cave system
 in ancient city
 in deep dark biome
 in sculk cave
-in underground ruins
-in ancient chamber
 in warden territory
-in underground city
-in sculk ruins
 in nether fortress
 in nether portal area
 in crimson forest
 in warped forest
 in basalt delta
 in soul sand valley
-in nether cave
-in lava fortress
 in piglin bastion
-in nether bridge
 in the end
 in end city
 in end island
-in dragon arena
 in end portal room
-in obsidian tower area
-in end gateway area
-in floating end island
-in end city bridge
-in end crystal area
-underwater in ocean biome
 in coral reef
 in ocean monument
 in underwater ruin
 in shipwreck area
-in underwater cave
-in river biome
-in beach biome
-in fishing dock
-in sea turtle habitat
 in forest biome
 in jungle biome
 in desert biome
 in snowy biome
-in taiga biome
-in savanna biome
 in cherry grove biome
-in mushroom island biome
-in flower meadow
-in bamboo jungle
 in stronghold
-in jungle temple
 in desert temple
+in jungle temple
 in pillager outpost
 in trial chamber
-in ruined portal
-in bastion remnant
-in watchtower
-in dungeon
-in mob spawner room
 #doraemon
 in nobita's bedroom
 in nobita's house
@@ -101,7 +63,6 @@ on riverbank
 in bamboo grove
 in flower garden
 in city park
-on hillside trail
 on back hill
 in baseball field
 in japanese neighborhood
@@ -135,13 +96,9 @@ in snowy mountain village
 in space station
 on alien planet
 in space city
-in rainbow valley
 in hidden cave
 in treasure island
 in amusement park
-in seaside village
-on sandy beach
-in countryside village
 in cherry blossom park
 #spongebob
 in bikini bottom
