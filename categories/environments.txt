@@ -406,3 +406,105 @@ in jungle kingdom
 in jungle village
 in amusement park
 in race track
+#poppy-playtime
+in playtime co factory
+in factory entrance
+in main lobby
+in reception area
+in toy showroom
+in toy factory
+in assembly line
+in production area
+in packaging room
+in warehouse
+in storage room
+in loading dock
+in maintenance room
+in maintenance tunnel
+in factory hallway
+in security room
+in control room
+in control center
+in surveillance room
+in experiment laboratory
+in research laboratory
+in testing chamber
+in puzzle room
+in puzzle corridor
+in power station
+in generator room
+in electrical room
+in ventilation tunnel
+in vent system
+in underground facility
+in underground tunnel
+in hidden laboratory
+in secret facility
+in train station
+in train platform
+in game station
+in playcare
+in daycare room
+in indoor playground
+in play area
+in toy storage area
+in kindergarten classroom
+in school room
+in art room
+in music room
+in sleeping quarters
+in colorful hallway
+in toy castle
+in factory courtyard
+in abandoned factory wing
+#pokemon
+in pokemon center
+in pokemon gym
+in gym arena
+in trainer school
+in professor laboratory
+in research laboratory
+in trainer academy
+in pokemon daycare
+in pokemon nursery
+in trainer camp
+in starter town
+in pokemon town
+in pokemon village
+in city plaza
+in market street
+in battle stadium
+in championship arena
+in contest hall
+in battle tower
+in trainer headquarters
+on route path
+on forest trail
+in forest clearing
+in deep forest
+in bamboo forest
+in flower meadow
+in cherry blossom park
+in grassy field
+in tall grass
+in countryside field
+in riverside meadow
+on riverbank
+in waterfall area
+in crystal cave
+in mountain cave
+in rocky canyon
+in mountain trail
+on snowy mountain
+in icy cave
+on sandy beach
+in seaside town
+in harbor town
+on tropical island
+in jungle area
+in volcano area
+in ancient ruins
+in hidden temple
+in magical forest
+in treasure cave
+in legendary shrine
