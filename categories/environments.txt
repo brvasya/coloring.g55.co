@@ -661,3 +661,54 @@ in bunny village
 in mushroom village
 in candy kingdom
 in dreamland
+#chiikawa
+in chiikawa house
+in cozy bedroom
+in small cottage
+in neighborhood path
+in village square
+in cute village
+in countryside village
+in town street
+in shopping street
+in market area
+in bakery
+in cafe
+in picnic area
+in flower garden
+in sunflower field
+in flower meadow
+in cherry blossom park
+in grassy field
+in riverside meadow
+on riverbank
+in forest clearing
+in bamboo grove
+in woodland trail
+in mushroom forest
+in magical forest
+in berry field
+in vegetable garden
+in apple orchard
+in mountain trail
+in hillside meadow
+in hidden cave
+in crystal cave
+in treasure cave
+in adventure field
+in camping area
+in fishing spot
+on sandy beach
+in seaside village
+on tropical island
+in snowy village
+in snowy field
+in hot spring village
+in training grounds
+in work site
+in workshop
+in honey field
+in cloud kingdom
+on floating island
+in dreamland
+in rainbow meadow
