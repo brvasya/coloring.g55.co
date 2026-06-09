@@ -763,3 +763,54 @@ in magical kingdom
 in dreamland
 in starlight meadow
 in friendship park
+#barbie
+in barbie dreamhouse
+in dreamhouse bedroom
+in dreamhouse kitchen
+in dreamhouse living room
+in dreamhouse garden
+in dreamhouse pool area
+in fashion studio
+in fashion runway
+in fashion boutique
+in clothing store
+in beauty salon
+in makeup studio
+in design workshop
+in art studio
+in music studio
+in dance studio
+in ballet theater
+in school classroom
+in school library
+in college campus
+in science laboratory
+in veterinary clinic
+in animal rescue center
+in horse stable
+in riding arena
+in flower garden
+in rose garden
+in butterfly garden
+in cherry blossom park
+in city park
+in picnic area
+on sandy beach
+in beach house
+in seaside resort
+on tropical island
+in luxury hotel
+in city apartment
+in shopping district
+in amusement park
+in carnival grounds
+in princess castle
+in royal palace
+in castle ballroom
+in fairy tale kingdom
+in magical forest
+in enchanted garden
+in cloud kingdom
+on floating island
+in dreamland
+in rainbow garden
