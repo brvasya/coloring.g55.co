@@ -610,3 +610,54 @@ in city park
 in clock tower
 in cathedral rooftop
 in observation tower
+#hello-kitty
+in hello kitty house
+in hello kitty bedroom
+in cozy bedroom
+in toy room
+in playroom
+in craft room
+in art studio
+in music room
+in school classroom
+in school library
+in bakery
+in cake shop
+in candy shop
+in ice cream shop
+in flower shop
+in tea party garden
+in flower garden
+in rose garden
+in cherry blossom park
+in city park
+in picnic area
+in playground
+in neighborhood street
+in town square
+in shopping street
+in cute village
+in countryside village
+in seaside village
+on sandy beach
+in beach cafe
+in amusement park
+in carnival grounds
+in ferris wheel area
+in castle courtyard
+in princess castle
+in fairy tale castle
+in magical forest
+in enchanted garden
+in rainbow garden
+in cloud kingdom
+on floating island
+in starry meadow
+in moonlit garden
+in heart garden
+in friendship park
+in pet playground
+in bunny village
+in mushroom village
+in candy kingdom
+in dreamland
