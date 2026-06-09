@@ -865,3 +865,54 @@ in enchanted garden
 in fantasy school
 in royal throne room
 in adventure camp
+#animals
+in forest
+in woodland forest
+in rainforest
+in jungle
+in bamboo forest
+in tropical forest
+in savanna
+in grassland
+in prairie
+in meadow
+in flower meadow
+in wildflower field
+in countryside field
+in farm pasture
+in farmyard
+in barnyard
+in orchard
+in vegetable garden
+in forest clearing
+on riverbank
+in riverside meadow
+near waterfall
+in wetland
+in marsh
+in swamp
+in mangrove forest
+in lake shore
+in pond area
+in mountain valley
+in mountain meadow
+on mountain trail
+in rocky mountains
+in snowy forest
+in arctic tundra
+in snowy field
+in winter woodland
+in desert
+in desert oasis
+in canyon
+in cave
+in volcanic valley
+in cherry blossom garden
+in flower garden
+in botanical garden
+in nature reserve
+in wildlife sanctuary
+in countryside village
+in hillside meadow
+in woodland trail
+in green valley
