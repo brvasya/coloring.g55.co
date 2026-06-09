@@ -544,7 +544,7 @@ class PromptGUI(tk.Tk):
 
         list_wrap = ttk.Frame(sidebar)
         list_wrap.pack(fill="y", expand=True)
-        self.cat_list = tk.Listbox(list_wrap, exportselection=False, activestyle="none")
+        self.cat_list = tk.Listbox(list_wrap, exportselection=False, activestyle="none", width=34)
         cat_scroll = ttk.Scrollbar(list_wrap, orient="vertical", command=self.cat_list.yview)
         self.cat_list.configure(yscrollcommand=cat_scroll.set)
         self.cat_list.pack(side="left", fill="y", expand=True)
