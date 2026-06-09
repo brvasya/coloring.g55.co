@@ -916,3 +916,54 @@ in countryside village
 in hillside meadow
 in woodland trail
 in green valley
+#bluey
+in bluey's house
+in bluey's bedroom
+in family living room
+in family kitchen
+in backyard
+in backyard garden
+in backyard playground
+in front yard
+in neighborhood street
+in neighborhood park
+in playground
+in school playground
+in school classroom
+in school yard
+in school library
+in daycare playground
+in camping area
+in picnic area
+in barbecue area
+in treehouse
+in cubby house
+in flower garden
+in vegetable garden
+in butterfly garden
+in city park
+in riverside park
+on riverbank
+in nature trail
+in forest trail
+in woodland clearing
+in countryside field
+in grassy meadow
+in sports field
+in soccer field
+in cricket field
+in skate park
+in community center
+in shopping center
+in farmers market
+in cafe
+in ice cream shop
+on sandy beach
+in beach playground
+in seaside park
+in beach picnic area
+in swimming pool area
+in water park
+in amusement park
+in holiday campsite
+in cherry blossom park
