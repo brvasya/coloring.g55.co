@@ -7,7 +7,12 @@
 {
 "id": "adventure-time",
 "name": "Adventure Time",
-"description": "Adventure Time Coloring Pages provide printable coloring pages featuring characters, creatures, kingdoms, gadgets, and adventures from the Land of Ooo. Illustrations include <a href='/?c=adventure-time-finn'>Finn</a>, <a href='/?c=adventure-time-jake'>Jake</a>, <a href='/?c=adventure-time-princess-bubblegum'>Princess Bubblegum</a>, BMO, and Ice King in a variety of fantasy scenes and activities. Pages place characters in forests, castles, villages, mountains, and other imaginative settings that support broad coloring variety. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+"description": "Adventure Time Coloring Pages provide printable coloring pages featuring characters, creatures, kingdoms, gadgets, and adventures from the Land of Ooo. Illustrations include <a href='/?c=adventure-time-finn'>Finn</a>, <a href='/?c=adventure-time-jake'>Jake</a>, <a href='/?c=adventure-time-princess-bubblegum'>Princess Bubblegum</a>, <a href='/?c=adventure-time-bmo'>BMO</a>, and Ice King in a variety of fantasy scenes and activities. Pages place characters in forests, castles, villages, mountains, and other imaginative settings that support broad coloring variety. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
+"id": "adventure-time-bmo",
+"name": "Adventure Time BMO",
+"description": "Adventure Time BMO Coloring Pages provide printable coloring pages featuring BMO in a variety of character-focused activities and imaginative scenes. Illustrations include video game consoles, musical instruments, robots, screens, and gadgets while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place BMO in tree houses, bedrooms, forests, villages, and fantasy settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
 },
 {
 "id": "adventure-time-finn",
