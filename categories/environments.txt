@@ -1120,3 +1120,54 @@ in mystical ruins
 in treasure chamber
 in legendary sanctuary
 in magical portal area
+#hatsune-miku
+on concert stage
+in concert arena
+in live performance hall
+in music venue
+in rehearsal studio
+in dance studio
+in recording studio
+in vocal studio
+in music production studio
+in live streaming studio
+in music classroom
+in backstage area
+in dressing room
+in concert backstage tunnel
+in music video set
+in virtual performance stage
+in digital concert hall
+in virtual stage
+in vocaloid concert arena
+in idol training room
+in cyber city
+in futuristic city
+in neon city
+in hologram city
+in digital world
+in virtual world
+in virtual city
+in technology laboratory
+in robotics laboratory
+in robot workshop
+in japanese school classroom
+in school rooftop
+in school courtyard
+in cherry blossom park
+in cherry blossom garden
+in bamboo grove
+in japanese shrine
+in temple courtyard
+in traditional japanese village
+in japanese festival
+in lantern festival
+in entertainment district
+in shopping district
+in flower meadow
+in sunflower field
+in moonlit garden
+in starlight meadow
+in sky garden
+on floating island
+among the stars
