@@ -1171,3 +1171,54 @@ in starlight meadow
 in sky garden
 on floating island
 among the stars
+#brawl-stars
+in brawl arena
+in battle arena
+in showdown arena
+in team battle arena
+in training grounds
+in practice arena
+in trophy road arena
+in star park
+in amusement park
+in theme park
+in gift shop
+in arcade zone
+in game room
+in town square
+in city street
+in downtown area
+in desert outpost
+in desert canyon
+in desert town
+in rocky canyon
+in mine entrance
+in abandoned mine
+in crystal mine
+in gemstone cave
+in treasure cave
+in pirate harbor
+in pirate ship
+in tropical island
+on sandy beach
+in seaside town
+in jungle ruins
+in jungle temple
+in ancient ruins
+in hidden temple
+in enchanted forest
+in magical forest
+in mushroom grove
+in haunted graveyard
+in spooky mansion
+in castle courtyard
+in royal castle
+in snowy village
+in frozen valley
+in mountain fortress
+in robot factory
+in secret laboratory
+in high tech laboratory
+in space station
+on alien planet
+in portal chamber
