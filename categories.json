@@ -460,6 +460,26 @@
 "description": "My Little Pony Twilight Sparkle Coloring Pages provide printable coloring pages featuring Twilight Sparkle in a variety of character-focused activities and scenes. Illustrations include books, stars, magic symbols, crowns, and friendship elements shown in recognizable artwork inspired by the popular pony character. As part of the <a href='/?c=my-little-pony'>My Little Pony Coloring Pages</a> collection, pages place Twilight Sparkle in forests, villages, magical kingdoms, and mountain landscapes that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs for clear coloring. This category supports classroom activities, home art time, and creative practice while encouraging creativity, character recognition, and artistic development."
 },
 {
+"id": "naruto",
+"name": "Naruto",
+"description": "Naruto Coloring Pages provide printable coloring pages featuring ninja themed activities and character focused scenes from the Hidden Leaf Village. Illustrations include <a href='/?c=naruto-sasuke'>Sasuke</a>, <a href='/?c=naruto-kakashi'>Kakashi</a>, <a href='/?c=naruto-itachi'>Itachi</a>, ninja headbands, scrolls, and training grounds. Pages place characters in villages, forests, mountains, battle arenas, and outdoor environments that create a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
+"id": "naruto-itachi",
+"name": "Naruto Itachi",
+"description": "Naruto Itachi Coloring Pages provide printable coloring pages featuring Itachi in ninja themed activities and character focused scenes. Illustrations include cloaks, ninja headbands, crows, scrolls, and battle effects while also connecting to <a href='/?c=naruto'>Naruto Coloring Pages</a>. Pages place Itachi in forests, villages, mountains, battle arenas, and outdoor environments that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
+"id": "naruto-kakashi",
+"name": "Naruto Kakashi",
+"description": "Naruto Kakashi Coloring Pages provide printable coloring pages featuring Kakashi in ninja themed activities and character focused scenes. Illustrations include masks, ninja headbands, scrolls, training targets, and battle effects while also connecting to <a href='/?c=naruto'>Naruto Coloring Pages</a>. Pages place Kakashi in forests, villages, mountains, training grounds, and outdoor environments that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
+"id": "naruto-sasuke",
+"name": "Naruto Sasuke",
+"description": "Naruto Sasuke Coloring Pages provide printable coloring pages featuring Sasuke in ninja themed activities and character focused scenes. Illustrations include swords, ninja headbands, scrolls, training targets, and battle effects while also connecting to <a href='/?c=naruto'>Naruto Coloring Pages</a>. Pages place Sasuke in forests, villages, mountains, battle arenas, and outdoor environments that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
 "id": "paw-patrol",
 "name": "Paw Patrol",
 "description": "Paw Patrol Coloring Pages offer printable coloring pages featuring rescue team characters designed for creative coloring activity and character recognition. Subjects include <a href='/?c=paw-patrol-chase'>Chase</a>, <a href='/?c=paw-patrol-marshall'>Marshall</a>, <a href='/?c=paw-patrol-skye'>Skye</a>, rescue vehicles, badges, and lookout towers. Scenes place characters in cities, beaches, mountains, and adventure locations with varied mission settings. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and learning routines focused on teamwork, problem solving, and visual recognition."

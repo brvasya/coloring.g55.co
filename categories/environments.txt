@@ -1222,3 +1222,54 @@ in high tech laboratory
 in space station
 on alien planet
 in portal chamber
+#naruto
+in hidden leaf village
+in village street
+in village market
+in village training grounds
+in ninja academy
+in academy classroom
+in academy courtyard
+in hokage office
+in hokage monument area
+in village gates
+in ramen shop
+in forest training area
+in bamboo forest
+in woodland trail
+in forest clearing
+on mountain trail
+in mountain valley
+near waterfall
+on riverbank
+in riverside meadow
+in hidden cave
+in crystal cave
+in underground tunnel
+in ancient ruins
+in abandoned temple
+in temple courtyard
+in sacred shrine
+in ninja hideout
+in secret base
+in battle arena
+in tournament arena
+in practice field
+in desert village
+in desert canyon
+in sandy desert
+in snowy village
+in frozen valley
+in misty forest
+in thunderstorm valley
+in cloud village
+in stone village
+in sand village
+in hidden rain village
+in hidden mist village
+in samurai fortress
+in castle courtyard
+in royal palace
+in spirit forest
+in portal chamber
+on floating island
