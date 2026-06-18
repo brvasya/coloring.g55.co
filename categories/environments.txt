@@ -1324,3 +1324,54 @@ in amusement park
 in toy kingdom
 in star portal
 in space station
+#hazbin-hotel
+in hazbin hotel
+in hotel lobby
+in hotel hallway
+in hotel lounge
+in hotel library
+in hotel kitchen
+in hotel dining room
+in hotel ballroom
+in hotel rooftop
+in hotel garden
+in hotel courtyard
+in hotel elevator
+in hotel reception
+in charlie's room
+in alastor's radio room
+in radio station
+in music room
+in theater stage
+in concert hall
+in jazz club
+in pentagram city
+in city street
+in downtown district
+in shopping district
+in entertainment district
+in dark alley
+in rooftop garden
+in abandoned building
+in old theater
+in underground club
+in casino
+in nightclub
+in luxury penthouse
+in royal palace
+in demon castle
+in castle courtyard
+in gothic cathedral
+in ancient library
+in grand staircase
+in enchanted ballroom
+in magical forest
+in crimson forest
+in fiery valley
+in lava cavern
+in crystal cave
+in hidden chamber
+in portal chamber
+in shadow realm
+in throne room
+in floating island
