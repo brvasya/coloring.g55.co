@@ -1273,3 +1273,54 @@ in royal palace
 in spirit forest
 in portal chamber
 on floating island
+#kirby
+in dream land
+in dream land meadow
+in dream land village
+in popstar plains
+in popstar countryside
+in waddle dee town
+in castle courtyard
+in king dedede's castle
+in royal throne room
+in candy kingdom
+in candy village
+in dessert valley
+in cookie forest
+in chocolate meadow
+in ice cream valley
+in flower meadow
+in flower garden
+in cherry blossom garden
+in magical forest
+in enchanted forest
+in mushroom forest
+in giant tree
+in bamboo grove
+in crystal cave
+in hidden cave
+in rainbow valley
+in cloud kingdom
+on floating island
+above the clouds
+in sky garden
+in sky castle
+in starlight meadow
+among the stars
+in moonlit valley
+in volcano valley
+in lava cave
+in snowy village
+in frozen valley
+in icy cave
+on sandy beach
+in seaside village
+on tropical island
+in underwater kingdom
+in treasure cave
+in ancient ruins
+in mysterious temple
+in amusement park
+in toy kingdom
+in star portal
+in space station
