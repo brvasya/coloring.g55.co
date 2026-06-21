@@ -1579,3 +1579,54 @@ in crystal cave
 in portal chamber
 in rainbow bridge
 in floating island
+#roblox
+in obby course
+in obstacle course
+in tycoon base
+in roleplay town
+in city street
+in city plaza
+in neighborhood
+in school classroom
+in school hallway
+in playground
+in amusement park
+in theme park
+in shopping mall
+in restaurant
+in cafe
+in pizza shop
+in police station
+in fire station
+in hospital
+in airport
+in train station
+in race track
+in soccer stadium
+in skate park
+in camping area
+in forest
+in jungle
+in mountain trail
+in snowy village
+in desert
+on sandy beach
+on tropical island
+in pirate ship
+in castle
+in medieval village
+in haunted mansion
+in spooky forest
+in secret laboratory
+in robot factory
+in science laboratory
+in space station
+on alien planet
+in underwater city
+in crystal cave
+in lava cave
+in portal chamber
+in floating island
+in sky kingdom
+in rainbow world
+in winner's podium
