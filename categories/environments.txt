@@ -1375,3 +1375,105 @@ in portal chamber
 in shadow realm
 in throne room
 in floating island
+#paw-patrol
+in adventure bay
+in adventure bay lookout
+in lookout tower
+in lookout headquarters
+in adventure bay beach
+in adventure bay harbor
+in adventure bay marina
+in adventure bay park
+in adventure bay town square
+in adventure bay street
+in city hall
+in fire station
+in police station
+in airport
+in train station
+in farm
+in barn
+in mountain trail
+in mountain rescue center
+in snowy mountain
+in ski resort
+in forest
+in forest trail
+in waterfall area
+on riverbank
+in lake park
+in camping area
+in picnic area
+in playground
+in school playground
+in soccer field
+in construction site
+in bridge construction area
+in lighthouse
+in seaside village
+on sandy beach
+in jungle
+in dinosaur valley
+in desert
+in canyon
+in castle courtyard
+in royal castle
+in pirate cove
+on tropical island
+in underwater headquarters
+in coral reef
+in space station
+on the moon
+on floating island
+in balloon festival
+#peppa-pig
+in peppa's house
+in peppa's bedroom
+in family living room
+in family kitchen
+in backyard
+in vegetable garden
+in flower garden
+in muddy puddle
+in playground
+in school playground
+in playgroup classroom
+in school library
+in school yard
+in neighborhood park
+in picnic area
+in camping area
+in treehouse
+in apple orchard
+in farm
+in barn
+in farm pasture
+in potato field
+in countryside meadow
+in grassy hill
+in forest trail
+in woodland clearing
+on riverbank
+in duck pond
+in lake park
+on sandy beach
+in seaside town
+in lighthouse
+in amusement park
+in fairground
+in zoo
+in aquarium
+in museum
+in castle
+in castle courtyard
+in village street
+in village market
+in town square
+in shopping street
+in train station
+in bus stop
+in airport
+in hot air balloon festival
+in snow covered park
+in cherry blossom park
+in rainbow garden
