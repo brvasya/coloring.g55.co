@@ -1528,3 +1528,54 @@ in magical tower
 in ancient temple
 in royal carriage
 in grand staircase
+#rainbow-friends
+in odd world
+in odd world entrance
+in play place
+in playground
+in game room
+in arcade room
+in toy room
+in indoor playground
+in ball pit
+in obstacle course
+in maze
+in colorful hallway
+in school hallway
+in classroom
+in cafeteria
+in library
+in theater stage
+in amusement park
+in carnival
+in funhouse
+in gift shop
+in party room
+in birthday room
+in daycare
+in daycare play area
+in factory
+in warehouse
+in storage room
+in maintenance room
+in control room
+in security room
+in ventilation tunnel
+in underground tunnel
+in hidden laboratory
+in experiment room
+in abandoned building
+in dark hallway
+in spooky forest
+in misty forest
+in abandoned playground
+in train station
+in subway tunnel
+in city park
+in rooftop
+in construction site
+in robot factory
+in crystal cave
+in portal chamber
+in rainbow bridge
+in floating island
