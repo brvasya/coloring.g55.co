@@ -1,5 +1,1 @@
-fnaf bonnie
-fnaf chica
-fnaf foxy
-fnaf freddy fazbear
-fnaf golden freddy
+fnaf characters
