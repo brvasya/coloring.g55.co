@@ -1,6 +1,1 @@
-minecraft alex
-minecraft creeper
-minecraft enderman
-minecraft skeleton
-minecraft steve
-minecraft zombie
+minecraft characters
