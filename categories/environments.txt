@@ -1477,3 +1477,54 @@ in hot air balloon festival
 in snow covered park
 in cherry blossom park
 in rainbow garden
+#princess
+in royal castle
+in castle courtyard
+in castle garden
+in castle ballroom
+in throne room
+in royal palace
+in palace garden
+in royal library
+in royal bedroom
+in royal balcony
+in enchanted castle
+in crystal castle
+in ice castle
+in fairy tale kingdom
+in royal village
+in village square
+in flower garden
+in rose garden
+in butterfly garden
+in cherry blossom garden
+in enchanted forest
+in magical forest
+in ancient forest
+in woodland clearing
+in flower meadow
+in rainbow meadow
+in crystal cave
+in hidden cave
+in magical waterfall
+on riverbank
+in mountain valley
+in snowy mountains
+on sandy beach
+on tropical island
+in swan lake
+in royal harbor
+in unicorn meadow
+in dragon kingdom
+in fairy village
+in fairy garden
+in cloud kingdom
+on floating island
+above the clouds
+in sky palace
+in moonlit garden
+in starlight meadow
+in magical tower
+in ancient temple
+in royal carriage
+in grand staircase
