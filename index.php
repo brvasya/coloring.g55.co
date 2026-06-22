@@ -39,9 +39,7 @@
 </section>
 <?php else: ?>
 <?php foreach ($homepageClusters as $cluster): ?>
-<a href="/?c=<?php echo rawurlencode($cluster['id']); ?>">
-<h2><?php echo h($cluster['title']); ?></h2>
-</a>
+<h2><a href="/?c=<?php echo rawurlencode($cluster['id']); ?>"><?php echo h($cluster['title']); ?></a></h2>
 <section class="grid">
 <?php foreach ($cluster['items'] as $it): ?>
 <a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($it['id']); ?>&c=<?php echo rawurlencode($it['category']); ?>">
