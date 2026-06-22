@@ -83,20 +83,32 @@ if ($hasC) {
 } else {
   $totalCount = 0;
   $gridItems = [];
+  $homepageClusters = [];
 
-  foreach ($categories as $c) {
-    $catId = $c['id'];
+  foreach (($grouped['clusters'] ?? []) as $cluster) {
+    $clusterItems = [];
 
-    list($_, $pages) = load_category_pages($catId);
-    $totalCount += count($pages);
+    foreach ($cluster as $c) {
+      $catId = $c['id'];
 
-    $newest = newest_page($pages);
-    $gridItems[] = [
-      'id' => $newest['id'],
-      'title' => $newest['title'],
-      'image' => '/categories/' . $catId . '/' . $newest['id'] . '.png',
-      'category' => $catId,
-    ];
+      list($_, $pages) = load_category_pages($catId);
+      $totalCount += count($pages);
+
+      $newest = newest_page($pages);
+      $clusterItems[] = [
+        'id' => $newest['id'],
+        'title' => $newest['title'],
+        'image' => '/categories/' . $catId . '/' . $newest['id'] . '.png',
+        'category' => $catId,
+      ];
+    }
+
+    if (!empty($clusterItems)) {
+      $homepageClusters[] = [
+        'title' => $cluster[0]['name'] . ' Coloring Pages',
+        'items' => $clusterItems,
+      ];
+    }
   }
 
   $h1 = ($totalCount > 0 ? number_format($totalCount) . ' ' : '') . $site['title'];
