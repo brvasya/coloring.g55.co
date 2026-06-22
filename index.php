@@ -38,8 +38,13 @@
 <?php endforeach; ?>
 </section>
 <?php else: ?>
+<ul class="categories">
+<?php foreach (array_keys($homepageLetters) as $letter): ?>
+<li><a class="tag" href="#<?php echo $letter; ?>"><?php echo $letter; ?></a></li>
+<?php endforeach; ?>
+</ul>
 <?php foreach ($homepageClusters as $cluster): ?>
-<h2><a href="/?c=<?php echo rawurlencode($cluster['id']); ?>"><?php echo h($cluster['title']); ?></a></h2>
+<h2 id="<?php echo h($cluster['title'][0]); ?>"><a href="/?c=<?php echo rawurlencode($cluster['id']); ?>"><?php echo h($cluster['title']); ?></a></h2>
 <section class="grid">
 <?php foreach ($cluster['items'] as $it): ?>
 <a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($it['id']); ?>&c=<?php echo rawurlencode($it['category']); ?>">
