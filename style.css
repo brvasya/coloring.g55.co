@@ -53,7 +53,7 @@ li {
     flex: auto;
 }
 a, a:visited {
-    color: #fff;
+    color: #0099cc;
     text-decoration: none;
 }
 p {
@@ -85,8 +85,8 @@ p {
     background-position: top right;
     background-image: linear-gradient(to bottom, transparent, #eee), linear-gradient(to top, transparent, #eee), url(mascot.png);
 }
-.title a {
-    color: #0099cc;
+nav a {
+    color: #fff;
 }
 .grid, .categories, .pagination {
     margin: 25px;
