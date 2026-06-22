@@ -83,44 +83,20 @@ if ($hasC) {
 } else {
   $totalCount = 0;
   $gridItems = [];
-  $homepageClusters = [];
 
-  foreach ($grouped as $tier0Id => $tier1Ids) {
-    if (!isset($catMap[$tier0Id])) continue;
+  foreach ($categories as $c) {
+    $catId = $c['id'];
 
-    $clusterItems = [];
-    $clusterCatIds = array_merge([$tier0Id], $tier1Ids);
+    list($_, $pages) = load_category_pages($catId);
+    $totalCount += count($pages);
 
-    foreach ($clusterCatIds as $catId) {
-      if (!isset($catMap[$catId])) continue;
-
-      list($_, $pages) = load_category_pages($catId);
-      $totalCount += count($pages);
-
-      if (empty($pages)) continue;
-
-      $newest = newest_page($pages);
-      if (!$newest || empty($newest['id'])) continue;
-
-      $item = [
-        'id' => $newest['id'],
-        'title' => $catMap[$catId]['name'] . ' Coloring Pages',
-        'image' => '/categories/' . $catId . '/' . $newest['id'] . '.png',
-        'category' => $catId,
-        'is_tier0' => $catId === $tier0Id,
-      ];
-
-      $clusterItems[] = $item;
-      $gridItems[] = $item;
-    }
-
-    if (!empty($clusterItems)) {
-      $homepageClusters[] = [
-        'id' => $tier0Id,
-        'title' => $catMap[$tier0Id]['name'] . ' Coloring Pages',
-        'items' => $clusterItems,
-      ];
-    }
+    $newest = newest_page($pages);
+    $gridItems[] = [
+      'id' => $newest['id'],
+      'title' => $newest['title'],
+      'image' => '/categories/' . $catId . '/' . $newest['id'] . '.png',
+      'category' => $catId,
+    ];
   }
 
   $h1 = ($totalCount > 0 ? number_format($totalCount) . ' ' : '') . $site['title'];
