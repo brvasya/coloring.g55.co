@@ -85,7 +85,7 @@ p {
     background-position: top right;
     background-image: linear-gradient(to bottom, transparent, #eee), linear-gradient(to top, transparent, #eee), url(mascot.png);
 }
-.title a, h2 a {
+.title a, .title a:visited, h2 a, h2 a:visited {
     color: #0099cc;
 }
 .grid, .categories, .pagination {
