@@ -84,6 +84,7 @@ if ($hasC) {
   $totalCount = 0;
   $gridItems = [];
   $homepageClusters = [];
+  $homepageLetters = [];
 
   foreach (($grouped['clusters'] ?? []) as $cluster) {
     $clusterItems = [];
@@ -110,6 +111,10 @@ if ($hasC) {
         'items' => $clusterItems,
       ];
     }
+  }
+
+  foreach ($homepageClusters as $cluster) {
+    $homepageLetters[$cluster['title'][0]] = true;
   }
 
   $h1 = ($totalCount > 0 ? number_format($totalCount) . ' ' : '') . $site['title'];
