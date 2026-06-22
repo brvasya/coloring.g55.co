@@ -105,6 +105,7 @@ if ($hasC) {
 
     if (!empty($clusterItems)) {
       $homepageClusters[] = [
+        'id' => $cluster[0]['id'],
         'title' => $cluster[0]['name'] . ' Coloring Pages',
         'items' => $clusterItems,
       ];
