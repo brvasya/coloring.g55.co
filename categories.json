@@ -680,6 +680,11 @@
 "description": "Color Roblox printable coloring pages featuring characters such as block avatars, builders, explorers, racers, and figures including pets, robots, warriors, and fantasy heroes shown in city maps, obstacle courses, adventure islands, and virtual worlds. Users explore simple outline drawings and bold line art pages across easy coloring pages for toddlers and detailed coloring pages for older kids. These printable coloring pages support classroom activities and home craft routines while coloring sheets to print encourage character recognition, visual focus, and early creative learning through structured offline art time."
 },
 {
+"id": "totoro-small",
+"name": "Small Totoro",
+"description": "Small Totoro Coloring Pages provide printable coloring pages featuring the small forest spirit in magical nature scenes. Explore <a href='/?c=totoro'>Totoro Coloring Pages</a> for more printable adventures with forest friends and woodland characters. Illustrations include Small Totoro, acorns, leaves, mushrooms, and tree hollows across forests, meadows, and countryside landscapes. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
 "id": "sonic",
 "name": "Sonic",
 "description": "Sonic Coloring Pages provide printable coloring pages featuring popular characters from the Sonic universe designed for kids who enjoy character based coloring activities. Children can color heroes like <a href='/?c=sonic-tails'>Tails</a>, <a href='/?c=sonic-knuckles'>Knuckles</a>, <a href='/?c=sonic-shadow'>Shadow</a>, <a href='/?c=sonic-amy'>Amy</a>, and <a href='/?c=sonic-silver'>Silver</a> while exploring well known character designs. Scenes appear across green hills, city zones, mechanical bases, racing tracks, and futuristic worlds that resemble environments from Sonic themed adventures. The collection includes simple outline drawings for younger children and more detailed pages for older kids using clear black and white line art. These coloring sheets support classroom activities, home art time, and creative practice focused on character recognition and coloring skills."
@@ -742,7 +747,12 @@
 {
 "id": "totoro",
 "name": "Totoro",
-"description": "Totoro Coloring Pages provide printable coloring pages featuring Totoro, Mei, Satsuki, Catbus, and forest creatures from the beloved animated story. Illustrations include woodland animals, giant trees, umbrellas, acorns, and nature-inspired scenes shown in recognizable character-focused artwork. Pages place characters in forests, gardens, countryside fields, and village environments that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs for clear coloring. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
+"description": "Totoro Coloring Pages provide printable coloring pages featuring Totoro, <a href='/?c=totoro-small'>Small Totoro</a>, <a href='/?c=totoro-catbus'>Catbus</a>, Mei, and Satsuki from the beloved animated story. Illustrations include woodland animals, giant trees, umbrellas, acorns, and nature-inspired scenes shown in recognizable character-focused artwork. Pages place characters in forests, gardens, countryside fields, and village environments that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs for clear coloring. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
+},
+{
+"id": "totoro-catbus",
+"name": "Totoro Catbus",
+"description": "Totoro Catbus Coloring Pages provide printable coloring pages featuring the famous Catbus in magical forest adventures. Browse <a href='/?c=totoro'>Totoro Coloring Pages</a> for more printable scenes with Totoro characters and woodland settings. Illustrations include Catbus, bus stops, trees, acorns, forest paths, and moonlit skies across forests, villages, and countryside landscapes. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
 },
 {
 "id": "unicorn",
