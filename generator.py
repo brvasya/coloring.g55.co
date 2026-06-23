@@ -18,7 +18,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 APP_DIR = os.path.join(BASE_DIR, "app")
 CATEGORIES_DIR = os.path.join(BASE_DIR, "categories")
 STYLE_FILE = os.path.join(CATEGORIES_DIR, "style.txt")
-ACTIONS_FILE = os.path.join(CATEGORIES_DIR, "actions.txt")
 ENVIRONMENTS_FILE = os.path.join(CATEGORIES_DIR, "environments.txt")
 
 POOL_FILES = {
@@ -29,7 +28,7 @@ POOL_FILES = {
 }
 
 POOLS = {k: [] for k in POOL_FILES.keys()}
-LIST_NAMES = ["characters", "actions", "environments"]
+LIST_NAMES = ["characters", "environments"]
 COPIED_BG = "systemHighlight"
 
 GEMINI_IMAGE_MODELS = ["gemini-3.1-flash-image", "gemini-2.5-flash-image"]
@@ -66,9 +65,6 @@ def load_style():
     text = re.sub(r"\s{2,}", " ", text)
     return text
 
-
-def load_shared_actions():
-    return load_lines(ACTIONS_FILE)
 
 
 def slugify(text):
@@ -129,7 +125,6 @@ def load_category_data(category_name):
     cat_dir = os.path.join(CATEGORIES_DIR, category_name)
     return {
         "characters": load_lines(os.path.join(cat_dir, "characters.txt")),
-        "actions": load_shared_actions(),
         "environments": load_category_environments(category_name),
         "style": load_style(),
     }
@@ -164,17 +159,15 @@ def strip_leading_article(text):
 
 def build_h1(parts):
     character = strip_leading_article(parts["character"])
-    action = parts["action"].strip()
     env = parts["environment"].strip()
-    base = re.sub(r"\s{2,}", " ", f"{character} {action} {env}").strip()
+    base = re.sub(r"\s{2,}", " ", f"{character} {env}").strip()
     return f"Free Printable {format_title(base)} Coloring Page for Kids"
 
 
 def build_seo_base_for_slug(parts):
     character = strip_leading_article(parts["character"])
-    action = parts["action"].strip()
     env = parts["environment"].strip()
-    return re.sub(r"\s{2,}", " ", f"{character} {action} {env} coloring page").strip()
+    return re.sub(r"\s{2,}", " ", f"{character} {env} coloring page").strip()
 
 
 def build_id(parts):
@@ -182,7 +175,7 @@ def build_id(parts):
 
 
 def build_prompt(parts, style):
-    core = f"{parts['character']} {parts['action']} {parts['environment']}"
+    core = f"{parts['character']} {parts['environment']}"
     core = re.sub(r"\s{2,}", " ", core).strip()
     style = (style or "").strip().rstrip(".")
     return f"Coloring page on white background, {core}, {style}."
@@ -207,7 +200,7 @@ def render_template(line, scene):
 
 
 def build_page_description(parts):
-    scene = f"{parts['character'].strip()} {parts['action'].strip()} {parts['environment'].strip()}"
+    scene = f"{parts['character'].strip()} {parts['environment'].strip()}"
     scene = re.sub(r"\s{2,}", " ", scene).strip()
 
     patterns = [
@@ -230,16 +223,15 @@ def build_page_description(parts):
 
 def generate_item(data):
     if not all(data.get(k) for k in LIST_NAMES) or not data.get("style"):
-        parts = {"character": "", "action": "", "environment": ""}
+        parts = {"character": "", "environment": ""}
         return {"parts": parts, "h1": "Missing files", "id": "missing-files", "prompt": "Missing files", "page_description": "Missing files"}
 
     if not all(POOLS.get(k) for k in ("intro", "usage", "ease", "benefit")):
-        parts = {"character": "", "action": "", "environment": ""}
+        parts = {"character": "", "environment": ""}
         return {"parts": parts, "h1": "Missing pool files", "id": "missing-pool-files", "prompt": "Missing pool files", "page_description": "Missing pool files"}
 
     parts = {
         "character": random.choice(data["characters"]),
-        "action": random.choice(data["actions"]),
         "environment": random.choice(data["environments"]),
     }
     return {
@@ -252,7 +244,7 @@ def generate_item(data):
 
 
 def calculate_total_combinations(data):
-    return len(data.get("characters") or []) * len(data.get("actions") or []) * len(data.get("environments") or [])
+    return len(data.get("characters") or []) * len(data.get("environments") or [])
 
 
 def count_keyword_matches(lines, keyword):
@@ -594,10 +586,9 @@ class PromptGUI(tk.Tk):
         category_keyword = self.category_var.get().strip()
         c = len(data.get("characters") or [])
         c_match = count_keyword_matches(data.get("characters") or [], category_keyword)
-        a = len(data.get("actions") or [])
         e = len(data.get("environments") or [])
         total = calculate_total_combinations(data)
-        self.counters_var.set(f"Characters: {c} ({c_match} matched)  Actions: {a}  Environments: {e}  Total: {total:,}")
+        self.counters_var.set(f"Characters: {c} ({c_match} matched)  Environments: {e}  Total: {total:,}")
 
     def on_category_select(self, _event=None):
         sel = self.cat_list.curselection()
