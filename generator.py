@@ -229,7 +229,11 @@ def build_page_description(parts):
 
 
 def generate_item(data):
-    if not all(data.get(k) for k in LIST_NAMES) or not data.get("style"):
+    if (
+        not data.get("characters")
+        or not data.get("environments")
+        or not data.get("style")
+    ):
         parts = {"character": "", "action": "", "environment": ""}
         return {"parts": parts, "h1": "Missing files", "id": "missing-files", "prompt": "Missing files", "page_description": "Missing files"}
 
@@ -239,7 +243,7 @@ def generate_item(data):
 
     parts = {
         "character": random.choice(data["characters"]),
-        "action": random.choice(data["actions"]),
+        "action": random.choice(data["actions"]) if data["actions"] else "",
         "environment": random.choice(data["environments"]),
     }
     return {
