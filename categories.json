@@ -357,7 +357,32 @@
 {
 "id": "kirby",
 "name": "Kirby",
-"description": "Kirby Coloring Pages feature printable coloring pages with Kirby, Meta Knight, King Dedede, Waddle Dee, and Galacta Knight in fun character themed illustrations. The collection includes dream lands, castles, forests, space settings, and villages that provide a wide variety of coloring activities inspired by the Kirby universe. Pages range from simple outline drawings for younger children to detailed pages for older kids with clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging imagination and fine motor skill development."
+"description": "Kirby Coloring Pages feature printable coloring pages with Kirby, <a href='/?c=kirby-meta-knight'>Meta Knight</a>, <a href='/?c=kirby-king-dedede'>King Dedede</a>, <a href='/?c=kirby-waddle-dee'>Waddle Dee</a>, <a href='/?c=kirby-marx'>Marx</a>, and <a href='/?c=kirby-magolor'>Magolor</a> in fun character-themed illustrations. The collection includes Dream Land, castles, forests, space settings, and villages that provide a wide variety of coloring activities inspired by the Kirby universe. Pages range from simple outline drawings for younger children to detailed pages for older kids with clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging imagination and fine motor skill development."
+},
+{
+"id": "kirby-king-dedede",
+"name": "Kirby King Dedede",
+"description": "Kirby King Dedede Coloring Pages provide printable coloring pages featuring King Dedede in recognizable character illustrations. Visit <a href='/?c=kirby'>Kirby Coloring Pages</a> to discover more printable Kirby heroes, rivals, and friends. Illustrations include hammers, crowns, robes, stars, and penguins across castles, snowy landscapes, and Dream Land settings. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
+},
+{
+"id": "kirby-magolor",
+"name": "Kirby Magolor",
+"description": "Kirby Magolor Coloring Pages provide printable coloring pages featuring Magolor in fantasy character illustrations. Browse <a href='/?c=kirby'>Kirby Coloring Pages</a> for more printable scenes with Kirby characters and magical worlds. Illustrations include crowns, scarves, portals, stars, and magical books across space settings, ancient ruins, and castles. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
+},
+{
+"id": "kirby-marx",
+"name": "Kirby Marx",
+"description": "Kirby Marx Coloring Pages provide printable coloring pages featuring Marx in memorable character illustrations. See <a href='/?c=kirby'>Kirby Coloring Pages</a> for additional printable characters and fantasy adventures. Illustrations include hats, wings, stars, moons, and magical energy across castles, space settings, and fantasy landscapes. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
+},
+{
+"id": "kirby-meta-knight",
+"name": "Kirby Meta Knight",
+"description": "Kirby Meta Knight Coloring Pages provide printable coloring pages featuring Meta Knight in heroic character illustrations. Explore <a href='/?c=kirby'>Kirby Coloring Pages</a> for additional printable characters from the Dream Land series. Illustrations include swords, masks, capes, wings, and stars across castles, forests, and space settings. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
+},
+{
+"id": "kirby-waddle-dee",
+"name": "Kirby Waddle Dee",
+"description": "Kirby Waddle Dee Coloring Pages provide printable coloring pages featuring Waddle Dee in friendly character illustrations. Find more printable Dream Land adventures in <a href='/?c=kirby'>Kirby Coloring Pages</a>. Illustrations include apples, stars, flowers, parasols, and treasure chests across forests, villages, and Dream Land settings. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
 },
 {
 "id": "kpop-demon-hunters",
