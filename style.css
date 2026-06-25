@@ -231,13 +231,13 @@ p {
 
 @media (min-width: 780px) {
 .thumbnail {
---cols: 4;
+--cols: 3;
 }
 }
 
 @media (min-width: 1080px) {
 .thumbnail {
---cols: 4;
+--cols: 6;
 }
 }
 
