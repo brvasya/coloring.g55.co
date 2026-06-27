@@ -1783,3 +1783,54 @@ in race track
 in space station
 on alien planet
 in victory island
+#vehicles
+on city street
+in downtown city
+on neighborhood road
+on country road
+on mountain road
+on coastal highway
+on desert highway
+on forest road
+on bridge
+in tunnel
+at traffic intersection
+in parking lot
+at gas station
+at car wash
+at repair garage
+at service station
+at race track
+at stadium parking
+at airport
+on airport runway
+at airport terminal
+at train station
+on railway tracks
+at railway crossing
+at subway station
+at bus station
+at bus stop
+at harbor
+at shipping port
+at ferry terminal
+at marina
+at lighthouse
+on sandy beach
+on snowy road
+in mountain pass
+in construction site
+in quarry
+at mining site
+on farm
+in barnyard
+in countryside field
+in industrial area
+at factory
+at warehouse
+at power station
+at fire station
+at police station
+at rescue center
+in city park
+at amusement park
