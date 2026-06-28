@@ -905,9 +905,19 @@
 "description": "Vehicles Coloring Pages provide printable coloring pages featuring many forms of transportation for creative coloring activities. Children can explore everyday road travel with <a href='/?c=vehicles-car'>car</a> designs, discover heavy hauling through <a href='/?c=vehicles-truck'>truck</a> illustrations, enjoy oversized wheels in <a href='/?c=vehicles-monster-truck'>monster truck</a> scenes, learn about rail transport using <a href='/?c=vehicles-train'>train</a> pages, and take to the skies with <a href='/?c=vehicles-airplane'>airplane</a> illustrations across cities, highways, countryside roads, airports, and mountain landscapes. The pages include simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging vehicle recognition and creative skill development."
 },
 {
+"id": "vehicles-car",
+"name": "Vehicles Car",
+"description": "Vehicles Car Coloring Pages provide printable coloring pages featuring sports cars, classic cars, racing cars, electric cars, and family cars for creative coloring activities. Car illustrations add everyday transportation themes to the broader <a href='/?c=vehicles'>Vehicles Coloring Pages</a> collection with scenes on city streets, country roads, mountain routes, race tracks, and parking areas. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. These pages support classroom activities, home art time, and creative practice while encouraging vehicle recognition and coloring skills."
+},
+{
 "id": "vehicles-monster-truck",
 "name": "Vehicles Monster Truck",
 "description": "Vehicles Monster Truck Coloring Pages provide printable coloring pages featuring oversized tires, lifted suspensions, racing trucks, crushed cars, and dirt ramps for creative coloring activities. Every design expands the <a href='/?c=vehicles'>Vehicles Coloring Pages</a> collection with powerful vehicle themes shown in stadium arenas, muddy tracks, off-road parks, deserts, and mountain trails. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. These pages support classroom activities, home art time, and creative practice while encouraging vehicle recognition and coloring skills."
+},
+{
+"id": "vehicles-truck",
+"name": "Vehicles Truck",
+"description": "Vehicles Truck Coloring Pages provide printable coloring pages featuring pickup trucks, cargo trucks, tow trucks, dump trucks, and delivery trucks for creative coloring activities. Truck designs complement other transportation subjects found in <a href='/?c=vehicles'>Vehicles Coloring Pages</a> through scenes on highways, construction sites, farms, cities, and mountain roads. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. These pages support classroom activities, home art time, and creative practice while encouraging vehicle recognition and coloring skills."
 },
 {
 "id": "zootopia",
