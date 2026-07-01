@@ -122,4 +122,4 @@ if ($pageIndex !== -1) {
 
 $moreText = 'More ' . $cat['name'] . ' Coloring Pages';
 $moreHref = '/?c=' . rawurlencode($cid);
-$moreTitle = 'Similar ' . $cat['name'] . ' Coloring Pages';
+$moreTitle = $cat['name'] . ' Coloring Pages';

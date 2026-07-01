@@ -45,7 +45,7 @@
 </nav>
 <?php endif; ?>
 <aside>
-<h2><a href="<?php echo h($moreHref); ?>"><?php echo h($moreTitle); ?></a></h2>
+<h2>Similar <a href="<?php echo h($moreHref); ?>"><?php echo h($moreTitle); ?></a></h2>
 <div class="grid">
 <?php foreach ($similar as $p): ?>
 <a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($p['id']); ?>&c=<?php echo rawurlencode($cid); ?>">
