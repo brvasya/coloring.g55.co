@@ -120,6 +120,5 @@ if ($pageIndex !== -1) {
     }
 }
 
-$moreText = 'More ' . $cat['name'] . ' Coloring Pages';
 $moreHref = '/?c=' . rawurlencode($cid);
 $moreTitle = $cat['name'] . ' Coloring Pages';

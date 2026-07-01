@@ -22,7 +22,7 @@
 <a class="tag save" href="https://www.pinterest.com/pin/create/button/?url=<?php echo rawurlencode($canonical); ?>&description=<?php echo rawurlencode($pinTitle); ?>" target="_blank">Save to Pinterest</a>
 <button class="tag print" onclick="window.print();">Print</button>
 <a class="tag download" href="<?php echo h($imageSrc); ?>" download>Download</a>
-<a class="tag more" href="<?php echo h($moreHref); ?>"><?php echo h($moreText); ?></a>
+<a class="tag more" href="<?php echo h($moreHref); ?>">More <?php echo h($moreTitle); ?></a>
 </section>
 <img class="page" onclick="this.requestFullscreen();" src="<?php echo h($imageSrc); ?>" alt="<?php echo h(makeImageAlt($page['id'])); ?>">
 </article>
