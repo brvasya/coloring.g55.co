@@ -161,6 +161,16 @@ p {
     position: absolute;
     object-fit: contain;
 }
+.view-all {
+    opacity: 1;
+    display: flex;
+    color: #0099cc;
+    font-size: 20px;
+    text-shadow: unset;
+    align-items: center;
+    justify-content: center;
+    background-image: unset;
+}
 .gsc-search-button {
     width: 75px !important;
     height: 36px;
