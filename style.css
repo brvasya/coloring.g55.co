@@ -162,14 +162,14 @@ p {
     object-fit: contain;
 }
 .view-all {
-    opacity: 1;
+    opacity: 1 !important;
     display: flex;
     color: #0099cc;
     font-size: 20px;
-    text-shadow: unset;
+    text-shadow: unset !important;
     align-items: center;
     justify-content: center;
-    background-image: unset;
+    background-image: unset !important;
 }
 .gsc-search-button {
     width: 75px !important;
