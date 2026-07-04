@@ -1834,3 +1834,54 @@ at police station
 at rescue center
 in city park
 at amusement park
+#barbie-dreamhouse
+in barbie dreamhouse
+in dreamhouse living room
+in dreamhouse bedroom
+in dreamhouse kitchen
+in dreamhouse dining room
+in dreamhouse bathroom
+in dreamhouse closet
+in dreamhouse fashion studio
+in dreamhouse art studio
+in dreamhouse music room
+in dreamhouse game room
+in dreamhouse balcony
+in dreamhouse rooftop
+in dreamhouse garden
+in dreamhouse backyard
+in dreamhouse patio
+in dreamhouse pool area
+in dreamhouse poolside
+in dreamhouse terrace
+in dreamhouse garage
+in dreamhouse elevator
+in dreamhouse library
+in dreamhouse movie room
+in dreamhouse home office
+in dreamhouse pet room
+in dreamhouse spa
+in dreamhouse fitness room
+in dreamhouse craft room
+in dreamhouse party room
+in dreamhouse tea room
+in dreamhouse picnic area
+in dreamhouse flower garden
+in dreamhouse rose garden
+in dreamhouse greenhouse
+in dreamhouse playground
+in dreamhouse treehouse
+in dreamhouse beach house
+in dreamhouse rooftop garden
+in dreamhouse courtyard
+in dreamhouse driveway
+in dreamhouse fashion runway
+in dreamhouse beauty salon
+in dreamhouse dance studio
+in dreamhouse baking kitchen
+in dreamhouse music stage
+in dreamhouse movie theater
+in dreamhouse café
+in dreamhouse sunset terrace
+in dreamhouse celebration hall
+in dreamhouse holiday room
