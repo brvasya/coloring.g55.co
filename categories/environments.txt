@@ -1885,3 +1885,54 @@ in dreamhouse café
 in dreamhouse sunset terrace
 in dreamhouse celebration hall
 in dreamhouse holiday room
+#winx-club
+in alfea college
+in alfea classroom
+in alfea library
+in alfea courtyard
+in alfea dormitory
+in alfea garden
+in alfea training grounds
+in alfea hallway
+in alfea tower
+in alfea campus
+in magix city
+in magix town square
+in magix marketplace
+in red fountain
+in cloud tower
+in pixie village
+in enchanted forest
+in magical forest
+in fairy meadow
+in flower meadow
+in flower garden
+in butterfly garden
+in crystal garden
+in rainbow valley
+in crystal cave
+in hidden cave
+in magical waterfall
+on riverbank
+in lake garden
+in sky kingdom
+on floating island
+above the clouds
+in cloud castle
+in fairy castle
+in magical castle
+in royal palace
+in princess garden
+in moonlit garden
+in starlight meadow
+in ancient ruins
+in ancient temple
+in sacred shrine
+in dragon valley
+in volcano valley
+in snowy mountain
+on tropical island
+on sandy beach
+in underwater kingdom
+in portal chamber
+in magical dimension
