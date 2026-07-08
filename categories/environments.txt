@@ -1936,3 +1936,54 @@ on sandy beach
 in underwater kingdom
 in portal chamber
 in magical dimension
+#angry-birds
+on bird island
+on piggy island
+in pig city
+in piggy village
+at king pig's castle
+in castle courtyard
+on slingshot hill
+near the bird nest
+in egg nest area
+in golden egg cave
+on mighty eagle mountain
+in red's village
+in hatchling nursery
+in treehouse
+in forest clearing
+in jungle
+in bamboo forest
+in tropical forest
+on sandy beach
+on tropical island
+near waterfall
+on riverbank
+in mountain valley
+on snowy mountain
+in frozen valley
+near volcano
+in lava cave
+in desert canyon
+in ancient ruins
+in hidden cave
+in treasure cave
+on pirate ship
+in pirate cove
+in harbor town
+in piggy workshop
+in piggy factory
+in construction site
+in wooden tower area
+in stone tower area
+in glass tower area
+in race track
+in stunt track
+in amusement park
+in carnival grounds
+in space station
+on alien planet
+on the moon
+in asteroid field
+in city park
+in cloud island
