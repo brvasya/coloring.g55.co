@@ -2089,3 +2089,54 @@ in crafting workshop
 in greenhouse
 at music concert
 in lighthouse area
+#kpop-demon-hunters
+on concert stage
+in concert arena
+in performance hall
+in music venue
+in rehearsal studio
+in dance studio
+in recording studio
+in vocal studio
+in music production studio
+in live streaming studio
+in backstage area
+in dressing room
+in practice room
+in idol training center
+in talent agency headquarters
+in music video set
+in concert backstage tunnel
+in award show venue
+in fan meeting hall
+in rooftop performance area
+in neon city
+in entertainment district
+in shopping district
+in night market
+in city rooftop
+in subway station
+on train platform
+in school classroom
+in school hallway
+in school courtyard
+in school rooftop
+in cherry blossom park
+in bamboo grove
+in mountain temple
+in ancient temple
+in temple courtyard
+in hidden shrine
+in sacred shrine
+in spirit temple
+in spirit forest
+in moonlit forest
+in demon fortress
+in demon realm
+in spirit realm
+in shadow kingdom
+in ancient ruins
+in portal chamber
+at magical gateway
+in sky palace
+on floating island
