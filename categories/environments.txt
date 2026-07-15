@@ -2038,3 +2038,54 @@ in whimsical village
 in dreamland
 in moonlit forest
 in starlight garden
+#animal-crossing
+on cozy island
+in island plaza
+at resident services
+in town hall
+in nook's cranny
+in able sisters shop
+in museum
+in aquarium room
+in fossil exhibit
+in art gallery
+in butterfly garden
+in the roost cafe
+at campsite
+in villager house
+in cozy living room
+in player house
+in home garden
+in flower garden
+in rose garden
+in tulip field
+in orchard
+in apple orchard
+in bamboo grove
+in cedar forest
+in forest clearing
+on forest trail
+on riverbank
+near waterfall
+by the pond
+on wooden bridge
+on sandy beach
+on beach boardwalk
+on fishing dock
+at island airport
+on mystery island
+on tropical island
+in seaside village
+at summer festival
+at fireworks show
+in market street
+at flea market
+in picnic area
+in playground
+in school classroom
+in vacation resort
+in island resort
+in crafting workshop
+in greenhouse
+at music concert
+in lighthouse area
