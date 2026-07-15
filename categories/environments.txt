@@ -1987,3 +1987,54 @@ on the moon
 in asteroid field
 in city park
 in cloud island
+#alice-in-wonderland
+in wonderland garden
+in rabbit hole
+in wonderland forest
+in tulgey wood
+in flower garden
+in talking flower garden
+in mushroom forest
+in giant mushroom field
+in enchanted meadow
+in hedge maze
+in queen's garden
+in rose garden
+in heart garden
+in croquet field
+in queen's castle
+in castle courtyard
+in royal throne room
+at mad tea party
+in tea garden
+in march hare's house
+at hatter's tea table
+in white rabbit's house
+in white rabbit's garden
+in wonderland pathway
+in forest clearing
+on riverbank
+in looking glass world
+in mirror room
+in chess garden
+in chessboard field
+in red queen's garden
+in white queen's castle
+on caterpillar's mushroom
+in caterpillar's forest
+in cheshire cat tree
+in smiling forest
+in magical doorway hall
+in tiny door hallway
+in key room
+in hallway of doors
+in wonderland palace
+in king's court
+in royal courtroom
+in enchanted library
+in secret garden
+in butterfly meadow
+in whimsical village
+in dreamland
+in moonlit forest
+in starlight garden
