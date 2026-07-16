@@ -2089,54 +2089,54 @@ in crafting workshop
 in greenhouse
 at music concert
 in lighthouse area
-#kpop-demon-hunters
-on concert stage
-in concert arena
-in performance hall
-in music venue
-in rehearsal studio
-in dance studio
-in recording studio
-in vocal studio
-in music production studio
-in live streaming studio
-in backstage area
-in dressing room
-in practice room
-in idol training center
-in talent agency headquarters
-in music video set
-in concert backstage tunnel
-in award show venue
-in fan meeting hall
-in rooftop performance area
-in neon city
-in entertainment district
-in shopping district
-in night market
-in city rooftop
+#zootopia
+in savanna central
+in bunnyburrow
+in tundratown
+in little rodentia
+in rainforest district
+in sahara square
+in canal district
+in downtown
+in city plaza
+on city street
+in neighborhood park
+in police headquarters
+in police station
+in police academy
+in police training grounds
+in police office
+in city hall
+in courthouse
+in city museum
+in city library
+in central train station
 in subway station
-on train platform
-in school classroom
-in school hallway
-in school courtyard
-in school rooftop
-in cherry blossom park
-in bamboo grove
-in mountain temple
-in ancient temple
-in temple courtyard
-in hidden shrine
-in sacred shrine
-in spirit temple
-in spirit forest
-in moonlit forest
-in demon fortress
-in demon realm
-in spirit realm
-in shadow kingdom
-in ancient ruins
-in portal chamber
-at magical gateway
-in sky palace
-on floating island
+at bus terminal
+in airport
+in harbor
+on bridge walkway
+in shopping district
+in shopping mall
+in market street
+at farmers market
+in restaurant district
+in cafe
+in ice cream shop
+in botanical garden
+in flower garden
+in rooftop garden
+in forest trail
+in woodland clearing
+near waterfall
+on riverbank
+in countryside farm
+in carrot field
+in barn
+in snowy village
+in desert oasis
+in amusement park
+in carnival grounds
+in science laboratory
+in secret laboratory
+on sky bridge

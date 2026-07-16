@@ -1222,7 +1222,7 @@
 {
 "id": "zootopia",
 "name": "Zootopia",
-"description": "Color Zootopia themed printable coloring pages featuring characters such as Judy Hopps, Nick Wilde, <a href='/?c=zootopia-chief-bogo'>Chief Bogo</a>, <a href='/?c=zootopia-flash'>Flash</a>, <a href='/?c=zootopia-clawhauser'>Clawhauser</a>, and animals including foxes, rabbits, sloths, buffalo, and gazelles shown in city streets, police stations, parks, and urban neighborhoods. Users explore bold line art pages and simple outline drawings across easy coloring pages for toddlers and detailed coloring pages for older kids. These printable coloring pages support classroom activities and home art time while coloring sheets to print encourage character recognition, visual focus, and early learning routines."
+"description": "Zootopia Coloring Pages provide printable coloring pages featuring animal characters, police work, city travel, investigations, and everyday activities across the metropolitan setting. Visual subjects include <a href='/?c=zootopia-judy-hopps'>Judy Hopps</a> on patrol, <a href='/?c=zootopia-nick-wilde'>Nick Wilde</a> during investigations, <a href='/?c=zootopia-chief-bogo'>Chief Bogo</a> at headquarters, <a href='/?c=zootopia-clawhauser'>Clawhauser</a> managing reception, and <a href='/?c=zootopia-flash'>Flash</a> working at the DMV. Scenes take place across downtown streets, police stations, train platforms, farmers markets, and woodland districts. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with clothing, expressions, civic objects, transportation, and environmental details."
 },
 {
 "id": "zootopia-chief-bogo",
@@ -1238,6 +1238,16 @@
 "id": "zootopia-flash",
 "name": "Zootopia Flash",
 "description": "Zootopia Flash Coloring Pages provide printable coloring pages featuring the slow-moving sloth character from Zootopia designed for fun character-based coloring activity. Illustrations include Flash, DMV workers, office desks, computer stations, and queue lines shown in recognizable scenes from the film. Scenes place Flash inside city offices, DMV interiors, urban workplaces, and indoor service areas that reflect everyday environments. Pages include simple outline drawings for younger children and detailed pages for older kids using clean black and white designs for easy coloring. This category supports classroom activities, home art time, and creative practice while connecting to <a href='/?c=zootopia'>Zootopia Coloring Pages</a> for more printable options."
+},
+{
+"id": "zootopia-judy-hopps",
+"name": "Zootopia Judy Hopps",
+"description": "Zootopia Judy Hopps Coloring Pages provide printable coloring pages featuring the rabbit officer in police work, investigation, travel, and everyday city activities. Visual subjects include Judy, her police uniform, badge, carrot recorder, patrol radio, and city maps, with related characters available through <a href='/?c=zootopia'>Zootopia Coloring Pages</a>. Scenes range from downtown streets and police stations to train platforms, farmers markets, and woodland districts. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with uniforms, expressions, civic objects, and urban details."
+},
+{
+"id": "zootopia-nick-wilde",
+"name": "Zootopia Nick Wilde",
+"description": "Zootopia Nick Wilde Coloring Pages provide printable coloring pages featuring the fox officer in patrol work, investigations, travel, and relaxed city activities. Visual subjects include Nick, his green shirt, striped tie, police badge, sunglasses, and notebook, with more city characters featured in <a href='/?c=zootopia'>Zootopia Coloring Pages</a>. Settings cover downtown streets, police stations, ice cream shops, train terminals, and desert roads across city and outdoor environments. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages. They support home art time, classroom activities, and creative practice with clothing, expressions, public-service objects, and environmental details."
 }
 ]
 }
