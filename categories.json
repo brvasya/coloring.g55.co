@@ -375,6 +375,11 @@
 "description": "Dinosaur Velociraptor Coloring Pages offer printable coloring pages featuring fast prehistoric hunters designed for creative coloring activity and visual engagement. Subjects include Velociraptor, claws, tails, nests, skeletons, and scenes from <a href='/?c=dinosaur'>Dinosaur Coloring Pages</a> collections. Scenes place dinosaurs in jungles, rocky terrains, deserts, and ancient landscapes with varied environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using easy coloring outlines. This category supports home art time and classroom activities focused on recognition and imagination."
 },
 {
+"id": "princess-disney",
+"name": "Disney Princess",
+"description": "Disney Princess Coloring Pages provide printable coloring pages featuring royal characters in dress, friendship, music, and adventure activities. Visual subjects include Ariel, Cinderella, Belle, Moana, and Rapunzel, with related royal themes available through <a href='/?c=princess'>Princess Coloring Pages</a>. Scenes place them inside castles, across enchanted forests, beside oceans, and throughout village squares. The collection combines simple outline drawings for younger children and detailed pages for older kids, using clean black and white designs. They support home art time, classroom activities, and creative practice with costumes, expressions, fantasy objects, and scene details."
+},
+{
 "id": "doraemon",
 "name": "Doraemon",
 "description": "Doraemon Coloring Pages provide printable coloring pages featuring Doraemon, <a href='/?c=doraemon-nobita'>Nobita</a>, <a href='/?c=doraemon-shizuka'>Shizuka</a>, <a href='/?c=doraemon-dorami'>Dorami</a>, and imaginative gadgets from the popular series. Illustrations include robots, gadgets, school items, parks, and houses shown in recognizable character-focused scenes. Pages place characters in classrooms, neighborhoods, parks, and city environments that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs for clear coloring. This category supports classroom activities, home art time, and creative practice while encouraging character recognition and artistic development."
@@ -962,7 +967,17 @@
 {
 "id": "princess",
 "name": "Princess",
-"description": "Princess Coloring Pages provide printable coloring pages featuring royal characters and fantasy figures designed for creative coloring activity and visual recognition. Subjects include Cinderella, Ariel, Elsa, <a href='/?c=princess-rapunzel'>Rapunzel</a>, and Belle shown alongside crowns, castles, animals, and magical companions. Scenes place characters in castles, forests, gardens, and villages with varied visual settings. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities and home art time while encouraging creativity, focus, and early learning."
+"description": "Princess Coloring Pages provide printable coloring pages featuring royal characters, fantasy clothing, celebrations, friendships, and palace activities. Film characters and royal costumes appear through <a href='/?c=princess-disney'>Disney Princess</a>, while tower rooms, braided hair, lanterns, and chameleons distinguish <a href='/?c=princess-rapunzel'>Rapunzel</a>. Dress-up scenes with crowns, gowns, kittens, tea sets, and bouquets shape <a href='/?c=princess-cute'>Cute Princess</a>, while ocean palaces and coral gardens define <a href='/?c=princess-mermaid'>Mermaid Princess</a>. The collection combines simple outline drawings for younger children and detailed pages for older kids, using clean black and white designs. They support home art time, classroom activities, and creative practice with colors, expressions, clothing, and fantasy scene details."
+},
+{
+"id": "princess-cute",
+"name": "Princess Cute",
+"description": "Cute Princess Coloring Pages provide printable coloring pages featuring royal characters in dress-up, celebration, friendship, and everyday activities. Visual subjects include crowns, gowns, kittens, tea sets, and flower bouquets, with additional royal themes in <a href='/?c=princess'>Princess Coloring Pages</a>. Scenes place them inside castles, through palace gardens, along village streets, and in playrooms. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages. They support home art time, classroom activities, and creative practice with clothing, expressions, objects, and background details."
+},
+{
+"id": "princess-mermaid",
+"name": "Princess Mermaid",
+"description": "Mermaid Princess Coloring Pages provide printable coloring pages featuring ocean royalty in swimming, singing, treasure-finding, and friendship activities. Visual subjects include crowns, seashells, fish, coral, and treasure chests, with related royal designs in <a href='/?c=princess'>Princess Coloring Pages</a>. Scenes take place across oceans, inside underwater palaces, along beaches, and within sea caves. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages. They support home art time, classroom activities, and creative practice with sea life, costumes, expressions, and underwater details."
 },
 {
 "id": "princess-rapunzel",
