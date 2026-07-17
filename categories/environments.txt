@@ -2191,3 +2191,54 @@ in fire spirit forest
 in wind spirit meadow
 in ancient ruins
 in hidden glacier
+#plants-vs-zombies
+in front yard
+in backyard
+on lawn
+in nighttime yard
+in pool yard
+on rooftop
+in zen garden
+in greenhouse
+in flower garden
+in vegetable garden
+at crazy dave's house
+in neighborhood street
+in suburban house
+in graveyard
+in foggy graveyard
+at cemetery gate
+in ancient egypt
+near desert pyramid
+in pyramid ruins
+on pirate seas
+on pirate ship
+on pirate deck
+in wild west town
+in western canyon
+on railway tracks
+in far future city
+in robot factory
+in futuristic laboratory
+in dark ages castle
+in medieval village
+in enchanted forest
+in frostbite caves
+in snowy valley
+in icy cavern
+in lost city
+in jungle ruins
+in ancient temple
+on big wave beach
+on tropical shore
+in neon mixtape arena
+on concert stage
+in jurassic marsh
+in dinosaur valley
+in modern day city
+in neighborville town center
+in giddy park
+on mount steep
+in weirding woods
+in battle arena
+in zomboss laboratory
