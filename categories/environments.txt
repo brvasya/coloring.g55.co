@@ -2140,3 +2140,54 @@ in carnival grounds
 in science laboratory
 in secret laboratory
 on sky bridge
+#frozen
+in arendelle castle
+in arendelle village
+in arendelle town square
+in arendelle harbor
+in castle courtyard
+in castle ballroom
+in royal throne room
+in royal library
+in palace garden
+on palace balcony
+in coronation hall
+in ice palace
+in ice palace hall
+in snow queen chamber
+on north mountain
+in snowy mountains
+on mountain trail
+in icy valley
+in icy canyon
+in ice cave
+in crystal cave
+near icy waterfall
+in snowy forest
+in enchanted forest
+in autumn forest
+in birch forest
+in misty forest
+in magical forest
+in forest clearing
+on icy lake
+on icy river
+in snowy meadow
+in winter village
+in snowy village square
+in winter market
+in holiday village
+in reindeer stable
+in royal stable
+in sleigh yard
+at wandering oaken's trading post
+in cozy cabin
+in mountain lodge
+in ahtohallan
+at dark sea
+on rocky shore
+in earth giant valley
+in fire spirit forest
+in wind spirit meadow
+in ancient ruins
+in hidden glacier
