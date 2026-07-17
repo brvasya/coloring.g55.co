@@ -34,8 +34,18 @@
       el.style.borderColor = getReadablePastel();
     });
 
-    document.querySelectorAll(".tag").forEach(el => {
+    document.querySelectorAll(".tag:not(.active)").forEach(el => {
       el.style.backgroundColor = getReadablePastel();
+    });
+  }
+
+  const c = new URLSearchParams(location.search).get("c");
+
+  if (c) {
+    document.querySelectorAll("a.tag").forEach(a => {
+      if (new URL(a.href).searchParams.get("c") === c) {
+        a.classList.add("active");
+      }
     });
   }
 
