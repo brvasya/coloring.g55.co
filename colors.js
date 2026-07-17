@@ -42,7 +42,7 @@
   const c = new URLSearchParams(location.search).get("c");
 
   if (c) {
-    document.querySelectorAll("a.tag").forEach(a => {
+    document.querySelectorAll(".categories .tag").forEach(a => {
       if (new URL(a.href).searchParams.get("c") === c) {
         a.classList.add("active");
       }
