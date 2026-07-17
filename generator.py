@@ -31,7 +31,7 @@ POOLS = {k: [] for k in POOL_FILES.keys()}
 LIST_NAMES = ["characters", "environments"]
 COPIED_BG = "systemHighlight"
 
-GEMINI_IMAGE_MODELS = ["gemini-3.1-flash-image", "gemini-3.1-flash-lite-image"]
+GEMINI_IMAGE_MODELS = ["gemini-3.1-flash-lite-image"]
 DEFAULT_GEMINI_IMAGE_MODEL = GEMINI_IMAGE_MODELS[0]
 DEFAULT_ASPECT_RATIO = "2:3"
 ONEBIT_THRESHOLD = 200
