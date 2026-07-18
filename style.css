@@ -213,6 +213,7 @@ p {
 }
 .tag.active {
     color: #333;
+    text-shadow: none;
     background-color: #eee;
 }
 .more {
