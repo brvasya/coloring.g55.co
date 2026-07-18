@@ -2242,3 +2242,54 @@ on mount steep
 in weirding woods
 in battle arena
 in zomboss laboratory
+#cuphead
+in inkwell isle one
+in inkwell isle two
+in inkwell isle three
+in inkwell isle four
+in inkwell hell
+at elder kettle house
+in forest follies
+in treetop trouble
+in root pack garden
+in cagney carnation flower field
+in ribby and croaks fight club
+in hilda berg sky
+in beppi carnival
+in baroness von bon bon candy kingdom
+in djimmi desert
+in grim matchstick tower
+in wally warbles birdhouse
+in sally stageplay theater
+in werner werman house
+in dr kahl junkyard
+in cala maria sea cave
+on phantom express
+in perilous piers
+in rugged ridge
+in funfair fever
+in funhouse frazzle
+in king dice casino
+in casino gaming hall
+in devil throne room
+in porkrind shop
+in mausoleum
+in moonshine mob hideout
+in glumstone mountain valley
+in mortimer freeze ice arena
+in howling aces airfield
+in esther winchester desert town
+in saltbaker bakery
+in bakery cellar
+in king leap castle
+in chessboard arena
+in carnival grounds
+in circus tent
+in jazz club
+on theater stage
+in candyland
+in flower garden
+in snowy village
+on pirate ship
+in clockwork factory
+in robot laboratory
