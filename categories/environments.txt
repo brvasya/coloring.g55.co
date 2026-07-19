@@ -2293,3 +2293,54 @@ in snowy village
 on pirate ship
 in clockwork factory
 in robot laboratory
+#zelda
+in hyrule castle
+in hyrule castle courtyard
+in hyrule castle throne room
+in castle town
+in temple of time
+in kakariko village
+in hateno village
+in lurelin village
+in rito village
+in goron city
+in gerudo town
+in zora's domain
+in korok forest
+in lost woods
+in faron woods
+near the great deku tree
+in hyrule field
+in akkala highlands
+in lanayru wetlands
+in gerudo desert
+on death mountain
+in hebra mountains
+at lake hylia
+along zora river
+on the great plateau
+in lookout landing
+on the great sky island
+on sky islands
+in the depths
+in forgotten temple
+in ancient shrine
+in forest temple
+in fire temple
+in water temple
+in shadow temple
+in spirit temple
+in skyview temple
+in desert temple
+at sacred spring
+in master sword grove
+in ancient ruins
+in underground ruins
+in ancient mine
+in skyloft
+in clock town
+on koholint island
+in mabe village
+on outset island
+on windfall island
+on dragon roost island
