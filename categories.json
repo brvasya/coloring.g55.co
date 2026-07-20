@@ -730,6 +730,31 @@
 "description": "KPop Demon Hunters Zoey Coloring Pages provide printable coloring pages featuring Zoey in character-focused music and demon-hunting activities. Visual subjects include microphones, stage costumes, throwing knives, lyric notebooks, headphones, and music notes, with related characters in <a href='/?c=kpop-demon-hunters'>KPop Demon Hunters Coloring Pages</a>. Scenes place her on concert stages, inside recording studios, across city rooftops, at talent agencies, and in cherry blossom parks. The collection combines simple outline drawings for younger children and detailed pages for older kids, using clean black and white designs. They support home art time, classroom activities, and creative practice with clothing, expressions, performance details, and fantasy action."
 },
 {
+"id": "lego-ninjago",
+"name": "LEGO Ninjago",
+"description": "LEGO Ninjago Coloring Pages provide printable coloring pages featuring ninja training, elemental combat, team missions, dragon flights, and mechanical adventures. Visual subjects connect <a href='/?c=lego-ninjago-lloyd'>Lloyd</a> with energy symbols, <a href='/?c=lego-ninjago-kai'>Kai</a> with flame effects, <a href='/?c=lego-ninjago-jay'>Jay</a> with mechanical vehicles, <a href='/?c=lego-ninjago-zane'>Zane</a> with ice shurikens, and dragons. Scenes take place in mountain temples, city rooftops, forest paths, village courtyards, and futuristic workshops. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as clean black and white designs. The collection supports home art time, classroom activities, and creative practice with costumes, weapons, elemental effects, vehicles, and fantasy architecture."
+},
+{
+"id": "lego-ninjago-jay",
+"name": "LEGO Ninjago Jay",
+"description": "LEGO Ninjago Jay Coloring Pages provide printable coloring pages featuring the lightning ninja during spinning attacks, vehicle races, mechanical repairs, and team missions. Representing the lightning and technology side of <a href='/?c=lego-ninjago'>LEGO Ninjago Coloring Pages</a>, visual subjects include Jay, blue ninja robes, nunchucks, lightning symbols, and mechanical vehicles. Scenes appear across stormy rooftops, city streets, mountain temples, vehicle workshops, and forest paths. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with electrical effects, equipment details, movement, and urban scenery."
+},
+{
+"id": "lego-ninjago-kai",
+"name": "LEGO Ninjago Kai",
+"description": "LEGO Ninjago Kai Coloring Pages provide printable coloring pages featuring the fire ninja during combat training, rescue missions, dragon rides, and elemental displays. Across the fire-focused selection in <a href='/?c=lego-ninjago'>LEGO Ninjago Coloring Pages</a>, visual subjects include Kai, red ninja robes, twin katanas, flame symbols, and dragons. Settings include volcanic mountains, training dojos, village streets, forge workshops, and temple courtyards. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as bold line art pages. They support home art time, classroom activities, and creative practice with costume details, fire effects, action poses, and architectural forms."
+},
+{
+"id": "lego-ninjago-lloyd",
+"name": "LEGO Ninjago Lloyd",
+"description": "LEGO Ninjago Lloyd Coloring Pages provide printable coloring pages featuring the Green Ninja in training poses, elemental action, dragon flights, and team missions. As the leadership-focused section of <a href='/?c=lego-ninjago'>LEGO Ninjago Coloring Pages</a>, visual subjects include Lloyd, green ninja robes, katanas, energy symbols, and dragons. Scenes take place in mountain temples, dojo courtyards, forest paths, city rooftops, and ancient villages. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with costume details, elemental effects, movement, and fantasy architecture."
+},
+{
+"id": "lego-ninjago-zane",
+"name": "LEGO Ninjago Zane",
+"description": "LEGO Ninjago Zane Coloring Pages provide printable coloring pages featuring the ice ninja during combat training, meditation poses, robotic transformations, and team missions. From the ice and robotics collection in <a href='/?c=lego-ninjago'>LEGO Ninjago Coloring Pages</a>, visual subjects include Zane, white ninja armor, ice shurikens, snowflake symbols, and robotic panels. Settings include snowy mountains, ice caves, forest temples, futuristic laboratories, and city rooftops. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as bold line art pages. They support home art time, classroom activities, and creative practice with armor construction, geometric forms, frozen scenery, and mechanical details."
+},
+{
 "id": "mario",
 "name": "Mario",
 "description": "Mario Coloring Pages feature printable coloring pages inspired by popular characters from the Mario universe designed for kids who enjoy character based coloring activities. Children can color characters like <a href='/?c=mario-luigi'>Luigi</a>, <a href='/?c=mario-princess-peach'>Princess Peach</a>, <a href='/?c=mario-yoshi'>Yoshi</a>, <a href='/?c=mario-bowser'>Bowser</a>, and <a href='/?c=mario-toad'>Toad</a> while exploring familiar character designs from classic platform adventures. Scenes appear across mushroom kingdoms, castle courtyards, grassy hills, underground tunnels, and colorful villages that resemble worlds from Mario themed games. The collection includes simple outline drawings for younger children and more detailed pages for older kids presented as clean black and white designs. These coloring sheets support classroom activities, home art time, and creative practice focused on character recognition and coloring skills."

@@ -2344,3 +2344,54 @@ in mabe village
 on outset island
 on windfall island
 on dragon roost island
+#lego-ninjago
+in city marketplace
+in city gardens
+at city docks
+in old town
+in crossroads
+in monastery of spinjitzu
+in monastery courtyard
+in monastery training grounds
+in temple of airjitzu
+in ninja dojo temple
+in temple of light
+in fire temple
+in ice temple
+in temple of resurrection
+in temple of dragon cores
+in tournament temple city
+on chen's island
+in chen's palace
+in corridor of elders
+in borg tower
+in garmadon's dark fortress
+in samurai x cave
+in jamanakai village
+in ignacia
+in royal blacksmith shop
+in stiix
+in caves of despair
+in sea of sand
+in lost city of ouroboros
+in toxic bogs
+in frozen wasteland
+in glacier barrens
+on dark island
+in kingdom of shintaro
+in shintaro palace
+in shintaro dungeons
+in skull sorcerer mine
+in merlopia
+in merlopian palace
+in endless sea
+on island of the keepers
+in prime empire
+in digiverse
+in cloud kingdom
+in underworld
+in never realm
+in imperium city
+in city of temples
+in source henge
+in dragon stone shrine
