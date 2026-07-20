@@ -120,6 +120,11 @@
 "description": "Animals Coloring Pages provide printable coloring pages that introduce children to wildlife and familiar creatures through coloring sheets to print designed for creative exploration and animal recognition. Popular subjects include <a href='/?c=animals-cat'>cats</a>, <a href='/?c=animals-dog'>dogs</a>, <a href='/?c=animals-horse'>horses</a>, <a href='/?c=animals-lion'>lions</a>, <a href='/?c=animals-elephant'>elephants</a>, and <a href='/?c=animals-bunny'>bunnies</a>. Scenes appear across forests, farms, oceans, mountains, and grassy plains where animals live and move through natural habitats. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages and clean black and white designs. The activity supports classroom learning, home art time, and creative practice while helping children recognize animals and explore nature themed subjects."
 },
 {
+"id": "animals-axolotl",
+"name": "Animals Axolotl",
+"description": ""
+},
+{
 "id": "animals-bunny",
 "name": "Animals Bunny",
 "description": "Bunny Coloring Pages provide printable coloring pages where children color small woodland animals using coloring sheets to print designed for relaxing creative play and animal recognition. Subjects include bunnies, rabbits, baby rabbits, fluffy rabbits, and hopping rabbits shown in playful animal poses. Scenes appear across gardens, meadows, forests, flower fields, and village yards where rabbits explore and hide among plants. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages and clean black and white designs. The activity connects with <a href='/?c=animals'>Animals Coloring Pages</a> and supports classroom activities, home art time, and creative learning."
@@ -153,6 +158,11 @@
 "id": "animals-lion",
 "name": "Animals Lion",
 "description": "Lion Coloring Pages feature printable coloring pages that introduce children to powerful wild animals through coloring sheets to print focused on safari wildlife exploration. Subjects include lions, lion cubs, male lions with manes, resting lions, and playful cub groups shown in natural animal scenes. Scenes appear across savannas, grassy plains, rocky hills, open valleys, and warm sunset landscapes where lions live in pride groups. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages and clean black and white designs. The activity connects with <a href='/?c=animals'>Animals Coloring Pages</a> and supports classroom wildlife lessons, home art time, and creative exploration."
+},
+{
+"id": "animals-owl",
+"name": "Animals Owl",
+"description": ""
 },
 {
 "id": "animals-tiger",
