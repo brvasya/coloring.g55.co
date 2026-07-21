@@ -2446,3 +2446,54 @@ in dinosaur valley
 in space station
 on alien planet
 in dreamland
+#dragon-ball-z
+in west city
+at capsule corporation
+in capsule corporation laboratory
+in capsule corporation garden
+at kame house
+on kame house island
+in goku's house
+on mount paozu
+at kami's lookout
+in hyperbolic time chamber
+at korin tower
+in sacred land of korin
+in world tournament arena
+in martial arts training grounds
+in gravity training room
+in rocky wasteland
+in desert battlefield
+in mountain valley
+in forest clearing
+in city street
+in ruined future city
+in android laboratory
+in dr gero's secret laboratory
+in cell games arena
+in cell games wasteland
+on planet namek
+in namek village
+near guru's house
+by namekian lake
+in namekian mountains
+in frieza's spaceship
+in healing chamber
+in ginyu force battlefield
+on destroyed namek
+on new namek
+on king kai's planet
+on snake way
+in other world
+in other world tournament arena
+at check-in station
+on supreme kai's world
+in babidi's spaceship
+in majin buu's house
+in majin buu battlefield
+in saiyan landing site
+in saiyan battle crater
+inside spaceship
+in space battlefield
+in asteroid field
+on alien planet
