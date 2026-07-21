@@ -2395,3 +2395,54 @@ in imperium city
 in city of temples
 in source henge
 in dragon stone shrine
+#pusheen
+in bedroom
+in living room
+in kitchen
+in dining room
+in home office
+in reading nook
+by the window
+by the fireplace
+in playroom
+in craft room
+in art studio
+in gaming room
+in bakery
+in cafe
+in coffee shop
+in ice cream shop
+in donut shop
+in candy shop
+in pizza restaurant
+in boba tea shop
+in grocery store
+in picnic area
+in flower garden
+in cherry blossom park
+in pumpkin patch
+in apple orchard
+in sunflower field
+in forest clearing
+in camping area
+on mountain trail
+on sandy beach
+on tropical island
+in seaside town
+in amusement park
+in carnival grounds
+in winter village
+in snowy park
+in christmas living room
+in halloween neighborhood
+in birthday party room
+in unicorn meadow
+in rainbow garden
+in cloud kingdom
+on floating island
+in mermaid lagoon
+in underwater palace
+in dinosaur valley
+in space station
+on alien planet
+in dreamland
