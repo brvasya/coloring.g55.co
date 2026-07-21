@@ -2497,3 +2497,54 @@ inside spaceship
 in space battlefield
 in asteroid field
 on alien planet
+#demon-slayer
+at kamado family house
+in snowy mountain forest
+on mountain trail
+in sakonji's house
+on mount sagiri
+near split boulder
+on final selection mountain
+in wisteria forest
+at corps headquarters
+in butterfly mansion
+in butterfly garden
+in rehabilitation room
+in hashira training grounds
+in sword training courtyard
+in asakusa
+on taisho city street
+in udon shop
+in tsuzumi mansion
+in rotating drum room
+on mount natagumo
+in spider forest
+near waterfall
+on riverbank
+in mugen train
+in train passenger car
+on train roof
+in entertainment district
+on lantern street
+in teahouse district
+in rooftop battle area
+in swordsmith village
+in swordsmith workshop
+in hidden hot springs
+in mountain village
+in misty forest
+in ancient shrine
+in temple courtyard
+in bamboo grove
+in infinity castle
+in shifting castle hallway
+in endless staircase
+in castle chamber
+in demon hideout
+in moonlit forest
+in snowy village
+in mountain cave
+in hidden cave
+in ancient ruins
+in sunrise battlefield
+in flower meadow
