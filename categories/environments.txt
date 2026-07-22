@@ -2548,3 +2548,54 @@ in hidden cave
 in ancient ruins
 in sunrise battlefield
 in flower meadow
+#moomin
+in valley house
+in house kitchen
+in house living room
+in house attic
+in house cellar
+in house garden
+on house veranda
+in family dining room
+in cozy bedroom
+in pantry
+in flower garden
+in vegetable garden
+in apple orchard
+in berry meadow
+in butterfly meadow
+in valley meadow
+in village square
+in village market
+in riverside village
+on riverbank
+by the river
+on wooden bridge
+near waterfall
+in forest clearing
+in pine forest
+in birch forest
+in enchanted forest
+on forest trail
+in mushroom grove
+in hidden cave
+in treasure cave
+on mountain trail
+in mountain valley
+on lonely mountain
+in snowy valley
+in winter forest
+on frozen river
+in winter garden
+on sandy beach
+on rocky shore
+in seaside village
+at bathing house
+on fishing dock
+in lighthouse
+on lighthouse island
+on sailing boat
+in harbor
+on tropical island
+in midsummer meadow
+under comet sky
