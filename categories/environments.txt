@@ -1216,7 +1216,7 @@ in royal castle
 in snowy village
 in frozen valley
 in mountain fortress
-in robot factory
+in soccer stadium
 in secret laboratory
 in high tech laboratory
 in space station
