@@ -501,7 +501,7 @@ class PromptGUI(tk.Tk):
 
         self.categories = list_category_folders()
         self.category_var = tk.StringVar(value=self.categories[0] if self.categories else "")
-        self.count_var = tk.IntVar(value=5)
+        self.count_var = tk.IntVar(value=10)
         self.model_var = tk.StringVar(value=DEFAULT_GEMINI_IMAGE_MODEL)
         self.aspect_ratio_var = tk.StringVar(value=DEFAULT_ASPECT_RATIO)
         self.data = load_category_data(self.category_var.get()) if self.category_var.get() else {}
