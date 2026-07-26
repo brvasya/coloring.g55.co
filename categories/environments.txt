@@ -2599,3 +2599,54 @@ in harbor
 on tropical island
 in midsummer meadow
 under comet sky
+#halo
+on Installation 04
+on Installation 05
+on Installation 07
+on the Ark
+in ringworld forest
+in ringworld canyon
+in ringworld valley
+near ringworld waterfall
+in the Silent Cartographer
+in Installation 04 control room
+in the Library
+in the Quarantine Zone
+in Forerunner structure
+in Forerunner temple
+in Forerunner tunnel
+in Forerunner chamber
+in Sentinel factory
+in the Silent Auditorium
+in the Conservatory
+in the Repository
+in Command Spire
+in Banished outpost
+in Banished fortress
+in Banished armory
+in Banished mining site
+at Forward Operating Base
+at Alpha Base
+in UNSC command center
+in UNSC armory
+in UNSC hangar
+inside Pelican dropship
+in Warthog garage
+aboard Pillar of Autumn
+aboard Forward Unto Dawn
+aboard UNSC Infinity
+aboard Truth and Reconciliation
+aboard Covenant cruiser
+in Covenant hangar
+in High Charity
+in Flood containment facility
+in New Mombasa
+on Mombasa street
+in ODST drop zone
+in New Alexandria
+at SWORD Base
+in Reach military base
+near space elevator
+in Voi
+in Ark control room
+in space battlefield
