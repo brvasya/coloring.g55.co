@@ -48,12 +48,7 @@ def list_category_folders():
 def load_lines(path):
     try:
         with open(path, "r", encoding="utf-8") as f:
-            out = []
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith("#"):
-                    out.append(line)
-            return out
+            return [line.strip() for line in f if line.strip()]
     except Exception:
         return []
 
