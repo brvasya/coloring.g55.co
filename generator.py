@@ -169,19 +169,30 @@ def build_page_description(parts):
     return " ".join(filter(None, sentences))
 
 
-def generate_item(data):
-    if not all(data.get(k) for k in LIST_NAMES) or not data.get("style"):
-        parts = {"character": "", "environment": ""}
-        return {"parts": parts, "h1": "Missing files", "id": "missing-files", "prompt": "Missing files", "page_description": "Missing files"}
+def build_unique_combinations(data):
+    characters = list(dict.fromkeys(data.get("characters") or []))
+    environments = list(dict.fromkeys(data.get("environments") or []))
+    combinations = [
+        {
+            "character": character,
+            "environment": environment,
+        }
+        for character in characters
+        for environment in environments
+    ]
+    random.shuffle(combinations)
+    return combinations
+
+
+def generate_item(data, parts):
+    if not parts or not all(data.get(k) for k in LIST_NAMES) or not data.get("style"):
+        empty_parts = {"character": "", "environment": ""}
+        return {"parts": empty_parts, "h1": "Missing files", "id": "missing-files", "prompt": "Missing files", "page_description": "Missing files"}
 
     if not all(POOLS.get(k) for k in ("intro", "usage", "ease", "benefit")):
-        parts = {"character": "", "environment": ""}
-        return {"parts": parts, "h1": "Missing pool files", "id": "missing-pool-files", "prompt": "Missing pool files", "page_description": "Missing pool files"}
+        empty_parts = {"character": "", "environment": ""}
+        return {"parts": empty_parts, "h1": "Missing pool files", "id": "missing-pool-files", "prompt": "Missing pool files", "page_description": "Missing pool files"}
 
-    parts = {
-        "character": random.choice(data["characters"]),
-        "environment": random.choice(data["environments"]),
-    }
     return {
         "parts": parts,
         "h1": build_h1(parts),
@@ -192,7 +203,9 @@ def generate_item(data):
 
 
 def calculate_total_combinations(data):
-    return len(data.get("characters") or []) * len(data.get("environments") or [])
+    characters = set(data.get("characters") or [])
+    environments = set(data.get("environments") or [])
+    return len(characters) * len(environments)
 
 
 def count_keyword_matches(lines, keyword):
@@ -670,13 +683,31 @@ class PromptGUI(tk.Tk):
         self.update_counters()
 
         try:
-            count = int(self.count_var.get())
+            requested_count = int(self.count_var.get())
         except Exception:
-            count = 10
+            requested_count = 10
             self.count_var.set(10)
 
-        for i in range(count):
-            item = generate_item(self.data)
+        combinations = build_unique_combinations(self.data)
+
+        if combinations:
+            count = min(requested_count, len(combinations))
+            selected_combinations = combinations[:count]
+
+            if requested_count > len(combinations):
+                self.count_var.set(count)
+                messagebox.showwarning(
+                    "Combination Limit",
+                    f"Requested: {requested_count}\n"
+                    f"Available unique combinations: {len(combinations)}\n\n"
+                    f"Generated {count} unique rows.",
+                )
+        else:
+            count = requested_count
+            selected_combinations = [None] * count
+
+        for i, parts in enumerate(selected_combinations):
+            item = generate_item(self.data, parts)
             h1_var = tk.StringVar(value=item["h1"])
             id_var = tk.StringVar(value=item["id"])
             desc_var = tk.StringVar(value=item["page_description"])
