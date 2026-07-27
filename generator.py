@@ -18,7 +18,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 APP_DIR = os.path.join(BASE_DIR, "app")
 CATEGORIES_DIR = os.path.join(BASE_DIR, "categories")
 STYLE_FILE = os.path.join(CATEGORIES_DIR, "style.txt")
-ENVIRONMENTS_FILE = os.path.join(CATEGORIES_DIR, "environments.txt")
 
 POOL_FILES = {
     "intro": os.path.join(APP_DIR, "intro_pool.txt"),
@@ -74,58 +73,12 @@ def slugify(text):
     return text or "coloring-page"
 
 
-def normalize_category_key(text):
-    return slugify((text or "").strip().lstrip("#"))
-
-
-def load_category_environments(category_name):
-    selected_key = normalize_category_key(category_name)
-    shared_lines = []
-    sections = {}
-    active_key = None
-
-    try:
-        with open(ENVIRONMENTS_FILE, "r", encoding="utf-8") as f:
-            for raw_line in f:
-                line = raw_line.strip()
-                if not line:
-                    continue
-
-                if line.startswith("#"):
-                    active_key = normalize_category_key(line)
-                    if active_key:
-                        sections.setdefault(active_key, [])
-                    continue
-
-                if active_key is None:
-                    shared_lines.append(line)
-                elif active_key:
-                    sections.setdefault(active_key, []).append(line)
-    except Exception:
-        return []
-
-    if selected_key and sections.get(selected_key):
-        return sections[selected_key]
-
-    parent_keys = [
-        key for key, lines in sections.items()
-        if lines and selected_key.startswith(f"{key}-")
-    ]
-    if parent_keys:
-        return sections[max(parent_keys, key=len)]
-
-    return shared_lines
-
-
-def load_shared_environments():
-    return load_category_environments("")
-
 
 def load_category_data(category_name):
     cat_dir = os.path.join(CATEGORIES_DIR, category_name)
     return {
         "characters": load_lines(os.path.join(cat_dir, "characters.txt")),
-        "environments": load_category_environments(category_name),
+        "environments": load_lines(os.path.join(cat_dir, "environments.txt")),
         "style": load_style(),
     }
 
