@@ -27,7 +27,6 @@ POOL_FILES = {
 }
 
 POOLS = {k: [] for k in POOL_FILES.keys()}
-LIST_NAMES = ["characters", "environments"]
 COPIED_BG = "systemHighlight"
 
 GEMINI_IMAGE_MODELS = ["gemini-3.1-flash-lite-image", "gemini-3-pro-image"]
@@ -72,8 +71,7 @@ def slugify(text):
 def load_category_data(category_name):
     cat_dir = os.path.join(CATEGORIES_DIR, category_name)
     return {
-        "characters": load_lines(os.path.join(cat_dir, "characters.txt")),
-        "environments": load_lines(os.path.join(cat_dir, "environments.txt")),
+        "pages": load_lines(os.path.join(cat_dir, "pages.txt")),
         "style": load_style(),
     }
 
@@ -105,28 +103,29 @@ def strip_leading_article(text):
     return s
 
 
-def build_h1(parts):
-    character = strip_leading_article(parts["character"])
-    env = parts["environment"].strip()
-    base = re.sub(r"\s{2,}", " ", f"{character} {env}").strip()
-    return f"Free Printable {format_title(base)} Coloring Page for Kids"
+def normalize_page_scene(page):
+    scene = strip_leading_article(page)
+    return re.sub(r"\s{2,}", " ", scene).strip()
 
 
-def build_seo_base_for_slug(parts):
-    character = strip_leading_article(parts["character"])
-    env = parts["environment"].strip()
-    return re.sub(r"\s{2,}", " ", f"{character} {env} coloring page").strip()
+def build_h1(page):
+    scene = normalize_page_scene(page)
+    return f"Free Printable {format_title(scene)} Coloring Page for Kids"
 
 
-def build_id(parts):
-    return slugify(build_seo_base_for_slug(parts))
+def build_seo_base_for_slug(page):
+    scene = normalize_page_scene(page)
+    return f"{scene} coloring page".strip()
 
 
-def build_prompt(parts, style):
-    core = f"{parts['character']} {parts['environment']}"
-    core = re.sub(r"\s{2,}", " ", core).strip()
+def build_id(page):
+    return slugify(build_seo_base_for_slug(page))
+
+
+def build_prompt(page, style):
+    scene = re.sub(r"\s{2,}", " ", (page or "").strip()).strip()
     style = (style or "").strip().rstrip(".")
-    return f"Coloring page on white background, {core}, {style}."
+    return f"Coloring page on white background, {scene}, {style}."
 
 
 def _clean_sentence(s):
@@ -147,9 +146,8 @@ def render_template(line, scene):
     return (line or "").replace("{scene}", scene)
 
 
-def build_page_description(parts):
-    scene = f"{parts['character'].strip()} {parts['environment'].strip()}"
-    scene = re.sub(r"\s{2,}", " ", scene).strip()
+def build_page_description(page):
+    scene = re.sub(r"\s{2,}", " ", (page or "").strip()).strip()
 
     patterns = [
         ("intro", "usage", "ease", "benefit"),
@@ -169,50 +167,54 @@ def build_page_description(parts):
     return " ".join(filter(None, sentences))
 
 
-def build_unique_combinations(data):
-    characters = list(dict.fromkeys(data.get("characters") or []))
-    environments = list(dict.fromkeys(data.get("environments") or []))
-    combinations = [
-        {
-            "character": character,
-            "environment": environment,
+def build_unique_pages(data):
+    unique_pages = []
+    seen_ids = set()
+
+    for page in data.get("pages") or []:
+        page = (page or "").strip()
+        if not page:
+            continue
+        page_id = build_id(page)
+        if page_id in seen_ids:
+            continue
+        seen_ids.add(page_id)
+        unique_pages.append(page)
+
+    random.shuffle(unique_pages)
+    return unique_pages
+
+
+def generate_item(data, page):
+    if not page or not data.get("pages") or not data.get("style"):
+        return {
+            "page": "",
+            "h1": "Missing pages.txt or style.txt",
+            "id": "missing-files",
+            "prompt": "Missing pages.txt or style.txt",
+            "page_description": "Missing pages.txt or style.txt",
         }
-        for character in characters
-        for environment in environments
-    ]
-    random.shuffle(combinations)
-    return combinations
-
-
-def generate_item(data, parts):
-    if not parts or not all(data.get(k) for k in LIST_NAMES) or not data.get("style"):
-        empty_parts = {"character": "", "environment": ""}
-        return {"parts": empty_parts, "h1": "Missing files", "id": "missing-files", "prompt": "Missing files", "page_description": "Missing files"}
 
     if not all(POOLS.get(k) for k in ("intro", "usage", "ease", "benefit")):
-        empty_parts = {"character": "", "environment": ""}
-        return {"parts": empty_parts, "h1": "Missing pool files", "id": "missing-pool-files", "prompt": "Missing pool files", "page_description": "Missing pool files"}
+        return {
+            "page": "",
+            "h1": "Missing pool files",
+            "id": "missing-pool-files",
+            "prompt": "Missing pool files",
+            "page_description": "Missing pool files",
+        }
 
     return {
-        "parts": parts,
-        "h1": build_h1(parts),
-        "id": build_id(parts),
-        "prompt": build_prompt(parts, data["style"]),
-        "page_description": build_page_description(parts),
+        "page": page,
+        "h1": build_h1(page),
+        "id": build_id(page),
+        "prompt": build_prompt(page, data["style"]),
+        "page_description": build_page_description(page),
     }
 
 
-def calculate_total_combinations(data):
-    characters = set(data.get("characters") or [])
-    environments = set(data.get("environments") or [])
-    return len(characters) * len(environments)
-
-
-def count_keyword_matches(lines, keyword):
-    keyword = (keyword or "").strip().lower().replace("-", " ")
-    if not keyword:
-        return 0
-    return sum(1 for line in lines or [] if keyword in (line or "").lower())
+def calculate_total_pages(data):
+    return len({build_id(page) for page in data.get("pages") or [] if (page or "").strip()})
 
 
 def category_json_path(category_name):
@@ -544,12 +546,12 @@ class PromptGUI(tk.Tk):
 
     def update_counters(self):
         data = self.data or {}
-        category_keyword = self.category_var.get().strip()
-        c = len(data.get("characters") or [])
-        c_match = count_keyword_matches(data.get("characters") or [], category_keyword)
-        e = len(data.get("environments") or [])
-        total = calculate_total_combinations(data)
-        self.counters_var.set(f"Characters: {c} ({c_match} matched)  Environments: {e}  Total: {total:,}")
+        page_count = len(data.get("pages") or [])
+        unique_count = calculate_total_pages(data)
+        duplicate_count = max(0, page_count - unique_count)
+        self.counters_var.set(
+            f"Pages: {page_count}  Unique: {unique_count}  Duplicates: {duplicate_count}"
+        )
 
     def on_category_select(self, _event=None):
         sel = self.cat_list.curselection()
@@ -688,26 +690,26 @@ class PromptGUI(tk.Tk):
             requested_count = 10
             self.count_var.set(10)
 
-        combinations = build_unique_combinations(self.data)
+        pages = build_unique_pages(self.data)
 
-        if combinations:
-            count = min(requested_count, len(combinations))
-            selected_combinations = combinations[:count]
+        if pages:
+            count = min(requested_count, len(pages))
+            selected_pages = pages[:count]
 
-            if requested_count > len(combinations):
+            if requested_count > len(pages):
                 self.count_var.set(count)
                 messagebox.showwarning(
-                    "Combination Limit",
+                    "Page Limit",
                     f"Requested: {requested_count}\n"
-                    f"Available unique combinations: {len(combinations)}\n\n"
+                    f"Available unique pages: {len(pages)}\n\n"
                     f"Generated {count} unique rows.",
                 )
         else:
             count = requested_count
-            selected_combinations = [None] * count
+            selected_pages = [None] * count
 
-        for i, parts in enumerate(selected_combinations):
-            item = generate_item(self.data, parts)
+        for i, page in enumerate(selected_pages):
+            item = generate_item(self.data, page)
             h1_var = tk.StringVar(value=item["h1"])
             id_var = tk.StringVar(value=item["id"])
             desc_var = tk.StringVar(value=item["page_description"])
