@@ -17,7 +17,7 @@ except Exception:
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 APP_DIR = os.path.join(BASE_DIR, "app")
 CATEGORIES_DIR = os.path.join(BASE_DIR, "categories")
-STYLE_FILE = os.path.join(CATEGORIES_DIR, "style.txt")
+STYLE_FILE = os.path.join(BASE_DIR, "style.txt")
 
 POOL_FILES = {
     "intro": os.path.join(APP_DIR, "intro_pool.txt"),
