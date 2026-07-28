@@ -1,50 +1,50 @@
-on Installation 04 observing the horizon
-on Installation 05 crossing a bridge
-on Installation 07 tracking a signal
-on the Ark studying ruins
-in ringworld forest stalking through foliage
-in ringworld canyon scaling rocks
-in ringworld valley overlooking the valley
-near ringworld waterfall resting by water
-in the Silent Cartographer reading a map
-in Installation 04 control room accessing a console
-in the Library searching records
-in the Quarantine Zone tracking enemies
-in Forerunner structure reading glyphs
-in Forerunner temple entering the temple
-in Forerunner tunnel navigating the tunnel
-in Forerunner chamber guarding a relic
-in Sentinel factory observing Sentinels
-in the Silent Auditorium standing silently
-in the Conservatory examining flora
-in the Repository recovering an artifact
-in Command Spire climbing the spire
-in Banished outpost watching the outpost
-in Banished fortress entering the fortress
-in Banished armory inspecting weapons
-in Banished mining site surveying the mine
-at Forward Operating Base receiving orders
-at Alpha Base greeting allies
-in UNSC command center viewing a hologram
-in UNSC armory selecting equipment
-in UNSC hangar boarding an aircraft
-inside Pelican dropship awaiting landing
-in Warthog garage inspecting a Warthog
-aboard Pillar of Autumn searching corridors
-aboard Forward Unto Dawn viewing the stars
-aboard UNSC Infinity reviewing strategy
-aboard Truth and Reconciliation guarding a passage
-aboard Covenant cruiser monitoring controls
+on Installation 05 surveying the ring
+in Heretic base confronting rebels
+inside Threshold gas mine searching corridors
+near Forerunner gas platform tracking Heretics
+in Heretic hangar inspecting aircraft
+beside Covenant Banshee preparing for flight
+on Threshold platform watching storm clouds
+in Heretic command room studying machinery
+along Sentinel Wall avoiding Sentinels
+in Sacred Icon chamber recovering the Index
+in Quarantine Zone tracking the Flood
+near Delta Halo gondola guarding the Index
+in Gravemind chamber reaching for sword
+in Mausoleum of the Arbiter kneeling ceremonially
+in High Council Chamber addressing the council
+in High Charity plaza crossing a bridge
+aboard Covenant cruiser reviewing star maps
+aboard Phantom dropship preparing to land
+in Covenant armory selecting energy sword
 in Covenant hangar inspecting a Banshee
-in High Charity crossing a plaza
-in Flood containment facility detecting the Flood
-in New Mombasa observing the skyline
-on Mombasa street patrolling the street
-in ODST drop zone checking a drop pod
-in New Alexandria guiding evacuation
-at SWORD Base guarding a courtyard
-in Reach military base practicing combat
-near space elevator watching the elevator
-in Voi crossing the grasslands
-in Ark control room activating controls
-in space battlefield drifting through debris
+in African jungle following tracks
+at Crow's Nest reviewing battle plans
+on Tsavo Highway scouting ahead
+in Voi factory drawing energy sword
+near Portal at Voi watching the portal
+in Flood-infested Voi avoiding infection
+on the Ark surveying the desert
+in Ark canyon following a trail
+at Ark Cartographer studying a map
+near Ark Citadel approaching the entrance
+inside Ark Citadel activating a bridge
+in Ark control room deactivating the rings
+near High Charity wreckage searching for allies
+on Installation 08 guarding the console
+aboard Forward Unto Dawn viewing Earth
+aboard Shadow of Intent commanding warriors
+in Sanghelios desert crossing dunes
+in Sanghelios canyon tracking enemies
+at Vadam Keep greeting allies
+in Vadam Keep courtyard holding energy sword
+in Swords of Sanghelios camp reviewing strategy
+in Nuusra hills overlooking Sunaion
+in Nuusra forest scouting ruins
+among Sanghelios ruins guarding civilians
+near Sunaion temple watching defenses
+in Sunaion city leading an assault
+on Sunaion platform raising energy sword
+on Netherop examining an artifact
+near Sanghelios spaceport watching ships
+in space battlefield leading the fleet
