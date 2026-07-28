@@ -474,7 +474,7 @@ class JsonGui(tk.Tk):
             return
 
         folder_path = os.path.join(CATEGORIES_DIR, category_id)
-        pages_file_path = os.path.join(folder_path, "pages.txt")
+        pages_file_path = os.path.join(CATEGORIES_DIR, f"{category_id}.txt")
         pages_line = category_id.replace("-", " ")
 
         try:
@@ -485,7 +485,7 @@ class JsonGui(tk.Tk):
                 with open(pages_file_path, "w", encoding="utf-8") as f:
                     f.write(pages_line)
         except Exception as e:
-            messagebox.showerror("Folder creation failed", f"Could not create folder or pages.txt:\n{e}")
+            messagebox.showerror("Folder creation failed", f"Could not create folder or category_id.txt:\n{e}")
 
     def find_duplicate_id(self, item_id, ignore_index=None):
         for idx, it in enumerate(self.items):
