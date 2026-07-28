@@ -54,32 +54,6 @@ def normalize_loaded_json(loaded, file_name: str):
     raise ValueError('Unsupported JSON format. Expected {"pages": [...]} or a list.')
 
 
-def category_keyword_from_filename(name: str) -> str:
-    name = os.path.splitext((name or "").strip())[0]
-    return name.lower().replace("-", " ").strip()
-
-
-def count_title_keyword_matches(items, keyword: str) -> int:
-    keyword = (keyword or "").strip().lower().replace("-", " ")
-    if not keyword:
-        return 0
-
-    count = 0
-    for it in items:
-        title = str(it.get("title", "")).strip().lower()
-        if keyword in title:
-            count += 1
-    return count
-
-
-def title_matches_keyword(title: str, keyword: str) -> bool:
-    keyword = (keyword or "").strip().lower().replace("-", " ")
-    title = (title or "").strip().lower()
-    if not keyword:
-        return False
-    return keyword in title
-
-
 def category_description_has_link(description: str) -> bool:
     description = str(description or "").lower()
     return "<a href=" in description
@@ -234,10 +208,7 @@ class JsonGui(tk.Tk):
             linked = count_categories_with_links(self.items)
             text = f"Descriptions: {linked}/{total}"
         else:
-            file_name = os.path.basename(self.current_file) if self.current_file else self.file_var.get()
-            keyword = category_keyword_from_filename(file_name)
-            matched = count_title_keyword_matches(self.items, keyword)
-            text = f"Pages: {matched}/{total}"
+            text = f"Pages: {total}"
 
         if prefix:
             self.set_status(f"{prefix}  {text}")
@@ -395,9 +366,6 @@ class JsonGui(tk.Tk):
     def refresh_list(self):
         self.listbox.delete(0, tk.END)
 
-        file_name = os.path.basename(self.current_file) if self.current_file else self.file_var.get()
-        keyword = category_keyword_from_filename(file_name)
-
         for idx, it in enumerate(self.items):
             label = it.get("name") if self.is_root_categories_mode() else it.get("title")
             label = label or it.get("id") or "(empty)"
@@ -406,9 +374,6 @@ class JsonGui(tk.Tk):
             if self.is_root_categories_mode():
                 if not category_description_has_link(it.get("description", "")):
                     self.listbox.itemconfig(idx, bg="#e6e6e6", fg="#555555")
-            else:
-                if not title_matches_keyword(it.get("title", ""), keyword):
-                    self.listbox.itemconfig(idx, bg="#ffe5e5", fg="#a00000")
 
     def on_title_change(self, event=None):
         if self.selected_index is not None:
