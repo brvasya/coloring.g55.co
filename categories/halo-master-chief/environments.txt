@@ -1,50 +1,50 @@
-on Installation 04 surveying terrain
-on Installation 05 crossing a bridge
-on Installation 07 scanning a beacon
-on the Ark exploring ruins
-in ringworld forest tracking footprints
-in ringworld canyon climbing a ledge
-in ringworld valley patrolling a trail
-near ringworld waterfall crossing a stream
-in the Silent Cartographer studying a map
-in Installation 04 control room activating a console
-in the Library searching archives
-in the Quarantine Zone checking motion tracker
-in Forerunner structure inspecting symbols
-in Forerunner temple opening a doorway
-in Forerunner tunnel carrying a flashlight
-in Forerunner chamber guarding an entrance
-in Sentinel factory planting a beacon
-in the Silent Auditorium approaching a podium
-in the Conservatory examining plants
-in the Repository retrieving an artifact
-in Command Spire ascending a platform
-in Banished outpost scouting the perimeter
-in Banished fortress breaching a gate
-in Banished armory selecting a rifle
-in Banished mining site inspecting machinery
+aboard Pillar of Autumn holding Cortana chip
+on Installation 04 surveying the ring
+in ringworld valley holding assault rifle
+near lifeboat crash site checking survivors
+aboard Truth and Reconciliation freeing prisoners
+in the Silent Cartographer studying the map
+near Installation 04 control room piloting a Banshee
+in Installation 04 swamp checking motion tracker
+in the Library retrieving the Index
+in Warthog escape tunnel racing toward lifeboat
+aboard Cairo Station defending the hangar
+in New Mombasa riding a Scorpion
+on Mombasa street aiming battle rifle
+on Delta Halo crossing a bridge
+near Temple of Regret carrying rocket launcher
+in High Charity holding energy sword
+in African jungle following tracks
+at Crow's Nest reviewing battle plans
+on Tsavo Highway driving a Warthog
+in Voi factory drawing energy sword
+near Portal at Voi watching the portal
+on the Ark crossing the desert
+at the Ark Cartographer studying a hologram
+inside the Ark Citadel activating a bridge
+on Installation 08 driving toward Dawn
+aboard Forward Unto Dawn viewing the stars
+inside Forward Unto Dawn awakening from cryosleep
+on Requiem climbing Forerunner ruins
+near a Requiem tower using Cortana chip
+aboard UNSC Infinity checking armor
+at Ivanoff Station protecting scientists
+aboard Mantle's Approach carrying nuclear bomb
+near the Composer chamber confronting the Didact
+aboard Argent Moon searching corridors
+at Apogee Station searching for Cortana
+on Genesis leading Blue Team
+aboard Warship Gbraakon using grappleshot
+inside Pelican Echo-216 checking the Pilot
+on Zeta Halo overlooking a valley
+at Outpost Tremonius capturing the base
 at Forward Operating Base using a radio
-at Alpha Base checking supplies
-in UNSC command center reviewing a hologram
-in UNSC armory loading equipment
-in UNSC hangar boarding a Pelican
-inside Pelican dropship preparing to land
-in Warthog garage repairing a Warthog
-aboard Pillar of Autumn exploring a corridor
-aboard Forward Unto Dawn checking navigation
-aboard UNSC Infinity inspecting armor
-aboard Truth and Reconciliation infiltrating a corridor
-aboard Covenant cruiser searching the decks
-in Covenant hangar inspecting aircraft
-in High Charity crossing a plaza
-in Flood containment facility sealing a chamber
-in New Mombasa surveying the skyline
-on Mombasa street taking cover
-in ODST drop zone checking a drop pod
-in New Alexandria signaling evacuation
-at SWORD Base defending a courtyard
-in Reach military base testing equipment
-near space elevator watching the ascent
-in Voi crossing the savanna
-in Ark control room entering coordinates
-in space battlefield floating near debris
+in a Banished outpost freeing Marines
+at the Tower throwing plasma grenade
+near the Excavation Site disabling mining laser
+in the Conservatory facing the Harbinger
+in the Repository firing a turret
+in the Command Spire entering the sequence
+inside the Nexus opening a portal
+in the House of Reckoning facing Escharum
+in the Silent Auditorium protecting the Weapon
