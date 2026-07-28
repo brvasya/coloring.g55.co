@@ -69,9 +69,8 @@ def slugify(text):
 
 
 def load_category_data(category_name):
-    cat_dir = os.path.join(CATEGORIES_DIR, category_name)
     return {
-        "pages": load_lines(os.path.join(cat_dir, "pages.txt")),
+        "pages": load_lines(os.path.join(CATEGORIES_DIR, f"{category_name}.txt")),
         "style": load_style(),
     }
 
@@ -189,10 +188,10 @@ def generate_item(data, page):
     if not page or not data.get("pages") or not data.get("style"):
         return {
             "page": "",
-            "h1": "Missing pages.txt or style.txt",
+            "h1": "Missing category_name.txt or style.txt",
             "id": "missing-files",
-            "prompt": "Missing pages.txt or style.txt",
-            "page_description": "Missing pages.txt or style.txt",
+            "prompt": "Missing category_name.txt or style.txt",
+            "page_description": "Missing category_name.txt or style.txt",
         }
 
     if not all(POOLS.get(k) for k in ("intro", "usage", "ease", "benefit")):
