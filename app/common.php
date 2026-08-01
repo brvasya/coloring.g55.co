@@ -52,7 +52,7 @@ function load_category_pages(string $cid): array {
 
 function sort_categories_alpha(array $cats): array {
   usort($cats, function($a, $b) {
-    return strcasecmp($a['name'], $b['name']);
+    return strcasecmp($a['id'], $b['id']);
   });
   return $cats;
 }
