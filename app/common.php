@@ -95,6 +95,7 @@ function extract_category_links_from_description(string $html): array {
 }
 
 function build_category_clusters(array $categories): array {
+    $categories = sort_categories_alpha($categories);
     $map = [];
     $graph = [];
     $order = [];
