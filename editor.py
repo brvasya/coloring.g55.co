@@ -338,7 +338,7 @@ class JsonGui(tk.Tk):
             return False
         try:
             if self.is_root_categories_mode():
-                self.items.sort(key=lambda it: str(it.get("name", "")).strip().lower())
+                self.items.sort(key=lambda it: str(it.get("id", "")).strip().lower())
 
             if self.wrapper is None:
                 payload = self.items
