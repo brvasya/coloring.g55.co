@@ -10,29 +10,9 @@
 "description": "Adventure Time Coloring Pages provide printable coloring pages featuring characters, creatures, kingdoms, gadgets, and adventures from the Land of Ooo. Illustrations include <a href='/?c=adventure-time-finn'>Finn</a>, <a href='/?c=adventure-time-jake'>Jake</a>, <a href='/?c=adventure-time-princess-bubblegum'>Princess Bubblegum</a>, <a href='/?c=adventure-time-bmo'>BMO</a>, and Ice King in a variety of fantasy scenes and activities. Pages place characters in forests, castles, villages, mountains, and other imaginative settings that support broad coloring variety. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
 },
 {
-"id": "adventure-time-bmo",
-"name": "Adventure Time BMO",
-"description": "Adventure Time BMO Coloring Pages provide printable coloring pages featuring BMO in a variety of character-focused activities and imaginative scenes. Illustrations include video game consoles, musical instruments, robots, screens, and gadgets while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place BMO in tree houses, bedrooms, forests, villages, and fantasy settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
-},
-{
 "id": "adventure-time-finn",
 "name": "Adventure Time Finn",
 "description": "Adventure Time Finn Coloring Pages provide printable coloring pages featuring Finn in a variety of adventure-focused activities and fantasy scenes. Illustrations include swords, backpacks, tree houses, magical creatures, and treasure chests while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Finn in forests, mountains, villages, castles, and other locations across the Land of Ooo. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
-},
-{
-"id": "adventure-time-jake",
-"name": "Adventure Time Jake",
-"description": "Adventure Time Jake Coloring Pages provide printable coloring pages featuring Jake in a variety of character-focused activities and fantasy adventures. Illustrations include musical instruments, magical objects, vehicles, treasure chests, and camping equipment while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Jake in forests, villages, castles, mountains, and imaginative outdoor settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
-},
-{
-"id": "adventure-time-marceline",
-"name": "Adventure Time Marceline",
-"description": "Adventure Time Marceline Coloring Pages provide printable coloring pages featuring Marceline in musical and fantasy-inspired activities. Illustrations include guitars, bats, castles, forests, and magical objects while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Marceline in forests, castles, villages, mountains, and other imaginative settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
-},
-{
-"id": "adventure-time-princess-bubblegum",
-"name": "Adventure Time Princess Bubblegum",
-"description": "Adventure Time Princess Bubblegum Coloring Pages provide printable coloring pages featuring Princess Bubblegum in a variety of character-focused activities and fantasy scenes. Illustrations include crowns, candy inventions, laboratory equipment, royal decorations, and flowers while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Princess Bubblegum in castles, gardens, laboratories, villages, and kingdom settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
 },
 {
 "id": "alice-in-wonderland",
@@ -258,6 +238,11 @@
 "id": "bluey-family",
 "name": "Bluey Family",
 "description": "Bluey Family Coloring Pages provide printable coloring pages featuring family scenes from Bluey for organized character coloring activity. Visual subjects include Bluey, Bingo, Bandit, Chilli, cousins, toys, and family games, connecting this group theme to <a href='/?c=bluey'>Bluey Coloring Pages</a>. Pages place the family in homes, classrooms, parks, beaches, and backyard play areas for varied scene themes. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with familiar group characters."
+},
+{
+"id": "adventure-time-bmo",
+"name": "BMO",
+"description": "Adventure Time BMO Coloring Pages provide printable coloring pages featuring BMO in a variety of character-focused activities and imaginative scenes. Illustrations include video game consoles, musical instruments, robots, screens, and gadgets while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place BMO in tree houses, bedrooms, forests, villages, and fantasy settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
 },
 {
 "id": "brawl-stars",
@@ -775,6 +760,11 @@
 "description": "Hello Kitty Pompompurin Coloring Pages provide printable coloring pages featuring Pompompurin for character coloring activity. Visual subjects include Pompompurin, pudding cups, berets, flowers, gift boxes, and cafe tables, with wider character context in <a href='/?c=hello-kitty'>Hello Kitty Coloring Pages</a>. Scenes place him in cafes, classrooms, gardens, cities, and village shops for varied everyday settings. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports home art time, classroom activities, and creative practice with character shapes, accessories, and food-themed details."
 },
 {
+"id": "adventure-time-jake",
+"name": "Jake the Dog",
+"description": "Adventure Time Jake Coloring Pages provide printable coloring pages featuring Jake in a variety of character-focused activities and fantasy adventures. Illustrations include musical instruments, magical objects, vehicles, treasure chests, and camping equipment while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Jake in forests, villages, castles, mountains, and imaginative outdoor settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
 "id": "digital-circus-jax",
 "name": "Jax",
 "description": "Digital Circus Jax Coloring Pages offer printable coloring pages featuring Jax in playful and dynamic poses for creative coloring activity. Subjects include Jax, circus props, digital shapes, accessories, and stage elements. Scenes place Jax in circus arenas, virtual environments, colorful stages, and abstract digital spaces while linking to <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a> for expanded character content. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice while encouraging creativity and character recognition."
@@ -868,6 +858,11 @@
 "id": "lego-ninjago-zane",
 "name": "LEGO Ninjago Zane",
 "description": "LEGO Ninjago Zane Coloring Pages provide printable coloring pages featuring the ice ninja during combat training, meditation poses, robotic transformations, and team missions. From the ice and robotics collection in <a href='/?c=lego-ninjago'>LEGO Ninjago Coloring Pages</a>, visual subjects include Zane, white ninja armor, ice shurikens, snowflake symbols, and robotic panels. Settings include snowy mountains, ice caves, forest temples, futuristic laboratories, and city rooftops. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as bold line art pages. They support home art time, classroom activities, and creative practice with armor construction, geometric forms, frozen scenery, and mechanical details."
+},
+{
+"id": "adventure-time-marceline",
+"name": "Marceline the Vampire Queen",
+"description": "Adventure Time Marceline Coloring Pages provide printable coloring pages featuring Marceline in musical and fantasy-inspired activities. Illustrations include guitars, bats, castles, forests, and magical objects while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Marceline in forests, castles, villages, mountains, and other imaginative settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
 },
 {
 "id": "mario",
@@ -1208,6 +1203,11 @@
 "id": "princess",
 "name": "Princess",
 "description": "Princess Coloring Pages provide printable coloring pages featuring royal characters, fantasy clothing, celebrations, friendships, and palace activities. Film characters and royal costumes appear through <a href='/?c=princess-disney'>Disney Princess</a>, while tower rooms, braided hair, lanterns, and chameleons distinguish <a href='/?c=princess-rapunzel'>Rapunzel</a>. Dress-up scenes with crowns, gowns, kittens, tea sets, and bouquets shape <a href='/?c=princess-cute'>Cute Princess</a>, while ocean palaces and coral gardens define <a href='/?c=princess-mermaid'>Mermaid Princess</a>. The collection combines simple outline drawings for younger children and detailed pages for older kids, using clean black and white designs. They support home art time, classroom activities, and creative practice with colors, expressions, clothing, and fantasy scene details."
+},
+{
+"id": "adventure-time-princess-bubblegum",
+"name": "Princess Bubblegum",
+"description": "Adventure Time Princess Bubblegum Coloring Pages provide printable coloring pages featuring Princess Bubblegum in a variety of character-focused activities and fantasy scenes. Illustrations include crowns, candy inventions, laboratory equipment, royal decorations, and flowers while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Princess Bubblegum in castles, gardens, laboratories, villages, and kingdom settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
 },
 {
 "id": "princess-cute",
