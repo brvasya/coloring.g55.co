@@ -10,14 +10,49 @@
 "description": "Adventure Time Coloring Pages provide printable coloring pages featuring characters, creatures, kingdoms, gadgets, and adventures from the Land of Ooo. Illustrations include <a href='/?c=adventure-time-finn'>Finn</a>, <a href='/?c=adventure-time-jake'>Jake</a>, <a href='/?c=adventure-time-princess-bubblegum'>Princess Bubblegum</a>, <a href='/?c=adventure-time-bmo'>BMO</a>, and Ice King in a variety of fantasy scenes and activities. Pages place characters in forests, castles, villages, mountains, and other imaginative settings that support broad coloring variety. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
 },
 {
+"id": "adventure-time-bmo",
+"name": "BMO",
+"description": "Adventure Time BMO Coloring Pages provide printable coloring pages featuring BMO in a variety of character-focused activities and imaginative scenes. Illustrations include video game consoles, musical instruments, robots, screens, and gadgets while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place BMO in tree houses, bedrooms, forests, villages, and fantasy settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
 "id": "adventure-time-finn",
 "name": "Adventure Time Finn",
 "description": "Adventure Time Finn Coloring Pages provide printable coloring pages featuring Finn in a variety of adventure-focused activities and fantasy scenes. Illustrations include swords, backpacks, tree houses, magical creatures, and treasure chests while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Finn in forests, mountains, villages, castles, and other locations across the Land of Ooo. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
 },
 {
+"id": "adventure-time-jake",
+"name": "Jake the Dog",
+"description": "Adventure Time Jake Coloring Pages provide printable coloring pages featuring Jake in a variety of character-focused activities and fantasy adventures. Illustrations include musical instruments, magical objects, vehicles, treasure chests, and camping equipment while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Jake in forests, villages, castles, mountains, and imaginative outdoor settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
+"id": "adventure-time-marceline",
+"name": "Marceline the Vampire Queen",
+"description": "Adventure Time Marceline Coloring Pages provide printable coloring pages featuring Marceline in musical and fantasy-inspired activities. Illustrations include guitars, bats, castles, forests, and magical objects while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Marceline in forests, castles, villages, mountains, and other imaginative settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
+"id": "adventure-time-princess-bubblegum",
+"name": "Princess Bubblegum",
+"description": "Adventure Time Princess Bubblegum Coloring Pages provide printable coloring pages featuring Princess Bubblegum in a variety of character-focused activities and fantasy scenes. Illustrations include crowns, candy inventions, laboratory equipment, royal decorations, and flowers while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Princess Bubblegum in castles, gardens, laboratories, villages, and kingdom settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
 "id": "alice-in-wonderland",
 "name": "Alice in Wonderland",
 "description": "Alice in Wonderland Coloring Pages provide printable coloring pages featuring fantasy characters and storybook scenes for character coloring activities. Subjects feature Alice with keys, <a href='/?c=alice-in-wonderland-cheshire-cat'>Cheshire Cat</a> among trees, <a href='/?c=alice-in-wonderland-mad-hatter'>Mad Hatter</a> with teacups, <a href='/?c=alice-in-wonderland-queen-of-hearts'>Queen of Hearts</a> beside card guards, and <a href='/?c=alice-in-wonderland-white-rabbit'>White Rabbit</a> with clocks. Settings cover rabbit holes, mushroom forests, tea gardens, castle courts, and rose mazes across Wonderland. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as bold black-and-white line art. Parents and teachers can use the pages for home art time, classroom activities, creative practice, and story-based learning."
+},
+{
+"id": "alice-in-wonderland-cheshire-cat",
+"name": "Cheshire Cat",
+"description": "Alice in Wonderland Cheshire Cat Coloring Pages provide printable coloring pages featuring the smiling cat for whimsical character coloring activities. Visual subjects include striped fur, curled tails, tree branches, mushrooms, forest signs, floating grins, and magical paths, with wider woodland context in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Scenes place the Cheshire Cat above garden trails, among giant flowers, near tea tables, and inside mysterious forests. The collection includes simple outlines for younger children and detailed pages for older kids using bold, expressive line art. These pages support home creativity, classroom story themes, and playful practice with unusual shapes and facial expressions."
+},
+{
+"id": "alice-in-wonderland-mad-hatter",
+"name": "Mad Hatter",
+"description": "Alice in Wonderland Mad Hatter Coloring Pages provide printable coloring pages featuring the Mad Hatter for tea-party and fantasy character activities. Visual subjects include tall hats, bow ties, teacups, teapots, cakes, clocks, chairs, and decorated tables, with broader celebration scenes in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Settings place him at long tea tables, garden gatherings, forest clearings, and rooms filled with curious tableware. The collection includes simple outlines for younger children and detailed pages for older kids using clear, bold line art. These pages work well for home art time, party activities, classroom storytelling, and imaginative costume coloring."
+},
+{
+"id": "alice-in-wonderland-queen-of-hearts",
+"name": "Queen of Hearts",
+"description": "Alice in Wonderland Queen of Hearts Coloring Pages provide printable coloring pages featuring the Queen of Hearts for royal fantasy coloring activities. Visual subjects include crowns, heart motifs, scepters, card guards, roses, croquet equipment, thrones, and castle decorations, with fuller royal-court context in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Scenes place her in rose gardens, palace halls, castle courtyards, garden mazes, and lively croquet grounds. The collection includes simple outlines for younger children and detailed pages for older kids using strong, decorative line art. These pages suit home coloring, classroom activities, and creative practice with costumes, patterns, and dramatic character poses."
 },
 {
 "id": "alice-in-wonderland-white-rabbit",
@@ -30,6 +65,11 @@
 "description": "Angry Birds Coloring Pages provide printable coloring pages featuring bird and pig characters for activity pages. Visual subjects include main flock leader <a href='/?c=angry-birds-red'>Red</a>, speedy bird <a href='/?c=angry-birds-chuck'>Chuck</a>, explosive bird <a href='/?c=angry-birds-bomb'>Bomb</a>, green rivals <a href='/?c=angry-birds-bad-piggies'>Bad Piggies</a>, island friend <a href='/?c=angry-birds-stella'>Stella</a>, slingshots, blocks, eggs, and towers. Scenes place the characters in forests, villages, islands, beaches, and cities with targets and stacked structures. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports home art time, classroom activities, and creative practice with character shapes, objects, and action scenes."
 },
 {
+"id": "angry-birds-bad-piggies",
+"name": "Bad Piggies",
+"description": "Angry Birds Bad Piggies Coloring Pages provide coloring sheets to print featuring pig villains for character coloring activity. Visual subjects include green pigs, helmets, crowns, carts, eggs, crates, and towers, with bird-and-pig rivalry context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place them in villages, forests, cities, and workshops with towers, tools, and target areas. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with villain shapes and objects."
+},
+{
 "id": "angry-birds-bomb",
 "name": "Angry Birds Bomb",
 "description": "Angry Birds Bomb Coloring Pages provide free printable coloring sheets featuring Bomb for character coloring activity. Visual subjects include Bomb, fuse details, feathers, slingshots, stone blocks, towers, and eggs, with block-smashing context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place him in forests, mountains, villages, and beaches with targets and block structures. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with large character forms."
@@ -38,6 +78,11 @@
 "id": "angry-birds-chuck",
 "name": "Angry Birds Chuck",
 "description": "Angry Birds Chuck Coloring Pages provide coloring sheets to print featuring Chuck for character coloring activity. Visual subjects include Chuck, beaks, feathers, slingshots, speed trails, blocks, and eggs, with fast action context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place him across forests, villages, open fields, and cities with towers and targets. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with movement poses."
+},
+{
+"id": "angry-birds-red",
+"name": "Red Angry Bird",
+"description": "Angry Birds Red Coloring Pages provide printable coloring pages featuring Red for character coloring activity. Visual subjects include Red, slingshots, blocks, eggs, towers, and nests, with wider flock context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place him near forests, villages, beaches, and cities with targets and stacked structures. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with expressive character shapes."
 },
 {
 "id": "angry-birds-stella",
@@ -50,14 +95,29 @@
 "description": "Animal Crossing Coloring Pages provide printable coloring pages featuring island residents, community activities, and game objects. Visual subjects include town-hall scenes with <a href='/?c=animal-crossing-isabelle'>Isabelle</a>, shop counters beside <a href='/?c=animal-crossing-tom-nook'>Tom Nook</a>, guitar performances by <a href='/?c=animal-crossing-kk-slider'>K.K. Slider</a>, office settings featuring <a href='/?c=animal-crossing-raymond'>Raymond</a>, and island houses. Scenes cover villages, beaches, forests, museums, shops, and town plazas with varied indoor and outdoor arrangements. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clean black and white designs. Activities suit home art time, classroom activities, and creative practice with animals, buildings, clothing, nature, and community settings."
 },
 {
+"id": "animal-crossing-ankha",
+"name": "Ankha",
+"description": "Animal Crossing Ankha Coloring Pages feature printable coloring pages showing the Egyptian-themed cat villager in character poses and everyday island activities. Within <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>, visual subjects include Ankha, striped headdresses, necklaces, pyramids, palm trees, and household furniture. Scenes appear in island villages, desert gardens, museum rooms, pyramid courtyards, and furnished homes. Selections combine simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages. They support classroom activities, home art time, and creative practice with clothing patterns, architectural shapes, and ornamental objects."
+},
+{
 "id": "animal-crossing-isabelle",
 "name": "Animal Crossing Isabelle",
 "description": "Animal Crossing Isabelle Coloring Pages provide printable coloring pages featuring Isabelle for character-focused coloring activities. Visual subjects include her bell-shaped hairstyle, town-hall vest, clipboard, microphone, flowers, and island decorations, with related community subjects in <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes place her in village plazas, town halls, flower gardens, and island beaches. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clean black and white designs. They support home art time, classroom activities, and creative practice with expressions, clothing, and community settings."
 },
 {
+"id": "animal-crossing-kk-slider",
+"name": "K.K. Slider",
+"description": "Animal Crossing K.K. Slider Coloring Pages provide printable coloring pages featuring K.K. Slider for music-themed character activities. Visual subjects include acoustic guitars, microphones, stools, music notes, record sleeves, and stage lights, with other island performers shown in <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes feature village plazas, beach concerts, music rooms, and nighttime festivals. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clear coloring outlines. They support home art time, classroom music activities, and creative practice with instruments, rhythm symbols, and performance settings."
+},
+{
 "id": "animal-crossing-raymond",
 "name": "Animal Crossing Raymond",
 "description": "Animal Crossing Raymond Coloring Pages provide printable coloring pages featuring Raymond for cat character coloring activities. Visual subjects include glasses, office vests, cat ears, briefcases, desk furniture, and coffee cups, with neighboring residents found across <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes show him in village offices, furnished homes, flower gardens, beaches, and outdoor cafés. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clean black and white designs. They support home art time, classroom activities, and creative practice with clothing, expressions, and interior objects."
+},
+{
+"id": "animal-crossing-tom-nook",
+"name": "Tom Nook",
+"description": "Animal Crossing Tom Nook Coloring Pages provide printable coloring pages featuring Tom Nook for island character activities. Visual subjects include tanuki ears, leaf shirts, bell bags, shop counters, tools, and furniture, with broader island-building elements throughout <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes place him inside shops, near resident-services buildings, across village plazas, and beside island campsites. The collection combines simple outline drawings for younger children with detailed pages for older kids, using bold line art pages. They support home art time, classroom activities, and creative practice with objects, clothing, and village roles."
 },
 {
 "id": "animals",
@@ -123,16 +183,6 @@
 "id": "animals-tiger",
 "name": "Animals Tiger",
 "description": "Tiger Coloring Pages offers printable coloring pages featuring striped tigers in natural and educational scenes. As a habitat-focused section of <a href='/?c=animals'>Animals Coloring Pages</a>, the collection highlights tiger markings, movement, and surroundings. Visual subjects include tigers, bamboo stalks, jungle flowers, rocky ledges, and watering holes across forests, grasslands, and mountain valleys. Options range from simple outline drawings for younger children to detailed pages for older kids, with clean black and white designs. The pages support classroom activities, home art time, and learning about tiger habitats."
-},
-{
-"id": "animal-crossing-ankha",
-"name": "Ankha",
-"description": "Animal Crossing Ankha Coloring Pages feature printable coloring pages showing the Egyptian-themed cat villager in character poses and everyday island activities. Within <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>, visual subjects include Ankha, striped headdresses, necklaces, pyramids, palm trees, and household furniture. Scenes appear in island villages, desert gardens, museum rooms, pyramid courtyards, and furnished homes. Selections combine simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages. They support classroom activities, home art time, and creative practice with clothing patterns, architectural shapes, and ornamental objects."
-},
-{
-"id": "angry-birds-bad-piggies",
-"name": "Bad Piggies",
-"description": "Angry Birds Bad Piggies Coloring Pages provide coloring sheets to print featuring pig villains for character coloring activity. Visual subjects include green pigs, helmets, crowns, carts, eggs, crates, and towers, with bird-and-pig rivalry context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place them in villages, forests, cities, and workshops with towers, tools, and target areas. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with villain shapes and objects."
 },
 {
 "id": "barbie",
@@ -210,11 +260,6 @@
 "description": "Bluey Family Coloring Pages provide printable coloring pages featuring family scenes from Bluey for organized character coloring activity. Visual subjects include Bluey, Bingo, Bandit, Chilli, cousins, toys, and family games, connecting this group theme to <a href='/?c=bluey'>Bluey Coloring Pages</a>. Pages place the family in homes, classrooms, parks, beaches, and backyard play areas for varied scene themes. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with familiar group characters."
 },
 {
-"id": "adventure-time-bmo",
-"name": "BMO",
-"description": "Adventure Time BMO Coloring Pages provide printable coloring pages featuring BMO in a variety of character-focused activities and imaginative scenes. Illustrations include video game consoles, musical instruments, robots, screens, and gadgets while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place BMO in tree houses, bedrooms, forests, villages, and fantasy settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
-},
-{
 "id": "brawl-stars",
 "name": "Brawl Stars",
 "description": "Brawl Stars Coloring Pages provide printable coloring pages featuring popular game characters, battles, and action themed activities using printable coloring pages. Illustrations include <a href='/?c=brawl-stars-leon'>Leon</a>, <a href='/?c=brawl-stars-spike'>Spike</a>, <a href='/?c=brawl-stars-crow'>Crow</a>, gems, trophies, and battle arenas that support a wide variety of coloring subjects. Pages place characters in deserts, cities, training grounds, forests, and futuristic arenas to create diverse coloring scenes. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
@@ -243,31 +288,6 @@
 "id": "brawl-stars-spike",
 "name": "Brawl Stars Spike",
 "description": "Brawl Stars Spike Coloring Pages provide printable coloring pages featuring Spike in action themed activities and character focused scenes. Illustrations include cactus outfits, battle gear, trophies, gems, and arena decorations while also connecting to <a href='/?c=brawl-stars'>Brawl Stars Coloring Pages</a>. Pages place Spike in deserts, training grounds, cities, battle arenas, and outdoor environments that create varied coloring scenes. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
-},
-{
-"id": "pokemon-bulbasaur",
-"name": "Bulbasaur",
-"description": "Bulbasaur Coloring Pages feature printable coloring pages showing Bulbasaur in friendly poses suitable for creative coloring activities at home or school. These pages belong to the broader <a href='/?c=pokemon'>Pokemon Coloring Pages</a> collection and present Bulbasaur, pokeballs, trainers, flowers, and forest plants across gardens and grassy landscapes. Scenes place characters exploring nature environments that reflect growth and adventure themes from the series. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
-},
-{
-"id": "digital-circus-caine",
-"name": "Caine",
-"description": "Digital Circus Caine Coloring Pages offer printable coloring pages featuring Caine in stylized and expressive designs for creative coloring activity. Subjects include Caine, circus props, digital symbols, performance elements, and abstract objects. Scenes place Caine in circus stages, virtual environments, digital arenas, and colorful performance spaces while connecting to <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a> for full category access. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging visual focus and character exploration."
-},
-{
-"id": "pokemon-charizard",
-"name": "Charizard",
-"description": "Charizard Coloring Pages offer printable coloring pages featuring dragon style character scenes designed for creative coloring activity and character recognition. Subjects include Charizard, flames, wings, fire attacks, and battle poses with <a href='/?c=pokemon'>Pokemon Coloring Pages</a> supporting broader character exploration. Scenes place characters in mountains, volcanic areas, battle arenas, and open skies with dynamic action environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice focused on action scenes and visual recognition."
-},
-{
-"id": "pokemon-charmander",
-"name": "Charmander",
-"description": "Charmander Coloring Pages feature printable coloring pages showing Charmander in adventurous poses suitable for creative coloring activities at home or school. These pages belong to the broader <a href='/?c=pokemon'>Pokemon Coloring Pages</a> collection and present Charmander, pokeballs, trainers, campfires, and rocky landscapes across forests and mountain paths. Scenes place characters exploring outdoor environments that reflect training journeys and discovery themes from the series. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
-},
-{
-"id": "alice-in-wonderland-cheshire-cat",
-"name": "Cheshire Cat",
-"description": "Alice in Wonderland Cheshire Cat Coloring Pages provide printable coloring pages featuring the smiling cat for whimsical character coloring activities. Visual subjects include striped fur, curled tails, tree branches, mushrooms, forest signs, floating grins, and magical paths, with wider woodland context in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Scenes place the Cheshire Cat above garden trails, among giant flowers, near tea tables, and inside mysterious forests. The collection includes simple outlines for younger children and detailed pages for older kids using bold, expressive line art. These pages support home creativity, classroom story themes, and playful practice with unusual shapes and facial expressions."
 },
 {
 "id": "chiikawa",
@@ -385,6 +405,41 @@
 "description": "Demon Slayer Zenitsu Coloring Pages include free printable coloring sheets featuring the lightning swordsman in battle poses and character scenes. The Thunder Breathing portion of <a href='/?c=demon-slayer'>Demon Slayer Coloring Pages</a> features Zenitsu, his Nichirin sword, lightning bolts, sparrows, and flowing haori patterns. Settings include forests, mountain paths, villages, and nighttime battlefields. Options include simple outline drawings for younger children and detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with movement, clothing, and electric effects."
 },
 {
+"id": "digital-circus",
+"name": "The Amazing Digital Circus",
+"description": "The Amazing Digital Circus Coloring Pages provide printable coloring pages featuring characters and elements from the digital circus universe for creative coloring activity. Subjects include <a href='/?c=digital-circus-pomni'>Pomni</a>, <a href='/?c=digital-circus-jax'>Jax</a>, <a href='/?c=digital-circus-caine'>Caine</a>, circus tents, digital landscapes, and abstract environments. Scenes place characters in circus arenas, virtual worlds, colorful stages, and city-like digital environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice while encouraging visual focus and character recognition."
+},
+{
+"id": "digital-circus-caine",
+"name": "Caine",
+"description": "Digital Circus Caine Coloring Pages offer printable coloring pages featuring Caine in stylized and expressive designs for creative coloring activity. Subjects include Caine, circus props, digital symbols, performance elements, and abstract objects. Scenes place Caine in circus stages, virtual environments, digital arenas, and colorful performance spaces while connecting to <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a> for full category access. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging visual focus and character exploration."
+},
+{
+"id": "digital-circus-gangle",
+"name": "Gangle",
+"description": "Digital Circus Gangle Coloring Pages provide printable coloring pages featuring the ribbon character in expressive poses, art activities, stage performances, and group scenes. Within the character-focused collection of <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a>, visual subjects include Gangle, theatrical masks, ribbon coils, drawing pencils, and stage curtains. Settings include circus arenas, backstage rooms, digital cities, and garden mazes. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with emotions, curved lines, costume details, and theatrical objects."
+},
+{
+"id": "digital-circus-jax",
+"name": "Jax",
+"description": "Digital Circus Jax Coloring Pages offer printable coloring pages featuring Jax in playful and dynamic poses for creative coloring activity. Subjects include Jax, circus props, digital shapes, accessories, and stage elements. Scenes place Jax in circus arenas, virtual environments, colorful stages, and abstract digital spaces while linking to <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a> for expanded character content. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice while encouraging creativity and character recognition."
+},
+{
+"id": "digital-circus-kinger",
+"name": "Kinger",
+"description": "Digital Circus Kinger Coloring Pages offer printable coloring pages featuring Kinger in imaginative poses for creative coloring activity. Subjects include Kinger, chess pieces, crowns, digital objects, masks, and circus props. Scenes place Kinger in circus arenas, virtual worlds, colorful stages, and abstract digital environments, with more printable character collections available in <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a>. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
+},
+{
+"id": "digital-circus-pomni",
+"name": "Pomni",
+"description": "Digital Circus Pomni Coloring Pages offer printable coloring pages featuring Pomni in expressive poses for creative coloring activity. Subjects include Pomni, circus props, digital objects, masks, and stage elements. Scenes place Pomni in circus arenas, virtual rooms, abstract worlds, and performance stages while connecting to <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a> for broader character exploration. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging visual focus and character recognition."
+},
+{
+"id": "digital-circus-ragatha",
+"name": "Ragatha",
+"description": "Digital Circus Ragatha Coloring Pages offer printable coloring pages featuring Ragatha in friendly character illustrations for creative coloring activity. Subjects include Ragatha, ribbons, dolls, flowers, buttons, and circus props. Scenes place Ragatha in circus arenas, virtual worlds, colorful stages, and whimsical digital environments, or explore <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a> to discover more printable characters from the series. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
+},
+{
 "id": "dinosaur",
 "name": "Dinosaur",
 "description": "Dinosaur Coloring Pages offer printable coloring pages featuring prehistoric creatures designed for creative coloring activity and early learning. Subjects include <a href='/?c=dinosaur-t-rex'>T Rex</a>, <a href='/?c=dinosaur-triceratops'>Triceratops</a>, <a href='/?c=dinosaur-velociraptor'>Velociraptor</a>, stegosaurus, pterodactyls, fossils, and eggs. Scenes place dinosaurs in jungles, volcano areas, deserts, and ancient landscapes with varied natural environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice focused on recognition, imagination, and basic science learning."
@@ -500,16 +555,6 @@
 "description": "Dragon Realistic Coloring Pages provide printable coloring pages featuring detailed dragon scenes for focused fantasy coloring activity. Visual subjects include dragons, scales, wings, claws, and mountains, covering more detailed fantasy forms inside <a href='/?c=dragon'>Dragon Coloring Pages</a>. Pages place realistic dragons in cliffs, forests, caves, and castle ruins for varied page settings. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice for advanced fantasy coloring."
 },
 {
-"id": "pokemon-eevee",
-"name": "Eevee",
-"description": "Eevee Coloring Pages feature printable coloring pages showing Eevee in expressive poses suitable for creative coloring activities at home or school. These pages belong to the broader <a href='/?c=pokemon'>Pokemon Coloring Pages</a> collection and present Eevee, pokeballs, trainers, forest paths, and village scenes across fields and woodland areas. Scenes place characters exploring natural environments that reflect curiosity and discovery from the series. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
-},
-{
-"id": "pokemon-flareon",
-"name": "Flareon",
-"description": "Flareon Coloring Pages feature printable coloring pages showing the Fire-type Pokemon resting, exploring, and using flame attacks. The collection expands <a href='/?c=pokemon'>Pokemon Coloring Pages</a> with Flareon, Fire Stones, flame effects, berry baskets, and trainer accessories. Scenes pair Flareon with Eevee across flower meadows, volcanic caves, snowy forests, mountain trails, and Pokemon stadiums. The set combines simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages with open coloring areas. They support home art time, classroom activities, and creative practice with animal shapes, fire effects, and outdoor scenery."
-},
-{
 "id": "fnaf",
 "name": "FNAF",
 "description": "FNAF Coloring Pages offer printable coloring pages featuring animatronic characters from the Five Nights at Freddy’s universe designed for creative coloring activity and character recognition. Subjects include <a href='/?c=fnaf-freddy-fazbear'>Freddy Fazbear</a>, <a href='/?c=fnaf-bonnie'>Bonnie</a>, <a href='/?c=fnaf-chica'>Chica</a>, <a href='/?c=fnaf-foxy'>Foxy</a>, and <a href='/?c=fnaf-golden-freddy'>Golden Freddy</a>, along with security guards shown as recognizable figures from the game series. Scenes place these characters inside arcades, stages, pizzerias, security rooms, and indoor entertainment areas. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages that remain easy to color. This category supports home art time, classroom activities, and creative practice centered on recognizable game characters."
@@ -528,6 +573,26 @@
 "id": "fnaf-foxy",
 "name": "FNAF Foxy",
 "description": "FNAF Foxy Coloring Pages provide printable coloring pages featuring the pirate themed animatronic fox from the Five Nights at Freddy’s universe for character focused coloring activity. Subjects include Foxy, pirate hooks, eyepatches, stage curtains, and treasure chests shown alongside characters from <a href='/?c=fnaf'>FNAF Coloring Pages</a>. Scenes place Foxy in pirate cove stages, pizzerias, backstage rooms, security halls, and indoor arcade areas inspired by the game setting. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs suitable for coloring. This category supports home art time, classroom activities, and creative practice centered on recognizable game characters."
+},
+{
+"id": "fnaf-freddy-fazbear",
+"name": "Freddy Fazbear",
+"description": "FNAF Freddy Fazbear Coloring Pages provide printable coloring pages featuring the famous animatronic bear from the Five Nights at Freddy’s universe for character focused coloring activity. Subjects include Freddy Fazbear, microphones, stage curtains, pizza boxes, and arcade speakers shown alongside characters from <a href='/?c=fnaf'>FNAF Coloring Pages</a>. Scenes place Freddy in pizzerias, stage performances, security rooms, party halls, and indoor arcade areas inspired by the game setting. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs suitable for coloring. This category supports home art time, classroom activities, and creative practice built around recognizable game characters."
+},
+{
+"id": "fnaf-golden-freddy",
+"name": "Golden Freddy",
+"description": "FNAF Golden Freddy Coloring Pages feature printable coloring pages centered on the golden animatronic character from the Five Nights at Freddy’s universe. These pages highlight Golden Freddy as a recognizable bear animatronic often shown holding a microphone, posing for a performance, or standing inside entertainment areas inspired by the game setting. Scenes include stage platforms, decorated party rooms, arcade areas, and indoor performance spaces designed for clear printable outlines and easy coloring. Kids can color Golden Freddy in different poses and activity scenes while recognizing one of the well-known characters from the series. For more animatronic characters and printable scenes, explore the full <a href='/?c=fnaf'>FNAF Coloring Pages</a> collection."
+},
+{
+"id": "fnaf-roxanne-wolf",
+"name": "Roxanne Wolf",
+"description": "FNAF Roxanne Wolf Coloring Pages feature printable coloring pages showing the animatronic wolf in racing poses, musical performances, and Pizzaplex activity scenes. The selection within <a href='/?c=fnaf'>FNAF Coloring Pages</a> includes Roxanne Wolf, racing helmets, checkered flags, keytars, and trophies. Settings range across Roxy Raceway, concert stages, beauty salons, arcades, and Pizzaplex corridors. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages with open coloring areas. They support home art time, classroom activities, and creative practice with animatronic shapes, musical equipment, and racing details."
+},
+{
+"id": "fnaf-springtrap",
+"name": "Springtrap",
+"description": "FNAF Springtrap Coloring Pages provide printable coloring pages featuring the rabbit character in standing poses, hallway scenes, arcade settings, and mechanical close-ups. Within the rabbit character collection of <a href='/?c=fnaf'>FNAF Coloring Pages</a>, visual subjects include Springtrap, rabbit ears, suit panels, arcade machines, and security cameras. Settings include old pizzerias, game rooms, security offices, storage rooms, and city arcades. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with machine shapes, costume parts, facial expressions, and room details."
 },
 {
 "id": "fortnite",
@@ -560,11 +625,6 @@
 "description": "Fortnite Peely Coloring Pages offer printable coloring pages featuring the banana skin from Fortnite for focused coloring activity. Subjects include banana suits, peel faces, backpacks, gloves, boots, and fruit props from <a href='/?c=fortnite'>Fortnite Coloring Pages</a>. Scenes place Peely in cities, beaches, jungles, game lobbies, and battle arenas. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports home art time, classroom activities, and creative practice with character shapes."
 },
 {
-"id": "fnaf-freddy-fazbear",
-"name": "Freddy Fazbear",
-"description": "FNAF Freddy Fazbear Coloring Pages provide printable coloring pages featuring the famous animatronic bear from the Five Nights at Freddy’s universe for character focused coloring activity. Subjects include Freddy Fazbear, microphones, stage curtains, pizza boxes, and arcade speakers shown alongside characters from <a href='/?c=fnaf'>FNAF Coloring Pages</a>. Scenes place Freddy in pizzerias, stage performances, security rooms, party halls, and indoor arcade areas inspired by the game setting. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs suitable for coloring. This category supports home art time, classroom activities, and creative practice built around recognizable game characters."
-},
-{
 "id": "frozen",
 "name": "Frozen",
 "description": "Frozen Coloring Pages provide printable coloring pages featuring characters, winter adventures, royal celebrations, and snowy activities from the animated fantasy setting. Visual subjects include <a href='/?c=frozen-kristoff'>Kristoff</a> with climbing gear, <a href='/?c=frozen-anna'>Anna</a> with travel clothing, <a href='/?c=frozen-olaf'>Olaf</a> with snowballs, <a href='/?c=frozen-sven'>Sven</a> with sleighs, and royal castles. Scenes range from mountain forests and frozen lakes to village streets, castle halls, snowy courtyards, and autumn valleys. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with clothing, expressions, animal features, seasonal objects, and geometric ice patterns."
@@ -588,11 +648,6 @@
 "id": "frozen-sven",
 "name": "Frozen Sven",
 "description": "Frozen Sven Coloring Pages provide printable coloring pages featuring the reindeer during sleigh trips, mountain travel, winter games, and stable activities. Visual subjects include Sven, antlers, harnesses, sleighs, carrots, and bells, with more winter characters available through <a href='/?c=frozen'>Frozen Coloring Pages</a>. Scenes range across mountain forests, snowy roads, castle stables, village squares, frozen lakes, and grassy valleys. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as easy coloring outlines. They support home art time, classroom activities, and creative practice with animal features, travel equipment, natural settings, and seasonal scenery."
-},
-{
-"id": "digital-circus-gangle",
-"name": "Gangle",
-"description": "Digital Circus Gangle Coloring Pages provide printable coloring pages featuring the ribbon character in expressive poses, art activities, stage performances, and group scenes. Within the character-focused collection of <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a>, visual subjects include Gangle, theatrical masks, ribbon coils, drawing pencils, and stage curtains. Settings include circus arenas, backstage rooms, digital cities, and garden mazes. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with emotions, curved lines, costume details, and theatrical objects."
 },
 {
 "id": "genshin-impact",
@@ -625,11 +680,6 @@
 "description": "Genshin Impact Raiden Shogun Coloring Pages feature printable coloring pages with lightning powers, anime outfits, swords, glowing effects, and fantasy battle designs inspired by the popular character. Illustrations include action poses, magical scenes, castle settings, mountain landscapes, and city environments from the game world. Fans of <a href='/?c=genshin-impact'>Genshin Impact Coloring Pages</a> can enjoy character portraits, combat artwork, elemental attacks, team scenes, and adventure themed illustrations. The category includes simple outline drawings for younger children alongside detailed pages for older kids with clean black and white designs. Suitable for home art time, creative practice, and anime inspired coloring activities."
 },
 {
-"id": "fnaf-golden-freddy",
-"name": "Golden Freddy",
-"description": "FNAF Golden Freddy Coloring Pages feature printable coloring pages centered on the golden animatronic character from the Five Nights at Freddy’s universe. These pages highlight Golden Freddy as a recognizable bear animatronic often shown holding a microphone, posing for a performance, or standing inside entertainment areas inspired by the game setting. Scenes include stage platforms, decorated party rooms, arcade areas, and indoor performance spaces designed for clear printable outlines and easy coloring. Kids can color Golden Freddy in different poses and activity scenes while recognizing one of the well-known characters from the series. For more animatronic characters and printable scenes, explore the full <a href='/?c=fnaf'>FNAF Coloring Pages</a> collection."
-},
-{
 "id": "halo",
 "name": "Halo",
 "description": "Halo Coloring Pages offer printable coloring pages based on armored heroes, alien forces, futuristic equipment, and science-fiction settings. Subjects feature <a href='/?c=halo-master-chief'>Master Chief</a> in armored missions, <a href='/?c=halo-cortana'>Cortana</a> with holographic displays, <a href='/?c=halo-arbiter'>Arbiter</a> carrying energy swords, <a href='/?c=halo-grunt'>Grunt</a> with Covenant equipment, and Warthog vehicles. Scenes range across ringworld forests, military bases, ruined cities, spacecraft interiors, and mountain battlefields. Selections combine simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages with open areas. They support home art time, classroom activities, and creative practice with armor forms, alien anatomy, vehicles, and technology shapes."
@@ -660,14 +710,14 @@
 "description": "Hatsune Miku Coloring Pages provide printable coloring pages featuring the virtual singer in anime character designs for focused music themed coloring activity. Visual subjects include Miku portraits, twin tails, microphones, headphones, small-style <a href='/?c=hatsune-miku-chibi'>chibi</a> figures, and floral <a href='/?c=hatsune-miku-sakura'>Sakura Miku</a> scenes for varied image signals. Pages place Miku on city stages, music rooms, classrooms, gardens, and festival streets for different page settings. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice."
 },
 {
-"id": "hatsune-miku-kasane-teto",
-"name": "Hatsune Miku and Kasane Teto",
-"description": "Hatsune Miku and Kasane Teto Coloring Pages provide printable coloring pages featuring the two virtual singers in character-focused music activities. Visual subjects include microphones, headphones, stage costumes, ribbon accessories, music notes, and confetti, with related designs in <a href='/?c=hatsune-miku'>Hatsune Miku Coloring Pages</a>. Scenes place the duo on concert stages, in music studios, across city plazas, and inside festival halls. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clean black and white designs. They support home art time, classroom activities, and creative practice with expressions, coordinated poses, clothing details, and performance objects."
-},
-{
 "id": "hatsune-miku-chibi",
 "name": "Hatsune Miku Chibi",
 "description": "Hatsune Miku Chibi Coloring Pages provide printable coloring pages featuring small Miku character designs for focused anime character coloring activity. Visual subjects include chibi Miku, twin tails, microphones, music notes, stars, and headphones, giving a miniature style branch to <a href='/?c=hatsune-miku'>Hatsune Miku Coloring Pages</a>. Pages place Miku in classrooms, music rooms, city stages, and bedroom settings for varied page themes. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice."
+},
+{
+"id": "hatsune-miku-kasane-teto",
+"name": "Hatsune Miku and Kasane Teto",
+"description": "Hatsune Miku and Kasane Teto Coloring Pages provide printable coloring pages featuring the two virtual singers in character-focused music activities. Visual subjects include microphones, headphones, stage costumes, ribbon accessories, music notes, and confetti, with related designs in <a href='/?c=hatsune-miku'>Hatsune Miku Coloring Pages</a>. Scenes place the duo on concert stages, in music studios, across city plazas, and inside festival halls. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clean black and white designs. They support home art time, classroom activities, and creative practice with expressions, coordinated poses, clothing details, and performance objects."
 },
 {
 "id": "hatsune-miku-sakura",
@@ -733,26 +783,6 @@
 "id": "hello-kitty-pompompurin",
 "name": "Hello Kitty Pompompurin",
 "description": "Hello Kitty Pompompurin Coloring Pages provide printable coloring pages featuring Pompompurin for character coloring activity. Visual subjects include Pompompurin, pudding cups, berets, flowers, gift boxes, and cafe tables, with wider character context in <a href='/?c=hello-kitty'>Hello Kitty Coloring Pages</a>. Scenes place him in cafes, classrooms, gardens, cities, and village shops for varied everyday settings. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports home art time, classroom activities, and creative practice with character shapes, accessories, and food-themed details."
-},
-{
-"id": "adventure-time-jake",
-"name": "Jake the Dog",
-"description": "Adventure Time Jake Coloring Pages provide printable coloring pages featuring Jake in a variety of character-focused activities and fantasy adventures. Illustrations include musical instruments, magical objects, vehicles, treasure chests, and camping equipment while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Jake in forests, villages, castles, mountains, and imaginative outdoor settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
-},
-{
-"id": "digital-circus-jax",
-"name": "Jax",
-"description": "Digital Circus Jax Coloring Pages offer printable coloring pages featuring Jax in playful and dynamic poses for creative coloring activity. Subjects include Jax, circus props, digital shapes, accessories, and stage elements. Scenes place Jax in circus arenas, virtual environments, colorful stages, and abstract digital spaces while linking to <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a> for expanded character content. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice while encouraging creativity and character recognition."
-},
-{
-"id": "animal-crossing-kk-slider",
-"name": "K.K. Slider",
-"description": "Animal Crossing K.K. Slider Coloring Pages provide printable coloring pages featuring K.K. Slider for music-themed character activities. Visual subjects include acoustic guitars, microphones, stools, music notes, record sleeves, and stage lights, with other island performers shown in <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes feature village plazas, beach concerts, music rooms, and nighttime festivals. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clear coloring outlines. They support home art time, classroom music activities, and creative practice with instruments, rhythm symbols, and performance settings."
-},
-{
-"id": "digital-circus-kinger",
-"name": "Kinger",
-"description": "Digital Circus Kinger Coloring Pages offer printable coloring pages featuring Kinger in imaginative poses for creative coloring activity. Subjects include Kinger, chess pieces, crowns, digital objects, masks, and circus props. Scenes place Kinger in circus arenas, virtual worlds, colorful stages, and abstract digital environments, with more printable character collections available in <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a>. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
 },
 {
 "id": "kirby",
@@ -838,16 +868,6 @@
 "id": "lego-ninjago-zane",
 "name": "LEGO Ninjago Zane",
 "description": "LEGO Ninjago Zane Coloring Pages provide printable coloring pages featuring the ice ninja during combat training, meditation poses, robotic transformations, and team missions. From the ice and robotics collection in <a href='/?c=lego-ninjago'>LEGO Ninjago Coloring Pages</a>, visual subjects include Zane, white ninja armor, ice shurikens, snowflake symbols, and robotic panels. Settings include snowy mountains, ice caves, forest temples, futuristic laboratories, and city rooftops. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as bold line art pages. They support home art time, classroom activities, and creative practice with armor construction, geometric forms, frozen scenery, and mechanical details."
-},
-{
-"id": "alice-in-wonderland-mad-hatter",
-"name": "Mad Hatter",
-"description": "Alice in Wonderland Mad Hatter Coloring Pages provide printable coloring pages featuring the Mad Hatter for tea-party and fantasy character activities. Visual subjects include tall hats, bow ties, teacups, teapots, cakes, clocks, chairs, and decorated tables, with broader celebration scenes in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Settings place him at long tea tables, garden gatherings, forest clearings, and rooms filled with curious tableware. The collection includes simple outlines for younger children and detailed pages for older kids using clear, bold line art. These pages work well for home art time, party activities, classroom storytelling, and imaginative costume coloring."
-},
-{
-"id": "adventure-time-marceline",
-"name": "Marceline the Vampire Queen",
-"description": "Adventure Time Marceline Coloring Pages provide printable coloring pages featuring Marceline in musical and fantasy-inspired activities. Illustrations include guitars, bats, castles, forests, and magical objects while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Marceline in forests, castles, villages, mountains, and other imaginative settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
 },
 {
 "id": "mario",
@@ -955,16 +975,6 @@
 "description": "Moomin Coloring Pages provide printable coloring pages featuring character activities, family moments, outdoor journeys, celebrations, and everyday tasks. Visual subjects include Moomintroll, harmonicas carried by <a href='/?c=moomin-snufkin'>Snufkin</a>, flower crowns worn by <a href='/?c=moomin-snorkmaiden'>Snorkmaiden</a>, teapots used by <a href='/?c=moomin-mamma'>Moominmamma</a>, and boats sailed by <a href='/?c=moomin-pappa'>Moominpappa</a>. Scenes appear across pine forests, riverbanks, flower gardens, coastal islands, village paths, and rooms inside the Moominhouse. Options include simple outline drawings for younger children and detailed pages for older kids, presented as clean black and white designs. They support classroom activities, home art time, and creative practice with clothing shapes, household objects, nature details, facial expressions, and movement."
 },
 {
-"id": "moomin-snorkmaiden",
-"name": "Moomin Snorkmaiden",
-"description": "Moomin Snorkmaiden Coloring Pages offer coloring sheets to print featuring Snorkmaiden during gardening, dancing, picnics, seaside walks, and family activities. From the character collection within <a href='/?c=moomin'>Moomin Coloring Pages</a>, visual subjects include Snorkmaiden, flower crowns, mirrors, handbags, umbrellas, and picnic baskets. Settings range across flower gardens, beaches, forest paths, open meadows, and rooms inside the Moominhouse. Options include simple outline drawings for younger children and detailed pages for older kids, using clean black and white designs. They support home art time and creative practice with hairstyles, clothing sections, facial expressions, flowers, and household objects."
-},
-{
-"id": "moomin-snufkin",
-"name": "Moomin Snufkin",
-"description": "Moomin Snufkin Coloring Pages provide printable coloring pages featuring Snufkin during travel, music, fishing, camping, and quiet outdoor activities. Within <a href='/?c=moomin'>Moomin Coloring Pages</a>, visual subjects include Snufkin, harmonicas, backpacks, tents, fishing rods, and campfires. Scenes appear across pine forests, riverbanks, mountain trails, open meadows, and lakeside campsites. Selections combine simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages. They support classroom activities, home art time, and creative practice with travel equipment, musical objects, clothing shapes, and natural scenery."
-},
-{
 "id": "moomin-mamma",
 "name": "Moominmamma",
 "description": "Moominmamma Coloring Pages provide free printable coloring sheets featuring Moominmamma while cooking, gardening, sewing, serving meals, and caring for the household. In the family-focused section of <a href='/?c=moomin'>Moomin Coloring Pages</a>, visual subjects include Moominmamma, aprons, handbags, teapots, garden tools, and berry baskets. Scenes appear in kitchens, gardens, forest paths, cottage verandas, and seaside picnic areas. Selections combine simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages. They support classroom activities and home art time with clothing patterns, food shapes, plants, facial expressions, and household objects."
@@ -973,6 +983,16 @@
 "id": "moomin-pappa",
 "name": "Moominpappa",
 "description": "Moominpappa Coloring Pages offer simple coloring pages to print featuring Moominpappa while writing, sailing, fishing, repairing boats, and exploring outdoors. As part of the adventure collection in <a href='/?c=moomin'>Moomin Coloring Pages</a>, visual subjects include Moominpappa, top hats, notebooks, lanterns, boats, and fishing rods. Scenes range across seaside docks, rocky islands, forest paths, cottage gardens, and study rooms. Options include simple outline drawings for younger children and detailed pages for older kids, using easy coloring outlines. They support classroom activities, home art time, and creative practice with clothing details, writing tools, water shapes, and outdoor equipment."
+},
+{
+"id": "moomin-snorkmaiden",
+"name": "Moomin Snorkmaiden",
+"description": "Moomin Snorkmaiden Coloring Pages offer coloring sheets to print featuring Snorkmaiden during gardening, dancing, picnics, seaside walks, and family activities. From the character collection within <a href='/?c=moomin'>Moomin Coloring Pages</a>, visual subjects include Snorkmaiden, flower crowns, mirrors, handbags, umbrellas, and picnic baskets. Settings range across flower gardens, beaches, forest paths, open meadows, and rooms inside the Moominhouse. Options include simple outline drawings for younger children and detailed pages for older kids, using clean black and white designs. They support home art time and creative practice with hairstyles, clothing sections, facial expressions, flowers, and household objects."
+},
+{
+"id": "moomin-snufkin",
+"name": "Moomin Snufkin",
+"description": "Moomin Snufkin Coloring Pages provide printable coloring pages featuring Snufkin during travel, music, fishing, camping, and quiet outdoor activities. Within <a href='/?c=moomin'>Moomin Coloring Pages</a>, visual subjects include Snufkin, harmonicas, backpacks, tents, fishing rods, and campfires. Scenes appear across pine forests, riverbanks, mountain trails, open meadows, and lakeside campsites. Selections combine simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages. They support classroom activities, home art time, and creative practice with travel equipment, musical objects, clothing shapes, and natural scenery."
 },
 {
 "id": "my-little-pony",
@@ -1115,11 +1135,6 @@
 "description": "Peppa Pig Mummy Pig Coloring Pages offer printable coloring pages featuring character scenes designed for creative coloring activity and recognition. Subjects include Mummy Pig, books, kitchen items, toys, and family objects inspired by <a href='/?c=peppa-pig'>Peppa Pig Coloring Pages</a> themes. Scenes place characters in kitchens, living rooms, parks, and classrooms with familiar daily environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using easy coloring outlines. This category supports classroom activities and home art time focused on recognition, creativity, and daily life scenes."
 },
 {
-"id": "pokemon-pikachu",
-"name": "Pikachu",
-"description": "Pikachu Coloring Pages feature printable coloring pages showing Pikachu in energetic poses suitable for creative activities at home or school. These pages belong to the broader <a href='/?c=pokemon'>Pokemon Coloring Pages</a> collection and present characters, pokeballs, trainers, forests, and electric themed scenes across open fields and villages. Scenes place Pikachu exploring grassy landscapes and friendly adventure locations that reflect the playful spirit of the series. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
-},
-{
 "id": "plants-vs-zombies",
 "name": "Plants vs Zombies",
 "description": "Plants vs Zombies Coloring Pages provide printable coloring pages featuring plant defenders and zombie opponents across garden battles, character portraits, and group scenes. Visual subjects include attacking <a href='/?c=plants-vs-zombies-peashooter'>Peashooter</a>, sunlight-producing <a href='/?c=plants-vs-zombies-sunflower'>Sunflower</a>, biting <a href='/?c=plants-vs-zombies-chomper'>Chomper</a>, advancing <a href='/?c=plants-vs-zombies-zombie'>Zombie</a>, and Wall-nut barriers. Settings cover backyard lawns, suburban streets, rooftop gardens, swimming pools, and nighttime fields. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with character features, action poses, and environmental details."
@@ -1150,9 +1165,39 @@
 "description": "Pokemon Coloring Pages provide printable coloring pages featuring characters and creatures from the Pokemon universe, designed for creative coloring activities at home or in classrooms. Characters include <a href='/?c=pokemon-pikachu'>Pikachu</a>, <a href='/?c=pokemon-charmander'>Charmander</a>, <a href='/?c=pokemon-bulbasaur'>Bulbasaur</a>, <a href='/?c=pokemon-squirtle'>Squirtle</a>, and <a href='/?c=pokemon-eevee'>Eevee</a> shown in playful poses across forests, grassy fields, training arenas, towns, and mountain paths. Environments place characters in adventure settings that reflect exploration and discovery across different regions. The collection includes simple outline drawings for younger children and more detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
 },
 {
-"id": "digital-circus-pomni",
-"name": "Pomni",
-"description": "Digital Circus Pomni Coloring Pages offer printable coloring pages featuring Pomni in expressive poses for creative coloring activity. Subjects include Pomni, circus props, digital objects, masks, and stage elements. Scenes place Pomni in circus arenas, virtual rooms, abstract worlds, and performance stages while connecting to <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a> for broader character exploration. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging visual focus and character recognition."
+"id": "pokemon-bulbasaur",
+"name": "Bulbasaur",
+"description": "Bulbasaur Coloring Pages feature printable coloring pages showing Bulbasaur in friendly poses suitable for creative coloring activities at home or school. These pages belong to the broader <a href='/?c=pokemon'>Pokemon Coloring Pages</a> collection and present Bulbasaur, pokeballs, trainers, flowers, and forest plants across gardens and grassy landscapes. Scenes place characters exploring nature environments that reflect growth and adventure themes from the series. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
+},
+{
+"id": "pokemon-charizard",
+"name": "Charizard",
+"description": "Charizard Coloring Pages offer printable coloring pages featuring dragon style character scenes designed for creative coloring activity and character recognition. Subjects include Charizard, flames, wings, fire attacks, and battle poses with <a href='/?c=pokemon'>Pokemon Coloring Pages</a> supporting broader character exploration. Scenes place characters in mountains, volcanic areas, battle arenas, and open skies with dynamic action environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice focused on action scenes and visual recognition."
+},
+{
+"id": "pokemon-charmander",
+"name": "Charmander",
+"description": "Charmander Coloring Pages feature printable coloring pages showing Charmander in adventurous poses suitable for creative coloring activities at home or school. These pages belong to the broader <a href='/?c=pokemon'>Pokemon Coloring Pages</a> collection and present Charmander, pokeballs, trainers, campfires, and rocky landscapes across forests and mountain paths. Scenes place characters exploring outdoor environments that reflect training journeys and discovery themes from the series. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
+},
+{
+"id": "pokemon-eevee",
+"name": "Eevee",
+"description": "Eevee Coloring Pages feature printable coloring pages showing Eevee in expressive poses suitable for creative coloring activities at home or school. These pages belong to the broader <a href='/?c=pokemon'>Pokemon Coloring Pages</a> collection and present Eevee, pokeballs, trainers, forest paths, and village scenes across fields and woodland areas. Scenes place characters exploring natural environments that reflect curiosity and discovery from the series. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
+},
+{
+"id": "pokemon-flareon",
+"name": "Flareon",
+"description": "Flareon Coloring Pages feature printable coloring pages showing the Fire-type Pokemon resting, exploring, and using flame attacks. The collection expands <a href='/?c=pokemon'>Pokemon Coloring Pages</a> with Flareon, Fire Stones, flame effects, berry baskets, and trainer accessories. Scenes pair Flareon with Eevee across flower meadows, volcanic caves, snowy forests, mountain trails, and Pokemon stadiums. The set combines simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages with open coloring areas. They support home art time, classroom activities, and creative practice with animal shapes, fire effects, and outdoor scenery."
+},
+{
+"id": "pokemon-pikachu",
+"name": "Pikachu",
+"description": "Pikachu Coloring Pages feature printable coloring pages showing Pikachu in energetic poses suitable for creative activities at home or school. These pages belong to the broader <a href='/?c=pokemon'>Pokemon Coloring Pages</a> collection and present characters, pokeballs, trainers, forests, and electric themed scenes across open fields and villages. Scenes place Pikachu exploring grassy landscapes and friendly adventure locations that reflect the playful spirit of the series. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
+},
+{
+"id": "pokemon-squirtle",
+"name": "Squirtle",
+"description": "Squirtle Coloring Pages feature printable coloring pages showing Squirtle in playful poses suitable for creative coloring activities at home or school. These pages belong to the broader <a href='/?c=pokemon'>Pokemon Coloring Pages</a> collection and present Squirtle, pokeballs, trainers, waves, and beach scenes across oceans and island shores. Scenes place characters exploring water themed environments that reflect adventure and exploration across coastal settings. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
 },
 {
 "id": "poppy-playtime",
@@ -1188,11 +1233,6 @@
 "id": "princess",
 "name": "Princess",
 "description": "Princess Coloring Pages provide printable coloring pages featuring royal characters, fantasy clothing, celebrations, friendships, and palace activities. Film characters and royal costumes appear through <a href='/?c=princess-disney'>Disney Princess</a>, while tower rooms, braided hair, lanterns, and chameleons distinguish <a href='/?c=princess-rapunzel'>Rapunzel</a>. Dress-up scenes with crowns, gowns, kittens, tea sets, and bouquets shape <a href='/?c=princess-cute'>Cute Princess</a>, while ocean palaces and coral gardens define <a href='/?c=princess-mermaid'>Mermaid Princess</a>. The collection combines simple outline drawings for younger children and detailed pages for older kids, using clean black and white designs. They support home art time, classroom activities, and creative practice with colors, expressions, clothing, and fantasy scene details."
-},
-{
-"id": "adventure-time-princess-bubblegum",
-"name": "Princess Bubblegum",
-"description": "Adventure Time Princess Bubblegum Coloring Pages provide printable coloring pages featuring Princess Bubblegum in a variety of character-focused activities and fantasy scenes. Illustrations include crowns, candy inventions, laboratory equipment, royal decorations, and flowers while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Princess Bubblegum in castles, gardens, laboratories, villages, and kingdom settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
 },
 {
 "id": "princess-cute",
@@ -1240,16 +1280,6 @@
 "description": "Pusheen Unicorn Coloring Pages provide printable coloring pages featuring the cat in magical unicorn scenes with rainbows, clouds, and fantasy decorations. Within the fantasy collection of <a href='/?c=pusheen'>Pusheen Coloring Pages</a>, visual subjects include Pusheen, unicorn horns, winged horses, stars, and rainbow arches. Settings range from cloud kingdoms and enchanted forests to mountain paths and castle gardens. Options include simple outline drawings for younger children and detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with fantasy shapes, decorative patterns, and color planning."
 },
 {
-"id": "alice-in-wonderland-queen-of-hearts",
-"name": "Queen of Hearts",
-"description": "Alice in Wonderland Queen of Hearts Coloring Pages provide printable coloring pages featuring the Queen of Hearts for royal fantasy coloring activities. Visual subjects include crowns, heart motifs, scepters, card guards, roses, croquet equipment, thrones, and castle decorations, with fuller royal-court context in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Scenes place her in rose gardens, palace halls, castle courtyards, garden mazes, and lively croquet grounds. The collection includes simple outlines for younger children and detailed pages for older kids using strong, decorative line art. These pages suit home coloring, classroom activities, and creative practice with costumes, patterns, and dramatic character poses."
-},
-{
-"id": "digital-circus-ragatha",
-"name": "Ragatha",
-"description": "Digital Circus Ragatha Coloring Pages offer printable coloring pages featuring Ragatha in friendly character illustrations for creative coloring activity. Subjects include Ragatha, ribbons, dolls, flowers, buttons, and circus props. Scenes place Ragatha in circus arenas, virtual worlds, colorful stages, and whimsical digital environments, or explore <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a> to discover more printable characters from the series. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
-},
-{
 "id": "rainbow-friends",
 "name": "Rainbow Friends",
 "description": "Rainbow Friends Coloring Pages feature printable coloring pages inspired by popular monster characters and activity scenes for kids, parents, and classroom use. The collection includes <a href='/?c=rainbow-friends-blue'>Blue</a>, <a href='/?c=rainbow-friends-green'>Green</a>, <a href='/?c=rainbow-friends-orange'>Orange</a>, <a href='/?c=rainbow-friends-red'>Red</a>, and rainbow monster group scenes with playful poses, scary expressions, and action moments. Many pages show environments like factories, classrooms, playgrounds, cities, and dark hallways to create varied coloring activities. The category includes simple outline drawings for younger children alongside detailed pages for older kids using clean black and white designs. These coloring sheets support home art time, classroom activities, and creative practice with recognizable characters from the game series."
@@ -1273,11 +1303,6 @@
 "id": "rainbow-friends-red",
 "name": "Rainbow Friends Red",
 "description": "Rainbow Friends Red Coloring Pages include simple coloring pages to print inspired by the scientist character and laboratory scenes from the popular game series. The collection features machines, computers, test tubes, control rooms, robots, and experiment scenes connected to <a href='/?c=rainbow-friends'>Rainbow Friends Coloring Pages</a>. Several pages place Red inside laboratories, classrooms, factories, and underground rooms for varied printable environments. The category includes simple outline drawings for younger children together with detailed pages for older kids using clean black and white designs. These sheets support creative practice, classroom activities, and home coloring time with game inspired characters."
-},
-{
-"id": "angry-birds-red",
-"name": "Red Angry Bird",
-"description": "Angry Birds Red Coloring Pages provide printable coloring pages featuring Red for character coloring activity. Visual subjects include Red, slingshots, blocks, eggs, towers, and nests, with wider flock context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place him near forests, villages, beaches, and cities with targets and stacked structures. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with expressive character shapes."
 },
 {
 "id": "roblox",
@@ -1308,11 +1333,6 @@
 "id": "roblox-noob",
 "name": "Roblox Noob",
 "description": "Roblox Noob Coloring Pages offer printable coloring pages featuring the classic Roblox noob character for screen-free coloring activity. Subjects include noob avatars, blocky heads, square hands, game badges, and hats, with more character sets in <a href='/?c=roblox'>Roblox Coloring Pages</a>. Scenes place noobs in cities, obstacle courses, classrooms, and game lobbies. Pages range from simple outline drawings for younger children to detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
-},
-{
-"id": "fnaf-roxanne-wolf",
-"name": "Roxanne Wolf",
-"description": "FNAF Roxanne Wolf Coloring Pages feature printable coloring pages showing the animatronic wolf in racing poses, musical performances, and Pizzaplex activity scenes. The selection within <a href='/?c=fnaf'>FNAF Coloring Pages</a> includes Roxanne Wolf, racing helmets, checkered flags, keytars, and trophies. Settings range across Roxy Raceway, concert stages, beauty salons, arcades, and Pizzaplex corridors. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages with open coloring areas. They support home art time, classroom activities, and creative practice with animatronic shapes, musical equipment, and racing details."
 },
 {
 "id": "sonic",
@@ -1390,29 +1410,9 @@
 "description": "SpongeBob Squidward Coloring Pages feature printable coloring pages centered on a cartoon octopus character designed for creative coloring activity and character recognition. Subjects include Squidward, clarinets, easels, paintings, and house interiors shown as recognizable elements from the series. Scenes place the character in indoor rooms, Bikini Bottom streets, art spaces, and ocean environments connected to <a href='/?c=spongebob'>SpongeBob Coloring Pages</a>. Pages include simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities and creative practice."
 },
 {
-"id": "fnaf-springtrap",
-"name": "Springtrap",
-"description": "FNAF Springtrap Coloring Pages provide printable coloring pages featuring the rabbit character in standing poses, hallway scenes, arcade settings, and mechanical close-ups. Within the rabbit character collection of <a href='/?c=fnaf'>FNAF Coloring Pages</a>, visual subjects include Springtrap, rabbit ears, suit panels, arcade machines, and security cameras. Settings include old pizzerias, game rooms, security offices, storage rooms, and city arcades. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with machine shapes, costume parts, facial expressions, and room details."
-},
-{
-"id": "pokemon-squirtle",
-"name": "Squirtle",
-"description": "Squirtle Coloring Pages feature printable coloring pages showing Squirtle in playful poses suitable for creative coloring activities at home or school. These pages belong to the broader <a href='/?c=pokemon'>Pokemon Coloring Pages</a> collection and present Squirtle, pokeballs, trainers, waves, and beach scenes across oceans and island shores. Scenes place characters exploring water themed environments that reflect adventure and exploration across coastal settings. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
-},
-{
 "id": "stitch",
 "name": "Stitch",
 "description": "Color Stitch printable coloring pages featuring characters such as Stitch, Lilo, Angel, Jumba, Pleakley, and figures including alien friends, beach animals, and island companions shown in tropical beaches, homes, parks, and ocean scenes. Users explore bold line art pages and simple outline drawings across easy coloring pages for toddlers and detailed coloring pages for older kids. These printable coloring pages support classroom craft sessions and home art routines while coloring sheets to print encourage character recognition, visual focus, and early creative learning through structured offline activity."
-},
-{
-"id": "digital-circus",
-"name": "The Amazing Digital Circus",
-"description": "The Amazing Digital Circus Coloring Pages provide printable coloring pages featuring characters and elements from the digital circus universe for creative coloring activity. Subjects include <a href='/?c=digital-circus-pomni'>Pomni</a>, <a href='/?c=digital-circus-jax'>Jax</a>, <a href='/?c=digital-circus-caine'>Caine</a>, circus tents, digital landscapes, and abstract environments. Scenes place characters in circus arenas, virtual worlds, colorful stages, and city-like digital environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice while encouraging visual focus and character recognition."
-},
-{
-"id": "animal-crossing-tom-nook",
-"name": "Tom Nook",
-"description": "Animal Crossing Tom Nook Coloring Pages provide printable coloring pages featuring Tom Nook for island character activities. Visual subjects include tanuki ears, leaf shirts, bell bags, shop counters, tools, and furniture, with broader island-building elements throughout <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes place him inside shops, near resident-services buildings, across village plazas, and beside island campsites. The collection combines simple outline drawings for younger children with detailed pages for older kids, using bold line art pages. They support home art time, classroom activities, and creative practice with objects, clothing, and village roles."
 },
 {
 "id": "totoro",
@@ -1420,14 +1420,14 @@
 "description": "Totoro Coloring Pages provide printable coloring pages featuring Totoro, <a href='/?c=totoro-small'>Small Totoro</a>, <a href='/?c=totoro-catbus'>Catbus</a>, Mei, and Satsuki from the beloved animated story. Illustrations include woodland animals, giant trees, umbrellas, acorns, and nature-inspired scenes shown in recognizable character-focused artwork. Pages place characters in forests, gardens, countryside fields, and village environments that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs for clear coloring. This category supports classroom activities, home art time, and creative practice while encouraging creativity, observation skills, and character recognition."
 },
 {
-"id": "totoro-mei",
-"name": "Totoro and Mei",
-"description": "Totoro and Mei Coloring Pages provide printable coloring pages featuring the forest spirit and young girl in friendship, exploration, and outdoor activities. Visual subjects include Totoro, Mei, umbrellas, acorns, and soot sprites, with more characters and scenes available through <a href='/?c=totoro'>Totoro Coloring Pages</a>. Settings range from wooded paths and gardens to rainy bus stops and countryside clearings. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with expressions, natural objects, weather details, and character interaction."
-},
-{
 "id": "totoro-catbus",
 "name": "Totoro Catbus",
 "description": "Totoro Catbus Coloring Pages provide printable coloring pages featuring the famous Catbus in magical forest adventures. Browse <a href='/?c=totoro'>Totoro Coloring Pages</a> for more printable scenes with Totoro characters and woodland settings. Illustrations include Catbus, bus stops, trees, acorns, forest paths, and moonlit skies across forests, villages, and countryside landscapes. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
+},
+{
+"id": "totoro-mei",
+"name": "Totoro and Mei",
+"description": "Totoro and Mei Coloring Pages provide printable coloring pages featuring the forest spirit and young girl in friendship, exploration, and outdoor activities. Visual subjects include Totoro, Mei, umbrellas, acorns, and soot sprites, with more characters and scenes available through <a href='/?c=totoro'>Totoro Coloring Pages</a>. Settings range from wooded paths and gardens to rainy bus stops and countryside clearings. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with expressions, natural objects, weather details, and character interaction."
 },
 {
 "id": "totoro-small",
