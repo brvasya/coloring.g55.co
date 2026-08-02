@@ -50,29 +50,14 @@
 "description": "Animal Crossing Coloring Pages provide printable coloring pages featuring island residents, community activities, and game objects. Visual subjects include town-hall scenes with <a href='/?c=animal-crossing-isabelle'>Isabelle</a>, shop counters beside <a href='/?c=animal-crossing-tom-nook'>Tom Nook</a>, guitar performances by <a href='/?c=animal-crossing-kk-slider'>K.K. Slider</a>, office settings featuring <a href='/?c=animal-crossing-raymond'>Raymond</a>, and island houses. Scenes cover villages, beaches, forests, museums, shops, and town plazas with varied indoor and outdoor arrangements. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clean black and white designs. Activities suit home art time, classroom activities, and creative practice with animals, buildings, clothing, nature, and community settings."
 },
 {
-"id": "animal-crossing-ankha",
-"name": "Animal Crossing Ankha",
-"description": "Animal Crossing Ankha Coloring Pages feature printable coloring pages showing the Egyptian-themed cat villager in character poses and everyday island activities. Within <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>, visual subjects include Ankha, striped headdresses, necklaces, pyramids, palm trees, and household furniture. Scenes appear in island villages, desert gardens, museum rooms, pyramid courtyards, and furnished homes. Selections combine simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages. They support classroom activities, home art time, and creative practice with clothing patterns, architectural shapes, and ornamental objects."
-},
-{
 "id": "animal-crossing-isabelle",
 "name": "Animal Crossing Isabelle",
 "description": "Animal Crossing Isabelle Coloring Pages provide printable coloring pages featuring Isabelle for character-focused coloring activities. Visual subjects include her bell-shaped hairstyle, town-hall vest, clipboard, microphone, flowers, and island decorations, with related community subjects in <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes place her in village plazas, town halls, flower gardens, and island beaches. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clean black and white designs. They support home art time, classroom activities, and creative practice with expressions, clothing, and community settings."
 },
 {
-"id": "animal-crossing-kk-slider",
-"name": "Animal Crossing K.K. Slider",
-"description": "Animal Crossing K.K. Slider Coloring Pages provide printable coloring pages featuring K.K. Slider for music-themed character activities. Visual subjects include acoustic guitars, microphones, stools, music notes, record sleeves, and stage lights, with other island performers shown in <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes feature village plazas, beach concerts, music rooms, and nighttime festivals. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clear coloring outlines. They support home art time, classroom music activities, and creative practice with instruments, rhythm symbols, and performance settings."
-},
-{
 "id": "animal-crossing-raymond",
 "name": "Animal Crossing Raymond",
 "description": "Animal Crossing Raymond Coloring Pages provide printable coloring pages featuring Raymond for cat character coloring activities. Visual subjects include glasses, office vests, cat ears, briefcases, desk furniture, and coffee cups, with neighboring residents found across <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes show him in village offices, furnished homes, flower gardens, beaches, and outdoor cafés. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clean black and white designs. They support home art time, classroom activities, and creative practice with clothing, expressions, and interior objects."
-},
-{
-"id": "animal-crossing-tom-nook",
-"name": "Animal Crossing Tom Nook",
-"description": "Animal Crossing Tom Nook Coloring Pages provide printable coloring pages featuring Tom Nook for island character activities. Visual subjects include tanuki ears, leaf shirts, bell bags, shop counters, tools, and furniture, with broader island-building elements throughout <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes place him inside shops, near resident-services buildings, across village plazas, and beside island campsites. The collection combines simple outline drawings for younger children with detailed pages for older kids, using bold line art pages. They support home art time, classroom activities, and creative practice with objects, clothing, and village roles."
 },
 {
 "id": "animals",
@@ -138,6 +123,11 @@
 "id": "animals-tiger",
 "name": "Animals Tiger",
 "description": "Tiger Coloring Pages offers printable coloring pages featuring striped tigers in natural and educational scenes. As a habitat-focused section of <a href='/?c=animals'>Animals Coloring Pages</a>, the collection highlights tiger markings, movement, and surroundings. Visual subjects include tigers, bamboo stalks, jungle flowers, rocky ledges, and watering holes across forests, grasslands, and mountain valleys. Options range from simple outline drawings for younger children to detailed pages for older kids, with clean black and white designs. The pages support classroom activities, home art time, and learning about tiger habitats."
+},
+{
+"id": "animal-crossing-ankha",
+"name": "Ankha",
+"description": "Animal Crossing Ankha Coloring Pages feature printable coloring pages showing the Egyptian-themed cat villager in character poses and everyday island activities. Within <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>, visual subjects include Ankha, striped headdresses, necklaces, pyramids, palm trees, and household furniture. Scenes appear in island villages, desert gardens, museum rooms, pyramid courtyards, and furnished homes. Selections combine simple outline drawings for younger children and detailed pages for older kids, presented as bold line art pages. They support classroom activities, home art time, and creative practice with clothing patterns, architectural shapes, and ornamental objects."
 },
 {
 "id": "angry-birds-bad-piggies",
@@ -753,6 +743,11 @@
 "id": "digital-circus-jax",
 "name": "Jax",
 "description": "Digital Circus Jax Coloring Pages offer printable coloring pages featuring Jax in playful and dynamic poses for creative coloring activity. Subjects include Jax, circus props, digital shapes, accessories, and stage elements. Scenes place Jax in circus arenas, virtual environments, colorful stages, and abstract digital spaces while linking to <a href='/?c=digital-circus'>Digital Circus Coloring Pages</a> for expanded character content. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice while encouraging creativity and character recognition."
+},
+{
+"id": "animal-crossing-kk-slider",
+"name": "K.K. Slider",
+"description": "Animal Crossing K.K. Slider Coloring Pages provide printable coloring pages featuring K.K. Slider for music-themed character activities. Visual subjects include acoustic guitars, microphones, stools, music notes, record sleeves, and stage lights, with other island performers shown in <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes feature village plazas, beach concerts, music rooms, and nighttime festivals. The collection combines simple outline drawings for younger children with detailed pages for older kids, using clear coloring outlines. They support home art time, classroom music activities, and creative practice with instruments, rhythm symbols, and performance settings."
 },
 {
 "id": "digital-circus-kinger",
@@ -1413,6 +1408,11 @@
 "id": "digital-circus",
 "name": "The Amazing Digital Circus",
 "description": "The Amazing Digital Circus Coloring Pages provide printable coloring pages featuring characters and elements from the digital circus universe for creative coloring activity. Subjects include <a href='/?c=digital-circus-pomni'>Pomni</a>, <a href='/?c=digital-circus-jax'>Jax</a>, <a href='/?c=digital-circus-caine'>Caine</a>, circus tents, digital landscapes, and abstract environments. Scenes place characters in circus arenas, virtual worlds, colorful stages, and city-like digital environments. Pages range from simple outline drawings for younger children to detailed pages for older kids using bold line art pages. This category supports classroom activities, home art time, and creative practice while encouraging visual focus and character recognition."
+},
+{
+"id": "animal-crossing-tom-nook",
+"name": "Tom Nook",
+"description": "Animal Crossing Tom Nook Coloring Pages provide printable coloring pages featuring Tom Nook for island character activities. Visual subjects include tanuki ears, leaf shirts, bell bags, shop counters, tools, and furniture, with broader island-building elements throughout <a href='/?c=animal-crossing'>Animal Crossing Coloring Pages</a>. Scenes place him inside shops, near resident-services buildings, across village plazas, and beside island campsites. The collection combines simple outline drawings for younger children with detailed pages for older kids, using bold line art pages. They support home art time, classroom activities, and creative practice with objects, clothing, and village roles."
 },
 {
 "id": "totoro",
