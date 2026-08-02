@@ -20,21 +20,6 @@
 "description": "Alice in Wonderland Coloring Pages provide printable coloring pages featuring fantasy characters and storybook scenes for character coloring activities. Subjects feature Alice with keys, <a href='/?c=alice-in-wonderland-cheshire-cat'>Cheshire Cat</a> among trees, <a href='/?c=alice-in-wonderland-mad-hatter'>Mad Hatter</a> with teacups, <a href='/?c=alice-in-wonderland-queen-of-hearts'>Queen of Hearts</a> beside card guards, and <a href='/?c=alice-in-wonderland-white-rabbit'>White Rabbit</a> with clocks. Settings cover rabbit holes, mushroom forests, tea gardens, castle courts, and rose mazes across Wonderland. The collection combines simple outline drawings for younger children and detailed pages for older kids, presented as bold black-and-white line art. Parents and teachers can use the pages for home art time, classroom activities, creative practice, and story-based learning."
 },
 {
-"id": "alice-in-wonderland-cheshire-cat",
-"name": "Alice in Wonderland Cheshire Cat",
-"description": "Alice in Wonderland Cheshire Cat Coloring Pages provide printable coloring pages featuring the smiling cat for whimsical character coloring activities. Visual subjects include striped fur, curled tails, tree branches, mushrooms, forest signs, floating grins, and magical paths, with wider woodland context in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Scenes place the Cheshire Cat above garden trails, among giant flowers, near tea tables, and inside mysterious forests. The collection includes simple outlines for younger children and detailed pages for older kids using bold, expressive line art. These pages support home creativity, classroom story themes, and playful practice with unusual shapes and facial expressions."
-},
-{
-"id": "alice-in-wonderland-mad-hatter",
-"name": "Alice in Wonderland Mad Hatter",
-"description": "Alice in Wonderland Mad Hatter Coloring Pages provide printable coloring pages featuring the Mad Hatter for tea-party and fantasy character activities. Visual subjects include tall hats, bow ties, teacups, teapots, cakes, clocks, chairs, and decorated tables, with broader celebration scenes in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Settings place him at long tea tables, garden gatherings, forest clearings, and rooms filled with curious tableware. The collection includes simple outlines for younger children and detailed pages for older kids using clear, bold line art. These pages work well for home art time, party activities, classroom storytelling, and imaginative costume coloring."
-},
-{
-"id": "alice-in-wonderland-queen-of-hearts",
-"name": "Alice in Wonderland Queen of Hearts",
-"description": "Alice in Wonderland Queen of Hearts Coloring Pages provide printable coloring pages featuring the Queen of Hearts for royal fantasy coloring activities. Visual subjects include crowns, heart motifs, scepters, card guards, roses, croquet equipment, thrones, and castle decorations, with fuller royal-court context in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Scenes place her in rose gardens, palace halls, castle courtyards, garden mazes, and lively croquet grounds. The collection includes simple outlines for younger children and detailed pages for older kids using strong, decorative line art. These pages suit home coloring, classroom activities, and creative practice with costumes, patterns, and dramatic character poses."
-},
-{
 "id": "alice-in-wonderland-white-rabbit",
 "name": "Alice in Wonderland White Rabbit",
 "description": "Alice in Wonderland White Rabbit Coloring Pages provide printable coloring pages featuring the White Rabbit for storybook character coloring activities. Visual subjects include rabbit ears, waistcoats, pocket watches, trumpets, keys, scrolls, garden paths, and rabbit holes, with more curious journeys in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Scenes show him hurrying through forests, entering small doors, crossing rose gardens, and appearing at the royal court. The collection includes easy outlines for younger children and detailed pages for older kids using crisp, bold line art. These pages support home art projects, classroom story lessons, and creative practice with movement, expressions, and fantasy props."
@@ -293,6 +278,11 @@
 "id": "pokemon-charmander",
 "name": "Charmander",
 "description": "Charmander Coloring Pages feature printable coloring pages showing Charmander in adventurous poses suitable for creative coloring activities at home or school. These pages belong to the broader <a href='/?c=pokemon'>Pokemon Coloring Pages</a> collection and present Charmander, pokeballs, trainers, campfires, and rocky landscapes across forests and mountain paths. Scenes place characters exploring outdoor environments that reflect training journeys and discovery themes from the series. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. Pages support classroom activities, home art time, and creative practice for kids who enjoy character themed coloring."
+},
+{
+"id": "alice-in-wonderland-cheshire-cat",
+"name": "Cheshire Cat",
+"description": "Alice in Wonderland Cheshire Cat Coloring Pages provide printable coloring pages featuring the smiling cat for whimsical character coloring activities. Visual subjects include striped fur, curled tails, tree branches, mushrooms, forest signs, floating grins, and magical paths, with wider woodland context in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Scenes place the Cheshire Cat above garden trails, among giant flowers, near tea tables, and inside mysterious forests. The collection includes simple outlines for younger children and detailed pages for older kids using bold, expressive line art. These pages support home creativity, classroom story themes, and playful practice with unusual shapes and facial expressions."
 },
 {
 "id": "chiikawa",
@@ -860,6 +850,11 @@
 "description": "LEGO Ninjago Zane Coloring Pages provide printable coloring pages featuring the ice ninja during combat training, meditation poses, robotic transformations, and team missions. From the ice and robotics collection in <a href='/?c=lego-ninjago'>LEGO Ninjago Coloring Pages</a>, visual subjects include Zane, white ninja armor, ice shurikens, snowflake symbols, and robotic panels. Settings include snowy mountains, ice caves, forest temples, futuristic laboratories, and city rooftops. Options range from simple outline drawings for younger children to detailed pages for older kids, presented as bold line art pages. They support home art time, classroom activities, and creative practice with armor construction, geometric forms, frozen scenery, and mechanical details."
 },
 {
+"id": "alice-in-wonderland-mad-hatter",
+"name": "Mad Hatter",
+"description": "Alice in Wonderland Mad Hatter Coloring Pages provide printable coloring pages featuring the Mad Hatter for tea-party and fantasy character activities. Visual subjects include tall hats, bow ties, teacups, teapots, cakes, clocks, chairs, and decorated tables, with broader celebration scenes in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Settings place him at long tea tables, garden gatherings, forest clearings, and rooms filled with curious tableware. The collection includes simple outlines for younger children and detailed pages for older kids using clear, bold line art. These pages work well for home art time, party activities, classroom storytelling, and imaginative costume coloring."
+},
+{
 "id": "adventure-time-marceline",
 "name": "Marceline the Vampire Queen",
 "description": "Adventure Time Marceline Coloring Pages provide printable coloring pages featuring Marceline in musical and fantasy-inspired activities. Illustrations include guitars, bats, castles, forests, and magical objects while also connecting to <a href='/?c=adventure-time'>Adventure Time Coloring Pages</a>. Pages place Marceline in forests, castles, villages, mountains, and other imaginative settings that support a wide variety of coloring activities. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports classroom activities, home art time, and creative practice."
@@ -1253,6 +1248,11 @@
 "id": "pusheen-unicorn",
 "name": "Pusheen Unicorn",
 "description": "Pusheen Unicorn Coloring Pages provide printable coloring pages featuring the cat in magical unicorn scenes with rainbows, clouds, and fantasy decorations. Within the fantasy collection of <a href='/?c=pusheen'>Pusheen Coloring Pages</a>, visual subjects include Pusheen, unicorn horns, winged horses, stars, and rainbow arches. Settings range from cloud kingdoms and enchanted forests to mountain paths and castle gardens. Options include simple outline drawings for younger children and detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with fantasy shapes, decorative patterns, and color planning."
+},
+{
+"id": "alice-in-wonderland-queen-of-hearts",
+"name": "Queen of Hearts",
+"description": "Alice in Wonderland Queen of Hearts Coloring Pages provide printable coloring pages featuring the Queen of Hearts for royal fantasy coloring activities. Visual subjects include crowns, heart motifs, scepters, card guards, roses, croquet equipment, thrones, and castle decorations, with fuller royal-court context in <a href=\"/?c=alice-in-wonderland\">Alice in Wonderland Coloring Pages</a>. Scenes place her in rose gardens, palace halls, castle courtyards, garden mazes, and lively croquet grounds. The collection includes simple outlines for younger children and detailed pages for older kids using strong, decorative line art. These pages suit home coloring, classroom activities, and creative practice with costumes, patterns, and dramatic character poses."
 },
 {
 "id": "digital-circus-ragatha",
