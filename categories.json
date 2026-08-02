@@ -30,11 +30,6 @@
 "description": "Angry Birds Coloring Pages provide printable coloring pages featuring bird and pig characters for activity pages. Visual subjects include main flock leader <a href='/?c=angry-birds-red'>Red</a>, speedy bird <a href='/?c=angry-birds-chuck'>Chuck</a>, explosive bird <a href='/?c=angry-birds-bomb'>Bomb</a>, green rivals <a href='/?c=angry-birds-bad-piggies'>Bad Piggies</a>, island friend <a href='/?c=angry-birds-stella'>Stella</a>, slingshots, blocks, eggs, and towers. Scenes place the characters in forests, villages, islands, beaches, and cities with targets and stacked structures. The collection includes simple outline drawings for younger children and detailed pages for older kids using clean black and white designs. This category supports home art time, classroom activities, and creative practice with character shapes, objects, and action scenes."
 },
 {
-"id": "angry-birds-bad-piggies",
-"name": "Angry Birds Bad Piggies",
-"description": "Angry Birds Bad Piggies Coloring Pages provide coloring sheets to print featuring pig villains for character coloring activity. Visual subjects include green pigs, helmets, crowns, carts, eggs, crates, and towers, with bird-and-pig rivalry context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place them in villages, forests, cities, and workshops with towers, tools, and target areas. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with villain shapes and objects."
-},
-{
 "id": "angry-birds-bomb",
 "name": "Angry Birds Bomb",
 "description": "Angry Birds Bomb Coloring Pages provide free printable coloring sheets featuring Bomb for character coloring activity. Visual subjects include Bomb, fuse details, feathers, slingshots, stone blocks, towers, and eggs, with block-smashing context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place him in forests, mountains, villages, and beaches with targets and block structures. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with large character forms."
@@ -43,11 +38,6 @@
 "id": "angry-birds-chuck",
 "name": "Angry Birds Chuck",
 "description": "Angry Birds Chuck Coloring Pages provide coloring sheets to print featuring Chuck for character coloring activity. Visual subjects include Chuck, beaks, feathers, slingshots, speed trails, blocks, and eggs, with fast action context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place him across forests, villages, open fields, and cities with towers and targets. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with movement poses."
-},
-{
-"id": "angry-birds-red",
-"name": "Angry Birds Red",
-"description": "Angry Birds Red Coloring Pages provide printable coloring pages featuring Red for character coloring activity. Visual subjects include Red, slingshots, blocks, eggs, towers, and nests, with wider flock context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place him near forests, villages, beaches, and cities with targets and stacked structures. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with expressive character shapes."
 },
 {
 "id": "angry-birds-stella",
@@ -148,6 +138,11 @@
 "id": "animals-tiger",
 "name": "Animals Tiger",
 "description": "Tiger Coloring Pages offers printable coloring pages featuring striped tigers in natural and educational scenes. As a habitat-focused section of <a href='/?c=animals'>Animals Coloring Pages</a>, the collection highlights tiger markings, movement, and surroundings. Visual subjects include tigers, bamboo stalks, jungle flowers, rocky ledges, and watering holes across forests, grasslands, and mountain valleys. Options range from simple outline drawings for younger children to detailed pages for older kids, with clean black and white designs. The pages support classroom activities, home art time, and learning about tiger habitats."
+},
+{
+"id": "angry-birds-bad-piggies",
+"name": "Bad Piggies",
+"description": "Angry Birds Bad Piggies Coloring Pages provide coloring sheets to print featuring pig villains for character coloring activity. Visual subjects include green pigs, helmets, crowns, carts, eggs, crates, and towers, with bird-and-pig rivalry context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place them in villages, forests, cities, and workshops with towers, tools, and target areas. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with villain shapes and objects."
 },
 {
 "id": "barbie",
@@ -1283,6 +1278,11 @@
 "id": "rainbow-friends-red",
 "name": "Rainbow Friends Red",
 "description": "Rainbow Friends Red Coloring Pages include simple coloring pages to print inspired by the scientist character and laboratory scenes from the popular game series. The collection features machines, computers, test tubes, control rooms, robots, and experiment scenes connected to <a href='/?c=rainbow-friends'>Rainbow Friends Coloring Pages</a>. Several pages place Red inside laboratories, classrooms, factories, and underground rooms for varied printable environments. The category includes simple outline drawings for younger children together with detailed pages for older kids using clean black and white designs. These sheets support creative practice, classroom activities, and home coloring time with game inspired characters."
+},
+{
+"id": "angry-birds-red",
+"name": "Red Angry Bird",
+"description": "Angry Birds Red Coloring Pages provide printable coloring pages featuring Red for character coloring activity. Visual subjects include Red, slingshots, blocks, eggs, towers, and nests, with wider flock context in <a href='/?c=angry-birds'>Angry Birds Coloring Pages</a>. Scenes place him near forests, villages, beaches, and cities with targets and stacked structures. The collection includes simple outline drawings for younger children and detailed pages for older kids using bold line art pages. This category supports home art time, classroom activities, and creative practice with expressive character shapes."
 },
 {
 "id": "roblox",
