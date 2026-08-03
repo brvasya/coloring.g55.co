@@ -440,15 +440,14 @@ class JsonGui(tk.Tk):
 
         folder_path = os.path.join(CATEGORIES_DIR, category_id)
         pages_file_path = os.path.join(CATEGORIES_DIR, f"{category_id}.txt")
-        pages_line = category_id.replace("-", " ")
 
         try:
             if not os.path.exists(folder_path):
                 os.makedirs(folder_path)
 
             if not os.path.exists(pages_file_path):
-                with open(pages_file_path, "w", encoding="utf-8") as f:
-                    f.write(pages_line)
+                with open(pages_file_path, "w", encoding="utf-8"):
+                    pass
         except Exception as e:
             messagebox.showerror("Folder creation failed", f"Could not create folder or category_id.txt:\n{e}")
 
