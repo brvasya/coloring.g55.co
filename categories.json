@@ -682,7 +682,27 @@
 {
 "id": "halloween",
 "name": "Halloween",
-"description": ""
+"description": "Halloween Coloring Pages feature printable coloring pages showing seasonal characters, decorations, and October activities for kids, parents, teachers, and casual users. Subjects include <a href='/?c=halloween-cute'>cute Halloween</a> characters, carved <a href='/?c=halloween-pumpkin'>Halloween pumpkins</a>, floating <a href='/?c=halloween-ghost'>Halloween ghosts</a>, <a href='/?c=halloween-haunted-house'>haunted houses</a> with bats, witches, and candy baskets. Scenes range across pumpkin patches, neighborhood streets, graveyards, classrooms, costume parties, and moonlit forests. The collection combines simple outline drawings for younger children with detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, seasonal party projects, and creative practice with costumes, architecture, shapes, and expressive faces."
+},
+{
+"id": "halloween-cute",
+"name": "Cute Halloween",
+"description": "Cute Halloween Coloring Pages feature printable coloring pages showing seasonal characters and activities for kids, parents, teachers, and casual users. Within <a href='/?c=halloween'>Halloween Coloring Pages</a>, the subject mix includes ghosts, costumed cats, witches, carved pumpkins, and candy baskets. Scenes range across pumpkin patches, neighborhood porches, haunted houses, costume parties, and autumn classrooms. The selection combines simple outline drawings for younger children with detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with costumes, seasonal symbols, and expressive faces."
+},
+{
+"id": "halloween-ghost",
+"name": "Halloween Ghost",
+"description": "Halloween Ghost Coloring Pages feature printable coloring pages showing ghost activities and seasonal scenes for kids, parents, teachers, and casual users. The ghost-focused selection within <a href='/?c=halloween'>Halloween Coloring Pages</a> includes floating spirits, jack-o'-lanterns, candy buckets, costumes, and haunted houses. Scenes range across pumpkin patches, neighborhood porches, graveyards, libraries, and costume parties. The selection combines simple outline drawings for younger children with detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with movement, expressions, and seasonal objects."
+},
+{
+"id": "halloween-haunted-house",
+"name": "Haunted House",
+"description": "Haunted House Coloring Pages feature printable coloring pages showing Halloween buildings and surrounding activity scenes for kids, parents, teachers, and casual users. Architecture scenes connected to <a href='/?c=halloween'>Halloween Coloring Pages</a> include haunted mansions, ghosts, bats, grave markers, and jack-o'-lanterns. Scene settings include graveyards, forests, village streets, castle grounds, and moonlit hills. The selection combines simple outline drawings for younger children with detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with architecture, perspective, and seasonal scenery."
+},
+{
+"id": "halloween-pumpkin",
+"name": "Halloween Pumpkin",
+"description": "Halloween Pumpkin Coloring Pages feature printable coloring pages showing carved pumpkin activities and seasonal designs for kids, parents, teachers, and casual users. This seasonal branch of <a href='/?c=halloween'>Halloween Coloring Pages</a> includes jack-o'-lanterns, scarecrows, ghosts, candy buckets, and witch hats. Scenes range across pumpkin patches, farm fields, front porches, haunted forests, and neighborhood streets. The selection combines simple outline drawings for younger children with detailed pages for older kids, presented as clean black and white designs. They support home art time, classroom activities, and creative practice with rounded shapes, facial expressions, and autumn symbols."
 },
 {
 "id": "halo",
