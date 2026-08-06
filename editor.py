@@ -84,6 +84,8 @@ class JsonGui(tk.Tk):
         self.files = list_all_editable_files()
 
         self.file_var = tk.StringVar(value="")
+        self.category_select_var = tk.StringVar(value="")
+        self.category_select_job = None
         self.status_var = tk.StringVar(value="")
 
         self.build_ui()
@@ -99,6 +101,12 @@ class JsonGui(tk.Tk):
         top.pack(fill="x")
 
         ttk.Button(top, text="Reload list", command=self.reload_list).pack(side="left")
+
+        ttk.Label(top, text="Select category").pack(side="left", padx=(12, 6))
+        category_select_entry = ttk.Entry(top, textvariable=self.category_select_var, width=30)
+        category_select_entry.pack(side="left")
+        category_select_entry.bind("<Escape>", lambda e: self.category_select_var.set(""))
+        self.category_select_var.trace_add("write", self.on_category_select_input)
 
         ttk.Label(top, text="Current file").pack(side="left", padx=(16, 6))
         ttk.Label(top, textvariable=self.file_var).pack(side="left")
@@ -248,6 +256,43 @@ class JsonGui(tk.Tk):
             return
         self.load_selected(name)
 
+    def on_category_select_input(self, *args):
+        if self.category_select_job is not None:
+            self.after_cancel(self.category_select_job)
+        self.category_select_job = self.after(120, self.select_category_from_input)
+
+    def select_category_from_input(self):
+        self.category_select_job = None
+        query = self.category_select_var.get().strip().lower()
+        if not query:
+            return
+
+        query_stem = query[:-5] if query.endswith(".json") else query
+        matches = []
+
+        for name in self.files:
+            name_lower = name.lower()
+            name_stem = os.path.splitext(name_lower)[0]
+
+            if query == name_lower or query_stem == name_stem:
+                rank = 0
+            elif name_lower.startswith(query) or name_stem.startswith(query_stem):
+                rank = 1
+            elif query in name_lower or query_stem in name_stem:
+                rank = 2
+            else:
+                continue
+
+            matches.append((rank, len(name_stem), name_lower, name))
+
+        if not matches:
+            self.set_status(f'No category matching "{query}"')
+            return
+
+        name = min(matches)[3]
+        current_name = os.path.basename(self.current_file) if self.current_file else ""
+        self.select_category_by_name(name, load=(name != current_name))
+
     def open_category_folder_from_sidebar(self, event=None):
         if event is None:
             return
@@ -310,7 +355,9 @@ class JsonGui(tk.Tk):
             self.set_status("No JSON files found")
             return
 
-        if keep and keep in self.files:
+        if self.category_select_var.get().strip():
+            self.select_category_from_input()
+        elif keep and keep in self.files:
             self.select_category_by_name(keep)
         else:
             self.select_category_by_name(self.files[0])
