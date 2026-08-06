@@ -1,6 +1,8 @@
 import json
 import os
 import re
+import subprocess
+import sys
 import tkinter as tk
 from tkinter import ttk, messagebox
 
@@ -121,6 +123,7 @@ class JsonGui(tk.Tk):
         self.cat_listbox = tk.Listbox(cat_frame, height=28, exportselection=False, width=34)
         self.cat_listbox.pack(side="left", fill="y", expand=False)
         self.cat_listbox.bind("<<ListboxSelect>>", lambda e: self.on_category_click())
+        self.cat_listbox.bind("<Double-Button-1>", self.open_category_folder_from_sidebar)
 
         cat_scroll = ttk.Scrollbar(cat_frame, orient="vertical", command=self.cat_listbox.yview)
         cat_scroll.pack(side="right", fill="y")
@@ -244,6 +247,49 @@ class JsonGui(tk.Tk):
         if self.current_file and os.path.basename(self.current_file) == name:
             return
         self.load_selected(name)
+
+    def open_category_folder_from_sidebar(self, event=None):
+        if event is None:
+            return
+
+        idx = self.cat_listbox.nearest(event.y)
+        if idx < 0 or idx >= len(self.files):
+            return
+
+        item_box = self.cat_listbox.bbox(idx)
+        if not item_box:
+            return
+        _, item_y, _, item_height = item_box
+        if not (item_y <= event.y < item_y + item_height):
+            return
+
+        name = self.files[idx]
+        self.cat_listbox.selection_clear(0, tk.END)
+        self.cat_listbox.selection_set(idx)
+        self.cat_listbox.see(idx)
+
+        if name == "categories.json":
+            folder_path = CATEGORIES_DIR
+        else:
+            category_id = os.path.splitext(name)[0]
+            folder_path = os.path.join(CATEGORIES_DIR, category_id)
+
+        if not os.path.isdir(folder_path):
+            messagebox.showwarning(
+                "Folder not found",
+                f"Category folder does not exist:\n{folder_path}",
+            )
+            return
+
+        try:
+            if sys.platform == "win32":
+                os.startfile(folder_path)
+            else:
+                subprocess.run(["open", folder_path], check=True)
+
+            self.set_status(f"Opened folder: {os.path.basename(folder_path)}")
+        except Exception as e:
+            messagebox.showerror("Open folder failed", f"Could not open category folder:\n{e}")
 
     def reload_list(self):
         keep = os.path.basename(self.current_file) if self.current_file else ""
