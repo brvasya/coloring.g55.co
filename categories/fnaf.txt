@@ -3,11 +3,11 @@ FNAF Bonnie strumming an electric guitar beside the stage speakers
 FNAF Chica carrying her cupcake through the decorated party room
 FNAF Foxy standing beside open curtains inside Pirate Cove
 Golden Freddy sitting quietly among spare costumes in the backstage room
-Endo-01 adjusting a loose faceplate inside the parts and service workshop
-Mr. Cupcake waving from a table covered with party hats and balloons
+FNAF Endo-01 adjusting a loose faceplate inside the parts and service workshop
+FNAF Mr. Cupcake waving from a table covered with party hats and balloons
 FNAF Puppet floating above its music box inside the prize corner
-Balloon Boy holding balloons beside an arcade prize counter
-Mangle climbing across exposed pipes above the prize room
+FNAF Balloon Boy holding balloons beside an arcade prize counter
+FNAF Mangle climbing across exposed pipes above the prize room
 Toy Freddy greeting visitors beside the arcade machines
 Toy Bonnie playing guitar under spotlights on the show stage
 Toy Chica presenting a birthday cake inside the party hall
@@ -15,7 +15,7 @@ Withered Freddy walking between shelves in the repair room
 Withered Bonnie reaching for a spare guitar in parts and service
 Withered Chica standing beside stacked trays in the pizzeria kitchen
 Withered Foxy stepping from behind curtains in the old Pirate Cove
-Security Puppet lifting a gift box beside the prize counter
+FNAF Security Puppet lifting a gift box beside the prize counter
 William Afton checking monitors inside the pizzeria security office
 Springtrap stepping through the doorway of the sealed safe room
 Glitchtrap waving inside the virtual arcade room
@@ -25,26 +25,26 @@ Nightmare Chica carrying Nightmare Cupcake through the family kitchen
 Nightmare Foxy opening the closet door inside the bedroom
 Nightmare Fredbear standing beneath a ceiling light in the bedroom
 Plushtrap sitting on a small chair at the end of the hallway
-Circus Baby offering an ice cream cone inside the colorful party room
+FNAF Circus Baby offering an ice cream cone inside the colorful party room
 Ballora spinning gracefully across the underground dance gallery
 Funtime Freddy performing with Bon-Bon inside the control module
-Bon-Bon waving from a workbench inside the maintenance room
+FNAF Bon-Bon waving from a workbench inside the maintenance room
 Funtime Foxy bowing beneath spotlights in the Funtime Auditorium
 Ennard crouching beside an open vent inside the underground facility
 Burntrap rising from a charging station inside the underground pizzeria
 Lolbit waving beside a screen at the arcade control panel
 Scrap Baby examining a pile of machine parts inside the salvage room
-Molten Freddy stretching tangled wires across the maintenance tunnel
-Lefty carrying a gift box through the backstage storage area
-Helpy bouncing on a desk inside the bright restaurant office
+Glamrock Bonnie playing guitar inside Bonnie Bowl
+FNAF Lefty carrying a gift box through the backstage storage area
+FNAF Helpy bouncing on a desk inside the bright restaurant office
 Rockstar Freddy tipping his hat on the grand performance stage
 Glamrock Freddy giving a thumbs-up inside the PizzaPlex lobby
 Glamrock Chica playing guitar beside tables in the PizzaPlex food court
 Roxanne Wolf waving beside a race kart at Roxy Raceway
 Montgomery Gator swinging his bass guitar inside Monty Golf
-Sun waving from the top of the colorful daycare play structure
-Moon swinging from a cable above the daycare play area
+FNAF Sun waving from the top of the colorful daycare play structure
+FNAF Moon swinging from a cable above the daycare play area
 Vanny tiptoeing past game cabinets inside the Fazer Blast arcade
-Gregory shining a flashlight across the PizzaPlex security office
-DJ Music Man raising his hands above the West Arcade dance floor
+FNAF Gregory shining a flashlight across the PizzaPlex security office
+FNAF DJ Music Man raising his hands above the West Arcade dance floor
 Freddy Fazbear, Bonnie, Chica, and Foxy standing in a spaced row at the pizzeria entrance
