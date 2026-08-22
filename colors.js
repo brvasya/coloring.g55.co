@@ -59,7 +59,6 @@
   });
 
   installButton.addEventListener("click", async () => {
-    installButton.style.display = "none";
     await installPrompt.prompt();
     installPrompt = null;
   });
