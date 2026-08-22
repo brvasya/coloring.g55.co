@@ -1,0 +1,23 @@
+{
+"id": "/",
+"name": "Coloring.G55.CO",
+"short_name": "Coloring.G55",
+"description": "Free Printable Coloring Pages",
+"start_url": "/",
+"scope": "/",
+"display": "standalone",
+"background_color": "#ffffff",
+"theme_color": "#ffffff",
+"icons": [
+{
+"src": "/192.png",
+"sizes": "192x192",
+"type": "image/png"
+},
+{
+"src": "/512.png",
+"sizes": "512x512",
+"type": "image/png"
+}
+]
+}
