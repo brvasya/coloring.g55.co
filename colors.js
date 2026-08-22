@@ -55,18 +55,18 @@
   addEventListener("beforeinstallprompt", e => {
     e.preventDefault();
     installPrompt = e;
-    installButton.hidden = false;
+    installButton.style.display = "";
   });
 
   installButton.addEventListener("click", async () => {
-    installButton.hidden = true;
+    installButton.style.display = "none";
     await installPrompt.prompt();
     installPrompt = null;
   });
 
   addEventListener("appinstalled", () => {
     installPrompt = null;
-    installButton.hidden = true;
+    installButton.style.display = "none";
   });
 
   colorize();
