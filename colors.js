@@ -49,5 +49,20 @@
     });
   }
 
+  let installPrompt;
+  const installButton = document.querySelector(".install");
+
+  addEventListener("beforeinstallprompt", e => {
+    e.preventDefault();
+    installPrompt = e;
+    installButton.hidden = false;
+  });
+
+  installButton.addEventListener("click", async () => {
+    installButton.hidden = true;
+    await installPrompt.prompt();
+    installPrompt = null;
+  });
+
   colorize();
 })();
