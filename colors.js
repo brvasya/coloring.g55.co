@@ -55,7 +55,7 @@
   addEventListener("beforeinstallprompt", e => {
     e.preventDefault();
     installPrompt = e;
-    installButton.style.display = "";
+    installButton.style.display = "block";
   });
 
   installButton.addEventListener("click", async () => {
