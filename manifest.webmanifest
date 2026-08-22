@@ -1,9 +1,9 @@
 {
 "id": "/",
-"name": "Coloring.G55.CO",
-"short_name": "Coloring.G55",
+"name": "Coloring Pages",
+"short_name": "Coloring Pages",
 "description": "Free Printable Coloring Pages",
-"start_url": "/",
+"start_url": "/?utm_source=pwa&utm_medium=app",
 "scope": "/",
 "display": "standalone",
 "background_color": "#ffffff",
