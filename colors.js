@@ -64,5 +64,10 @@
     installPrompt = null;
   });
 
+  addEventListener("appinstalled", () => {
+    installPrompt = null;
+    installButton.hidden = true;
+  });
+
   colorize();
 })();
