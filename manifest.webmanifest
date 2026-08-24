@@ -3,7 +3,7 @@
 "name": "Coloring Pages",
 "short_name": "Coloring Pages",
 "description": "Free Printable Coloring Pages",
-"start_url": "/?utm_source=pwa&utm_medium=app",
+"start_url": "/?utm_source=pwa",
 "scope": "/",
 "display": "standalone",
 "background_color": "#ffffff",
