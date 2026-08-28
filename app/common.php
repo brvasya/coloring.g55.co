@@ -81,23 +81,9 @@ function makeImageAlt(string $id): string {
   return preg_replace('/\s+/', ' ', trim($imageAlt));
 }
 
-function extract_category_links_from_description(string $html): array {
-    if ($html === '') {
-        return [];
-    }
-
-    preg_match_all('/href=["\']\/?\?c=([^"\']+)["\']/i', $html, $m);
-
-    $links = array_map('clean_slug', $m[1] ?? []);
-    $links = array_values(array_unique(array_filter($links)));
-
-    return $links;
-}
-
 function build_category_clusters(array $categories): array {
     $categories = sort_categories_alpha($categories);
     $map = [];
-    $graph = [];
     $order = [];
 
     foreach ($categories as $cat) {
@@ -110,77 +96,58 @@ function build_category_clusters(array $categories): array {
             continue;
         }
 
-        $cat['_cluster_links'] = extract_category_links_from_description((string)($cat['description'] ?? ''));
-
         $map[$id] = $cat;
-        $graph[$id] = [];
         $order[] = $id;
     }
 
-    $n = count($order);
+    $parentIds = [];
 
-    for ($i = 0; $i < $n; $i++) {
-        $a = $order[$i];
-        $linksA = $map[$a]['_cluster_links'];
+    foreach ($order as $id) {
+        $candidate = $id;
 
-        if (!$linksA) {
-            continue;
-        }
+        while (($separator = strrpos($candidate, '-')) !== false) {
+            $candidate = substr($candidate, 0, $separator);
 
-        for ($j = $i + 1; $j < $n; $j++) {
-            $b = $order[$j];
-            $linksB = $map[$b]['_cluster_links'];
-
-            if (!$linksB) {
-                continue;
-            }
-
-            $shared = array_intersect($linksA, $linksB);
-            $aLinksToB = in_array($b, $linksA, true);
-            $bLinksToA = in_array($a, $linksB, true);
-
-            if ($shared || $aLinksToB || $bLinksToA) {
-                $graph[$a][] = $b;
-                $graph[$b][] = $a;
+            if (isset($map[$candidate])) {
+                $parentIds[$candidate] = true;
             }
         }
     }
 
-    $visited = [];
-    $clusters = [];
+    $clustersByParent = [];
     $browseMore = [];
 
     foreach ($order as $id) {
-        if (isset($visited[$id])) {
-            continue;
-        }
+        $parentId = '';
 
-        if (empty($map[$id]['_cluster_links'])) {
-            $visited[$id] = true;
-            $browseMore[] = $map[$id];
-            continue;
-        }
+        if (isset($parentIds[$id])) {
+            $parentId = $id;
+        } else {
+            $candidate = $id;
 
-        $queue = [$id];
-        $visited[$id] = true;
-        $cluster = [];
+            while (($separator = strrpos($candidate, '-')) !== false) {
+                $candidate = substr($candidate, 0, $separator);
 
-        while ($queue) {
-            $cur = array_shift($queue);
-            $cluster[] = $map[$cur];
-
-            foreach ($graph[$cur] as $next) {
-                if (!isset($visited[$next])) {
-                    $visited[$next] = true;
-                    $queue[] = $next;
+                if (isset($parentIds[$candidate])) {
+                    $parentId = $candidate;
+                    break;
                 }
             }
         }
 
-        if (count($cluster) > 1) {
-            $clusters[] = $cluster;
-        } else {
-            $browseMore[] = $cluster[0];
+        if ($parentId === '') {
+            $browseMore[] = $map[$id];
+            continue;
+        }
+
+        $clustersByParent[$parentId][] = $map[$id];
+    }
+
+    $clusters = [];
+
+    foreach ($order as $id) {
+        if (isset($clustersByParent[$id])) {
+            $clusters[] = $clustersByParent[$id];
         }
     }
 
