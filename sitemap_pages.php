@@ -15,21 +15,9 @@ function q($s): string {
 
 $base = 'https://coloring.g55.co';
 
-if (!isset($_GET['n'])) {
-  http_response_code(400);
-  echo 'Missing n';
-  exit;
-}
+$n = max(1, (int)($_GET['n'] ?? 1));
 
-$n = (int)$_GET['n'];
-if ($n < 1) {
-  http_response_code(400);
-  echo 'Invalid n';
-  exit;
-}
-
-$index = load_site_index();
-$categories = get_categories_sorted($index);
+$categories = get_categories_sorted(load_site_index());
 
 $perSitemap = 10000;
 $start = ($n - 1) * $perSitemap;
@@ -52,10 +40,7 @@ foreach ($categories as $c) {
     if ($count >= $start && $count < $end) {
       $loc = $base . "/page.php?id=" . q($pid) . "&c=" . q($cid);
 
-      echo "  <url>\n";
-      echo "    <loc>" . xml_e($loc) . "</loc>\n";
-      echo "    <lastmod>" . xml_e($today) . "</lastmod>\n";
-      echo "  </url>\n";
+      echo "<url><loc>" . xml_e($loc) . "</loc><lastmod>" . xml_e($today) . "</lastmod></url>\n";
     }
 
     $count++;
