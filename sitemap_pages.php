@@ -15,7 +15,7 @@ function q($s): string {
 
 $base = 'https://coloring.g55.co';
 
-$n = max(1, (int)($_GET['n'] ?? 1));
+$n = (int)$_GET['n'];
 
 $categories = get_categories_sorted(load_site_index());
 
