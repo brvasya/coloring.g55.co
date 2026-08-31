@@ -11,8 +11,7 @@ function xml_e($s): string {
 
 $base = 'https://coloring.g55.co';
 
-$index = load_site_index();
-$categories = get_categories_sorted($index);
+$categories = get_categories_sorted(load_site_index());
 
 $allPageCount = 0;
 foreach ($categories as $c) {
