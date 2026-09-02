@@ -9,9 +9,15 @@ body {
     overflow-x: hidden;
 }
 header {
+    top: 0;
+    width: 100%;
     height: 90px;
     display: flex;
+    position: sticky;
     align-items: center;
+    border: 1px solid #eee;
+    background-color: #fff;
+    z-index: 1;
 }
 .content {
     margin: 0 25px;
