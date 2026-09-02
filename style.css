@@ -15,7 +15,7 @@ header {
     display: flex;
     position: sticky;
     align-items: center;
-    border: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     background-color: #fff;
     z-index: 10;
 }
