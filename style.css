@@ -20,6 +20,7 @@ header {
     z-index: 10;
 }
 .content {
+    gap: 15px;
     margin: 25px 25px 0;
     display: flex;
     flex-direction: row-reverse;
@@ -107,7 +108,6 @@ p {
 .description {
     gap: 15px;
     width: 30%;
-    margin-left: 15px;
     border-radius: 20px;
     padding: 25px;
     display: flex;
@@ -301,8 +301,6 @@ h1, h2 {
 }
 .description {
     width: 100%;
-    margin-top: 25px;
-    margin-left: unset;
 }
 #___gcse_0 {
     display: none;
