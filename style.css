@@ -15,7 +15,7 @@ header {
     display: flex;
     position: sticky;
     align-items: center;
-    box-shadow: 0 2px 6px #ccc;
+    box-shadow: 0 2px 6px #eee;
     background-color: #fff;
     z-index: 10;
 }
