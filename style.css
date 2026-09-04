@@ -21,7 +21,7 @@ header {
 }
 .content {
     gap: 15px;
-    margin: 15px 15px 0;
+    margin: 15px;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -87,7 +87,6 @@ p {
     gap: 15px;
     display: flex;
     padding: 60px;
-    margin-bottom: 15px;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
