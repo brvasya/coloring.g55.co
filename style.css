@@ -177,17 +177,6 @@ p {
     justify-content: center;
     background-image: unset !important;
 }
-.gsc-search-button {
-    width: 75px !important;
-    height: 36px;
-    margin-left: 0 !important;
-    border-radius: 0 20px 20px 0 !important;
-    background-color: #66cc33 !important;
-    border-color: #66cc33 !important;
-}
-.gsc-search-button:hover {
-    opacity: 0.9;
-}
 .gsc-search-box {
     margin: 0 !important;
 }
