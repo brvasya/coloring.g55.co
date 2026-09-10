@@ -13,7 +13,7 @@ Undertale Frisk Standing on a Snowdin Path
 Undertale Flowey Smiling in the Ruins
 Undertale Flowey Rising from a Patch of Golden Flowers
 Undertale Flowey Peeking Out of a Flower Bed
-Undertale Flowey Waving a Leaf in the Underground
+Undertale Flowey Laughing in the Ruins
 Undertale Toriel Holding a Pie in Her Home
 Undertale Toriel Reading Beside a Fireplace
 Undertale Toriel Waving Near a Ruins Doorway
@@ -23,7 +23,7 @@ Undertale Undyne Standing Beside an Echo Flower
 Undertale Undyne Waving on a Waterfall Bridge
 Undertale Undyne Cooking in Her Kitchen
 Undertale Asriel Dreemurr Holding a Golden Flower
-Undertale Asriel Dreemurr Tending Flowers in the Ruins
+Undertale Asriel Dreemurr Waving in the Ruins
 Undertale Asriel Dreemurr Standing Near the Ruins Entrance
 Undertale Asriel Dreemurr Sitting Beside a Golden Flower Bed
 Undertale Mettaton Posing on a Hotland Stage
@@ -40,11 +40,11 @@ Undertale Alphys Writing Notes Beside Lab Equipment
 Undertale Alphys Standing Near a Laboratory Monitor
 Undertale Temmie Smiling in Temmie Village
 Undertale Temmie Waving Beside the Tem Shop
-Undertale Temmie Sitting Beside a Mushroom in Temmie Village
+Undertale Chara Standing Beside Golden Flowers
 Undertale Muffet Holding a Tea Cup
 Undertale Muffet Serving a Pastry at the Spider Bake Sale
 Undertale Muffet Standing in Her Spider Lair
 Undertale Napstablook Resting in Waterfall
 Undertale Napstablook Listening to Music at Home
-Undertale Napstablook Floating Beside the Snail Farm
-Undertale Greater Dog Playing in the Snow
+Undertale Monster Kid Cheering in Waterfall
+Undertale Sans and Frisk Standing Together in Snowdin
