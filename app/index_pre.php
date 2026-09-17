@@ -67,7 +67,7 @@ if ($hasC) {
     $gridItems[] = [
       'id' => $p['id'],
       'title' => $p['title'],
-      'image' => '/categories/' . $cid . '/' . $p['id'] . '.png',
+      'image' => '/categories/' . $cid . '/' . $p['id'] . (file_exists(__DIR__ . '/../categories/' . $cid . '/' . $p['id'] . '.png') ? '.png' : '.PNG'),
       'category' => $cid,
     ];
   }
@@ -99,7 +99,7 @@ if ($hasC) {
       $clusterItems[] = [
         'id' => $newest['id'],
         'title' => $newest['title'],
-        'image' => '/categories/' . $catId . '/' . $newest['id'] . '.png',
+        'image' => '/categories/' . $catId . '/' . $newest['id'] . (file_exists(__DIR__ . '/../categories/' . $catId . '/' . $newest['id'] . '.png') ? '.png' : '.PNG'),
         'category' => $catId,
       ];
     }
