@@ -32,7 +32,7 @@
 <section class="grid">
 <?php foreach ($gridItems as $it): ?>
 <a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($it['id']); ?>&c=<?php echo rawurlencode($it['category']); ?>">
-<img src="<?php echo h('/categories/' . $it['category'] . '/' . $it['id'] . '.png'); ?>" alt="<?php echo h(makeImageAlt($it['id'])); ?>">
+<img src="<?php echo h($it['image']); ?>" alt="<?php echo h(makeImageAlt($it['id'])); ?>">
 <span><?php echo h($it['title']); ?></span>
 </a>
 <?php endforeach; ?>
@@ -48,7 +48,7 @@
 <section class="grid">
 <?php foreach (array_slice($cluster['items'], 0, 5) as $it): ?>
 <a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($it['id']); ?>&c=<?php echo rawurlencode($it['category']); ?>">
-<img src="<?php echo h('/categories/' . $it['category'] . '/' . $it['id'] . '.png'); ?>" alt="<?php echo h(makeImageAlt($it['id'])); ?>">
+<img src="<?php echo h($it['image']); ?>" alt="<?php echo h(makeImageAlt($it['id'])); ?>">
 <span><?php echo h($it['title']); ?></span>
 </a>
 <?php endforeach; ?>
