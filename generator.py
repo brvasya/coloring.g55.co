@@ -38,10 +38,11 @@ ONEBIT_THRESHOLD = 200
 def list_category_folders():
     if not os.path.isdir(CATEGORIES_DIR):
         return []
-    return sorted(
+    folders = sorted(
         d for d in os.listdir(CATEGORIES_DIR)
         if os.path.isdir(os.path.join(CATEGORIES_DIR, d))
     )
+    return [d for d in folders if category_has_missing_png(d)]
 
 
 def load_lines(path):
@@ -272,6 +273,32 @@ def image_output_path(category_name, page_id):
     return os.path.join(CATEGORIES_DIR, category_name, f"{sanitize_filename(page_id)}.png")
 
 
+def category_has_missing_png(category_name):
+    pages_path = os.path.join(CATEGORIES_DIR, f"{category_name}.txt")
+
+    # Keep categories visible when their page source file is missing or empty.
+    if not os.path.isfile(pages_path):
+        return True
+
+    data = load_category_data(category_name)
+    pages = data.get("pages") or []
+    if not pages:
+        return True
+
+    seen_ids = set()
+    for page in pages:
+        page = (page or "").strip()
+        if not page:
+            continue
+        page_id = build_id(page)
+        if page_id in seen_ids:
+            continue
+        seen_ids.add(page_id)
+        if not os.path.isfile(image_output_path(category_name, page_id)):
+            return True
+    return False
+
+
 def temp_image_output_path(category_name, page_id, ext="jpg"):
     ext = (ext or "jpg").lower().strip().lstrip(".")
     if ext not in {"jpg", "jpeg", "png"}:
@@ -494,7 +521,8 @@ class PromptGUI(tk.Tk):
 
         sidebar = ttk.Frame(container, padding=(0, 0, 10, 0))
         sidebar.pack(side="left", fill="y")
-        ttk.Label(sidebar, text="Categories").pack(anchor="w", pady=(0, 6))
+        self.categories_left_var = tk.StringVar(value=f"Categories: {len(self.categories)}")
+        ttk.Label(sidebar, textvariable=self.categories_left_var).pack(anchor="w", pady=(0, 6))
 
         list_wrap = ttk.Frame(sidebar)
         list_wrap.pack(fill="y", expand=True)
@@ -534,6 +562,7 @@ class PromptGUI(tk.Tk):
         self.id_vars = []
         self.prompt_vars = []
         self.desc_vars = []
+        self._updating_category_list = False
 
         self.update_counters()
         self.refresh_items()
@@ -553,6 +582,8 @@ class PromptGUI(tk.Tk):
         )
 
     def on_category_select(self, _event=None):
+        if self._updating_category_list:
+            return
         sel = self.cat_list.curselection()
         if not sel:
             return
@@ -566,9 +597,39 @@ class PromptGUI(tk.Tk):
         self.on_category_change()
 
     def on_category_change(self, _event=None):
-        self.data = load_category_data(self.category_var.get())
-        self.update_counters()
-        self.refresh_items()
+        category_name = self.category_var.get().strip()
+        self.data = load_category_data(category_name) if category_name else {}
+        self.refresh_items(refresh_categories=False)
+
+    def refresh_category_list(self):
+        current_category = self.category_var.get().strip()
+        self.categories = list_category_folders()
+        self.categories_left_var.set(f"Categories: {len(self.categories)}")
+
+        self._updating_category_list = True
+        try:
+            self.cat_list.delete(0, "end")
+            for category_name in self.categories:
+                self.cat_list.insert("end", category_name)
+
+            if not self.categories:
+                self.category_var.set("")
+                self.data = {}
+                return
+
+            if current_category in self.categories:
+                selected_category = current_category
+            else:
+                selected_category = self.categories[0]
+
+            self.category_var.set(selected_category)
+            selected_idx = self.categories.index(selected_category)
+            self.cat_list.selection_clear(0, "end")
+            self.cat_list.selection_set(selected_idx)
+            self.cat_list.see(selected_idx)
+            self.data = load_category_data(selected_category)
+        finally:
+            self._updating_category_list = False
 
     def mark_row(self, idx):
         if idx >= len(self.rows):
@@ -672,7 +733,10 @@ class PromptGUI(tk.Tk):
             message += "\n\nFirst failures:\n" + json.dumps(failed[:3], ensure_ascii=False, indent=2)
         messagebox.showinfo("Generate Images + Save All", message)
 
-    def refresh_items(self):
+    def refresh_items(self, refresh_categories=True):
+        if refresh_categories:
+            self.refresh_category_list()
+
         for child in self.scrollable_frame.winfo_children():
             child.destroy()
 
@@ -683,13 +747,16 @@ class PromptGUI(tk.Tk):
         self.desc_vars.clear()
         self.update_counters()
 
+        category_name = self.category_var.get().strip()
+        if not category_name:
+            return
+
         try:
             requested_count = int(self.count_var.get())
         except Exception:
             requested_count = 10
             self.count_var.set(10)
 
-        category_name = self.category_var.get().strip()
         all_pages = build_unique_pages(self.data)
         pages = [
             page for page in all_pages
