@@ -689,7 +689,12 @@ class PromptGUI(tk.Tk):
             requested_count = 10
             self.count_var.set(10)
 
-        pages = build_unique_pages(self.data)
+        category_name = self.category_var.get().strip()
+        all_pages = build_unique_pages(self.data)
+        pages = [
+            page for page in all_pages
+            if not os.path.isfile(image_output_path(category_name, build_id(page)))
+        ]
 
         if pages:
             count = min(requested_count, len(pages))
@@ -703,6 +708,10 @@ class PromptGUI(tk.Tk):
                     f"Available unique pages: {len(pages)}\n\n"
                     f"Generated {count} unique rows.",
                 )
+        elif all_pages:
+            # Category has page prompts, but every expected PNG already exists.
+            # Show no prompt cards at all.
+            selected_pages = []
         else:
             count = requested_count
             selected_pages = [None] * count
