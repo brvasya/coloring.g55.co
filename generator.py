@@ -181,7 +181,7 @@ def build_unique_pages(data):
         seen_ids.add(page_id)
         unique_pages.append(page)
 
-    random.shuffle(unique_pages)
+    # Preserve the original order from pages.txt for deterministic production.
     return unique_pages
 
 
