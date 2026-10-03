@@ -1,4 +1,6 @@
 <?php
+http_response_code(410);
+exit;
 require_once 'app/index_pre.php';
 $items = (int) ($_GET['items'] ?? 2000);
 $pages = array_slice($pages, 0, $items);
