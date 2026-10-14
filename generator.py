@@ -91,20 +91,8 @@ def format_title(title: str) -> str:
     return " ".join(out)
 
 
-def strip_leading_article(text):
-    s = (text or "").strip()
-    lower = s.lower()
-    if lower.startswith("a "):
-        return s[2:].lstrip()
-    if lower.startswith("an "):
-        return s[3:].lstrip()
-    if lower.startswith("the "):
-        return s[4:].lstrip()
-    return s
-
-
 def normalize_page_scene(page):
-    scene = strip_leading_article(page)
+    scene = (page or "").strip()
     return re.sub(r"\s{2,}", " ", scene).strip()
 
 
