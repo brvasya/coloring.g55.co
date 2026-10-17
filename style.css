@@ -296,6 +296,9 @@ p {
     display: none;
 }
 }
+ins.adsbygoogle[data-ad-status="unfilled"] {
+    display: none !important;
+}
 
 @media print {
 html, body {
