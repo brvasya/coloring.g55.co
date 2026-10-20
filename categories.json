@@ -325,8 +325,18 @@
 "description": ""
 },
 {
+"id": "christmas-grinch",
+"name": "Grinch",
+"description": ""
+},
+{
 "id": "christmas-santa",
 "name": "Santa",
+"description": ""
+},
+{
+"id": "christmas-snowman",
+"name": "Snowman",
 "description": ""
 },
 {
