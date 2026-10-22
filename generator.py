@@ -490,6 +490,7 @@ class PromptGUI(tk.Tk):
         ttk.Spinbox(top, from_=1, to=200, textvariable=self.count_var, width=6).pack(side="left", padx=(6, 12))
         ttk.Button(top, text="Refresh", command=self.refresh_items).pack(side="left", padx=(0, 8))
         ttk.Button(top, text="Save All", command=self.save_all_to_json).pack(side="left", padx=(0, 8))
+        ttk.Button(top, text="Remove Orphans", command=self.remove_orphan_lines).pack(side="left", padx=(0, 8))
         ttk.Button(top, text="Generate Images + Save All", command=self.generate_images_and_save_all).pack(side="left")
 
         ttk.Label(top, text="Aspect:").pack(side="left", padx=(12, 4))
@@ -652,6 +653,27 @@ class PromptGUI(tk.Tk):
         ]
         added, skipped = prepend_unique_pages_to_category_json(category_name, pages)
         messagebox.showinfo("Saved", f"Added: {added}\nSkipped duplicates: {skipped}\nFile: {category_name}.json")
+
+    def remove_orphan_lines(self):
+        category = self.category_var.get().strip()
+        if not category:
+            return
+
+        path = os.path.join(CATEGORIES_DIR, f"{category}.txt")
+        pages = load_lines(path)
+        kept = [
+            page for page in pages
+            if os.path.isfile(image_output_path(category, build_id(page)))
+        ]
+        removed = len(pages) - len(kept)
+        if not removed:
+            return
+
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("\n".join(kept) + ("\n" if kept else ""))
+
+        self.refresh_items()
+        messagebox.showinfo("Cleanup", f"Removed {removed} orphan lines.")
 
     def _page_from_row(self, idx):
         return {
