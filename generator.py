@@ -661,10 +661,14 @@ class PromptGUI(tk.Tk):
 
         path = os.path.join(CATEGORIES_DIR, f"{category}.txt")
         pages = load_lines(path)
-        kept = [
-            page for page in pages
-            if os.path.isfile(image_output_path(category, build_id(page)))
-        ]
+        kept = []
+        orphan_ids = set()
+        for page in pages:
+            page_id = build_id(page)
+            if os.path.isfile(image_output_path(category, page_id)):
+                kept.append(page)
+            else:
+                orphan_ids.add(page_id)
         removed = len(pages) - len(kept)
         if not removed:
             return
@@ -672,8 +676,24 @@ class PromptGUI(tk.Tk):
         with open(path, "w", encoding="utf-8") as f:
             f.write("\n".join(kept) + ("\n" if kept else ""))
 
+        json_path = category_json_path(category)
+        data = _safe_read_category_json(json_path)
+        original = data["pages"]
+        data["pages"] = [
+            entry for entry in original
+            if not isinstance(entry, dict) or entry.get("id") not in orphan_ids
+        ]
+        json_removed = len(original) - len(data["pages"])
+        if json_removed:
+            with open(json_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=0)
+
         self.refresh_items()
-        messagebox.showinfo("Cleanup", f"Removed {removed} orphan lines.")
+        messagebox.showinfo(
+            "Cleanup",
+            f"Removed {removed} orphan lines.\n"
+            f"Removed {json_removed} orphan JSON entries."
+        )
 
     def _page_from_row(self, idx):
         return {
