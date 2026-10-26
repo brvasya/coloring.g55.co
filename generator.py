@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-import random
 import os
 import re
 import json
@@ -15,18 +14,9 @@ except Exception:
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-APP_DIR = os.path.join(BASE_DIR, "app")
 CATEGORIES_DIR = os.path.join(BASE_DIR, "categories")
 STYLE_FILE = os.path.join(BASE_DIR, "style.txt")
 
-POOL_FILES = {
-    "intro": os.path.join(APP_DIR, "intro_pool.txt"),
-    "usage": os.path.join(APP_DIR, "usage_pool.txt"),
-    "ease": os.path.join(APP_DIR, "ease_pool.txt"),
-    "benefit": os.path.join(APP_DIR, "benefit_pool.txt"),
-}
-
-POOLS = {k: [] for k in POOL_FILES.keys()}
 COPIED_BG = "systemHighlight"
 
 GEMINI_IMAGE_MODELS = ["gemini-nano-banana-2.1"]
@@ -116,45 +106,6 @@ def build_prompt(page, style):
     return f"Coloring page on white background, {scene}, {style}."
 
 
-def _clean_sentence(s):
-    s = re.sub(r"\s{2,}", " ", (s or "").strip()).strip(" ,")
-    if not s:
-        return ""
-    if not s.endswith("."):
-        s += "."
-    return s
-
-
-def load_pools():
-    for key, path in POOL_FILES.items():
-        POOLS[key] = load_lines(path)
-
-
-def render_template(line, scene):
-    return (line or "").replace("{scene}", scene)
-
-
-def build_page_description(page):
-    scene = re.sub(r"\s{2,}", " ", (page or "").strip()).strip()
-
-    patterns = [
-        ("intro", "usage", "ease", "benefit"),
-        ("intro", "usage", "benefit", "ease"),
-        ("intro", "ease", "usage", "benefit"),
-        ("intro", "ease", "benefit", "usage"),
-        ("intro", "benefit", "usage", "ease"),
-        ("intro", "benefit", "ease", "usage"),
-    ]
-
-    if any(not POOLS.get(k) for k in ("intro", "usage", "ease", "benefit")):
-        return "Missing pool files."
-
-    sentences = []
-    for key in random.choice(patterns):
-        sentences.append(_clean_sentence(render_template(random.choice(POOLS[key]), scene)))
-    return " ".join(filter(None, sentences))
-
-
 def build_unique_pages(data):
     unique_pages = []
     seen_ids = set()
@@ -180,16 +131,6 @@ def generate_item(data, page):
             "h1": "Missing category_name.txt or style.txt",
             "id": "missing-files",
             "prompt": "Missing category_name.txt or style.txt",
-            "page_description": "Missing category_name.txt or style.txt",
-        }
-
-    if not all(POOLS.get(k) for k in ("intro", "usage", "ease", "benefit")):
-        return {
-            "page": "",
-            "h1": "Missing pool files",
-            "id": "missing-pool-files",
-            "prompt": "Missing pool files",
-            "page_description": "Missing pool files",
         }
 
     return {
@@ -197,7 +138,6 @@ def generate_item(data, page):
         "h1": build_h1(page),
         "id": build_id(page),
         "prompt": build_prompt(page, data["style"]),
-        "page_description": build_page_description(page),
     }
 
 
@@ -241,7 +181,7 @@ def prepend_unique_pages_to_category_json(category_name, pages_to_add):
             skipped += 1
             continue
         existing_ids.add(pid)
-        clean_add.append({"id": pid, "title": str(p.get("title", "")), "description": str(p.get("description", ""))})
+        clean_add.append({"id": pid, "title": str(p.get("title", "")), "description": ""})
 
     data["pages"] = clean_add + data.get("pages", [])
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -550,7 +490,6 @@ class PromptGUI(tk.Tk):
         self.h1_vars = []
         self.id_vars = []
         self.prompt_vars = []
-        self.desc_vars = []
         self._updating_category_list = False
 
         self.update_counters()
@@ -640,7 +579,7 @@ class PromptGUI(tk.Tk):
         self.clipboard_append(self.prompt_vars[idx].get())
         self.update()
         category_name = self.category_var.get().strip()
-        page = {"id": self.id_vars[idx].get(), "title": self.h1_vars[idx].get(), "description": self.desc_vars[idx].get()}
+        page = {"id": self.id_vars[idx].get(), "title": self.h1_vars[idx].get(), "description": ""}
         added, skipped = prepend_unique_pages_to_category_json(category_name, [page])
         self.mark_row(idx)
         messagebox.showinfo("Copied and Saved", f"Prompt copied to clipboard.\nAdded: {added}\nSkipped duplicates: {skipped}\nFile: {category_name}.json")
@@ -648,7 +587,7 @@ class PromptGUI(tk.Tk):
     def save_all_to_json(self):
         category_name = self.category_var.get().strip()
         pages = [
-            {"id": self.id_vars[i].get(), "title": self.h1_vars[i].get(), "description": self.desc_vars[i].get()}
+            {"id": self.id_vars[i].get(), "title": self.h1_vars[i].get(), "description": ""}
             for i in range(len(self.h1_vars))
         ]
         added, skipped = prepend_unique_pages_to_category_json(category_name, pages)
@@ -699,7 +638,7 @@ class PromptGUI(tk.Tk):
         return {
             "id": self.id_vars[idx].get(),
             "title": self.h1_vars[idx].get(),
-            "description": self.desc_vars[idx].get(),
+            "description": "",
             "prompt": self.prompt_vars[idx].get(),
         }
 
@@ -774,7 +713,6 @@ class PromptGUI(tk.Tk):
         self.h1_vars.clear()
         self.id_vars.clear()
         self.prompt_vars.clear()
-        self.desc_vars.clear()
         self.update_counters()
 
         category_name = self.category_var.get().strip()
@@ -817,12 +755,10 @@ class PromptGUI(tk.Tk):
             item = generate_item(self.data, page)
             h1_var = tk.StringVar(value=item["h1"])
             id_var = tk.StringVar(value=item["id"])
-            desc_var = tk.StringVar(value=item["page_description"])
             prompt_var = tk.StringVar(value=item["prompt"])
 
             self.h1_vars.append(h1_var)
             self.id_vars.append(id_var)
-            self.desc_vars.append(desc_var)
             self.prompt_vars.append(prompt_var)
 
             card = ttk.Frame(self.scrollable_frame, style="Card.TFrame", padding=10)
@@ -839,7 +775,6 @@ class PromptGUI(tk.Tk):
             text_block.grid(row=0, column=2, sticky="nsew")
             ttk.Label(text_block, textvariable=h1_var, wraplength=900, justify="left", anchor="w").pack(side="top", anchor="w", fill="x")
             ttk.Label(text_block, textvariable=id_var, wraplength=900, justify="left", anchor="w").pack(side="top", anchor="w", fill="x", pady=(4, 0))
-            ttk.Label(text_block, textvariable=desc_var, wraplength=900, justify="left", anchor="w").pack(side="top", anchor="w", fill="x", pady=(6, 0))
             ttk.Label(text_block, textvariable=prompt_var, wraplength=900, justify="left", anchor="w").pack(side="top", anchor="w", fill="x", pady=(6, 0))
 
             btns = ttk.Frame(card)
@@ -852,5 +787,4 @@ class PromptGUI(tk.Tk):
 
 
 if __name__ == "__main__":
-    load_pools()
     PromptGUI().mainloop()
