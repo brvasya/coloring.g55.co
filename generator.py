@@ -88,7 +88,7 @@ def normalize_page_scene(page):
 
 def build_h1(page):
     scene = normalize_page_scene(page)
-    return f"Free Printable {format_title(scene)} Coloring Page for Kids"
+    return f"{format_title(scene)} Coloring Page"
 
 
 def build_seo_base_for_slug(page):
