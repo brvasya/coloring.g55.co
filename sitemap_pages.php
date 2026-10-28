@@ -23,8 +23,6 @@ $perSitemap = 10000;
 $start = ($n - 1) * $perSitemap;
 $end = $start + $perSitemap;
 
-$today = date('Y-m-d');
-
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' . "\n";
 
@@ -41,7 +39,7 @@ foreach ($categories as $c) {
       $loc = $base . "/page.php?id=" . q($pid) . "&c=" . q($cid);
       $imageLoc = $base . "/categories/" . q($cid) . "/" . q($pid) . ".png";
 
-      echo "<url><loc>" . xml_e($loc) . "</loc><lastmod>" . xml_e($today) . "</lastmod>";
+      echo "<url><loc>" . xml_e($loc) . "</loc>";
       echo "<image:image><image:loc>" . xml_e($imageLoc) . "</image:loc></image:image>";
       echo "</url>\n";
     }

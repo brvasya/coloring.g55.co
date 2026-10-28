@@ -24,15 +24,13 @@ $perSitemap = 10000;
 $pageSitemaps = (int)ceil($allPageCount / $perSitemap);
 if ($pageSitemaps < 1) $pageSitemaps = 1;
 
-$today = date('Y-m-d');
-
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 echo '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
 
-echo "<sitemap><loc>" . xml_e($base . "/sitemap_categories.php") . "</loc><lastmod>" . xml_e($today) . "</lastmod></sitemap>\n";
+echo "<sitemap><loc>" . xml_e($base . "/sitemap_categories.php") . "</loc></sitemap>\n";
 
 for ($i = 1; $i <= $pageSitemaps; $i++) {
-  echo "<sitemap><loc>" . xml_e($base . "/sitemap_pages.php?n=" . $i) . "</loc><lastmod>" . xml_e($today) . "</lastmod></sitemap>\n";
+  echo "<sitemap><loc>" . xml_e($base . "/sitemap_pages.php?n=" . $i) . "</loc></sitemap>\n";
 }
 
 echo "</sitemapindex>\n";

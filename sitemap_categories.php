@@ -17,8 +17,6 @@ $base = 'https://coloring.g55.co';
 
 $categories = get_categories_sorted(load_site_index());
 
-$today = date('Y-m-d');
-
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
 
@@ -26,7 +24,7 @@ foreach ($categories as $c) {
   $cid = $c['id'];
   $loc = $base . "/?c=" . q($cid);
 
-  echo "<url><loc>" . xml_e($loc) . "</loc><lastmod>" . xml_e($today) . "</lastmod></url>\n";
+  echo "<url><loc>" . xml_e($loc) . "</loc></url>\n";
 }
 
 echo "</urlset>\n";
