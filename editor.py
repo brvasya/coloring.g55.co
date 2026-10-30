@@ -72,15 +72,15 @@ def normalize_loaded_json(loaded, file_name: str):
     raise ValueError('Unsupported JSON format. Expected {"pages": [...]} or a list.')
 
 
-def category_description_has_link(description: str) -> bool:
-    description = str(description or "").lower()
-    return "<a href=" in description
+def category_has_description(description: str) -> bool:
+    description = str(description or "").strip()
+    return bool(description)
 
 
-def count_categories_with_links(items) -> int:
+def count_categories_with_descriptions(items) -> int:
     count = 0
     for it in items:
-        if category_description_has_link(it.get("description", "")):
+        if category_has_description(it.get("description", "")):
             count += 1
     return count
 
@@ -233,8 +233,8 @@ class JsonGui(tk.Tk):
         total = len(self.items)
 
         if self.is_root_categories_mode():
-            linked = count_categories_with_links(self.items)
-            text = f"Descriptions: {linked}/{total}"
+            described = count_categories_with_descriptions(self.items)
+            text = f"Descriptions: {described}/{total}"
         else:
             text = f"Pages: {total}"
 
@@ -482,7 +482,7 @@ class JsonGui(tk.Tk):
             self.listbox.insert(tk.END, label)
 
             if self.is_root_categories_mode():
-                if not category_description_has_link(it.get("description", "")):
+                if not category_has_description(it.get("description", "")):
                     self.listbox.itemconfig(idx, bg="#e6e6e6", fg="#555555")
 
     def on_title_change(self, event=None):
