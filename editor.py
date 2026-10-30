@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import unicodedata
 import subprocess
 import sys
 import tkinter as tk
@@ -13,6 +14,12 @@ ROOT_CATEGORIES_FILE = os.path.join(SCRIPT_DIR, "categories.json")
 PAGE_TEMPLATE = {"id": "", "title": "", "description": ""}
 CATEGORY_TEMPLATE = {"id": "", "name": "", "description": ""}
 NEW_CATEGORY_FILE_TEMPLATE = {"pages": []}
+
+APOSTROPHES = str.maketrans({char: "-" for char in "'\u2018\u2019\u02bc\u02bb\uff07"})
+LATIN_EQUIVALENTS = str.maketrans({
+    "æ": "ae", "œ": "oe", "ø": "o", "ł": "l", "đ": "d",
+    "ð": "d", "þ": "th", "ı": "i", "ħ": "h", "ŋ": "n",
+})
 
 
 def list_json_files(folder: str) -> list[str]:
@@ -36,11 +43,20 @@ def list_all_editable_files() -> list[str]:
 
 
 def slugify(text: str) -> str:
-    text = text.strip().lower()
-    text = re.sub(r"[^\w\s-]", "", text, flags=re.UNICODE)
-    text = re.sub(r"[\s_]+", "-", text)
-    text = re.sub(r"-{2,}", "-", text)
-    return text.strip("-")
+    """Match the make-coloring-page-titles skill's ID normalization."""
+    text = (text or "").strip()
+    if not text:
+        raise ValueError("The title must not be empty.")
+    text = text.replace("&", " and ").translate(APOSTROPHES)
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    text = text.casefold().translate(LATIN_EQUIVALENTS)
+    if any(char.isalnum() and not char.isascii() for char in text):
+        raise ValueError("Use an established Latin spelling for non-Latin words.")
+    slug = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
+    if not slug:
+        raise ValueError("The title must contain a Latin letter or ASCII digit.")
+    return slug
 
 
 def normalize_loaded_json(loaded, file_name: str):
@@ -80,6 +96,7 @@ class JsonGui(tk.Tk):
         self.wrapper = None
         self.mode = "pages"
         self.selected_index = None
+        self._auto_generated_id = ""
 
         self.files = list_all_editable_files()
 
@@ -472,12 +489,22 @@ class JsonGui(tk.Tk):
         if self.selected_index is not None:
             return
         current_id = self.id_var.get().strip()
-        if current_id:
+        if current_id and current_id != self._auto_generated_id:
             return
         value = self.title_var.get().strip()
         if not value:
+            self.id_var.set("")
+            self._auto_generated_id = ""
             return
-        self.id_var.set(slugify(value))
+        try:
+            generated_id = slugify(value)
+        except ValueError as exc:
+            self.id_var.set("")
+            self._auto_generated_id = ""
+            self.set_status(str(exc))
+            return
+        self.id_var.set(generated_id)
+        self._auto_generated_id = generated_id
 
     def read_form(self):
         if self.is_root_categories_mode():
@@ -504,6 +531,7 @@ class JsonGui(tk.Tk):
 
     def new_template(self):
         self.selected_index = None
+        self._auto_generated_id = ""
         if self.is_root_categories_mode():
             self.write_form(CATEGORY_TEMPLATE.copy())
             self.set_status("New category")
@@ -588,6 +616,7 @@ class JsonGui(tk.Tk):
         self.set_status(f"Found {len(matches)} match(es)")
 
     def add_item(self):
+        self.on_title_change()
         it = self.read_form()
         label = it.get("name") if self.is_root_categories_mode() else it.get("title")
 
