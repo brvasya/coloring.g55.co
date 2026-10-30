@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import os
 import re
+import unicodedata
 import json
 import base64
 import urllib.request
@@ -23,6 +24,12 @@ GEMINI_IMAGE_MODELS = ["gemini-nano-banana-2.1"]
 DEFAULT_GEMINI_IMAGE_MODEL = GEMINI_IMAGE_MODELS[0]
 DEFAULT_ASPECT_RATIO = "2:3"
 ONEBIT_THRESHOLD = 200
+
+APOSTROPHES = str.maketrans({char: "-" for char in "'\u2018\u2019\u02bc\u02bb\uff07"})
+LATIN_EQUIVALENTS = str.maketrans({
+    "æ": "ae", "œ": "oe", "ø": "o", "ł": "l", "đ": "d",
+    "ð": "d", "þ": "th", "ı": "i", "ħ": "h", "ŋ": "n",
+})
 
 
 def list_category_folders():
@@ -52,10 +59,20 @@ def load_style():
 
 
 def slugify(text):
-    text = (text or "").lower()
-    text = re.sub(r"[^a-z0-9]+", "-", text)
-    text = re.sub(r"-{2,}", "-", text).strip("-")
-    return text or "coloring-page"
+    """Match the make-coloring-page-titles skill's ID normalization."""
+    text = (text or "").strip()
+    if not text:
+        raise ValueError("The title must not be empty.")
+    text = text.replace("&", " and ").translate(APOSTROPHES)
+    text = unicodedata.normalize("NFKD", text)
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    text = text.casefold().translate(LATIN_EQUIVALENTS)
+    if any(char.isalnum() and not char.isascii() for char in text):
+        raise ValueError("Use an established Latin spelling for non-Latin words.")
+    slug = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
+    if not slug:
+        raise ValueError("The title must contain a Latin letter or ASCII digit.")
+    return slug
 
 
 
@@ -92,8 +109,7 @@ def build_h1(page):
 
 
 def build_seo_base_for_slug(page):
-    scene = normalize_page_scene(page)
-    return f"{scene} coloring page".strip()
+    return build_h1(page)
 
 
 def build_id(page):
