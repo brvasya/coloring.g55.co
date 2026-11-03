@@ -307,7 +307,7 @@ html, body {
 body * {
     visibility: hidden;
 }
-section, nav, footer, .adsbygoogle {
+header, section, nav, aside, footer, .adsbygoogle {
     display: none !important;
 }
 .page {
