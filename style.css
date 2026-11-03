@@ -301,14 +301,17 @@ ins.adsbygoogle[data-ad-status="unfilled"] {
 }
 
 @media print {
-html, body {
+html {
     height: 100%;
 }
 body * {
     visibility: hidden;
 }
-header, section, nav, aside, footer, .adsbygoogle {
+header, section, nav, aside, footer, .adsbygoogle, .google-auto-placed {
     display: none !important;
+}
+.content {
+    margin: 0;
 }
 .page {
     visibility: visible;
