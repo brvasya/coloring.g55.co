@@ -1140,16 +1140,6 @@
 "description": "Stuart Minion coloring pages feature printable music scenes, disguises and adventures with Gru and other characters. Electric guitars, an amplifier, a music-shop window and a fruit-hat dance outfit give several pictures a performance focus. Other designs show Stuart piloting an airplane, becoming a chicken through the Zodiac Stone and mixing an experiment with Dr. Nefario. Cinema popcorn, astronaut equipment, a Hypno-hat and outdoor settings extend the selection from familiar character poses to costume, travel and transformation subjects."
 },
 {
-"id": "miraculous-ladybug",
-"name": "Miraculous Ladybug",
-"description": "Miraculous Ladybug coloring pages feature printable superhero action, Paris landmarks and everyday scenes with Marinette and her friends. Yo-yo swings, Lucky Charm poses and akuma captures appear alongside encounters with Cat Noir, Stormy Weather and Stoneheart. Marinette's attic bedroom, sewing desk, family bakery and school surroundings bring another side of the characters into the gallery. Other heroes, magical transformations and shared rooftop moments extend the selection beyond individual Ladybug poses, combining costume details, companion pictures and city adventures."
-},
-{
-"id": "miraculous-ladybug-cat-noir",
-"name": "Cat Noir",
-"description": "Cat Noir coloring pages feature printable rooftop adventures, staff action and scenes with Ladybug and Plagg. Pictures show Cataclysm breaking a gate, pole-vaulting between buildings and watching Paris from a gargoyle, alongside rescues and battle poses. Adrien's ring, transformation and moments feeding Plagg connect his everyday life with his superhero identity. Roses, a rooftop dinner and shared fist bumps add companion scenes, while encounters with villains and alternate forms such as Cat Blanc broaden the collection's action and character subjects."
-},
-{
 "id": "moomin",
 "name": "Moomin",
 "description": "Moomin coloring pages feature printable character gatherings, riverside activities and adventures around Moominvalley. Moomintroll appears fishing, collecting shells, exploring caves and traveling with Sniff, while Snorkmaiden, Snufkin and Little My join picnics, boat trips and quiet meetings. Pictures of Moominhouse, the bathing house, an observatory and the Lonely Mountains give the collection recognizable locations. Flowers, campfires, hammocks and magical objects bring everyday comforts together with journeys, changing weather and fantasy moments from the Moomin characters' world."
@@ -1673,6 +1663,11 @@
 "id": "superhero-hulk",
 "name": "Hulk",
 "description": "Hulk coloring pages collect printable scenes of ground-smashing strength, rescues, and battles with familiar Marvel characters. Designs show Hulk lifting a car, catching a bus, breaking chains, and stopping a runaway train. Character pairings include Skaar and Devil Dinosaur, alongside confrontations with Abomination, Red Hulk, Wolverine, Thanos, and the Thing. Gladiator armor, Joe Fixit's striped suit, Professor Hulk's laboratory outfit, and seasonal Santa and pumpkin designs give the gallery distinct costumes and settings."
+},
+{
+"id": "superhero-miraculous-ladybug",
+"name": "Miraculous Ladybug",
+"description": "Miraculous Ladybug coloring pages bring together printable adventures with Ladybug, Cat Noir, Marinette, Adrien, and their friends across Paris. Yo-yo swings, Lucky Charm poses, akuma captures, staff action, and Cataclysm scenes appear alongside the Eiffel Tower, rooftops, and familiar city streets. Tikki, Plagg, Rena Rouge, Queen Bee, and Hawk Moth add companions, allies, and villains to the gallery. Everyday scenes include Marinette's sewing desk, the family bakery, school encounters, and Adrien's piano, while transformations and alternate hero forms broaden the character designs."
 },
 {
 "id": "superhero-superman",
