@@ -42,10 +42,58 @@
   const c = new URLSearchParams(location.search).get("c");
 
   if (c) {
-    document.querySelectorAll(".categories .tag").forEach(a => {
+    document.querySelectorAll(".categories a.tag[href]").forEach(a => {
       if (new URL(a.href).searchParams.get("c") === c) {
         a.classList.add("active");
       }
+    });
+  }
+
+  const categoryNav = document.querySelector(".category-nav");
+
+  if (categoryNav) {
+    const panel = categoryNav.querySelector(".category-panel");
+    const letterLinks = [...categoryNav.querySelectorAll(".category-letter")];
+    const categoryGroups = [...categoryNav.querySelectorAll(".category-links")];
+    const mobileToggle = categoryNav.querySelector(".categories-toggle");
+    categoryNav.classList.add("has-toggle");
+
+    function closeLetter() {
+      panel.hidden = true;
+      categoryGroups.forEach(group => { group.hidden = true; });
+      letterLinks.forEach(link => link.setAttribute("aria-expanded", "false"));
+    }
+
+    function toggleLetter(link, event) {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+
+      const wasOpen = link.getAttribute("aria-expanded") === "true";
+      closeLetter();
+      if (wasOpen) return;
+
+      const group = categoryGroups.find(item => item.dataset.letter === link.dataset.letter);
+      if (!group) return;
+      group.hidden = false;
+      panel.hidden = false;
+      link.setAttribute("aria-expanded", "true");
+    }
+
+    letterLinks.forEach(link => {
+      link.addEventListener("click", event => toggleLetter(link, event));
+      link.addEventListener("keydown", event => {
+        if (event.key === " ") toggleLetter(link, event);
+      });
+    });
+
+    mobileToggle.addEventListener("click", () => {
+      const isOpen = categoryNav.classList.toggle("is-open");
+      mobileToggle.setAttribute("aria-expanded", String(isOpen));
+      if (!isOpen) closeLetter();
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && !panel.hidden) closeLetter();
     });
   }
 
