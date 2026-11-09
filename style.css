@@ -117,6 +117,8 @@ p {
     min-width: 44px;
 }
 .category-nav .category-letter {
+    box-sizing: border-box;
+    width: 100%;
     padding: 10px;
 }
 .category-nav .category-letter[aria-expanded="true"] {

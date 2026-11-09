@@ -53,7 +53,7 @@
 
   if (categoryNav) {
     const panel = categoryNav.querySelector(".category-panel");
-    const letterLinks = [...categoryNav.querySelectorAll(".category-letter")];
+    const letterButtons = [...categoryNav.querySelectorAll(".category-letter")];
     const categoryGroups = [...categoryNav.querySelectorAll(".category-links")];
     const mobileToggle = categoryNav.querySelector(".categories-toggle");
     categoryNav.classList.add("has-toggle");
@@ -61,29 +61,23 @@
     function closeLetter() {
       panel.hidden = true;
       categoryGroups.forEach(group => { group.hidden = true; });
-      letterLinks.forEach(link => link.setAttribute("aria-expanded", "false"));
+      letterButtons.forEach(button => button.setAttribute("aria-expanded", "false"));
     }
 
-    function toggleLetter(link, event) {
-      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-      event.preventDefault();
-
-      const wasOpen = link.getAttribute("aria-expanded") === "true";
+    function toggleLetter(button) {
+      const wasOpen = button.getAttribute("aria-expanded") === "true";
       closeLetter();
       if (wasOpen) return;
 
-      const group = categoryGroups.find(item => item.dataset.letter === link.dataset.letter);
+      const group = categoryGroups.find(item => item.dataset.letter === button.dataset.letter);
       if (!group) return;
       group.hidden = false;
       panel.hidden = false;
-      link.setAttribute("aria-expanded", "true");
+      button.setAttribute("aria-expanded", "true");
     }
 
-    letterLinks.forEach(link => {
-      link.addEventListener("click", event => toggleLetter(link, event));
-      link.addEventListener("keydown", event => {
-        if (event.key === " ") toggleLetter(link, event);
-      });
+    letterButtons.forEach(button => {
+      button.addEventListener("click", () => toggleLetter(button));
     });
 
     mobileToggle.addEventListener("click", () => {

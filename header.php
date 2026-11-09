@@ -19,7 +19,7 @@ ksort($navByLetter);
 <button class="tag categories-toggle" type="button" aria-expanded="false" aria-controls="category-letters">Browse categories</button>
 <ul class="categories category-letters" id="category-letters">
 <?php foreach (array_keys($navByLetter) as $letter): ?>
-<li><a class="tag category-letter" href="/?c=<?php echo rawurlencode($navByLetter[$letter][0]['id']); ?>" role="button" aria-controls="category-panel" aria-expanded="false" aria-label="Browse <?php echo h($letter); ?> categories" data-letter="<?php echo h($letter); ?>"><?php echo h($letter); ?></a></li>
+<li><button class="tag category-letter" type="button" aria-controls="category-panel" aria-expanded="false" aria-label="Browse <?php echo h($letter); ?> categories" data-letter="<?php echo h($letter); ?>"><?php echo h($letter); ?></button></li>
 <?php endforeach; ?>
 </ul>
 <div class="category-panel" id="category-panel" hidden>
