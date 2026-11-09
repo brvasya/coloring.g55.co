@@ -134,9 +134,6 @@ p {
 .category-nav .categories-toggle {
     display: none;
 }
-h2[id] {
-    scroll-margin-top: 90px;
-}
 .pagination .tag {
     flex: auto;
 }

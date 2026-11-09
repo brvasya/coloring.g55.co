@@ -38,10 +38,8 @@
 <?php endforeach; ?>
 </section>
 <?php else: ?>
-<?php $seenLetters = []; ?>
 <?php foreach ($homepageClusters as $cluster): ?>
-<?php $letter = $cluster['title'][0]; $firstOfLetter = !isset($seenLetters[$letter]); $seenLetters[$letter] = true; ?>
-<h2<?php if ($firstOfLetter): ?> id="<?php echo h($letter); ?>"<?php endif; ?>><a href="/?c=<?php echo rawurlencode($cluster['id']); ?>"><?php echo h($cluster['title']); ?></a></h2>
+<h2><a href="/?c=<?php echo rawurlencode($cluster['id']); ?>"><?php echo h($cluster['title']); ?></a></h2>
 <section class="grid">
 <?php foreach (array_slice($cluster['items'], 0, 5) as $it): ?>
 <a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($it['id']); ?>&c=<?php echo rawurlencode($it['category']); ?>">
