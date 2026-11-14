@@ -136,8 +136,7 @@ function build_category_clusters(array $categories): array {
         }
 
         if ($parentId === '') {
-            $browseMore[] = $map[$id];
-            continue;
+            $parentId = $id;
         }
 
         $clustersByParent[$parentId][] = $map[$id];
