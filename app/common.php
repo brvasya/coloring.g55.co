@@ -115,7 +115,6 @@ function build_category_clusters(array $categories): array {
     }
 
     $clustersByParent = [];
-    $browseMore = [];
 
     foreach ($order as $id) {
         $parentId = '';
@@ -152,7 +151,6 @@ function build_category_clusters(array $categories): array {
 
     return [
         'clusters' => $clusters,
-        'browse_more' => $browseMore,
     ];
 }
 
