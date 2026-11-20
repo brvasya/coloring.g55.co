@@ -57,16 +57,6 @@ function sort_categories_alpha(array $cats): array {
   return $cats;
 }
 
-function newest_page(array $pages): array {
-  $n = count($pages);
-  if ($n === 0) {
-    http_response_code(500);
-    exit;
-  }
-
-  return $pages[0];
-}
-
 function get_categories_sorted(array $index): array {
   return sort_categories_alpha($index['categories']);
 }

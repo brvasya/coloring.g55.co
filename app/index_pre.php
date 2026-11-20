@@ -3,14 +3,7 @@
 require_once 'common.php';
 
 $index = load_site_index();
-$site = $index['site'];
-$categories = get_categories_sorted($index);
 $grouped = get_categories_clustered($index);
-
-$catMap = [];
-foreach ($categories as $c) {
-  $catMap[$c['id']] = $c;
-}
 
 function category_pages_pagination(array $allPages, int $perPage = 30, string $pageParam = 'p'): array {
   $totalItems = count($allPages);
@@ -28,8 +21,6 @@ function category_pages_pagination(array $allPages, int $perPage = 30, string $p
 
   return [
     'page' => $page,
-    'per_page' => $perPage,
-    'total_items' => $totalItems,
     'total_pages' => $totalPages,
     'items' => $items,
     'has_prev' => $page > 1,
@@ -45,6 +36,11 @@ function category_url(string $cid, ?int $p = null): string {
 $hasC = isset($_GET['c']);
 
 if ($hasC) {
+  $catMap = [];
+  foreach ($index['categories'] as $c) {
+    $catMap[$c['id']] = $c;
+  }
+
   $cid = clean_slug($_GET['c']);
   if ($cid === '' || !isset($catMap[$cid])) {
     header('Location: /', true, 302);
@@ -53,9 +49,9 @@ if ($hasC) {
 
   $cat = $catMap[$cid];
   $currentCluster = find_cluster_for_category($grouped, $cid);
-  list($_, $pages) = load_category_pages($cid);
+  list(, $pages) = load_category_pages($cid);
 
-  $pager = category_pages_pagination($pages, 30, 'p');
+  $pager = category_pages_pagination($pages);
   $pageNum = $pager['page'];
 
   $canonical = category_url($cid, $pageNum);
@@ -81,10 +77,9 @@ if ($hasC) {
   $title = $h1;
   $metaDesc = strip_tags($desc);
 } else {
+  $site = $index['site'];
   $totalCount = 0;
-  $gridItems = [];
   $homepageClusters = [];
-  $homepageLetters = [];
 
   foreach (($grouped['clusters'] ?? []) as $cluster) {
     $clusterItems = [];
@@ -92,7 +87,7 @@ if ($hasC) {
     foreach ($cluster as $c) {
       $catId = $c['id'];
 
-      list($_, $pages) = load_category_pages($catId);
+      list(, $pages) = load_category_pages($catId);
       $totalCount += count($pages);
 
       if ($catId !== $cluster[0]['id']) continue;
@@ -114,10 +109,6 @@ if ($hasC) {
         'items' => $clusterItems,
       ];
     }
-  }
-
-  foreach ($homepageClusters as $cluster) {
-    $homepageLetters[$cluster['title'][0]] = true;
   }
 
   $h1 = ($totalCount > 0 ? number_format($totalCount) . ' ' : '') . $site['title'];
