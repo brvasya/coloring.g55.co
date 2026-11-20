@@ -95,13 +95,16 @@ if ($hasC) {
       list($_, $pages) = load_category_pages($catId);
       $totalCount += count($pages);
 
-      $newest = newest_page($pages);
-      $clusterItems[] = [
-        'id' => $newest['id'],
-        'title' => $newest['title'],
-        'image' => '/categories/' . $catId . '/' . $newest['id'] . '.png',
-        'category' => $catId,
-      ];
+      if ($catId !== $cluster[0]['id']) continue;
+
+      foreach (array_slice($pages, 0, 5) as $page) {
+        $clusterItems[] = [
+          'id' => $page['id'],
+          'title' => $page['title'],
+          'image' => '/categories/' . $catId . '/' . $page['id'] . '.png',
+          'category' => $catId,
+        ];
+      }
     }
 
     if (!empty($clusterItems)) {
