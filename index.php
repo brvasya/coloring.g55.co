@@ -41,7 +41,7 @@
 <?php foreach ($homepageClusters as $cluster): ?>
 <h2><a href="/?c=<?php echo rawurlencode($cluster['id']); ?>"><?php echo h($cluster['title']); ?></a></h2>
 <section class="grid">
-<?php foreach (array_slice($cluster['items'], 0, 5) as $it): ?>
+<?php foreach ($cluster['items'] as $it): ?>
 <a class="thumbnail" href="/page.php?id=<?php echo rawurlencode($it['id']); ?>&c=<?php echo rawurlencode($it['category']); ?>">
 <img src="<?php echo h($it['image']); ?>" alt="<?php echo h(makeImageAlt($it['id'])); ?>">
 <span><?php echo h($it['title']); ?></span>
